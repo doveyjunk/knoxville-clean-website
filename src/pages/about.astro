@@ -1,0 +1,295 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - Knoxville Clean" description="Learn about Knoxville Clean, your trusted local house cleaning service in Knoxville, TN.">
+	<section class="page-header">
+		<div class="container">
+			<h1>About Knoxville Clean</h1>
+			<p>Your trusted partner for a cleaner, healthier home</p>
+		</div>
+	</section>
+
+	<section class="about-section">
+		<div class="container">
+			<div class="story">
+				<h2>Our Story</h2>
+				<p>Founded in Knoxville, Tennessee, Knoxville Clean was built on a simple belief: everyone deserves to come home to a clean, comfortable space. What started as a small operation has grown into one of Knoxville's most trusted house cleaning services, but we've never forgotten our roots or our commitment to personalized, quality service.</p>
+				<p>We understand that inviting someone into your home requires trust. That's why we've built our business on reliability, professionalism, and genuine care for both our clients and our team members. Every person on our staff is thoroughly vetted, professionally trained, and dedicated to exceeding your expectations.</p>
+			</div>
+
+			<div class="values">
+				<h2>Our Values</h2>
+				<div class="values-grid">
+					<div class="value-card">
+						<h3>🎯 Excellence</h3>
+						<p>We're not satisfied with "good enough." Every clean is thorough, consistent, and done to the highest standards.</p>
+					</div>
+					<div class="value-card">
+						<h3>🤝 Integrity</h3>
+						<p>Honest pricing, reliable service, and transparent communication. We do what we say we'll do.</p>
+					</div>
+					<div class="value-card">
+						<h3>💚 Care</h3>
+						<p>We care about your home, your family, and our environment. That's why we use eco-friendly products and treat every home with respect.</p>
+					</div>
+					<div class="value-card">
+						<h3>👥 Community</h3>
+						<p>We're Knoxville locals serving Knoxville families. Your neighbors, your friends, your trusted cleaning service.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="why-choose">
+				<h2>Why Choose Us?</h2>
+				<div class="reasons-grid">
+					<div class="reason">
+						<h3>Experienced Professionals</h3>
+						<p>Our team consists of trained, background-checked cleaning professionals who take pride in their work. We invest in ongoing training to ensure we're using the best techniques and products available.</p>
+					</div>
+					<div class="reason">
+						<h3>Customized Service</h3>
+						<p>No two homes are alike, and neither are our cleaning plans. We work with you to create a service that fits your specific needs, schedule, and budget.</p>
+					</div>
+					<div class="reason">
+						<h3>Eco-Friendly Approach</h3>
+						<p>We use environmentally responsible cleaning products that are safe for your family, pets, and the planet. Clean homes shouldn't come at the cost of a clean environment.</p>
+					</div>
+					<div class="reason">
+						<h3>100% Satisfaction Guarantee</h3>
+						<p>If you're not completely satisfied with our service, we'll make it right. No questions asked. Your happiness is our success.</p>
+					</div>
+					<div class="reason">
+						<h3>Flexible Scheduling</h3>
+						<p>Life is busy. We offer flexible scheduling options including weekly, bi-weekly, monthly, or one-time cleanings to fit your lifestyle.</p>
+					</div>
+					<div class="reason">
+						<h3>Insured & Bonded</h3>
+						<p>We're fully insured and bonded for your peace of mind. Your property is protected when we're on the job.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="team">
+				<h2>Our Team</h2>
+				<p class="team-intro">Our cleaning professionals are the heart of our business. Each team member is carefully selected, thoroughly trained, and committed to delivering exceptional service. We believe in treating our team well, which means they're motivated, professional, and proud of the work they do in your home.</p>
+				<div class="team-features">
+					<div class="team-feature">
+						<h4>Background Checked</h4>
+						<p>Every team member passes comprehensive background checks</p>
+					</div>
+					<div class="team-feature">
+						<h4>Professionally Trained</h4>
+						<p>Ongoing training in cleaning techniques and customer service</p>
+					</div>
+					<div class="team-feature">
+						<h4>Uniformed & Identified</h4>
+						<p>Professional appearance with company uniforms and ID badges</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta-section">
+		<div class="container">
+			<h2>Experience the Knoxville Clean Difference</h2>
+			<p>Join hundreds of satisfied customers who trust us with their homes</p>
+			<a href="/contact" class="btn btn-large btn-white">Get Your Free Quote</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.page-header p {
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.about-section {
+		padding: 4rem 2rem;
+	}
+
+	.story {
+		max-width: 800px;
+		margin: 0 auto 4rem;
+	}
+
+	.story h2 {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.story p {
+		font-size: 1.1rem;
+		line-height: 1.8;
+		margin-bottom: 1.5rem;
+	}
+
+	.values {
+		margin-bottom: 4rem;
+	}
+
+	.values h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.value-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.5rem;
+		text-align: center;
+	}
+
+	.value-card h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+		font-size: 1.3rem;
+	}
+
+	.why-choose {
+		margin-bottom: 4rem;
+	}
+
+	.why-choose h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.reasons-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.reason {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		border-left: 4px solid var(--primary);
+	}
+
+	.reason h3 {
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+	}
+
+	.team {
+		background: var(--bg-light);
+		padding: 3rem;
+		border-radius: 0.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.team h2 {
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+
+	.team-intro {
+		max-width: 800px;
+		margin: 0 auto 2rem;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+
+	.team-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.team-feature {
+		background: white;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		text-align: center;
+	}
+
+	.team-feature h4 {
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+	}
+
+	.cta-section {
+		background: var(--secondary);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.cta-section h2 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.cta-section p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: white;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 2rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+	}
+
+	.btn-large {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.btn-white {
+		background: white;
+		color: var(--primary);
+	}
+
+	.btn-white:hover {
+		background: var(--bg-light);
+		transform: translateY(-2px);
+	}
+
+	@media (max-width: 768px) {
+		.page-header h1 {
+			font-size: 2rem;
+		}
+
+		.values-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.reasons-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.team-features {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

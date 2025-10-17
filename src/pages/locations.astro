@@ -1,0 +1,288 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Service Locations - Knoxville Clean" description="We serve Knoxville and surrounding areas in Tennessee with professional house cleaning services.">
+	<section class="page-header">
+		<div class="container">
+			<h1>Service Areas</h1>
+			<p>Proudly serving Knoxville and surrounding communities</p>
+		</div>
+	</section>
+
+	<section class="locations-section">
+		<div class="container">
+			<div class="intro-text">
+				<h2>Serving Greater Knoxville, TN</h2>
+				<p>We're proud to bring professional house cleaning services to homes throughout Knoxville and the surrounding areas. Our team is dedicated to serving our local community with reliable, high-quality cleaning services.</p>
+			</div>
+
+			<div class="locations-grid">
+				<div class="location-card primary">
+					<h3>Knoxville</h3>
+					<p>Our primary service area includes all neighborhoods in Knoxville, from downtown to the suburbs.</p>
+					<ul>
+						<li>Downtown Knoxville</li>
+						<li>West Knoxville</li>
+						<li>North Knoxville</li>
+						<li>South Knoxville</li>
+						<li>East Knoxville</li>
+						<li>Sequoyah Hills</li>
+						<li>Bearden</li>
+						<li>Farragut</li>
+					</ul>
+				</div>
+
+				<div class="location-card">
+					<h3>Knox County</h3>
+					<p>We extend our services throughout Knox County communities.</p>
+					<ul>
+						<li>Powell</li>
+						<li>Karns</li>
+						<li>Halls</li>
+						<li>Corryton</li>
+						<li>Mascot</li>
+					</ul>
+				</div>
+
+				<div class="location-card">
+					<h3>Surrounding Areas</h3>
+					<p>We also serve select nearby communities.</p>
+					<ul>
+						<li>Maryville</li>
+						<li>Alcoa</li>
+						<li>Oak Ridge</li>
+						<li>Lenoir City</li>
+						<li>Clinton</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="coverage-note">
+				<h3>Don't See Your Area?</h3>
+				<p>We're always expanding our service area. If you don't see your location listed, please contact us anyway. We may be able to accommodate special requests or your area might be within our extended service range.</p>
+				<a href="/contact" class="btn btn-primary">Contact Us</a>
+			</div>
+
+			<div class="service-commitment">
+				<h2>Local, Trusted, Professional</h2>
+				<div class="commitment-grid">
+					<div class="commitment-item">
+						<h4>🏠 Local Expertise</h4>
+						<p>We understand Knoxville homes and the specific cleaning needs of our community.</p>
+					</div>
+					<div class="commitment-item">
+						<h4>⏰ Reliable Service</h4>
+						<p>Consistent, punctual service you can depend on, week after week.</p>
+					</div>
+					<div class="commitment-item">
+						<h4>🤝 Community Focused</h4>
+						<p>We're invested in our community and committed to serving our neighbors well.</p>
+					</div>
+					<div class="commitment-item">
+						<h4>🚗 Efficient Routes</h4>
+						<p>Our local presence means we can serve you efficiently and respond quickly to your needs.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta-section">
+		<div class="container">
+			<h2>Ready to Experience the Cleanest Home in Knoxville?</h2>
+			<p>Get your free quote today and join hundreds of satisfied customers in the Knoxville area</p>
+			<a href="/contact" class="btn btn-large btn-white">Get Your Free Quote</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.page-header p {
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.locations-section {
+		padding: 4rem 2rem;
+	}
+
+	.intro-text {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 4rem;
+	}
+
+	.intro-text h2 {
+		margin-bottom: 1rem;
+	}
+
+	.intro-text p {
+		font-size: 1.1rem;
+	}
+
+	.locations-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	.location-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border-left: 4px solid var(--secondary);
+	}
+
+	.location-card.primary {
+		border-left-color: var(--primary);
+		border-left-width: 6px;
+	}
+
+	.location-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+	}
+
+	.location-card p {
+		margin-bottom: 1.5rem;
+	}
+
+	.location-card ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.location-card li {
+		padding: 0.4rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.location-card li::before {
+		content: "📍";
+		position: absolute;
+		left: 0;
+	}
+
+	.coverage-note {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		text-align: center;
+		margin: 4rem 0;
+	}
+
+	.coverage-note h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.coverage-note p {
+		font-size: 1.1rem;
+		margin-bottom: 1.5rem;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.service-commitment {
+		margin-top: 4rem;
+	}
+
+	.service-commitment h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.commitment-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.commitment-item {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.commitment-item h4 {
+		color: var(--text);
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+	}
+
+	.cta-section {
+		background: var(--secondary);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.cta-section h2 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.cta-section p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: white;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 2rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+	}
+
+	.btn-large {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.btn-white {
+		background: white;
+		color: var(--primary);
+	}
+
+	.btn-white:hover {
+		background: var(--bg-light);
+		transform: translateY(-2px);
+	}
+
+	@media (max-width: 768px) {
+		.page-header h1 {
+			font-size: 2rem;
+		}
+
+		.locations-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.commitment-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

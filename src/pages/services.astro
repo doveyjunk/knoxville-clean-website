@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Our Services - Knoxville Clean" description="Comprehensive house cleaning services in Knoxville, TN. Regular cleaning, deep cleaning, move in/out, and more.">
+	<section class="page-header">
+		<div class="container">
+			<h1>Our Cleaning Services</h1>
+			<p>Professional cleaning solutions tailored to your needs</p>
+		</div>
+	</section>
+
+	<section class="services-section">
+		<div class="container">
+			<div id="regular" class="service-detail">
+				<h2>Regular Cleaning</h2>
+				<p class="service-intro">Keep your home consistently clean with our weekly or bi-weekly maintenance service.</p>
+				<div class="service-content">
+					<div class="service-description">
+						<h3>What's Included:</h3>
+						<ul>
+							<li>Dusting all surfaces and furniture</li>
+							<li>Vacuuming and mopping floors</li>
+							<li>Kitchen cleaning (counters, sinks, appliances)</li>
+							<li>Bathroom cleaning and sanitizing</li>
+							<li>Trash removal and bin cleaning</li>
+							<li>Making beds and tidying rooms</li>
+							<li>Wiping down switches and handles</li>
+						</ul>
+					</div>
+					<div class="service-details-box">
+						<h3>Perfect For:</h3>
+						<p>Busy families, professionals, and anyone who wants to maintain a clean home without the hassle</p>
+						<h3>Frequency Options:</h3>
+						<p>Weekly, Bi-weekly, or Monthly</p>
+						<a href="/contact" class="btn btn-primary">Schedule Service</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="deep" class="service-detail">
+				<h2>Deep Cleaning</h2>
+				<p class="service-intro">A thorough, top-to-bottom cleaning that reaches every corner of your home.</p>
+				<div class="service-content">
+					<div class="service-description">
+						<h3>What's Included:</h3>
+						<ul>
+							<li>Everything in Regular Cleaning, plus:</li>
+							<li>Baseboard and trim cleaning</li>
+							<li>Inside appliances (oven, refrigerator, microwave)</li>
+							<li>Cabinet exterior and interior cleaning</li>
+							<li>Window sills and tracks</li>
+							<li>Light fixtures and ceiling fan cleaning</li>
+							<li>Door frames and detailed woodwork</li>
+							<li>Behind and under furniture</li>
+						</ul>
+					</div>
+					<div class="service-details-box">
+						<h3>Perfect For:</h3>
+						<p>Spring cleaning, preparing for guests, or when your home needs extra attention</p>
+						<h3>Time Required:</h3>
+						<p>3-6 hours depending on home size</p>
+						<a href="/contact" class="btn btn-primary">Get a Quote</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="move" class="service-detail">
+				<h2>Move In/Move Out Cleaning</h2>
+				<p class="service-intro">Ensure a fresh start in your new home or leave your old one spotless.</p>
+				<div class="service-content">
+					<div class="service-description">
+						<h3>What's Included:</h3>
+						<ul>
+							<li>Complete deep cleaning of entire property</li>
+							<li>All cabinets and drawers (inside and out)</li>
+							<li>All appliances thoroughly cleaned</li>
+							<li>Walls spot cleaned and wiped down</li>
+							<li>Closets vacuumed and wiped</li>
+							<li>Window cleaning (interior)</li>
+							<li>Bathroom deep clean and sanitization</li>
+							<li>Floor cleaning (vacuum, mop, or both)</li>
+						</ul>
+					</div>
+					<div class="service-details-box">
+						<h3>Perfect For:</h3>
+						<p>Tenants, landlords, home buyers, and home sellers</p>
+						<h3>Satisfaction Guarantee:</h3>
+						<p>We'll make it right if you're not 100% satisfied</p>
+						<a href="/contact" class="btn btn-primary">Book Now</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="service-detail">
+				<h2>Additional Services</h2>
+				<div class="additional-services">
+					<div class="addon-card">
+						<h3>Window Cleaning</h3>
+						<p>Interior and exterior window cleaning for a crystal-clear view</p>
+					</div>
+					<div class="addon-card">
+						<h3>Carpet Cleaning</h3>
+						<p>Professional steam cleaning to refresh and sanitize your carpets</p>
+					</div>
+					<div class="addon-card">
+						<h3>Post-Construction</h3>
+						<p>Thorough cleanup after renovation or construction projects</p>
+					</div>
+					<div class="addon-card">
+						<h3>Laundry Service</h3>
+						<p>Wash, dry, and fold service to save you time</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pricing-note">
+		<div class="container">
+			<h2>Transparent Pricing</h2>
+			<p>All quotes are customized based on your home size and specific needs. Contact us for a free, no-obligation estimate.</p>
+			<a href="/contact" class="btn btn-large btn-primary">Request Your Free Quote</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.page-header p {
+		font-size: 1.2rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.services-section {
+		padding: 4rem 2rem;
+	}
+
+	.service-detail {
+		margin-bottom: 4rem;
+		padding-bottom: 4rem;
+		border-bottom: 2px solid var(--border);
+	}
+
+	.service-detail:last-child {
+		border-bottom: none;
+	}
+
+	.service-detail h2 {
+		color: var(--primary);
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.service-intro {
+		font-size: 1.1rem;
+		color: var(--text-light);
+		margin-bottom: 2rem;
+	}
+
+	.service-content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+		margin-top: 2rem;
+	}
+
+	.service-description h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.service-description ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.service-description li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.service-description li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.service-details-box {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.5rem;
+		height: fit-content;
+	}
+
+	.service-details-box h3 {
+		color: var(--text);
+		margin-bottom: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.service-details-box h3:first-child {
+		margin-top: 0;
+	}
+
+	.service-details-box p {
+		margin-bottom: 1rem;
+	}
+
+	.service-details-box .btn {
+		width: 100%;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.additional-services {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.addon-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border-left: 4px solid var(--secondary);
+	}
+
+	.addon-card h3 {
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+	}
+
+	.pricing-note {
+		background: var(--bg-light);
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.pricing-note h2 {
+		margin-bottom: 1rem;
+	}
+
+	.pricing-note p {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 2rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+	}
+
+	.btn-large {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	@media (max-width: 768px) {
+		.service-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.page-header h1 {
+			font-size: 2rem;
+		}
+
+		.additional-services {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

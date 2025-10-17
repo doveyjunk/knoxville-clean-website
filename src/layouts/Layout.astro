@@ -1,0 +1,241 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Professional house cleaning services in Knoxville, TN" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="nav-container">
+					<a href="/" class="logo">Knoxville Clean</a>
+					<ul class="nav-links">
+						<li><a href="/">Home</a></li>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/locations">Locations</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact" class="btn-primary">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-section">
+					<h3>Knoxville Clean</h3>
+					<p>Professional house cleaning services you can trust.</p>
+				</div>
+				<div class="footer-section">
+					<h3>Quick Links</h3>
+					<ul>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/locations">Locations</a></li>
+						<li><a href="/about">About Us</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-section">
+					<h3>Contact</h3>
+					<p>Knoxville, TN</p>
+					<p>Phone: (865) XXX-XXXX</p>
+					<p>Email: info@knoxvilleclean.com</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; {new Date().getFullYear()} Knoxville Clean. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--primary: #2563eb;
+		--primary-dark: #1e40af;
+		--secondary: #10b981;
+		--text: #1f2937;
+		--text-light: #6b7280;
+		--bg: #ffffff;
+		--bg-light: #f9fafb;
+		--border: #e5e7eb;
+	}
+
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+		line-height: 1.6;
+		color: var(--text);
+		background: var(--bg);
+	}
+
+	header {
+		background: white;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
+
+	.nav-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1rem 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: var(--primary);
+		text-decoration: none;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 2rem;
+		list-style: none;
+		align-items: center;
+	}
+
+	.nav-links a {
+		text-decoration: none;
+		color: var(--text);
+		font-weight: 500;
+		transition: color 0.3s;
+	}
+
+	.nav-links a:hover {
+		color: var(--primary);
+	}
+
+	.btn-primary {
+		background: var(--primary);
+		color: white !important;
+		padding: 0.5rem 1.5rem;
+		border-radius: 0.5rem;
+		transition: background 0.3s;
+	}
+
+	.btn-primary:hover {
+		background: var(--primary-dark) !important;
+	}
+
+	main {
+		min-height: calc(100vh - 200px);
+	}
+
+	footer {
+		background: var(--text);
+		color: white;
+		padding: 3rem 2rem 1rem;
+		margin-top: 4rem;
+	}
+
+	.footer-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.footer-section h3 {
+		margin-bottom: 1rem;
+		color: var(--secondary);
+	}
+
+	.footer-section ul {
+		list-style: none;
+	}
+
+	.footer-section ul li {
+		margin-bottom: 0.5rem;
+	}
+
+	.footer-section a {
+		color: #d1d5db;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	.footer-section a:hover {
+		color: white;
+	}
+
+	.footer-bottom {
+		text-align: center;
+		padding-top: 2rem;
+		border-top: 1px solid #374151;
+		color: #9ca3af;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: var(--text);
+	}
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: var(--text);
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		margin-bottom: 1rem;
+		color: var(--text-light);
+	}
+
+	@media (max-width: 768px) {
+		.nav-links {
+			gap: 1rem;
+			font-size: 0.9rem;
+		}
+
+		.container {
+			padding: 1rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
+</style>
