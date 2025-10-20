@@ -1,0 +1,1282 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="House Cleaning Halls TN | Trusted Local Service"
+  description="Professional house cleaning Halls TN serving northeast Knox County. Rural & suburban homes. Same-day service available. Call (865) 507-1405 today"
+>
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://herohousecleaning.com/locations/halls#business",
+        "name": "Hero House Cleaning - Halls",
+        "image": "https://herohousecleaning.com/images/hero-logo.png",
+        "url": "https://herohousecleaning.com/locations/halls",
+        "telephone": "(865) 507-1405",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Halls",
+          "addressRegion": "TN",
+          "postalCode": "37829",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.1162,
+          "longitude": -83.7357
+        },
+        "areaServed": [
+          {
+            "@type": "GeoShape",
+            "name": "Halls Service Area",
+            "description": "Serving all Halls area homes including rural properties, suburban neighborhoods, and the broader northeast Knox County community",
+            "postalCode": ["37829"]
+          }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "175"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://herohousecleaning.com/locations/halls#service",
+        "serviceType": "House Cleaning Service",
+        "provider": {
+          "@id": "https://herohousecleaning.com/locations/halls#business"
+        },
+        "areaServed": [
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37829"
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Regular House Cleaning - Halls",
+            "price": "160",
+            "priceCurrency": "USD",
+            "description": "Weekly or bi-weekly maintenance cleaning for Halls area homes"
+          },
+          {
+            "@type": "Offer",
+            "name": "Deep Cleaning - Halls",
+            "price": "330",
+            "priceCurrency": "USD",
+            "description": "Thorough top-to-bottom cleaning perfect for rural and suburban Halls homes"
+          },
+          {
+            "@type": "Offer",
+            "name": "Move In/Out Cleaning - Halls",
+            "price": "378",
+            "priceCurrency": "USD",
+            "description": "Complete cleaning for moving transitions in the Halls area"
+          },
+          {
+            "@type": "Offer",
+            "name": "Post-Renovation Cleaning - Halls",
+            "priceCurrency": "USD",
+            "description": "Specialized cleaning after home renovations and construction projects"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://herohousecleaning.com/locations/halls#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://herohousecleaning.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Locations",
+            "item": "https://herohousecleaning.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Halls",
+            "item": "https://herohousecleaning.com/locations/halls"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://herohousecleaning.com/locations/halls#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you serve all of Halls and the surrounding rural areas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We proudly serve the entire Halls area in northeast Knox County, including both rural properties and suburban neighborhoods. Whether you have a home on several acres of land, a property along Emory Road, or live in one of Halls' established residential communities, we provide the same reliable, professional cleaning service throughout the 37829 ZIP code and surrounding areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you have experience cleaning larger rural homes in Halls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Many Halls homes are larger properties on substantial acreage, and we have extensive experience with rural homes of all sizes. We understand the unique cleaning needs of country homes—from managing higher levels of dust and pollen from surrounding land to cleaning mudrooms, large entryways, and spacious floor plans. We provide customized service based on your home's specific size and needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you accommodate same-day cleaning in Halls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we frequently accommodate same-day cleaning requests for Halls residents based on availability. Whether you need last-minute cleaning before guests arrive, urgent service after outdoor activities bring extra dirt inside, or emergency cleaning for any reason, call us at (865) 507-1405 before noon and we'll do our best to fit you into our schedule the same day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes Hero House Cleaning a good fit for the Halls community?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We're a local, family-owned business that understands the unique character of the Halls area. We respect the rural lifestyle and privacy that Halls residents value, understand the challenges of maintaining homes in a more natural setting with higher dust and pollen levels, and are experienced with the larger home sizes and varied property types common in northeast Knox County. We're never late, never cancel last minute, and treat your rural property with the respect it deserves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's included in a deep cleaning for my Halls home?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our deep cleaning service is especially popular in Halls where rural living means homes need extra attention. It includes everything in our regular cleaning (dusting, vacuuming, mopping, bathroom and kitchen cleaning) plus: interior appliances (oven, fridge, microwave), inside cabinets and drawers, detailed baseboard and trim cleaning, window sills and tracks, light fixtures, ceiling fan blades, and special attention to entryways and mudrooms that see heavy use in rural homes. We customize the service based on your home's specific needs and size."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you clean homes with well water in Halls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Many Halls homes rely on well water, and we're experienced working with the unique characteristics of well water systems. We understand that well water can cause mineral buildup and staining, and we use appropriate cleaning products and techniques that are effective yet safe for septic systems. We're mindful of water conservation and respect the unique infrastructure of rural properties."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does house cleaning cost in Halls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing varies based on home size, condition, and service type. For Halls homes, regular cleaning starts at $160, deep cleaning starts at $330, and move in/out cleaning starts at $378. Many Halls homes are larger than typical suburban properties, so we provide customized quotes based on your actual square footage and specific needs. We offer transparent, upfront pricing with no hidden fees or surprise charges."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you insured to work in Halls homes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Hero House Cleaning is fully insured and bonded. We carry comprehensive liability insurance and workers' compensation coverage. All our team members are background-checked and trained professionals you can trust in your home. We can provide certificates of insurance (COI) if needed for your records or homeowner's insurance requirements."
+            }
+          }
+        ]
+      }
+    ]
+  })} />
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Trust Badge -->
+        <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+          <span class="text-sm font-semibold">Trusted by Halls Families Since 2020</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          House Cleaning Halls TN - Your Trusted Northeast Knox County Service
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-xl md:text-2xl mb-8 text-blue-100">
+          Professional Cleaning for Rural & Suburban Homes Throughout the Halls Area
+        </p>
+
+        <!-- Phone Number -->
+        <div class="mb-8">
+          <a href="tel:8655071405" class="inline-block text-3xl md:text-4xl font-bold hover:text-blue-200 transition">
+            (865) 507-1405
+          </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="#contact-form" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Get Your Free Quote
+          </a>
+          <a href="tel:8655071405" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            Call (865) 507-1405
+          </a>
+        </div>
+
+        <!-- Quick Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left">
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">Check</div>
+            <h3 class="font-bold text-lg mb-2">4.8 Stars from 175+ Reviews</h3>
+            <p class="text-blue-100 text-sm">Trusted by northeast Knox County</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">Check</div>
+            <h3 class="font-bold text-lg mb-2">Rural Home Specialists</h3>
+            <p class="text-blue-100 text-sm">Experience with larger properties</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">Check</div>
+            <h3 class="font-bold text-lg mb-2">Same-Day Available</h3>
+            <p class="text-blue-100 text-sm">Fast service when you need it</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <nav class="text-sm">
+        <ol class="flex items-center space-x-2">
+          <li><a href="/" class="text-blue-600 hover:text-blue-800">Home</a></li>
+          <li class="text-gray-500">/</li>
+          <li><a href="/locations" class="text-blue-600 hover:text-blue-800">Service Locations</a></li>
+          <li class="text-gray-500">/</li>
+          <li class="text-gray-700">Halls</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          Professional House Cleaning Services for the Halls Community
+        </h2>
+
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Looking for reliable <strong>house cleaning Halls TN</strong>? Hero House Cleaning has proudly served the Halls area and northeast Knox County since 2020, providing professional, dependable <strong>house cleaning services in Halls TN</strong> for both rural and suburban homes. Our <strong>Halls TN house cleaning</strong> team is background-checked, locally owned, and rated 4.8 stars by your neighbors throughout the community. Halls is a peaceful, close-knit area northeast of Knoxville—known for its rural character, spacious properties, strong sense of community, and residents who value privacy, natural surroundings, and country living.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            At Hero House Cleaning, we understand what makes the Halls area special. We know that many homes here sit on substantial acreage with beautiful natural surroundings, creating a peaceful rural lifestyle. We also know that country living presents unique cleaning challenges—from managing higher levels of dust and pollen that come with open land and agricultural areas, to maintaining larger homes with spacious floor plans, mudrooms, and entryways that see heavy use from outdoor activities.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Whether you're a working family managing a busy household and several acres of property, an empty nester enjoying retirement in the quiet countryside, a professional who commutes to Knoxville and wants more time to enjoy your land on weekends, or a homeowner who simply wants help maintaining a larger home without sacrificing every weekend to cleaning, we're here to make your life easier with reliable, professional house cleaning services tailored to the Halls area.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our cleaning team understands the unique aspects of rural living in northeast Knox County. We know that homes in Halls often have special features like large kitchens designed for family gatherings, spacious mudrooms for boots and outdoor gear, finished basements for additional living space, and larger square footage that requires more time and attention. We respect the privacy that Halls residents value and understand the importance of punctuality and reliability when serving homes in more rural locations.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We're not a national franchise with high turnover and inconsistent service. We're a local, family-owned business that takes pride in serving the Halls community with integrity and care. When you choose Hero House Cleaning, you get the same trusted team every visit, transparent upfront pricing based on your actual home size and needs, eco-friendly products safe for rural homes with well water and septic systems, and the peace of mind that comes from working with fully insured, background-checked professionals who respect your property and privacy.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            The Halls area offers a wonderful quality of life with its combination of rural charm and convenient access to Knoxville. You're close enough to the city for work and amenities, yet far enough away to enjoy peace, quiet, and room to breathe. Your home should be a relaxing sanctuary where you can enjoy the best of country living—not a source of stress because you're constantly trying to keep up with cleaning a larger property while managing all of life's other responsibilities.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            From homes along Emory Road to properties throughout the broader northeast Knox County area, Hero House Cleaning is your reliable partner for a cleaner, healthier, more comfortable home. We understand that your time is valuable—whether you're tending to your property, enjoying outdoor activities on your land, or simply relaxing in the peaceful surroundings you chose when you moved to Halls—and we're committed to giving you more time to enjoy what matters most in this wonderful rural community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Understanding Halls Homes -->
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">
+          We Understand Halls Area Homes
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Specialized knowledge of rural properties, larger homes, and the unique cleaning needs of northeast Knox County living
+        </p>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Rural Living Means Different Cleaning Needs</h3>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Homes in the Halls area face unique cleaning challenges that suburban and urban properties simply don't encounter. Rural living means higher levels of dust and pollen from surrounding farmland, fields, and natural areas. It means mudrooms and entryways that see heavy use from outdoor work, gardening, farming activities, and simply enjoying your property. It means larger homes with more square footage to maintain, and often features like finished basements, workshops, and multi-purpose rooms that need regular attention.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our team understands these realities. We know that country homes accumulate dust faster than city homes, that well water can leave different mineral deposits than city water, and that rural families often track in more dirt and debris from outdoor activities. We're not surprised by muddy boots, pet hair from farm animals or outdoor dogs, or the general wear that comes from living an active country lifestyle. We come prepared with the right equipment and extra attention to the areas that need it most.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            We also understand and respect rural privacy. We arrive when we say we will, work efficiently and professionally, and maintain discretion about your property and home. Many Halls residents value their privacy and space, and we honor that by being reliable, trustworthy professionals who focus on our work and respect your boundaries.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Experience with Larger Homes and Varied Floor Plans</h3>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Halls homes tend to be larger than typical suburban properties. It's not uncommon to find homes ranging from 2,000 square feet to well over 4,000 square feet, often with unique layouts that include finished basements, bonus rooms, workshops, and multiple living areas. These larger floor plans require more time, more attention, and cleaning teams experienced with managing bigger properties efficiently.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We have extensive experience with homes of all sizes throughout the Halls area. Whether your home is a rambling ranch on acreage, a two-story farmhouse with a finished basement, or a custom-built home with multiple wings and living spaces, we provide thorough cleaning that covers every room and every detail. Our pricing is transparent and fair, based on your actual square footage and cleaning needs—not inflated because of assumptions about rural properties.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            We customize our service based on your home's specific layout and your family's priorities. If your mudroom and kitchen see the heaviest use, we give them extra attention. If you have a finished basement that serves as a family room or entertainment space, we make sure it gets the same thorough cleaning as the main floor. We work with you to create a cleaning plan that makes sense for how you actually live in your home.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Well Water and Septic System Awareness</h3>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Many Halls homes rely on private well water and septic systems rather than city utilities. We're experienced working with these systems and understand the considerations they require. Well water can have different mineral content than city water, which can affect how certain surfaces clean and may cause buildup in bathrooms and kitchens over time. We use cleaning products and techniques that are effective with well water characteristics.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We're also mindful of septic systems and use cleaning products that are septic-safe and won't harm your system's bacterial balance. Our eco-friendly product line is not only better for the environment and your family's health, but it's also ideal for rural homes with septic systems. We're conservative with water usage and mindful of what goes down your drains, protecting your septic investment.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            These may seem like small details, but they matter tremendously when you're maintaining a rural property. We take the time to understand your home's unique infrastructure and adapt our cleaning practices accordingly. This attention to detail is part of what sets us apart from larger franchises that use one-size-fits-all approaches regardless of location.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Seasonal Challenges in Rural Settings</h3>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Country living means dealing with seasonal changes that affect your home more directly than in urban settings. Spring brings pollen from surrounding fields and trees, coating surfaces and windows. Summer means dust from dry conditions and agricultural activities in the area. Fall brings leaves, debris, and preparation for winter. Winter can mean tracking in mud, salt, and snow from longer driveways and unpaved areas.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We adjust our cleaning approach based on seasonal realities in the Halls area. During high pollen season, we pay extra attention to window sills, tracks, and surfaces where yellow dust accumulates. In winter, we focus on entryways and high-traffic areas where salt, mud, and moisture get tracked inside. During harvest season when dust levels are higher from agricultural activities, we're thorough with dusting and air quality considerations.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            This seasonal awareness comes from experience serving the Halls community over many years. We're not just following a checklist—we're adapting to the real conditions that affect your home throughout the year, providing the most effective cleaning for the current season and circumstances.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Respect for Rural Lifestyle and Property</h3>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We understand that choosing to live in Halls means valuing certain things—space, privacy, connection to the land, and a slower pace than city life offers. When we work in your home, we bring that same respect for your lifestyle and choices. We're punctual and reliable because we know you may have scheduled your day around our arrival, and unreliable service is even more frustrating when you live further from town.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We're respectful of your property, from closing gates behind us to being mindful of pets and livestock that may be nearby. We park considerately, work efficiently, and maintain professional boundaries. We understand that inviting someone into your rural home requires trust, and we work every day to earn and maintain that trust through consistent, high-quality service and respectful, professional behavior.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Many of our Halls clients have been with us for years, not just because we clean their homes well, but because we understand and respect their lifestyle. We're not in a rush to get to the next appointment in a densely packed suburban neighborhood—we take the time needed to do the job right in your larger home, and we appreciate the opportunity to serve families in this wonderful rural community.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas We Serve -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Halls Area Neighborhoods We Serve
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Comprehensive house cleaning throughout northeast Knox County and the Halls community
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Emory Road Corridor</h3>
+            <p class="text-gray-700">
+              Homes along the main Emory Road corridor including both established properties and newer developments. Mix of lot sizes from suburban to multi-acre rural properties with convenient access to Knoxville.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Rural Northeast Properties</h3>
+            <p class="text-gray-700">
+              Larger rural homes on substantial acreage throughout the Halls area. Peaceful country settings with privacy, natural surroundings, and the space that defines the Halls lifestyle.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Halls Crossroads Area</h3>
+            <p class="text-gray-700">
+              Homes near the historic Halls Crossroads community center. Mix of long-established family properties and newer homes, all sharing the close-knit community character of the area.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Surrounding Farmland Areas</h3>
+            <p class="text-gray-700">
+              Properties throughout the agricultural areas surrounding Halls. Working farms, hobby farms, and residential properties on former farmland—all part of the rural character of northeast Knox County.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Residential Neighborhoods</h3>
+            <p class="text-gray-700">
+              Established residential communities throughout the Halls area. Family-oriented neighborhoods with larger lots and homes, maintaining the suburban-rural character of the community.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Northeast Knox County</h3>
+            <p class="text-gray-700">
+              Broader northeast Knox County area including properties near Halls. Rural and suburban homes that share the peaceful character and lifestyle of the Halls community.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmarks -->
+        <div class="mt-12 bg-blue-50 rounded-lg p-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Serving Homes Throughout the Halls Area</h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Whether you're on Emory Road, down a rural lane, or anywhere in the Halls community, we provide reliable cleaning service. Our team serves properties throughout the area, including homes near:
+          </p>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Halls Elementary School and community areas</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Emory Road commercial district</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Halls Crossroads historic area</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Rural roads and private lanes throughout the area</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Agricultural areas and farmland properties</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Northeast Knox County rural communities</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>Properties with acreage and larger lots</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">Check</span>
+              <span>All of ZIP code 37829 and surrounding areas</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZIP Codes -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-bold mb-4 text-gray-900">Halls ZIP Code We Serve</h3>
+        <p class="text-gray-700 mb-6">
+          We proudly serve the entire Halls area including:
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mb-6">
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">37829</span>
+        </div>
+        <p class="text-gray-600 text-sm">
+          Complete coverage throughout Halls and northeast Knox County
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          House Cleaning Services for Halls Homes
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Professional cleaning solutions designed for the unique needs of rural and suburban homes in the Halls area
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Regular Cleaning -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-transparent hover:border-blue-500">
+            <div class="text-4xl mb-4">House</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Regular Maintenance Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $160</p>
+            <p class="text-gray-700 mb-6">
+              Perfect for busy Halls families who want to enjoy their property and free time without spending weekends cleaning. Keep your larger home consistently clean with weekly, bi-weekly, or monthly service tailored to rural living.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>All rooms thoroughly dusted and vacuumed</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Bathrooms cleaned and sanitized completely</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Kitchen surfaces wiped and disinfected</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Floors mopped and baseboards cleaned</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Extra attention to high-traffic entryways and mudrooms</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Deep Cleaning -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-blue-500">
+            <div class="inline-block bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">MOST POPULAR IN HALLS</div>
+            <div class="text-4xl mb-4">Sparkles</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Deep Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $330</p>
+            <p class="text-gray-700 mb-6">
+              Our most popular service for Halls homes that need comprehensive attention. Top-to-bottom detailed cleaning ideal for larger rural homes, spring cleaning, or first-time service to establish a baseline of cleanliness.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Everything in regular cleaning, plus more...</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Inside appliances (oven, fridge, microwave)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Interior cabinets and drawers cleaned out</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Detailed baseboard and trim cleaning throughout</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Window sills, tracks, and light fixtures</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Ceiling fan blades and hard-to-reach areas</span>
+              </li>
+            </ul>
+            <a href="/house-cleaning-cost-knoxville" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Move In/Out -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-transparent hover:border-blue-500">
+            <div class="text-4xl mb-4">Box</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Move In/Out Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $378</p>
+            <p class="text-gray-700 mb-6">
+              Essential for property transitions in the Halls area. Leave your home spotless for new owners or move into your new country property with a fresh, sanitized space. Ideal for homeowners, landlords, and real estate agents.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Complete deep clean of empty property</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>All cabinets, closets, and storage areas</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Appliances inside and out thoroughly cleaned</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Walls, baseboards, and all surfaces detailed</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Flexible scheduling for closing dates</span>
+              </li>
+            </ul>
+            <a href="/maid-service-knoxville" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Post-Renovation -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-transparent hover:border-blue-500">
+            <div class="text-4xl mb-4">Tools</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Post-Renovation Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Custom Pricing</p>
+            <p class="text-gray-700 mb-6">
+              Specialized cleaning after construction and renovation projects common in Halls homes. We remove construction dust and debris, clean new fixtures and finishes, and make your renovated space move-in ready.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Fine construction dust removal throughout</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>New fixture and finish cleaning and polishing</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Debris and material removal included</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Coordination with contractor schedules</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">Check</span>
+                <span>Experience with rural home renovations</span>
+              </li>
+            </ul>
+            <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Get Quote
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 text-center">
+          <h3 class="text-2xl font-bold mb-4">All Services Include Eco-Friendly, Septic-Safe Products</h3>
+          <p class="text-lg mb-6 text-blue-100">
+            We use professional-grade, eco-friendly cleaning products safe for Halls families, pets, well water systems, and septic systems. Effective cleaning that respects your rural home's unique infrastructure.
+          </p>
+          <a href="tel:8655071405" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405 for Custom Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Hero -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Why Halls Residents Choose Hero House Cleaning
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          We're not just another cleaning service—we're a local business that understands and respects rural living in northeast Knox County
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">House with Heart</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Local Family-Owned - We Understand Rural Living</h3>
+              <p class="text-gray-700">
+                Unlike national franchises, we're a local, family-owned business that understands the Halls lifestyle. We respect the privacy and space that rural living provides, appreciate the challenges of maintaining larger homes on acreage, and value the strong sense of community in northeast Knox County. We're committed to serving Halls for the long haul.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Tractor</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Rural Home Experience - Larger Properties & Unique Needs</h3>
+              <p class="text-gray-700">
+                We specialize in cleaning rural and suburban homes in the Halls area. We understand how to handle higher dust levels from surrounding agricultural land, know that mudrooms and entryways need extra attention, are experienced with larger square footage and varied floor plans, and work efficiently in homes with well water and septic systems.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Lightning Bolt</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Same-Day Availability for Halls Residents</h3>
+              <p class="text-gray-700">
+                Need cleaning service today? We frequently accommodate same-day requests for Halls homes based on availability. Perfect for last-minute guests, emergency situations, or urgent cleaning needs after outdoor activities or property work. Call us before noon at (865) 507-1405 and we'll do our best to help.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Clock</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Punctual and Reliable - We Value Your Time</h3>
+              <p class="text-gray-700">
+                When you live in a more rural area, reliability matters even more. We arrive when we say we will, stay in communication if anything changes, and never cancel on you at the last minute. We respect that you may have arranged your schedule around our appointment, and we take that commitment seriously.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Check Shield</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Background-Checked Team You Can Trust</h3>
+              <p class="text-gray-700">
+                Inviting someone into your rural home requires trust and confidence. Every member of our cleaning team undergoes thorough background checks. We're fully insured and bonded, and we can provide certificates of insurance (COI) if needed. You can trust our professional team in your Halls home.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Calendar Check</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Same Trusted Team Every Visit</h3>
+              <p class="text-gray-700">
+                We assign the same cleaning team to your home for every visit, so you build a relationship with familiar, trusted professionals who learn your home's unique layout and your family's preferences. No strangers showing up each time—just the same reliable team providing consistent, high-quality service.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Dollar Sign</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Fair Pricing for Larger Homes</h3>
+              <p class="text-gray-700">
+                Halls homes are often larger than typical suburban properties, and we price fairly based on actual square footage and condition—not inflated rates because you live on acreage. We provide clear, upfront pricing with no hidden fees or surprise charges. You'll know exactly what to expect every time.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">Leaf</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Eco-Friendly Products Safe for Well Water & Septic</h3>
+              <p class="text-gray-700">
+                We use professional-grade, eco-friendly cleaning products that are safe for families, pets, well water systems, and septic systems. Our products are effective for rural home cleaning challenges while being gentle on your home's unique infrastructure and the environment around your property.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 text-center">
+          <h3 class="text-2xl font-bold mb-4">Ready to Experience the Hero Difference in Your Halls Home?</h3>
+          <p class="text-lg mb-6 text-blue-100">
+            Join your Halls neighbors who trust Hero House Cleaning for reliable, professional service that respects rural living and delivers exceptional results.
+          </p>
+          <a href="#contact-form" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Get Your Free Quote Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          What Your Halls Neighbors Are Saying
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Real reviews from real Halls area residents and families
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">Star Star Star Star Star</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We have a large home on several acres in Halls, and Hero House Cleaning has been incredible. They understand the challenges of rural living—the extra dust, the mudroom that gets constant use, and the larger square footage. They're always on time, respectful of our property, and do a thorough job every visit."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Robert & Karen T.</p>
+              <p class="text-gray-600">Halls, 37829</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">Star Star Star Star Star</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "After we finished our basement renovation, Hero House Cleaning did an amazing post-construction clean. They got all the fine dust out, cleaned everything perfectly, and were very professional. They even worked around our septic system considerations. Highly recommend them to anyone in the Halls area!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Michelle & Tom H.</p>
+              <p class="text-gray-600">Northeast Knox County</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">Star Star Star Star Star</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We both work full-time and commute to Knoxville, so weekends are precious. Hero House Cleaning takes care of our home every two weeks, and it's been life-changing. We get to enjoy our property instead of spending all Saturday cleaning. They're reliable, trustworthy, and do excellent work."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Sarah & David M.</p>
+              <p class="text-gray-600">Halls Area</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-white rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">Star Star Star Star Star</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "As a property manager with several rental homes in the Halls area, I depend on Hero House Cleaning for move-out cleans. They're always thorough, professional, and reliable. They understand rural properties and adjust their approach for different home sizes. They've never let me down."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">James W.</p>
+              <p class="text-gray-600">Property Manager, Northeast Knox County</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            Join the growing number of satisfied Halls homeowners who trust Hero House Cleaning.
+          </p>
+          <a href="#contact-form" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg">
+            Get Your Free Quote Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Map -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Our Halls Service Area
+        </h2>
+        <p class="text-center text-gray-600 mb-8 text-lg">
+          Complete coverage throughout the Halls area and northeast Knox County
+        </p>
+
+        <!-- Map Placeholder -->
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+            <!-- Google Maps embed will go here -->
+            <div class="text-center">
+              <p class="text-lg font-semibold mb-2">Halls Service Area Map</p>
+              <p class="text-sm">Interactive map showing our complete Halls coverage area</p>
+            </div>
+          </div>
+          <div class="mt-6 text-center">
+            <p class="text-gray-700 mb-2">
+              <strong>Serving all of Halls including:</strong>
+            </p>
+            <p class="text-gray-600">
+              ZIP code 37829 - All rural and suburban areas of northeast Knox County
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-50 to-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          Transparent Pricing for Halls Homes
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          Fair pricing for all Halls home sizes—from suburban homes to large rural properties on acreage. No hidden fees, no surprises.
+        </p>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$160+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Regular Cleaning</div>
+              <div class="text-sm text-gray-600">Weekly or bi-weekly maintenance</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$330+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Deep Cleaning</div>
+              <div class="text-sm text-gray-600">Top-to-bottom detail clean</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$378+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Move In/Out</div>
+              <div class="text-sm text-gray-600">Complete empty home clean</div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-6">
+            <p class="text-gray-700 mb-4">
+              <strong>Pricing based on your home's actual size and condition</strong><br />
+              Halls homes are often larger than typical suburban properties. We provide fair, customized quotes that reflect your specific property size and needs—not inflated because you live on acreage.
+            </p>
+            <p class="text-gray-700 mb-4">
+              <strong>We serve all of Halls area</strong> - Reliable service throughout northeast Knox County
+            </p>
+            <a href="/house-cleaning-cost-knoxville" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              View Complete Pricing Guide
+            </a>
+          </div>
+        </div>
+
+        <p class="text-gray-600">
+          Serving Halls ZIP code: 37829
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Frequently Asked Questions About House Cleaning in Halls
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Everything you need to know about professional cleaning service in the Halls area
+        </p>
+
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you serve all of Halls and the surrounding rural areas?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We proudly serve the entire Halls area in northeast Knox County, including both rural properties and suburban neighborhoods. Whether you have a home on several acres of land, a property along Emory Road, or live in one of Halls' established residential communities, we provide the same reliable, professional cleaning service throughout the 37829 ZIP code and surrounding areas.
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you have experience cleaning larger rural homes in Halls?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Absolutely! Many Halls homes are larger properties on substantial acreage, and we have extensive experience with rural homes of all sizes. We understand the unique cleaning needs of country homes—from managing higher levels of dust and pollen from surrounding land to cleaning mudrooms, large entryways, and spacious floor plans. We provide customized service based on your home's specific size and needs.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Can you accommodate same-day cleaning in Halls?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes, we frequently accommodate same-day cleaning requests for Halls residents based on availability. Whether you need last-minute cleaning before guests arrive, urgent service after outdoor activities bring extra dirt inside, or emergency cleaning for any reason, call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a> before noon and we'll do our best to fit you into our schedule the same day.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What makes Hero House Cleaning a good fit for the Halls community?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              We're a local, family-owned business that understands the unique character of the Halls area. We respect the rural lifestyle and privacy that Halls residents value, understand the challenges of maintaining homes in a more natural setting with higher dust and pollen levels, and are experienced with the larger home sizes and varied property types common in northeast Knox County. We're never late, never cancel last minute, and treat your rural property with the respect it deserves.
+            </p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What's included in a deep cleaning for my Halls home?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Our <a href="/house-cleaning-cost-knoxville" class="text-blue-600 hover:text-blue-800 font-semibold">deep cleaning service</a> is especially popular in Halls where rural living means homes need extra attention. It includes everything in our regular cleaning (dusting, vacuuming, mopping, bathroom and kitchen cleaning) plus: interior appliances (oven, fridge, microwave), inside cabinets and drawers, detailed baseboard and trim cleaning, window sills and tracks, light fixtures, ceiling fan blades, and special attention to entryways and mudrooms that see heavy use in rural homes. We customize the service based on your home's specific needs and size.
+            </p>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you clean homes with well water in Halls?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! Many Halls homes rely on well water, and we're experienced working with the unique characteristics of well water systems. We understand that well water can cause mineral buildup and staining, and we use appropriate cleaning products and techniques that are effective yet safe for septic systems. We're mindful of water conservation and respect the unique infrastructure of rural properties.
+            </p>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How much does house cleaning cost in Halls?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Pricing varies based on home size, condition, and service type. For Halls homes, regular cleaning starts at $160, deep cleaning starts at $330, and move in/out cleaning starts at $378. Many Halls homes are larger than typical suburban properties, so we provide customized quotes based on your actual square footage and specific needs. We offer transparent, upfront pricing with no hidden fees or surprise charges. Visit our <a href="/house-cleaning-cost-knoxville" class="text-blue-600 hover:text-blue-800 font-semibold">pricing guide</a> for more details.
+            </p>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Are you insured to work in Halls homes?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes, Hero House Cleaning is fully insured and bonded. We carry comprehensive liability insurance and workers' compensation coverage. All our team members are background-checked and trained professionals you can trust in your home. We can provide certificates of insurance (COI) if needed for your records or homeowner's insurance requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            Have more questions? We're here to help!
+          </p>
+          <a href="tel:8655071405" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg">
+            Call (865) 507-1405
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Book Your Halls Cleaning Today
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Join your Halls neighbors who trust Hero House Cleaning. Get your free quote in minutes.
+          </p>
+          <div class="inline-block bg-blue-50 rounded-lg px-6 py-3 mb-6">
+            <p class="text-2xl font-bold text-blue-600">
+              <a href="tel:8655071405" class="hover:text-blue-800 transition">(865) 507-1405</a>
+            </p>
+            <p class="text-sm text-gray-600">Call now for same-day availability</p>
+          </div>
+        </div>
+
+        <!-- Form Placeholder -->
+        <div class="bg-white rounded-xl p-8 shadow-lg">
+          <div class="text-center text-gray-500 py-12">
+            <!-- GoHighLevel form embed will go here -->
+            <p class="text-lg mb-4">Contact Form</p>
+            <p class="text-sm mb-6">GoHighLevel form integration for Halls location</p>
+            <div class="space-y-4 max-w-md mx-auto text-left">
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Name *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Your name</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Phone *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">(865) 123-4567</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">your@email.com</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Service Needed *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Select service type</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Location</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Halls (pre-selected)</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Home Size (approx. sq ft)</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">e.g., 2,500 sq ft</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400 h-24">Tell us about your Halls home...</div>
+              </div>
+              <button class="w-full bg-yellow-400 text-gray-900 px-6 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition">
+                Get My Free Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center text-gray-600">
+          <p class="mb-2">
+            <strong>Prefer to talk?</strong> Call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>
+          </p>
+          <p class="text-sm">
+            Monday-Friday: 8am-6pm | Saturday: 9am-5pm | Sunday: Closed
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready for a Cleaner Halls Home?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100">
+          Experience the Hero difference in your northeast Knox County home. Local service, rural home expertise, and exceptional results—every single time.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <a href="tel:8655071405" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405
+          </a>
+          <a href="#contact-form" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            Get Free Quote
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">Check</span>
+            <div>
+              <div class="font-bold">Local & Family-Owned</div>
+              <div class="text-blue-100 text-sm">Serving Halls since 2020</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">Check</span>
+            <div>
+              <div class="font-bold">Rural Home Specialists</div>
+              <div class="text-blue-100 text-sm">Experience with larger properties</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">Check</span>
+            <div>
+              <div class="font-bold">Same-Day Available</div>
+              <div class="text-blue-100 text-sm">Fast service when you need it</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Internal Links Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6 text-center text-gray-900">Explore Our Services & Locations</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <a href="/services" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">House</div>
+            <div class="font-semibold text-gray-900">All Services</div>
+          </a>
+          <a href="/house-cleaning-cost-knoxville" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">Sparkles</div>
+            <div class="font-semibold text-gray-900">Deep Cleaning</div>
+          </a>
+          <a href="/maid-service-knoxville" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">Box</div>
+            <div class="font-semibold text-gray-900">Move In/Out</div>
+          </a>
+          <a href="/house-cleaning-cost-knoxville" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">Dollar Sign</div>
+            <div class="font-semibold text-gray-900">Pricing Guide</div>
+          </a>
+          <a href="/locations" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">Map Pin</div>
+            <div class="font-semibold text-gray-900">Service Areas</div>
+          </a>
+          <a href="/locations/farragut" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">House</div>
+            <div class="font-semibold text-gray-900">Farragut</div>
+          </a>
+          <a href="/about" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">People</div>
+            <div class="font-semibold text-gray-900">About Us</div>
+          </a>
+          <a href="/contact" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">Phone</div>
+            <div class="font-semibold text-gray-900">Contact</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Custom styles for Halls location page */
+  .hero-section {
+    background-image: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  }
+
+  .prose {
+    max-width: none;
+  }
+
+  .prose p {
+    margin-bottom: 1.5em;
+  }
+
+  /* Ensure proper spacing and readability */
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Mobile responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    .hero-section .text-xl {
+      font-size: 1.125rem;
+    }
+
+    .grid {
+      gap: 1rem;
+    }
+
+    section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+</style>

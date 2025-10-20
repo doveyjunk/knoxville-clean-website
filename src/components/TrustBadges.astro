@@ -1,0 +1,152 @@
+---
+// TrustBadges Component - Displays trust signals for conversion optimization
+interface Props {
+	variant?: 'horizontal' | 'vertical' | 'compact';
+	backgroundColor?: string;
+}
+
+const { variant = 'horizontal', backgroundColor = 'transparent' } = Astro.props;
+---
+
+<div class={`trust-badges trust-badges-${variant}`} style={`background-color: ${backgroundColor}`}>
+	<div class="trust-badge">
+		<div class="badge-icon">✅</div>
+		<div class="badge-content">
+			<strong>Background Checked</strong>
+			<span>Fully vetted team</span>
+		</div>
+	</div>
+
+	<div class="trust-badge">
+		<div class="badge-icon">🛡️</div>
+		<div class="badge-content">
+			<strong>Insured & Bonded</strong>
+			<span>Your property protected</span>
+		</div>
+	</div>
+
+	<div class="trust-badge">
+		<div class="badge-icon">⭐</div>
+		<div class="badge-content">
+			<strong>4.8 Star Rating</strong>
+			<span>175+ reviews</span>
+		</div>
+	</div>
+
+	<div class="trust-badge">
+		<div class="badge-icon">📋</div>
+		<div class="badge-content">
+			<strong>100% Guarantee</strong>
+			<span>Satisfaction promised</span>
+		</div>
+	</div>
+
+	<div class="trust-badge">
+		<div class="badge-icon">🌿</div>
+		<div class="badge-content">
+			<strong>Eco-Friendly</strong>
+			<span>Safe products</span>
+		</div>
+	</div>
+
+	<div class="trust-badge">
+		<div class="badge-icon">🏠</div>
+		<div class="badge-content">
+			<strong>Family-Owned</strong>
+			<span>Local business</span>
+		</div>
+	</div>
+</div>
+
+<style>
+	.trust-badges {
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+
+	.trust-badges-horizontal {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.trust-badges-vertical {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		max-width: 400px;
+	}
+
+	.trust-badges-compact {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.trust-badge {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.75rem;
+		background: white;
+		border-radius: 6px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	.trust-badges-compact .trust-badge {
+		flex: 0 0 auto;
+		min-width: 180px;
+	}
+
+	.trust-badge:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.badge-icon {
+		font-size: 2rem;
+		flex-shrink: 0;
+	}
+
+	.badge-content {
+		display: flex;
+		flex-direction: column;
+		gap: 0.125rem;
+	}
+
+	.badge-content strong {
+		font-size: 0.9rem;
+		color: var(--text);
+		font-weight: 600;
+	}
+
+	.badge-content span {
+		font-size: 0.75rem;
+		color: var(--text-light);
+	}
+
+	@media (max-width: 768px) {
+		.trust-badges-horizontal {
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 1rem;
+		}
+
+		.trust-badge {
+			padding: 0.5rem;
+		}
+
+		.badge-icon {
+			font-size: 1.5rem;
+		}
+
+		.badge-content strong {
+			font-size: 0.8rem;
+		}
+
+		.badge-content span {
+			font-size: 0.7rem;
+		}
+	}
+</style>

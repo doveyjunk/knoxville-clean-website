@@ -1,0 +1,2178 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "Professional House Cleaning Knoxville | Hero";
+const pageDescription = "Professional house cleaning in Knoxville with background-checked, trained teams. 4.8 stars from 175+ reviews. Insured, bonded, and professional-grade service. Call (865) 507-1405.";
+
+// Structured Data - LocalBusiness Schema
+const localBusinessSchema = {
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	"name": "Hero House Cleaning - Professional House Cleaning Knoxville",
+	"image": "https://herohousecleaning.com/logo.png",
+	"@id": "https://herohousecleaning.com/professional-house-cleaning",
+	"url": "https://herohousecleaning.com/professional-house-cleaning",
+	"telephone": "865-507-1405",
+	"priceRange": "$160-$650",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Knoxville",
+		"addressRegion": "TN",
+		"addressCountry": "US"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 35.9606,
+		"longitude": -83.9207
+	},
+	"openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+		"opens": "08:00",
+		"closes": "17:00"
+	},
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.8",
+		"reviewCount": "175"
+	}
+};
+
+// Service Schema
+const serviceSchema = {
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"serviceType": "Professional House Cleaning",
+	"provider": {
+		"@type": "LocalBusiness",
+		"name": "Hero House Cleaning"
+	},
+	"areaServed": {
+		"@type": "City",
+		"name": "Knoxville",
+		"@id": "https://en.wikipedia.org/wiki/Knoxville,_Tennessee"
+	},
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Professional House Cleaning Services",
+		"itemListElement": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Professional Regular Cleaning",
+					"description": "Professional house cleaning with trained, background-checked teams"
+				},
+				"price": "160",
+				"priceCurrency": "USD"
+			}
+		]
+	}
+};
+
+// FAQ Schema
+const faqSchema = {
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "What makes Hero House Cleaning a professional service?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We're a professional house cleaning service with comprehensive training programs, background-checked team members, full insurance and bonding, professional-grade equipment and eco-friendly products, quality control inspections, and consistent team assignments. Every team member is vetted, trained, and held to rigorous professional standards."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Are your cleaners background checked?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes, absolutely. Every single team member passes rigorous background checks before they're ever allowed to enter a client's home. Your safety and security are our top priority. We never compromise on vetting our professional cleaning team."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What training do your professional cleaners receive?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Our professional cleaners complete comprehensive training covering advanced cleaning techniques, professional-grade equipment operation, eco-friendly product usage, customer service excellence, safety protocols, damage prevention procedures, and quality standards. We provide ongoing education to ensure our team stays current with best practices."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Are you insured and bonded?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes, Hero House Cleaning is fully insured and bonded. We carry comprehensive professional liability insurance and bonding to protect both our clients and our team members. In the unlikely event something goes wrong, you're fully covered."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What is the difference between professional and casual cleaning?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Professional cleaning includes trained team members (vs untrained workers), background checks and vetting (vs unknown workers), insurance and bonding (vs uninsured liability), professional-grade equipment and products (vs household supplies), quality control inspections (vs no oversight), and consistent standards and procedures (vs inconsistent results)."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do you use professional-grade cleaning products?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes, we use professional-grade, commercial-quality cleaning products that are eco-friendly and safe for your family and pets. These products are more effective than typical household cleaners and are specifically designed for professional cleaning applications."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How do you ensure quality and consistency?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We maintain professional standards through detailed cleaning checklists for every service, quality control inspections, consistent team assignments so you get the same professionals every time, ongoing training and education, customer feedback systems, and our 100% satisfaction guarantee. We take professionalism seriously."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Why should I choose professional cleaning over casual cleaners?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Professional cleaning provides peace of mind with background-checked, insured workers in your home, consistent quality standards and procedures, damage prevention training and insurance coverage, professional equipment and products, reliable scheduling and communication, and accountability through quality guarantees. The small price difference is worth the security and quality you receive."
+			}
+		}
+	]
+};
+
+// Breadcrumb Schema
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://herohousecleaning.com"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Services",
+			"item": "https://herohousecleaning.com/services"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Professional House Cleaning Knoxville",
+			"item": "https://herohousecleaning.com/professional-house-cleaning"
+		}
+	]
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+	<!-- Schema Markup -->
+	<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="container">
+			<div class="breadcrumb">
+				<a href="/">Home</a> / <a href="/services">Services</a> / Professional House Cleaning
+			</div>
+			<div class="hero-content">
+				<div class="hero-text">
+					<h1>Professional House Cleaning Knoxville | Certified, Trained, Trusted</h1>
+					<p class="hero-subtitle">Experience the difference professional standards make. Background-checked teams, professional training, and quality you can trust.</p>
+					<div class="trust-badge">4.8 stars from 175+ Knoxville families</div>
+					<div class="hero-cta">
+						<a href="/contact" class="btn btn-primary btn-large">Get Your Free Quote</a>
+						<a href="tel:865-507-1405" class="btn btn-secondary btn-large">Call (865) 507-1405</a>
+					</div>
+					<p class="hero-note">Professional standards • Background-checked teams • 100% satisfaction guarantee</p>
+				</div>
+				<div class="hero-image">
+					<img src="/images/professional-cleaning-hero.jpg" alt="Professional house cleaning team in Knoxville TN" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- What Makes Us Professional Section -->
+	<section class="professional-difference">
+		<div class="container">
+			<h2>What Makes Hero House Cleaning a Professional Service?</h2>
+			<p class="section-intro">Not all house cleaning services are created equal. The word "professional" gets thrown around a lot, but here's what it actually means when you hire Hero House Cleaning:</p>
+
+			<div class="professional-grid">
+				<div class="professional-card">
+					<div class="professional-icon">🎓</div>
+					<h3>Comprehensive Training Program</h3>
+					<p>Every team member completes our rigorous training program before ever entering a client's home. This isn't just showing someone how to use a vacuum - it's comprehensive education in professional cleaning techniques, advanced stain removal, proper product usage, equipment operation, safety protocols, and customer service excellence.</p>
+					<p class="detail">Unlike casual cleaners who learn on the job (on your dime), our team members are trained professionals from day one. We invest in ongoing education to keep our team current with the latest cleaning methods and industry best practices.</p>
+				</div>
+
+				<div class="professional-card">
+					<div class="professional-icon">✓</div>
+					<h3>Background Checks & Thorough Vetting</h3>
+					<p>We conduct comprehensive background checks on every single team member - no exceptions. Before anyone is allowed to enter your home, they've passed criminal background screening, reference checks, and employment verification.</p>
+					<p class="detail">This is one of the biggest differences between professional cleaning services and casual cleaners or unlicensed individuals. You deserve to know exactly who is entering your home, and we make sure every person wearing our uniform has been thoroughly vetted for your safety and security.</p>
+				</div>
+
+				<div class="professional-card">
+					<div class="professional-icon">🛡️</div>
+					<h3>Professional Liability Insurance & Bonding</h3>
+					<p>Hero House Cleaning carries comprehensive professional liability insurance and bonding. If something goes wrong - a broken vase, damaged flooring, or any accident - you're fully protected. Our insurance covers both property damage and any potential injuries.</p>
+					<p class="detail">Many casual cleaners and unlicensed services operate without insurance, leaving you liable if something breaks or someone gets hurt in your home. This is a massive risk that professional services eliminate entirely.</p>
+				</div>
+
+				<div class="professional-card">
+					<div class="professional-icon">🌟</div>
+					<h3>Professional-Grade Equipment & Products</h3>
+					<p>We use commercial-grade cleaning equipment and professional products that deliver superior results compared to household supplies. Our HEPA-filter vacuums, industrial steam cleaners, and professional-grade eco-friendly products are specifically designed for professional cleaning applications.</p>
+					<p class="detail">Professional equipment works faster and more effectively, delivering results you simply can't achieve with a home vacuum and drugstore cleaners. This is part of what you're paying for with a professional service - better tools, better products, better results.</p>
+				</div>
+
+				<div class="professional-card">
+					<div class="professional-icon">📋</div>
+					<h3>Quality Control Standards & Inspections</h3>
+					<p>We don't just hope our cleaners do a good job - we ensure it through detailed cleaning checklists, quality control inspections, and systematic oversight. Every service is held to rigorous professional standards that are checked and verified.</p>
+					<p class="detail">Casual cleaners work without oversight or accountability. Professional services have systems in place to ensure consistency and quality on every single visit. If something doesn't meet our standards, we catch it and fix it before you ever notice.</p>
+				</div>
+
+				<div class="professional-card">
+					<div class="professional-icon">👥</div>
+					<h3>Consistent Team Assignments</h3>
+					<p>You get the same professional team members on every visit. This builds trust, allows your team to learn your home's unique needs and your personal preferences, and creates a comfortable, reliable relationship.</p>
+					<p class="detail">Many cleaning companies send different workers every time, so you never know who's showing up or what quality to expect. Professional service means consistency - the same trusted faces who know your home inside and out.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Professional vs Casual Comparison -->
+	<section class="comparison-section">
+		<div class="container">
+			<h2>The Difference Between Professional and Casual Cleaning</h2>
+			<p class="section-intro">Understanding what separates professional house cleaning from casual or amateur services helps you make an informed decision about who you're trusting with your home:</p>
+
+			<div class="comparison-table">
+				<div class="comparison-row header-row">
+					<div class="comparison-item">Feature</div>
+					<div class="comparison-item professional-col">Professional Service (Hero House Cleaning)</div>
+					<div class="comparison-item casual-col">Casual/Amateur Cleaners</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Training</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Comprehensive professional training program covering techniques, safety, and customer service</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Little to no formal training; learns on the job at your expense</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Background Checks</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Rigorous background screening, reference checks, employment verification</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Often no background checks; you're trusting unknown individuals in your home</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Insurance & Bonding</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Fully insured and bonded; you're protected if anything goes wrong</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Usually uninsured; you're liable for damages or injuries</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Equipment & Products</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Professional-grade, commercial equipment and eco-friendly products</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Basic household supplies; may use your products</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Quality Control</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Systematic quality inspections and detailed checklists ensure consistency</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>No oversight or quality control; inconsistent results</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Team Consistency</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Same trusted team members every visit who learn your preferences</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Different workers each time; no continuity or relationship building</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Reliability & Communication</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>Professional communication, confirmed appointments, reliable scheduling</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Frequent cancellations, poor communication, unreliable scheduling</span>
+					</div>
+				</div>
+
+				<div class="comparison-row">
+					<div class="comparison-item feature-name">Accountability</div>
+					<div class="comparison-item professional-col">
+						<span class="check-mark">✓</span>
+						<span>100% satisfaction guarantee; we fix any issues immediately at no charge</span>
+					</div>
+					<div class="comparison-item casual-col">
+						<span class="x-mark">✗</span>
+						<span>Little recourse if you're unhappy; no formal guarantees</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="comparison-cta">
+				<h3>The Professional Difference is Worth It</h3>
+				<p>The price difference between professional and casual cleaning is minimal - often just $20-$40 per visit. But the difference in quality, reliability, and peace of mind is enormous. When you factor in insurance protection, consistent quality, and the security of background-checked professionals, professional service is the clear choice.</p>
+				<a href="/contact" class="btn btn-primary btn-large">Experience Professional Cleaning</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Professional Standards Section -->
+	<section class="standards-section">
+		<div class="container">
+			<h2>Our Professional Standards: What You Can Expect</h2>
+			<p class="section-intro">Professional service isn't just about what we clean - it's about how we operate. Here are the professional standards we uphold on every single visit:</p>
+
+			<div class="standards-grid">
+				<div class="standard-card">
+					<h3>Detailed Cleaning Checklists</h3>
+					<p>Every service follows a comprehensive, room-by-room checklist that ensures nothing is missed. Our team members are trained to work systematically through your home, checking off each task to guarantee completeness.</p>
+					<ul class="standard-details">
+						<li>Kitchen: 17-point detailed checklist</li>
+						<li>Bathrooms: 15-point sanitization checklist</li>
+						<li>Bedrooms: 12-point cleaning and organizing checklist</li>
+						<li>Living areas: 14-point dusting and floor care checklist</li>
+						<li>General areas: High-touch surface sanitization checklist</li>
+					</ul>
+					<p class="standard-note">These checklists are reviewed and updated regularly to maintain our high professional standards.</p>
+				</div>
+
+				<div class="standard-card">
+					<h3>Time Management Protocols</h3>
+					<p>Professional cleaning means efficient cleaning. We arrive on time, work systematically and efficiently, and complete the job within the estimated timeframe. Our team members are trained in time management techniques that maximize productivity without sacrificing quality.</p>
+					<ul class="standard-details">
+						<li>Confirmed arrival windows with text notifications</li>
+						<li>Efficient room-by-room workflow systems</li>
+						<li>Professional-grade equipment for faster results</li>
+						<li>Two-person teams for optimal efficiency</li>
+						<li>Realistic time estimates based on experience</li>
+					</ul>
+				</div>
+
+				<div class="standard-card">
+					<h3>Customer Communication Standards</h3>
+					<p>Professional service includes professional communication. We keep you informed every step of the way with clear, timely updates and responsive customer service.</p>
+					<ul class="standard-details">
+						<li>Confirmation emails when you book</li>
+						<li>Reminder text messages 24 hours before service</li>
+						<li>Arrival notification when team is on the way</li>
+						<li>Completion notification when service is finished</li>
+						<li>Same-day response to questions or concerns</li>
+						<li>Follow-up to ensure your satisfaction</li>
+					</ul>
+				</div>
+
+				<div class="standard-card">
+					<h3>Damage Prevention Procedures</h3>
+					<p>Our team is trained in proper techniques to prevent damage to your home and belongings. This professional training eliminates the common mistakes that untrained cleaners make.</p>
+					<ul class="standard-details">
+						<li>Proper product selection for different surfaces</li>
+						<li>Equipment training to prevent scratching or damage</li>
+						<li>Delicate item handling protocols</li>
+						<li>Floor protection systems</li>
+						<li>Pet-safe practices and precautions</li>
+					</ul>
+					<p class="standard-note">Even with our prevention procedures, our insurance and bonding protects you if accidents happen.</p>
+				</div>
+
+				<div class="standard-card">
+					<h3>Satisfaction Guarantee Process</h3>
+					<p>Our professional guarantee isn't just words - it's a systematic process that ensures your complete satisfaction:</p>
+					<ul class="standard-details">
+						<li>Quality self-checks by team members before leaving</li>
+						<li>24-hour window to report any concerns</li>
+						<li>Immediate return visit to address issues (usually same day)</li>
+						<li>Full refund if you're still not satisfied</li>
+						<li>Root cause analysis to prevent future issues</li>
+					</ul>
+					<p class="standard-note">This level of accountability separates professional services from casual cleaners.</p>
+				</div>
+
+				<div class="standard-card">
+					<h3>Continuous Improvement System</h3>
+					<p>Professional standards mean we're always getting better. We have formal systems for collecting feedback, identifying areas for improvement, and implementing changes.</p>
+					<ul class="standard-details">
+						<li>Customer feedback surveys after each service</li>
+						<li>Monthly team training and skills development</li>
+						<li>Performance reviews and quality metrics</li>
+						<li>Investment in new equipment and techniques</li>
+						<li>Industry certification and ongoing education</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Offered Section -->
+	<section class="services-offered">
+		<div class="container">
+			<h2>Professional Services We Offer</h2>
+			<p class="section-intro">All of our services are delivered with the same professional standards, training, and quality you can count on:</p>
+
+			<div class="services-grid">
+				<div class="service-card">
+					<h3>Professional Regular Cleaning</h3>
+					<p class="service-price">Starting at $160</p>
+					<p>Our most popular service - recurring professional cleaning that keeps your home consistently pristine. Perfect for weekly, bi-weekly, or monthly maintenance.</p>
+					<ul class="service-features">
+						<li>Complete home cleaning following professional checklists</li>
+						<li>Kitchen and bathroom sanitization</li>
+						<li>Dusting, vacuuming, and mopping throughout</li>
+						<li>Same professional team every visit</li>
+						<li>All supplies and equipment included</li>
+					</ul>
+					<a href="/services#regular" class="service-link">Learn more</a>
+				</div>
+
+				<div class="service-card featured-service">
+					<div class="popular-badge">Most Thorough</div>
+					<h3>Professional Deep Cleaning</h3>
+					<p class="service-price">Starting at $330</p>
+					<p>Comprehensive, top-to-bottom professional cleaning that goes beyond regular maintenance. Ideal for first-time service or seasonal deep cleans.</p>
+					<ul class="service-features">
+						<li>Everything in regular cleaning, plus:</li>
+						<li>Baseboards, crown molding, and door frames</li>
+						<li>Inside appliances (oven, refrigerator, microwave)</li>
+						<li>Detailed shower and tub scrubbing</li>
+						<li>Window sills, blinds, and ceiling fans</li>
+						<li>Behind and under movable furniture</li>
+					</ul>
+					<a href="/deep-cleaning" class="service-link">Learn more</a>
+				</div>
+
+				<div class="service-card">
+					<h3>Professional Move-In/Out Cleaning</h3>
+					<p class="service-price">Starting at $378</p>
+					<p>The most thorough professional cleaning for real estate transitions. Perfect for securing deposits or preparing homes for new occupants.</p>
+					<ul class="service-features">
+						<li>Everything in deep cleaning, plus:</li>
+						<li>Inside all cabinets, closets, and drawers</li>
+						<li>Complete appliance interior cleaning</li>
+						<li>Interior windows (when accessible)</li>
+						<li>Garage and laundry room</li>
+						<li>Complete sanitization throughout</li>
+					</ul>
+					<a href="/move-in-out-cleaning" class="service-link">Learn more</a>
+				</div>
+
+				<div class="service-card">
+					<h3>Professional Post-Construction Cleaning</h3>
+					<p class="service-price">Custom quote</p>
+					<p>Specialized professional cleaning to remove construction dust, debris, and residue after renovations or new construction.</p>
+					<ul class="service-features">
+						<li>Construction dust and debris removal</li>
+						<li>Paint overspray and residue cleaning</li>
+						<li>Window and fixture cleaning</li>
+						<li>Floor cleaning and protection removal</li>
+						<li>Final polish for move-in readiness</li>
+					</ul>
+					<a href="/contact" class="service-link">Get a quote</a>
+				</div>
+			</div>
+
+			<div class="services-note">
+				<p>All services include professional-grade equipment and eco-friendly products at no extra charge. Recurring service discounts available: save up to 20% with weekly cleaning.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Professionalism Matters Section -->
+	<section class="why-professional-matters">
+		<div class="container">
+			<h2>Why Professionalism Matters in House Cleaning</h2>
+			<p class="section-intro">The difference between professional and casual cleaning goes far beyond just getting a clean house. Here's why professional standards are worth the investment:</p>
+
+			<div class="matters-grid">
+				<div class="matters-card">
+					<div class="matters-icon">🛡️</div>
+					<h3>Avoiding Damage to Your Home</h3>
+					<p>Untrained cleaners cause damage. Wrong products on delicate surfaces, improper equipment use, and lack of knowledge lead to scratched floors, damaged countertops, stained fabrics, and broken items.</p>
+					<p class="matters-detail">Professional training teaches team members the correct products for every surface, proper equipment operation, safe handling of delicate items, and damage prevention techniques. When accidents do happen, professional insurance covers you - unlike casual cleaners who leave you with the bill.</p>
+					<div class="real-example">
+						<strong>Real example:</strong> We've had clients switch to us after casual cleaners used abrasive cleaners on marble countertops (causing permanent etching) or vacuumed up valuable jewelry that wasn't properly checked for. Professional training and oversight prevents these costly mistakes.
+					</div>
+				</div>
+
+				<div class="matters-card">
+					<div class="matters-icon">🏥</div>
+					<h3>Health & Safety Standards</h3>
+					<p>Professional cleaning protects your family's health in ways casual cleaning cannot. Proper sanitization, allergen reduction, and safe product use require professional knowledge and equipment.</p>
+					<p class="matters-detail">Our professional team uses HEPA-filter vacuums that trap allergens instead of redistributing them, EPA-approved sanitizers that kill bacteria and viruses, proper ventilation techniques for cleaning product safety, and cross-contamination prevention methods (like separate cloths for bathrooms vs. kitchens).</p>
+					<div class="real-example">
+						<strong>Health impact:</strong> Professional cleaning with HEPA filtration can reduce household allergens by up to 80%, improving respiratory health for allergy and asthma sufferers. Casual cleaners using standard vacuums actually worsen indoor air quality.
+					</div>
+				</div>
+
+				<div class="matters-card">
+					<div class="matters-icon">🔒</div>
+					<h3>Security & Peace of Mind</h3>
+					<p>Inviting someone into your home requires trust. Professional background checks, insurance, and accountability systems provide security that casual cleaners cannot offer.</p>
+					<p class="matters-detail">Every Hero House Cleaning team member has passed criminal background screening, employment verification, and reference checks. We're bonded and insured. We have professional protocols for key management and home security. You know exactly who is in your home and can trust they've been thoroughly vetted.</p>
+					<div class="real-example">
+						<strong>Peace of mind:</strong> Many clients tell us the background checks and insurance were deciding factors in choosing us over cheaper alternatives. The small price difference is worth the security of knowing verified professionals are in your home.
+					</div>
+				</div>
+
+				<div class="matters-card">
+					<div class="matters-icon">📅</div>
+					<h3>Reliability You Can Count On</h3>
+					<p>Professional service means professional reliability. No last-minute cancellations, no-shows, or inconsistent quality that plague casual cleaning arrangements.</p>
+					<p class="matters-detail">We honor our commitments with confirmed scheduling systems, text reminders and confirmations, backup team members if someone is sick, professional communication standards, and we'll never cancel on you last minute like casual cleaners often do.</p>
+					<div class="real-example">
+						<strong>Common complaint:</strong> The number one complaint we hear from clients who previously used casual cleaners is unreliability - constant cancellations, showing up late, or simply not showing up at all. Professional service eliminates this frustration.
+					</div>
+				</div>
+
+				<div class="matters-card">
+					<div class="matters-icon">✨</div>
+					<h3>Consistent, Quality Results</h3>
+					<p>Professional standards mean you get the same high-quality results every single time. No more wondering if this week's cleaning will be good or disappointing.</p>
+					<p class="matters-detail">Our detailed checklists, quality control inspections, professional training, and accountability systems ensure consistency. The same team members who know your home deliver the same thorough results on every visit.</p>
+					<div class="real-example">
+						<strong>The difference:</strong> Casual cleaners might do a great job one time and miss half the house the next. Professional systems eliminate this inconsistency - you can count on thorough, quality cleaning every time.
+					</div>
+				</div>
+
+				<div class="matters-card">
+					<div class="matters-icon">💰</div>
+					<h3>Better Long-Term Value</h3>
+					<p>Professional cleaning actually saves you money long-term by preventing damage, maintaining your home properly, and reducing the need for costly repairs or replacements.</p>
+					<p class="matters-detail">Professional care extends the life of carpets, flooring, and fixtures through proper cleaning methods. Prevention of damage saves repair costs. Proper maintenance reduces wear and tear. Regular professional care keeps your home in better condition, protecting your investment.</p>
+					<div class="real-example">
+						<strong>ROI perspective:</strong> Replacing damaged hardwood floors costs thousands. Professional cleaning that prevents damage costs $160 every two weeks. The value proposition is clear when you consider the protection professional service provides.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Vetting & Training Process -->
+	<section class="vetting-training">
+		<div class="container">
+			<h2>Our Professional Vetting & Training Process</h2>
+			<p class="section-intro">Here's exactly what every Hero House Cleaning team member goes through before they ever enter your home:</p>
+
+			<div class="process-timeline">
+				<div class="process-step">
+					<div class="step-number">1</div>
+					<div class="step-content">
+						<h3>Application & Initial Screening</h3>
+						<p>We receive dozens of applications but only accept a small percentage. Initial screening includes employment history review, professional reference checks, skills assessment and interview, and alignment with our company values and standards.</p>
+						<p class="step-note">Most applicants don't make it past this stage. We're selective about who we hire because our reputation depends on every team member.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">2</div>
+					<div class="step-content">
+						<h3>Comprehensive Background Check</h3>
+						<p>Every candidate passes rigorous background screening including criminal background check, employment verification, professional reference verification, and driving record review (for our drivers).</p>
+						<p class="step-note">We use professional background check services to ensure thorough vetting. Any red flags result in disqualification - no exceptions.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">3</div>
+					<div class="step-content">
+						<h3>Professional Training Program</h3>
+						<p>New team members complete our comprehensive training program covering cleaning techniques and best practices, professional equipment operation, eco-friendly product knowledge and safety, customer service and communication skills, damage prevention protocols, quality standards and checklist systems, and time management and efficiency.</p>
+						<p class="step-note">This isn't a one-hour orientation - it's days of hands-on training before team members are ready for client homes.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">4</div>
+					<div class="step-content">
+						<h3>Supervised Field Training</h3>
+						<p>After classroom training, new team members work alongside experienced professionals on actual cleaning jobs. This supervised training ensures they can apply their training in real-world situations and meet our quality standards under supervision before working independently.</p>
+						<p class="step-note">Team members typically complete 10-15 supervised jobs before they're cleared for independent work.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">5</div>
+					<div class="step-content">
+						<h3>Quality Certification</h3>
+						<p>Before team members are certified, they must pass quality inspections, demonstrate proficiency with all equipment and products, show mastery of our checklist systems, and receive positive client feedback from supervised visits.</p>
+						<p class="step-note">Only after certification are team members assigned to client homes independently.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">6</div>
+					<div class="step-content">
+						<h3>Ongoing Education & Development</h3>
+						<p>Professional development doesn't stop at certification. Our team participates in monthly training sessions on new techniques and products, quarterly performance reviews and skills assessment, ongoing customer service training, and professional certification opportunities.</p>
+						<p class="step-note">This commitment to continuous improvement keeps our team at the forefront of professional cleaning standards.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="training-cta">
+				<h3>This is What Professional Training Looks Like</h3>
+				<p>This comprehensive process is what separates professional house cleaning from casual cleaners who show up with a vacuum and learn as they go. When you hire Hero House Cleaning, you're getting trained, vetted professionals who've earned the right to work in your home.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Quality Assurance Program -->
+	<section class="quality-assurance">
+		<div class="container">
+			<h2>Our Quality Assurance Program</h2>
+			<p class="section-intro">Professional service requires professional oversight. Here's how we ensure every cleaning meets our high standards:</p>
+
+			<div class="qa-grid">
+				<div class="qa-card">
+					<h3>Pre-Service Quality Checks</h3>
+					<ul class="qa-checklist">
+						<li>Equipment inspected and tested before every job</li>
+						<li>Product inventory verified - fresh, high-quality supplies</li>
+						<li>Team briefing on client preferences and priorities</li>
+						<li>Review of previous visit notes and feedback</li>
+						<li>Confirmation of arrival time and special instructions</li>
+					</ul>
+				</div>
+
+				<div class="qa-card">
+					<h3>During Service Monitoring</h3>
+					<ul class="qa-checklist">
+						<li>Systematic room-by-room checklist completion</li>
+						<li>Team communication and coordination</li>
+						<li>Real-time problem solving and adaptation</li>
+						<li>Attention to client-specific requests</li>
+						<li>Professional standards maintained throughout</li>
+					</ul>
+				</div>
+
+				<div class="qa-card">
+					<h3>Post-Service Quality Verification</h3>
+					<ul class="qa-checklist">
+						<li>Team self-inspection before leaving</li>
+						<li>Checklist review - every item completed</li>
+						<li>Final walkthrough of entire home</li>
+						<li>Notes documented for next visit</li>
+						<li>Client notification of completion</li>
+					</ul>
+				</div>
+
+				<div class="qa-card">
+					<h3>Customer Feedback & Follow-Up</h3>
+					<ul class="qa-checklist">
+						<li>Post-service satisfaction survey</li>
+						<li>Review and response to all feedback</li>
+						<li>24-hour window for concern reporting</li>
+						<li>Immediate action on any issues</li>
+						<li>Continuous improvement implementation</li>
+					</ul>
+				</div>
+
+				<div class="qa-card">
+					<h3>Random Quality Inspections</h3>
+					<ul class="qa-checklist">
+						<li>Unannounced quality audits of completed work</li>
+						<li>Detailed inspection against our standards</li>
+						<li>Photo documentation of quality levels</li>
+						<li>Team performance evaluation</li>
+						<li>Recognition for excellence and coaching for improvement</li>
+					</ul>
+				</div>
+
+				<div class="qa-card">
+					<h3>Performance Metrics & Analytics</h3>
+					<ul class="qa-checklist">
+						<li>Client satisfaction scores tracked</li>
+						<li>Team performance metrics monitored</li>
+						<li>Quality trends analyzed</li>
+						<li>Areas for improvement identified</li>
+						<li>Data-driven training and development</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="qa-guarantee">
+				<h3>Our 100% Satisfaction Guarantee</h3>
+				<p>All of this quality assurance culminates in our ironclad satisfaction guarantee: If any aspect of our service doesn't meet your expectations, we'll return within 24 hours to make it right at no charge. If you're still not satisfied after we re-clean, we'll provide a full refund - no questions asked. That's how confident we are in our professional standards.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Before/After Section -->
+	<section class="before-after-section">
+		<div class="container">
+			<h2>Professional Results You Can See</h2>
+			<p class="section-intro">The difference between professional and amateur cleaning is visible. Here are real results from Knoxville homes we've cleaned:</p>
+
+			<div class="before-after-grid">
+				<div class="before-after-card">
+					<div class="before-after-images">
+						<div class="before-image">
+							<img src="/images/before-kitchen-pro.jpg" alt="Kitchen before professional cleaning" />
+							<span class="image-label">Before</span>
+						</div>
+						<div class="after-image">
+							<img src="/images/after-kitchen-pro.jpg" alt="Kitchen after professional house cleaning Knoxville" />
+							<span class="image-label">After Professional Cleaning</span>
+						</div>
+					</div>
+					<h3>Professional Kitchen Deep Clean</h3>
+					<p>From neglected and grimy to restaurant-quality clean. Professional degreasing, appliance detailing, and sanitization.</p>
+				</div>
+
+				<div class="before-after-card">
+					<div class="before-after-images">
+						<div class="before-image">
+							<img src="/images/before-bathroom-pro.jpg" alt="Bathroom before professional service" />
+							<span class="image-label">Before</span>
+						</div>
+						<div class="after-image">
+							<img src="/images/after-bathroom-pro.jpg" alt="Bathroom after professional cleaning service" />
+							<span class="image-label">After Professional Cleaning</span>
+						</div>
+					</div>
+					<h3>Professional Bathroom Sanitization</h3>
+					<p>Soap scum, hard water stains, and mildew eliminated. Professional-grade products and techniques deliver spotless results.</p>
+				</div>
+
+				<div class="before-after-card">
+					<div class="before-after-images">
+						<div class="before-image">
+							<img src="/images/before-floors-pro.jpg" alt="Floors before professional cleaning" />
+							<span class="image-label">Before</span>
+						</div>
+						<div class="after-image">
+							<img src="/images/after-floors-pro.jpg" alt="Floors after professional house cleaning" />
+							<span class="image-label">After Professional Cleaning</span>
+						</div>
+					</div>
+					<h3>Professional Floor Care</h3>
+					<p>Proper cleaning techniques restore shine without damage. Professional equipment achieves results home methods cannot.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Professional Standards Checklist -->
+	<section class="professional-checklist">
+		<div class="container">
+			<h2>Your Professional Cleaning Standards Checklist</h2>
+			<p class="section-intro">Use this checklist when evaluating any cleaning service. Hero House Cleaning checks every box - can your current cleaner say the same?</p>
+
+			<div class="checklist-columns">
+				<div class="checklist-column">
+					<h3>Team Qualifications</h3>
+					<ul class="checklist-items">
+						<li><span class="check">✓</span> Background checks completed on all team members</li>
+						<li><span class="check">✓</span> Comprehensive professional training program</li>
+						<li><span class="check">✓</span> Ongoing education and skill development</li>
+						<li><span class="check">✓</span> Professional certifications and credentials</li>
+						<li><span class="check">✓</span> Employment verification and reference checks</li>
+						<li><span class="check">✓</span> Professional appearance and conduct standards</li>
+					</ul>
+
+					<h3>Equipment & Products</h3>
+					<ul class="checklist-items">
+						<li><span class="check">✓</span> Professional-grade, commercial equipment</li>
+						<li><span class="check">✓</span> HEPA-filter vacuums for allergen control</li>
+						<li><span class="check">✓</span> Eco-friendly, professional cleaning products</li>
+						<li><span class="check">✓</span> Specialized tools for different surfaces</li>
+						<li><span class="check">✓</span> All supplies included in service price</li>
+						<li><span class="check">✓</span> Equipment regularly maintained and updated</li>
+					</ul>
+
+					<h3>Business Practices</h3>
+					<ul class="checklist-items">
+						<li><span class="check">✓</span> Fully insured with liability coverage</li>
+						<li><span class="check">✓</span> Bonded for your protection</li>
+						<li><span class="check">✓</span> Professional business licensing</li>
+						<li><span class="check">✓</span> Transparent, flat-rate pricing</li>
+						<li><span class="check">✓</span> No long-term contracts required</li>
+						<li><span class="check">✓</span> Professional invoicing and payment systems</li>
+					</ul>
+				</div>
+
+				<div class="checklist-column">
+					<h3>Service Quality</h3>
+					<ul class="checklist-items">
+						<li><span class="check">✓</span> Detailed, room-by-room cleaning checklists</li>
+						<li><span class="check">✓</span> Quality control inspections</li>
+						<li><span class="check">✓</span> Consistent team assignments</li>
+						<li><span class="check">✓</span> Professional damage prevention training</li>
+						<li><span class="check">✓</span> Systematic cleaning procedures</li>
+						<li><span class="check">✓</span> Attention to detail and thoroughness</li>
+					</ul>
+
+					<h3>Communication & Reliability</h3>
+					<ul class="checklist-items">
+						<li><span class="check">✓</span> Confirmed scheduling and arrival windows</li>
+						<li><span class="check">✓</span> Text and email notifications</li>
+						<li><span class="check">✓</span> Professional, responsive customer service</li>
+						<li><span class="check">✓</span> Same-day response to inquiries</li>
+						<li><span class="check">✓</span> Reliable scheduling - no last-minute cancellations</li>
+						<li><span class="check">✓</span> Clear communication of expectations</li>
+					</ul>
+
+					<h3>Accountability & Guarantee</h3>
+					<ul class="checklist-items">
+						<li><span class="check">✓</span> 100% satisfaction guarantee</li>
+						<li><span class="check">✓</span> Free re-clean if not satisfied</li>
+						<li><span class="check">✓</span> Full refund policy if issues not resolved</li>
+						<li><span class="check">✓</span> Formal complaint resolution process</li>
+						<li><span class="check">✓</span> Insurance coverage for damages</li>
+						<li><span class="check">✓</span> Verified online reviews and reputation</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="checklist-cta">
+				<p>If your current cleaning service doesn't check all these boxes, you're not getting professional service - you're settling for amateur work. Experience the Hero House Cleaning difference.</p>
+				<a href="/contact" class="btn btn-primary btn-large">Get Professional Cleaning</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section class="faq-section">
+		<div class="container">
+			<h2>Frequently Asked Questions About Professional House Cleaning</h2>
+
+			<div class="faq-list">
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">What makes Hero House Cleaning a professional service?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">We're a professional house cleaning service with comprehensive training programs for all team members, rigorous background checks and vetting processes, full insurance and bonding protection, professional-grade equipment and eco-friendly products, detailed quality control inspections and standards, consistent team assignments so you get the same professionals every time, systematic cleaning checklists and procedures, and a 100% satisfaction guarantee. Every aspect of our service is designed to deliver professional results you can count on.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">Are your cleaners background checked?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">Yes, absolutely. Every single team member passes rigorous background checks before they're ever allowed to enter a client's home. This includes criminal background screening, employment verification, professional reference checks, and driving record reviews. Your safety and security are our top priority, and we never compromise on vetting our professional cleaning team. This is one of the key differences between professional services and casual cleaners.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">What training do your professional cleaners receive?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">Our professional cleaners complete a comprehensive training program covering advanced cleaning techniques and best practices, professional-grade equipment operation and maintenance, eco-friendly product knowledge and proper usage, customer service excellence and communication skills, safety protocols and damage prevention procedures, quality standards and our detailed checklist systems, time management and efficiency techniques, and specialized training for different surfaces and materials. This isn't a quick orientation - it's days of classroom and hands-on training before team members ever work in client homes. We also provide ongoing monthly training to keep our team current with industry best practices.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">Are you insured and bonded?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">Yes, Hero House Cleaning is fully insured and bonded. We carry comprehensive professional liability insurance and bonding to protect both our clients and our team members. If something breaks, gets damaged, or if there's any kind of accident, you're fully covered. This professional protection is one of the major differences between professional cleaning services and casual cleaners who often operate without insurance, leaving you liable if something goes wrong. We can provide proof of insurance upon request.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">What is the difference between professional and casual cleaning?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">Professional cleaning includes trained team members who've completed comprehensive education programs vs untrained workers learning on the job, background checks and thorough vetting vs unknown individuals in your home, insurance and bonding protection vs uninsured liability risk, professional-grade equipment and commercial products vs household supplies, quality control inspections and oversight vs no accountability, consistent standards and detailed procedures vs inconsistent hit-or-miss results, same team members every visit vs different workers each time, professional communication and reliability vs frequent cancellations and poor communication. The price difference is typically just $20-40 per visit, but the difference in quality, security, and peace of mind is enormous.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">Do you use professional-grade cleaning products?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">Yes, we use professional-grade, commercial-quality cleaning products that are eco-friendly and safe for your family and pets. These professional products are significantly more effective than typical household cleaners you'd buy at the drugstore. They're specifically formulated for professional cleaning applications and deliver superior results. We also use HEPA-filter vacuums that actually trap allergens instead of redistributing them into the air like standard vacuums. All of our professional equipment and products are included in our flat-rate pricing at no extra charge.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">How do you ensure quality and consistency?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">We maintain professional standards through multiple quality assurance systems including detailed cleaning checklists for every service that ensure nothing is missed, quality control inspections and random audits of completed work, consistent team assignments so you get the same professionals who know your home, comprehensive training and ongoing education for all team members, customer feedback systems that we review and act on, performance metrics and analytics to track quality trends, and our 100% satisfaction guarantee that holds us accountable. This systematic approach to quality is what separates professional services from casual cleaners. We take professionalism seriously and have formal systems in place to ensure every cleaning meets our high standards.</p>
+					</div>
+				</div>
+
+				<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<h3 itemprop="name">Why should I choose professional cleaning over casual cleaners?</h3>
+					<div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p itemprop="text">Professional cleaning provides peace of mind with background-checked, insured workers in your home instead of unknown individuals, consistent quality standards and procedures instead of hit-or-miss results, damage prevention training and insurance coverage instead of liability risk, professional equipment and products that deliver superior results, reliable scheduling and communication instead of frequent cancellations, accountability through formal guarantees instead of no recourse if you're unhappy, ongoing training and oversight instead of learning on the job at your expense. The small price difference (typically $20-40 per visit) is absolutely worth the security, reliability, and quality you receive. When you factor in the risk of damage from untrained cleaners, the value proposition of professional service becomes even clearer. Many of our clients switched to us after bad experiences with casual cleaners and say they'll never go back.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section class="testimonials-section">
+		<div class="container">
+			<h2>What Knoxville Families Say About Our Professional Service</h2>
+			<p class="section-intro">Our clients appreciate the professionalism, quality, and reliability we bring to every visit:</p>
+
+			<div class="testimonials-grid">
+				<div class="testimonial-card">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"Sandon with Hero House Cleaning was amazing! Super professional and a delight to work with. My house is spotless now! The difference between her professional work and the casual cleaners I used before is night and day. I would definitely recommend her and will be using her again."</p>
+					<div class="testimonial-author">
+						<strong>Maria M.</strong>
+						<span>West Knoxville</span>
+					</div>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"Finally found a truly professional cleaning service in Knoxville! The team is always on time, the quality is consistent, and I love that they're background-checked and insured. After dealing with unreliable casual cleaners for years, Hero House Cleaning has been a game-changer. Worth every penny."</p>
+					<div class="testimonial-author">
+						<strong>Jennifer K.</strong>
+						<span>Farragut</span>
+					</div>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"Kayla was awesome! She did an amazing job with our move in cleaning! So professional and thorough. Whenever we need cleaning service we will definitely request her! The professionalism and quality control really shows - this is what professional service looks like. Thank you Kayla and everyone at Hero House Cleaning!"</p>
+					<div class="testimonial-author">
+						<strong>Elizabeth W.</strong>
+						<span>Bearden</span>
+					</div>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"Hero House Cleaning has been a lifesaver! They take care of our home in Rocky Hill every other week, and it always feels spotless and fresh. The team is reliable, professional, and treats our home with respect every time. The background checks and insurance gave us peace of mind, and the quality has been consistently excellent."</p>
+					<div class="testimonial-author">
+						<strong>Sarah L.</strong>
+						<span>Rocky Hill</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonials-cta">
+				<p>Join 175+ Knoxville families who trust Hero House Cleaning's professional service</p>
+				<a href="/contact" class="btn btn-primary btn-large">Experience Professional Cleaning</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Final CTA Section -->
+	<section class="final-cta-section">
+		<div class="container">
+			<h2>Ready to Experience True Professional House Cleaning?</h2>
+			<p class="cta-intro">Stop settling for amateur cleaning. Experience the difference that professional training, background checks, and quality standards make. Trusted by 175+ Knoxville families.</p>
+
+			<div class="cta-stats">
+				<div class="stat-item">
+					<div class="stat-number">4.8★</div>
+					<div class="stat-label">Professional Rating</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">100%</div>
+					<div class="stat-label">Background Checked</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">175+</div>
+					<div class="stat-label">Happy Families</div>
+				</div>
+				<div class="stat-item">
+					<div class="stat-number">$160</div>
+					<div class="stat-label">Starting Price</div>
+				</div>
+			</div>
+
+			<div class="cta-options">
+				<div class="cta-option">
+					<h3>Book Online</h3>
+					<p>Get instant pricing and schedule your first professional cleaning in 60 seconds</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get Your Free Quote</a>
+				</div>
+				<div class="cta-option">
+					<h3>Call Us</h3>
+					<p>Speak with our professional team Monday-Friday, 8 AM - 5 PM</p>
+					<a href="tel:865-507-1405" class="btn btn-secondary btn-large">Call (865) 507-1405</a>
+				</div>
+			</div>
+
+			<div class="professional-promise">
+				<h3>Our Professional Promise</h3>
+				<p>When you choose Hero House Cleaning, you're choosing background-checked professionals you can trust, comprehensive training and ongoing education, full insurance and bonding protection, professional-grade equipment and eco-friendly products, consistent quality with the same team every visit, detailed quality control and inspections, and a 100% satisfaction guarantee. This is what professional house cleaning looks like.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Related Services Links -->
+	<section class="related-services">
+		<div class="container">
+			<h2>Explore Our Professional Cleaning Services</h2>
+			<div class="related-grid">
+				<a href="/maid-service-knoxville" class="related-card">
+					<h3>Professional Maid Service</h3>
+					<p>Recurring professional cleaning with the same trusted team every visit</p>
+				</a>
+				<a href="/deep-cleaning" class="related-card">
+					<h3>Professional Deep Cleaning</h3>
+					<p>Comprehensive top-to-bottom professional cleaning service</p>
+				</a>
+				<a href="/services" class="related-card">
+					<h3>All Services & Pricing</h3>
+					<p>Complete list of professional cleaning services in Knoxville</p>
+				</a>
+				<a href="/house-cleaning-cost-knoxville" class="related-card">
+					<h3>Pricing Guide</h3>
+					<p>Transparent pricing for professional house cleaning services</p>
+				</a>
+				<a href="/locations" class="related-card">
+					<h3>Service Areas</h3>
+					<p>Professional cleaning throughout Knoxville and surrounding areas</p>
+				</a>
+				<a href="/about" class="related-card">
+					<h3>About Our Team</h3>
+					<p>Meet the professional team behind Hero House Cleaning</p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	/* Hero Section */
+	.hero-section {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 4rem 2rem;
+	}
+
+	.breadcrumb {
+		font-size: 0.9rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	}
+
+	.breadcrumb a:hover {
+		border-bottom-color: white;
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.hero-text h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
+		color: rgba(255, 255, 255, 0.95);
+	}
+
+	.trust-badge {
+		background: rgba(255, 255, 255, 0.2);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		padding: 0.75rem 1.5rem;
+		border-radius: 0.5rem;
+		display: inline-block;
+		margin-bottom: 2rem;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.hero-note {
+		font-size: 0.95rem;
+		color: rgba(255, 255, 255, 0.85);
+		margin: 0;
+	}
+
+	.hero-image img {
+		width: 100%;
+		border-radius: 1rem;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	}
+
+	/* Button Styles */
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 2rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+		text-align: center;
+	}
+
+	.btn-large {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.btn-primary {
+		background: var(--secondary);
+		color: white;
+	}
+
+	.btn-primary:hover {
+		background: #059669;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-secondary {
+		background: white;
+		color: var(--primary);
+		border: 2px solid white;
+	}
+
+	.btn-secondary:hover {
+		background: rgba(255, 255, 255, 0.9);
+		transform: translateY(-2px);
+	}
+
+	/* Professional Difference Section */
+	.professional-difference {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.section-intro {
+		text-align: center;
+		max-width: 900px;
+		margin: 0 auto 3rem;
+		font-size: 1.15rem;
+		color: var(--text-light);
+	}
+
+	.professional-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.professional-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		transition: all 0.3s;
+	}
+
+	.professional-card:hover {
+		border-color: var(--primary);
+		box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+		transform: translateY(-4px);
+	}
+
+	.professional-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.professional-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.35rem;
+	}
+
+	.professional-card p {
+		color: var(--text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.professional-card .detail {
+		background: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--secondary);
+		font-size: 0.95rem;
+	}
+
+	/* Comparison Section */
+	.comparison-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.comparison-table {
+		max-width: 1200px;
+		margin: 0 auto 3rem;
+	}
+
+	.comparison-row {
+		display: grid;
+		grid-template-columns: 200px 1fr 1fr;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		background: white;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+
+	.header-row {
+		background: var(--primary);
+		color: white;
+		font-weight: 600;
+	}
+
+	.comparison-item {
+		padding: 1.5rem;
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.feature-name {
+		font-weight: 600;
+		color: var(--text);
+		background: var(--bg-light);
+	}
+
+	.professional-col {
+		background: rgba(16, 185, 129, 0.05);
+		border-left: 3px solid var(--secondary);
+	}
+
+	.casual-col {
+		background: rgba(239, 68, 68, 0.05);
+		border-left: 3px solid #ef4444;
+	}
+
+	.check-mark {
+		color: var(--secondary);
+		font-weight: bold;
+		font-size: 1.5rem;
+		flex-shrink: 0;
+	}
+
+	.x-mark {
+		color: #ef4444;
+		font-weight: bold;
+		font-size: 1.5rem;
+		flex-shrink: 0;
+	}
+
+	.comparison-cta {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--secondary);
+	}
+
+	.comparison-cta h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+	}
+
+	.comparison-cta p {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	/* Standards Section */
+	.standards-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.standards-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.standard-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.standard-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	.standard-card > p {
+		color: var(--text-light);
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.standard-details {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	.standard-details li {
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.standard-details li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.standard-note {
+		background: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--primary);
+		font-size: 0.95rem;
+		margin-top: 1rem;
+	}
+
+	/* Services Offered Section */
+	.services-offered {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto 2rem;
+	}
+
+	.service-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		position: relative;
+		transition: all 0.3s;
+	}
+
+	.service-card:hover {
+		border-color: var(--primary);
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+	}
+
+	.featured-service {
+		border-color: var(--secondary);
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -12px;
+		right: 20px;
+		background: var(--secondary);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 1rem;
+		font-size: 0.85rem;
+		font-weight: 700;
+	}
+
+	.service-card h3 {
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+		font-size: 1.25rem;
+	}
+
+	.service-price {
+		color: var(--secondary);
+		font-weight: 700;
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+	}
+
+	.service-card > p {
+		color: var(--text-light);
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.service-features {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.service-features li {
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+		font-size: 0.95rem;
+	}
+
+	.service-features li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.service-link {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s;
+	}
+
+	.service-link:hover {
+		color: var(--primary-dark);
+		text-decoration: underline;
+	}
+
+	.services-note {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		background: white;
+		padding: 1.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.services-note p {
+		color: var(--text-light);
+		margin: 0;
+	}
+
+	/* Why Professional Matters Section */
+	.why-professional-matters {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.matters-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.matters-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.matters-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.matters-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.35rem;
+	}
+
+	.matters-card > p {
+		color: var(--text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.matters-detail {
+		background: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-bottom: 1rem;
+		font-size: 0.95rem;
+	}
+
+	.real-example {
+		background: rgba(16, 185, 129, 0.1);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--secondary);
+		font-size: 0.95rem;
+	}
+
+	.real-example strong {
+		color: var(--primary);
+	}
+
+	/* Vetting & Training Section */
+	.vetting-training {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.process-timeline {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.process-step {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+		border-bottom: 2px solid var(--border);
+	}
+
+	.process-step:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.step-number {
+		width: 80px;
+		height: 80px;
+		background: var(--primary);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-weight: 700;
+		flex-shrink: 0;
+	}
+
+	.step-content h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.step-content > p {
+		color: var(--text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.step-note {
+		background: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--secondary);
+		font-size: 0.95rem;
+		font-style: italic;
+	}
+
+	.training-cta {
+		max-width: 800px;
+		margin: 3rem auto 0;
+		text-align: center;
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--primary);
+	}
+
+	.training-cta h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+	}
+
+	.training-cta p {
+		color: var(--text-light);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* Quality Assurance Section */
+	.quality-assurance {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.qa-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto 3rem;
+	}
+
+	.qa-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.qa-card h3 {
+		color: var(--primary);
+		margin-bottom: 1.5rem;
+		font-size: 1.25rem;
+	}
+
+	.qa-checklist {
+		list-style: none;
+		padding: 0;
+	}
+
+	.qa-checklist li {
+		padding: 0.75rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.qa-checklist li:last-child {
+		border-bottom: none;
+	}
+
+	.qa-checklist li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.qa-guarantee {
+		max-width: 800px;
+		margin: 0 auto;
+		background: linear-gradient(135deg, var(--secondary) 0%, #059669 100%);
+		color: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		text-align: center;
+	}
+
+	.qa-guarantee h3 {
+		color: white;
+		margin-bottom: 1rem;
+		font-size: 1.75rem;
+	}
+
+	.qa-guarantee p {
+		color: white;
+		font-size: 1.1rem;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	/* Before/After Section */
+	.before-after-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.before-after-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.before-after-card {
+		background: white;
+		border-radius: 0.75rem;
+		overflow: hidden;
+		border: 2px solid var(--border);
+	}
+
+	.before-after-images {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0;
+	}
+
+	.before-image,
+	.after-image {
+		position: relative;
+		aspect-ratio: 1;
+		background: var(--bg-light);
+	}
+
+	.before-image img,
+	.after-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.image-label {
+		position: absolute;
+		top: 0.75rem;
+		left: 0.75rem;
+		background: rgba(0, 0, 0, 0.75);
+		color: white;
+		padding: 0.35rem 0.75rem;
+		border-radius: 0.25rem;
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+
+	.before-after-card h3 {
+		color: var(--text);
+		padding: 1rem 1.5rem 0.5rem;
+		margin: 0;
+		font-size: 1.15rem;
+	}
+
+	.before-after-card > p {
+		color: var(--text-light);
+		padding: 0 1.5rem 1.5rem;
+		margin: 0;
+		font-size: 0.95rem;
+	}
+
+	/* Professional Checklist Section */
+	.professional-checklist {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.checklist-columns {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		max-width: 1200px;
+		margin: 0 auto 3rem;
+	}
+
+	.checklist-column h3 {
+		color: var(--primary);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-size: 1.35rem;
+	}
+
+	.checklist-column h3:first-child {
+		margin-top: 0;
+	}
+
+	.checklist-items {
+		list-style: none;
+		padding: 0;
+	}
+
+	.checklist-items li {
+		padding: 0.75rem 0;
+		display: flex;
+		align-items: flex-start;
+		gap: 0.75rem;
+		border-bottom: 1px solid var(--border);
+		color: var(--text-light);
+	}
+
+	.checklist-items li:last-child {
+		border-bottom: none;
+	}
+
+	.checklist-items .check {
+		color: var(--secondary);
+		font-weight: bold;
+		font-size: 1.25rem;
+		flex-shrink: 0;
+	}
+
+	.checklist-cta {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--primary);
+	}
+
+	.checklist-cta p {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	/* FAQ Section */
+	.faq-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.faq-list {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.faq-item {
+		background: white;
+		padding: 2rem;
+		margin-bottom: 1.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		transition: all 0.3s;
+	}
+
+	.faq-item:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+	}
+
+	.faq-item h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	.faq-answer p {
+		color: var(--text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	/* Testimonials Section */
+	.testimonials-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto 3rem;
+	}
+
+	.testimonial-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.stars {
+		color: #fbbf24;
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.testimonial-text {
+		color: var(--text);
+		font-size: 1.05rem;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+
+	.testimonial-author strong {
+		color: var(--text);
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.testimonial-author span {
+		color: var(--text-light);
+		font-size: 0.9rem;
+	}
+
+	.testimonials-cta {
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.testimonials-cta p {
+		font-size: 1.15rem;
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+	}
+
+	/* Final CTA Section */
+	.final-cta-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.final-cta-section h2 {
+		text-align: center;
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.cta-intro {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 3rem;
+		font-size: 1.2rem;
+		color: var(--text-light);
+	}
+
+	.cta-stats {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 2rem;
+		max-width: 800px;
+		margin: 0 auto 3rem;
+	}
+
+	.stat-item {
+		text-align: center;
+		background: white;
+		padding: 1.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--text-light);
+		font-size: 0.95rem;
+	}
+
+	.cta-options {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		max-width: 900px;
+		margin: 0 auto 3rem;
+	}
+
+	.cta-option {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.75rem;
+		text-align: center;
+		border: 2px solid var(--border);
+	}
+
+	.cta-option h3 {
+		color: var(--primary);
+		margin-bottom: 0.75rem;
+		font-size: 1.5rem;
+	}
+
+	.cta-option p {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+	}
+
+	.professional-promise {
+		max-width: 800px;
+		margin: 0 auto;
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		text-align: center;
+	}
+
+	.professional-promise h3 {
+		color: white;
+		margin-bottom: 1rem;
+		font-size: 1.75rem;
+	}
+
+	.professional-promise p {
+		color: white;
+		font-size: 1.05rem;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	/* Related Services Section */
+	.related-services {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.related-services h2 {
+		text-align: center;
+		color: var(--text);
+		margin-bottom: 3rem;
+	}
+
+	.related-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.related-card {
+		background: var(--bg-light);
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		text-decoration: none;
+		transition: all 0.3s;
+		display: block;
+	}
+
+	.related-card:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+		transform: translateY(-2px);
+	}
+
+	.related-card h3 {
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+		font-size: 1.15rem;
+	}
+
+	.related-card p {
+		color: var(--text-light);
+		font-size: 0.95rem;
+		margin: 0;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.hero-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.hero-text h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.professional-grid,
+		.standards-grid,
+		.matters-grid,
+		.services-grid,
+		.qa-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.comparison-row {
+			grid-template-columns: 1fr;
+		}
+
+		.feature-name {
+			font-weight: 700;
+			background: var(--primary);
+			color: white;
+		}
+
+		.checklist-columns {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.cta-options {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-stats {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+		}
+
+		.process-step {
+			grid-template-columns: 60px 1fr;
+			gap: 1.5rem;
+		}
+
+		.step-number {
+			width: 60px;
+			height: 60px;
+			font-size: 1.5rem;
+		}
+
+		.before-after-images {
+			grid-template-columns: 1fr;
+		}
+
+		h1 {
+			font-size: 1.75rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
+</style>

@@ -1,0 +1,1979 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "How Much Does House Cleaning Cost in Knoxville? [2025 Guide]";
+const pageDescription = "Complete guide to house cleaning costs in Knoxville, TN. Learn average pricing for regular, deep, and move-in/out cleaning services. Transparent rates from $160-$400. Get instant quote.";
+
+// Structured Data - LocalBusiness Schema
+const localBusinessSchema = {
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	"name": "Hero House Cleaning",
+	"image": "https://herohousecleaning.com/logo.png",
+	"@id": "https://herohousecleaning.com",
+	"url": "https://herohousecleaning.com",
+	"telephone": "865-507-1405",
+	"priceRange": "$160-$650",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Knoxville",
+		"addressLocality": "Knoxville",
+		"addressRegion": "TN",
+		"postalCode": "37919",
+		"addressCountry": "US"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 35.9606,
+		"longitude": -83.9207
+	},
+	"openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+		"opens": "08:00",
+		"closes": "17:00"
+	},
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.8",
+		"reviewCount": "175"
+	}
+};
+
+// Service Schema
+const serviceSchema = {
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"serviceType": "House Cleaning",
+	"provider": {
+		"@type": "LocalBusiness",
+		"name": "Hero House Cleaning"
+	},
+	"areaServed": {
+		"@type": "City",
+		"name": "Knoxville",
+		"@id": "https://en.wikipedia.org/wiki/Knoxville,_Tennessee"
+	},
+	"offers": [
+		{
+			"@type": "Offer",
+			"name": "Regular House Cleaning",
+			"price": "160",
+			"priceCurrency": "USD",
+			"priceSpecification": {
+				"@type": "UnitPriceSpecification",
+				"price": "160",
+				"priceCurrency": "USD",
+				"referenceQuantity": {
+					"@type": "QuantitativeValue",
+					"value": "1",
+					"unitText": "service"
+				}
+			}
+		},
+		{
+			"@type": "Offer",
+			"name": "Deep House Cleaning",
+			"price": "330",
+			"priceCurrency": "USD"
+		},
+		{
+			"@type": "Offer",
+			"name": "Move In/Out Cleaning",
+			"price": "378",
+			"priceCurrency": "USD"
+		}
+	]
+};
+
+// FAQ Schema
+const faqSchema = {
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "How much does house cleaning cost in Knoxville on average?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "House cleaning in Knoxville typically costs between $160-$400 depending on your home size and service type. Regular cleaning starts at $160, deep cleaning at $330, and move-in/out cleaning at $378. Most Knoxville cleaning companies charge $18-$25 per hour per cleaner, while Hero House Cleaning uses transparent flat-rate pricing."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Is professional house cleaning worth the cost?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes, professional house cleaning is worth the cost for most homeowners. You save 3-5 hours per week (worth $60-$150 of your time), reduce stress, improve home health by reducing allergens and bacteria, and get professional results. For $160 every 2 weeks, you get 6-8 hours back - that's less than $20/hour for professional cleaning results."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How often should I have my house cleaned?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Most homeowners schedule cleaning every 2 weeks (bi-weekly), which provides the best balance of cost and cleanliness. Weekly cleaning is ideal for large families, homes with pets, or allergy sufferers. Monthly cleaning works for smaller homes or those who maintain well between services. Recurring service also saves you money - up to 20% off for weekly cleaning."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What's the difference between regular and deep cleaning cost?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Regular cleaning ($160-$240) focuses on maintenance - surfaces, floors, bathrooms, and kitchens. Deep cleaning ($330-$560) is more comprehensive, including baseboards, inside appliances, light fixtures, blinds, and detailed scrubbing. Deep cleaning takes 2-3 times longer and is recommended for first-time service, seasonal cleaning, or if your home hasn't been professionally cleaned in months."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do cleaning companies charge more for pets?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Some cleaning companies charge extra fees for homes with pets (typically $15-$30 per visit), especially if there's excessive pet hair or odor. At Hero House Cleaning, we don't charge pet fees - we simply account for your home's condition when providing your quote. We love pets and understand they're part of your family!"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Are there extra fees I should know about?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Watch out for companies that charge separately for supplies, have vague pricing, require long-term contracts (9-12 months), or have minimum charges. Hero House Cleaning includes all supplies in our flat-rate pricing, requires no contracts, and provides transparent quotes upfront - what we quote is what you pay."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How much should I tip my house cleaner?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Tipping is appreciated but not required. If you're happy with the service, 15-20% is standard, or $10-$20 per cleaner for regular service. For exceptional service or during holidays, consider 20-25%. Some customers add the tip when booking online, while others prefer to tip in cash directly to the cleaning team."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Can I get a discount for recurring service?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes! Hero House Cleaning offers recurring service discounts: 20% off for weekly cleaning, 15% off for bi-weekly cleaning, and 10% off for monthly cleaning. Recurring service also ensures consistent scheduling, the same trusted team, and a cleaner home year-round. Most customers save $300-$800 per year with recurring service."
+			}
+		}
+	]
+};
+
+// Breadcrumb Schema
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://herohousecleaning.com"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "House Cleaning Cost Knoxville",
+			"item": "https://herohousecleaning.com/house-cleaning-cost-knoxville"
+		}
+	]
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+	<!-- Schema Markup -->
+	<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+	<!-- Hero Section -->
+	<section class="cost-hero">
+		<div class="container">
+			<div class="breadcrumb">
+				<a href="/">Home</a> / House Cleaning Cost Knoxville
+			</div>
+			<div class="hero-badge">2025 Pricing Guide • Knoxville, TN</div>
+			<h1>How Much Does House Cleaning Cost in Knoxville? [2025 Guide]</h1>
+			<p class="hero-subtitle">Everything you need to know about house cleaning costs in Knoxville, TN - from average rates to hidden fees to avoid</p>
+			<div class="hero-cta">
+				<a href="/contact" class="btn btn-large btn-primary">Get Your Free Quote</a>
+				<a href="tel:865-507-1405" class="btn btn-large btn-secondary">Call (865) 507-1405</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Quick Answer Section -->
+	<section class="quick-answer">
+		<div class="container">
+			<div class="answer-box">
+				<h2 class="quick-answer-title">The Quick Answer</h2>
+				<p class="answer-highlight">House cleaning in Knoxville typically costs <strong>$160-$400</strong> depending on your home size and the type of service you need.</p>
+
+				<div class="pricing-comparison">
+					<div class="comparison-column">
+						<h3>Industry Average Rates in Knoxville</h3>
+						<ul class="pricing-list">
+							<li><strong>Hourly rate:</strong> $18-$25/hour per cleaner</li>
+							<li><strong>Standard cleaning:</strong> $90-$180</li>
+							<li><strong>Deep cleaning:</strong> $230-$600</li>
+							<li><strong>Move in/out:</strong> $250-$700</li>
+						</ul>
+						<p class="note">Note: Hourly pricing can be unpredictable and often takes longer than estimated</p>
+					</div>
+
+					<div class="comparison-column highlight-column">
+						<h3>Hero House Cleaning Rates</h3>
+						<ul class="pricing-list">
+							<li><strong>Regular cleaning:</strong> Starting at $160</li>
+							<li><strong>Deep cleaning:</strong> Starting at $330</li>
+							<li><strong>Move in/out:</strong> Starting at $378</li>
+							<li><strong>Recurring discounts:</strong> Save up to 20%</li>
+						</ul>
+						<p class="note highlight">Flat-rate pricing - you know the exact cost before we start</p>
+					</div>
+				</div>
+
+				<a href="#cost-calculator" class="quick-link">Skip to pricing calculator</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cost by Service Type Section -->
+	<section class="cost-by-service">
+		<div class="container">
+			<h2>House Cleaning Cost by Service Type</h2>
+			<p class="section-intro">Understanding what's included in each service type helps you choose the right option for your needs and budget.</p>
+
+			<div class="service-breakdown">
+				<!-- Regular/Standard Cleaning -->
+				<div class="service-detail-card">
+					<div class="service-header">
+						<h3>Regular/Standard Cleaning</h3>
+						<div class="price-badge">$160-$240</div>
+					</div>
+					<p class="service-description">Regular cleaning is perfect for ongoing maintenance and keeping your home consistently clean. This is the service most customers schedule weekly, bi-weekly, or monthly.</p>
+
+					<h4>What's Included:</h4>
+					<ul class="inclusion-list">
+						<li>Dusting all surfaces, furniture, and decor</li>
+						<li>Vacuuming and mopping all floors</li>
+						<li>Kitchen: countertops, sink, exterior appliances, table</li>
+						<li>Bathrooms: toilet, sink, shower/tub, mirrors</li>
+						<li>Making beds and tidying rooms</li>
+						<li>Emptying trash and recycling</li>
+						<li>Wiping down door handles and light switches</li>
+					</ul>
+
+					<div class="best-for">
+						<strong>Best for:</strong> Weekly, bi-weekly, or monthly maintenance cleaning for homes that are generally well-maintained
+					</div>
+
+					<a href="/services#regular" class="service-link">Learn more about regular cleaning</a>
+				</div>
+
+				<!-- Deep Cleaning -->
+				<div class="service-detail-card featured">
+					<div class="service-header">
+						<h3>Deep Cleaning</h3>
+						<div class="price-badge">$330-$560</div>
+					</div>
+					<p class="service-description">Deep cleaning is a comprehensive, top-to-bottom cleaning that goes far beyond regular maintenance. This service is more detailed and time-intensive.</p>
+
+					<h4>What's Included:</h4>
+					<ul class="inclusion-list">
+						<li><strong>Everything in regular cleaning, PLUS:</strong></li>
+						<li>Baseboards and crown molding throughout home</li>
+						<li>Inside oven, refrigerator, and microwave</li>
+						<li>Inside cabinets and drawers (if requested)</li>
+						<li>Detailed scrubbing of showers and tubs</li>
+						<li>Window sills and blinds</li>
+						<li>Light fixtures and ceiling fans</li>
+						<li>Door frames and detailed spot cleaning</li>
+						<li>Behind and under movable furniture</li>
+					</ul>
+
+					<div class="best-for">
+						<strong>Best for:</strong> First-time professional cleaning, seasonal cleaning (spring/fall), homes that haven't been cleaned in months, or post-renovation
+					</div>
+
+					<a href="/deep-cleaning" class="service-link">Learn more about deep cleaning</a>
+				</div>
+
+				<!-- Move In/Out Cleaning -->
+				<div class="service-detail-card">
+					<div class="service-header">
+						<h3>Move In/Move Out Cleaning</h3>
+						<div class="price-badge">$378-$650</div>
+					</div>
+					<p class="service-description">Move-in/out cleaning is the most thorough service we offer - perfect for real estate transitions, ensuring security deposits are returned, or preparing a home for new occupants.</p>
+
+					<h4>What's Included:</h4>
+					<ul class="inclusion-list">
+						<li><strong>Everything in deep cleaning, PLUS:</strong></li>
+						<li>Inside all cabinets, closets, and drawers</li>
+						<li>Inside all appliances (oven, fridge, dishwasher)</li>
+						<li>Interior windows (if accessible)</li>
+						<li>Detailed cleaning of all surfaces and corners</li>
+						<li>Garage and laundry room (if applicable)</li>
+						<li>Extra attention to walls, switches, and fixtures</li>
+						<li>Complete sanitization of bathrooms and kitchen</li>
+					</ul>
+
+					<div class="best-for">
+						<strong>Best for:</strong> Tenants moving out, landlords preparing for new tenants, homebuyers/sellers, real estate agents
+					</div>
+
+					<a href="/move-in-out-cleaning" class="service-link">Learn more about move-in/out cleaning</a>
+				</div>
+
+				<!-- Specialty Services -->
+				<div class="service-detail-card">
+					<div class="service-header">
+						<h3>Specialty Cleaning Services</h3>
+						<div class="price-badge">Custom Quote</div>
+					</div>
+					<p class="service-description">We also offer specialized cleaning services tailored to unique needs.</p>
+
+					<div class="specialty-grid">
+						<div class="specialty-item">
+							<h4>Airbnb/Vacation Rental Turnover</h4>
+							<p class="specialty-price">$150-$300 per turnover</p>
+							<p>Fast, reliable cleaning between guests to keep your ratings high and reviews positive.</p>
+						</div>
+
+						<div class="specialty-item">
+							<h4>Office Cleaning</h4>
+							<p class="specialty-price">Custom quote</p>
+							<p>Professional commercial cleaning customized for your business schedule and needs.</p>
+						</div>
+
+						<div class="specialty-item">
+							<h4>Post-Construction Cleaning</h4>
+							<p class="specialty-price">Custom quote</p>
+							<p>Detailed cleaning to remove construction dust, debris, and residue after renovations.</p>
+						</div>
+					</div>
+
+					<a href="/contact" class="service-link">Get a custom quote</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Cost by Square Footage -->
+	<section class="cost-by-sqft">
+		<div class="container">
+			<h2>House Cleaning Cost by Home Size</h2>
+			<p class="section-intro">Your home's square footage is one of the biggest factors affecting cleaning cost. Here's what you can expect to pay in Knoxville based on home size:</p>
+
+			<div class="pricing-table">
+				<table>
+					<thead>
+						<tr>
+							<th>Home Size</th>
+							<th>Regular Clean</th>
+							<th>Deep Clean</th>
+							<th>Move In/Out</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>1,000-1,500 sq ft</strong><br><span class="table-note">1-2 bed, 1-2 bath</span></td>
+							<td>$160-$200</td>
+							<td>$330-$400</td>
+							<td>$378-$450</td>
+						</tr>
+						<tr>
+							<td><strong>1,500-2,000 sq ft</strong><br><span class="table-note">2-3 bed, 2 bath</span></td>
+							<td>$200-$240</td>
+							<td>$400-$480</td>
+							<td>$450-$520</td>
+						</tr>
+						<tr class="highlight-row">
+							<td><strong>2,000-2,500 sq ft</strong><br><span class="table-note">3-4 bed, 2-3 bath</span></td>
+							<td>$240-$280</td>
+							<td>$480-$560</td>
+							<td>$520-$590</td>
+						</tr>
+						<tr>
+							<td><strong>2,500-3,000 sq ft</strong><br><span class="table-note">4-5 bed, 3+ bath</span></td>
+							<td>$280-$320</td>
+							<td>$560-$640</td>
+							<td>$590-$660</td>
+						</tr>
+						<tr>
+							<td><strong>3,000+ sq ft</strong><br><span class="table-note">Large homes</span></td>
+							<td colspan="3" class="custom-quote">Custom quote required - <a href="/contact">Contact us</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="table-notes">
+				<h4>Important Notes:</h4>
+				<ul>
+					<li>Prices shown are estimates for homes in average condition</li>
+					<li>Actual cost may vary based on home condition, clutter level, and specific requests</li>
+					<li>Recurring service discounts (up to 20%) apply to all service types</li>
+					<li>For homes over 3,000 sq ft, we provide personalized quotes to ensure accuracy</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Factors That Affect Cost -->
+	<section class="cost-factors">
+		<div class="container">
+			<h2>What Affects House Cleaning Cost in Knoxville?</h2>
+			<p class="section-intro">Understanding these factors helps you get an accurate estimate and potentially save money on your cleaning service.</p>
+
+			<div class="factors-grid">
+				<div class="factor-card">
+					<div class="factor-icon">📏</div>
+					<h3>Home Size</h3>
+					<p>This is the most significant cost factor. Larger homes require more time, more cleaning supplies, and often multiple cleaners. A 1,000 sq ft apartment takes 2-3 hours to deep clean, while a 3,000 sq ft home may take 6-8 hours.</p>
+					<p class="factor-tip"><strong>Money-saving tip:</strong> Focus on high-priority areas if you're on a tight budget - you can request certain rooms only.</p>
+				</div>
+
+				<div class="factor-card">
+					<div class="factor-icon">🚪</div>
+					<h3>Number of Rooms & Bathrooms</h3>
+					<p>Bathrooms and kitchens require more detailed cleaning than bedrooms or living areas. A 2,000 sq ft home with 4 bathrooms costs more to clean than the same size home with 2 bathrooms.</p>
+					<p class="factor-tip"><strong>Money-saving tip:</strong> Keep bathrooms maintained between professional cleanings to reduce time needed.</p>
+				</div>
+
+				<div class="factor-card featured-factor">
+					<div class="factor-icon">📅</div>
+					<h3>Cleaning Frequency</h3>
+					<p>Recurring service is significantly cheaper than one-time cleaning. When your home is cleaned regularly, it stays in better condition and requires less time per visit.</p>
+					<div class="discount-info">
+						<strong>Hero House Cleaning Recurring Discounts:</strong>
+						<ul>
+							<li>Weekly cleaning: <strong>20% off</strong></li>
+							<li>Bi-weekly cleaning: <strong>15% off</strong></li>
+							<li>Monthly cleaning: <strong>10% off</strong></li>
+						</ul>
+					</div>
+					<p class="factor-tip"><strong>Money-saving tip:</strong> Even monthly recurring service saves you 10% compared to one-time bookings.</p>
+				</div>
+
+				<div class="factor-card">
+					<div class="factor-icon">🏠</div>
+					<h3>Home Condition</h3>
+					<p>A cluttered or heavily soiled home takes longer to clean. Excessive pet hair, visible dirt buildup, or significant disorganization increases cleaning time and cost.</p>
+					<p class="factor-tip"><strong>Money-saving tip:</strong> Do a quick declutter and pickup before cleaners arrive - it allows them to focus on actual cleaning rather than organizing.</p>
+				</div>
+
+				<div class="factor-card">
+					<div class="factor-icon">🔧</div>
+					<h3>Add-On Services</h3>
+					<p>Special requests beyond standard cleaning affect the price. Common add-ons include interior windows ($30-$80), inside refrigerator ($25-$40), carpet cleaning (varies by room), and laundry services.</p>
+					<p class="factor-tip"><strong>Money-saving tip:</strong> Bundle add-ons with deep cleaning rather than requesting them separately.</p>
+				</div>
+
+				<div class="factor-card">
+					<div class="factor-icon">📍</div>
+					<h3>Location in Knoxville Area</h3>
+					<p>Some companies charge travel fees for homes outside central Knoxville. West Knoxville, Farragut, and Oak Ridge may incur additional charges with some providers.</p>
+					<p class="factor-tip"><strong>At Hero House Cleaning:</strong> We serve all of Knoxville and surrounding areas with no hidden travel fees included in your quote.</p>
+				</div>
+
+				<div class="factor-card">
+					<div class="factor-icon">⚡</div>
+					<h3>Urgency & Timing</h3>
+					<p>Same-day or next-day service may cost 15-25% more due to schedule adjustments. Weekend and evening appointments may also carry premium pricing with some companies.</p>
+					<p class="factor-tip"><strong>Money-saving tip:</strong> Book 3-5 days in advance when possible and be flexible with timing.</p>
+				</div>
+
+				<div class="factor-card">
+					<div class="factor-icon">🌿</div>
+					<h3>Special Requests</h3>
+					<p>Preferences like eco-friendly products, pet-safe cleaners, or specific cleaning techniques may affect pricing. Allergy-conscious cleaning or fragrance-free products sometimes cost extra.</p>
+					<p class="factor-tip"><strong>At Hero House Cleaning:</strong> We use eco-friendly, pet-safe products at no extra charge - it's our standard.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Hourly vs Flat Rate -->
+	<section class="pricing-models">
+		<div class="container">
+			<h2>Hourly vs Flat Rate Pricing: What's the Difference?</h2>
+			<p class="section-intro">Most Knoxville cleaning companies charge one of two ways. Understanding the difference helps you choose the best option.</p>
+
+			<div class="pricing-comparison-detailed">
+				<div class="pricing-model-card">
+					<h3>Hourly Pricing</h3>
+					<p class="model-rate">$18-$25/hour per cleaner</p>
+					<p class="model-description">You're charged based on how long the cleaning takes. Most companies send 2-3 cleaners for 2-4 hours.</p>
+
+					<h4>Pros:</h4>
+					<ul class="pros-list">
+						<li>Seems flexible at first glance</li>
+						<li>Can work for very small or unusual jobs</li>
+					</ul>
+
+					<h4>Cons:</h4>
+					<ul class="cons-list">
+						<li>Unpredictable total cost - you won't know the final price until they're done</li>
+						<li>No incentive for cleaners to work efficiently</li>
+						<li>Easy for time to expand beyond estimates</li>
+						<li>Can feel awkward monitoring how long cleaners take</li>
+						<li>Often ends up costing more than expected</li>
+					</ul>
+
+					<div class="example-box">
+						<strong>Example:</strong> You're quoted "2-3 hours with 2 cleaners" at $20/hour = $80-$120 estimate. But what if it takes 4 hours? Now you're at $160 - and you had no control over it.
+					</div>
+				</div>
+
+				<div class="pricing-model-card featured-model">
+					<h3>Flat Rate Pricing (Hero's Model)</h3>
+					<p class="model-rate">Set price per job</p>
+					<p class="model-description">You receive an exact price quote before service based on your home size, condition, and service type. That's what you pay - no surprises.</p>
+
+					<h4>Pros:</h4>
+					<ul class="pros-list">
+						<li><strong>Know exact cost upfront</strong> - no surprises or bill shock</li>
+						<li>Cleaners work efficiently to complete the job well</li>
+						<li>Budget-friendly and predictable</li>
+						<li>No awkward time-watching or wondering about the final bill</li>
+						<li>Fair to both customer and cleaner</li>
+					</ul>
+
+					<h4>Cons:</h4>
+					<ul class="cons-list">
+						<li>Honestly? We can't think of any (when priced fairly)</li>
+					</ul>
+
+					<div class="example-box highlight">
+						<strong>Example:</strong> You get a quote for $200 for a deep clean. Whether it takes 3 hours or 4.5 hours, you pay $200. You know exactly what to budget, and our team focuses on quality, not clock-watching.
+					</div>
+				</div>
+			</div>
+
+			<div class="why-flat-rate">
+				<h3>Why We Use Flat Rate Pricing</h3>
+				<p>At Hero House Cleaning, we believe in transparency and fairness. Flat-rate pricing means you're never surprised by the bill, you can budget accurately, and our team is motivated to do excellent work efficiently - not drag out the job to increase billable hours. It's a win-win.</p>
+				<a href="/pricing-guide" class="btn btn-primary">See Our Complete Pricing Guide</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- How to Save Money -->
+	<section class="save-money">
+		<div class="container">
+			<h2>How to Save Money on House Cleaning in Knoxville</h2>
+			<p class="section-intro">Professional cleaning doesn't have to break the bank. Here are proven ways to reduce costs without sacrificing quality.</p>
+
+			<div class="savings-tips">
+				<div class="tip-card highlight-tip">
+					<div class="tip-number">1</div>
+					<h3>Book Recurring Service</h3>
+					<p>This is the single best way to save. Recurring customers at Hero House Cleaning save up to 20% per visit compared to one-time cleaning rates.</p>
+					<div class="savings-example">
+						<strong>Savings example:</strong> A $200 bi-weekly cleaning becomes $170 with 15% recurring discount = <strong>$780 saved per year</strong>
+					</div>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-number">2</div>
+					<h3>Pre-Clean & Declutter Before Cleaners Arrive</h3>
+					<p>Pick up toys, clothes, and clutter before your cleaning team arrives. This allows them to focus on actual cleaning rather than organizing, making their time more efficient and potentially reducing service time.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-number">3</div>
+					<h3>Be Flexible with Scheduling</h3>
+					<p>Mid-week appointments often have better availability. If you can be flexible with your cleaning day or time, you may get priority scheduling without rush fees.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-number">4</div>
+					<h3>Bundle Services Together</h3>
+					<p>Need deep cleaning AND carpet cleaning? Booking them together often costs less than scheduling separately. Ask about package deals when requesting your quote.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-number">5</div>
+					<h3>Ask About Seasonal Promotions</h3>
+					<p>Many cleaning companies offer special pricing during slower seasons (typically January-February and after summer). Follow Hero House Cleaning on social media or join our email list for exclusive offers.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-number">6</div>
+					<h3>Maintain Between Professional Cleanings</h3>
+					<p>Do quick maintenance cleaning between professional visits. This keeps your home in better condition, potentially allowing you to book less frequent deep cleans.</p>
+				</div>
+			</div>
+
+			<div class="warning-box">
+				<h3>⚠️ But Don't Sacrifice Quality for Price</h3>
+				<p>While saving money is important, the cheapest cleaning service is rarely the best value. Low-cost cleaners often mean rushed work, inexperienced staff, hidden fees, or lack of insurance. A reliable, professional service that costs $20 more but does thorough, trustworthy work is worth far more than a cheap service that cuts corners.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Red Flags & Hidden Costs -->
+	<section class="red-flags">
+		<div class="container">
+			<h2>Red Flags & Hidden Costs to Watch For</h2>
+			<p class="section-intro">Not all cleaning companies operate with transparency. Here's what to watch out for when comparing Knoxville house cleaning services.</p>
+
+			<div class="red-flags-list">
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>Refuses to Provide Estimates Without In-Home Visit</h3>
+					<p>While in-home estimates can be accurate, companies that ONLY provide quotes this way may be using high-pressure sales tactics. Reputable companies can provide ballpark estimates over the phone or online.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> We provide instant estimates online and by phone, with the option for in-home quotes for unusual situations.</p>
+				</div>
+
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>Vague Pricing ("It Depends on the House")</h3>
+					<p>If a company can't give you even a rough estimate based on your square footage and service type, they're either inexperienced or intentionally keeping prices unclear.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> Transparent, flat-rate pricing based on clear factors you can understand.</p>
+				</div>
+
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>Charges for Supplies as Extra Fee</h3>
+					<p>Some companies quote a cleaning price, then add supply fees ($15-$30) on top. This should be included in the service cost.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> All eco-friendly cleaning supplies included in our flat rate - no supply fees ever.</p>
+				</div>
+
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>Requires Long-Term Contracts</h3>
+					<p>Beware of companies requiring 6-12 month contracts or charging cancellation fees. Quality service shouldn't need to lock you in.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> No contracts required. Cancel or reschedule anytime with reasonable notice - no penalties.</p>
+				</div>
+
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>Arbitrary Minimum Charges</h3>
+					<p>Watch for minimums that don't make sense for your home size. A $300 minimum for a 1-bedroom apartment is excessive.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> Fair pricing based on actual square footage and service needs.</p>
+				</div>
+
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>No Proof of Insurance or Bonding</h3>
+					<p>Always verify that your cleaning company is insured and bonded. If they can't immediately provide proof, walk away.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> Fully insured, bonded, and happy to provide documentation.</p>
+				</div>
+
+				<div class="red-flag-item">
+					<div class="flag-icon">🚩</div>
+					<h3>No Online Presence or Reviews</h3>
+					<p>In 2025, legitimate businesses have online reviews. If you can't find any reviews or their website is sketchy, that's a red flag.</p>
+					<p class="hero-difference"><strong>Hero's approach:</strong> 4.8 stars with 175+ verified Google reviews. We're proud of our reputation.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section class="faq-section">
+		<div class="container">
+			<h2>Frequently Asked Questions About House Cleaning Costs</h2>
+
+			<div class="faq-list">
+				<div class="faq-item">
+					<h3>How much does house cleaning cost in Knoxville on average?</h3>
+					<p>House cleaning in Knoxville typically costs between $160-$400 depending on your home size and service type. Regular cleaning starts at $160, deep cleaning at $330, and move-in/out cleaning at $378. Most Knoxville cleaning companies charge $18-$25 per hour per cleaner, while Hero House Cleaning uses transparent flat-rate pricing so you know exactly what you'll pay upfront.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Is professional house cleaning worth the cost?</h3>
+					<p>Yes, professional house cleaning is absolutely worth the cost for most homeowners. Consider this: you save 3-5 hours per week (worth $60-$150 of your time if you value your time at $20-$30/hour), you reduce stress and mental load, improve home health by reducing allergens and bacteria, get more time with family and for hobbies, and achieve professional-quality results vs DIY cleaning. For $160 every 2 weeks, you get 6-8 hours of your life back - that's less than $20/hour for professional cleaning results and the peace of mind that comes with a consistently clean home.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>How often should I have my house cleaned?</h3>
+					<p>The ideal cleaning frequency depends on your lifestyle, home size, and budget. <strong>Bi-weekly (every 2 weeks)</strong> is most popular - it provides the best balance of cost and cleanliness for most families. <strong>Weekly cleaning</strong> is ideal for large families, homes with multiple pets, allergy sufferers, or those who entertain frequently. <strong>Monthly cleaning</strong> works well for smaller homes, couples without pets, or those who maintain well between services. <strong>One-time or seasonal cleaning</strong> can work for deep cleans or special occasions. Remember: recurring service also saves you money - up to 20% off for weekly cleaning at Hero House Cleaning.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>What's the difference between regular and deep cleaning cost?</h3>
+					<p>Regular cleaning ($160-$240) focuses on maintenance tasks - surface dusting, vacuuming, mopping floors, cleaning bathrooms, and tidying the kitchen. It typically takes 2-4 hours. Deep cleaning ($330-$560) is significantly more comprehensive, including everything in regular cleaning PLUS baseboards, inside appliances (oven, refrigerator, microwave), inside cabinets, detailed shower/tub scrubbing, window sills, blinds, light fixtures, ceiling fans, and detailed spot cleaning. Deep cleaning takes 2-3 times longer and is recommended for first-time service, if your home hasn't been professionally cleaned in months, seasonal cleaning, or post-renovation situations.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Do cleaning companies charge more for pets?</h3>
+					<p>Some cleaning companies do charge extra fees for homes with pets, typically $15-$30 per visit, especially if there's excessive pet hair, odor, or accidents to address. At Hero House Cleaning, we don't charge separate pet fees - we simply account for your home's condition (including pets) when providing your personalized quote. We love pets and understand they're part of your family! Our eco-friendly, pet-safe cleaning products are included at no extra charge.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Are there extra fees I should know about?</h3>
+					<p>Reputable cleaning companies should be transparent about all fees upfront. Watch out for companies that charge separately for supplies, have vague "depends on the house" pricing, require long-term contracts (9-12 months), have arbitrary minimum charges, or add fuel/travel surcharges after providing a quote. At Hero House Cleaning, we include all supplies in our flat-rate pricing, require no contracts, charge no hidden fees, and provide transparent quotes upfront - what we quote is what you pay. The only additional costs are optional add-on services you specifically request.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>How much should I tip my house cleaner?</h3>
+					<p>Tipping is appreciated but not required for house cleaning services. If you're happy with the service, standard tipping is 15-20% of the service cost, or $10-$20 per cleaner for regular recurring service. For exceptional service, holidays, or especially challenging jobs, consider 20-25%. Some customers add the tip when booking online or paying by card, while others prefer to tip in cash directly to the cleaning team on the day of service. At Hero House Cleaning, our team always appreciates gratuity but never expects it - your satisfaction and kind review mean the world to us too.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Can I get a discount for recurring service?</h3>
+					<p>Yes! Recurring service discounts are one of the best ways to save money on professional house cleaning. Hero House Cleaning offers: <strong>20% off for weekly cleaning</strong>, <strong>15% off for bi-weekly cleaning</strong>, and <strong>10% off for monthly cleaning</strong>. These discounts apply to all service types (regular, deep, move-in/out). Recurring service also ensures consistent scheduling, the same trusted cleaning team who learns your preferences, priority booking, and a consistently cleaner home year-round. Most customers save $300-$800 per year by choosing recurring service instead of one-time bookings.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ROI Section -->
+	<section class="roi-section">
+		<div class="container">
+			<h2>Is Professional House Cleaning Really Worth It?</h2>
+			<p class="section-intro">Let's break down the actual return on investment when you hire professional cleaners.</p>
+
+			<div class="roi-grid">
+				<div class="roi-card">
+					<div class="roi-icon">⏰</div>
+					<h3>Time Saved</h3>
+					<p class="roi-stat">3-5 hours per week</p>
+					<p>The average person spends 3-5 hours per week on house cleaning. If you value your time at even $20/hour (less than minimum wage in many professional fields), that's <strong>$60-$100 of your time</strong> every week, or <strong>$3,120-$5,200 per year</strong>.</p>
+					<p class="roi-comparison">Professional cleaning every 2 weeks costs about <strong>$4,160/year</strong> - and you get professional results plus all that time back.</p>
+				</div>
+
+				<div class="roi-card">
+					<div class="roi-icon">🧘</div>
+					<h3>Reduced Stress & Mental Load</h3>
+					<p>How much is your mental peace worth? The mental burden of a constantly messy home, nagging cleaning tasks, and weekend cleaning chores adds significant stress to your life. Studies show household clutter and mess directly increase cortisol (stress hormone) levels.</p>
+					<p class="roi-benefit">Coming home to a professionally cleaned house every week or two removes this burden entirely.</p>
+				</div>
+
+				<div class="roi-card">
+					<div class="roi-icon">🏥</div>
+					<h3>Better Home Health</h3>
+					<p>Professional cleaning reduces allergens, dust, bacteria, and mold that accumulate in homes. For families with allergies, asthma, or young children, this can mean:</p>
+					<ul>
+						<li>Fewer sick days from work/school</li>
+						<li>Reduced allergy medication costs</li>
+						<li>Better respiratory health</li>
+						<li>Improved sleep quality</li>
+					</ul>
+				</div>
+
+				<div class="roi-card">
+					<div class="roi-icon">👨‍👩‍👧‍👦</div>
+					<h3>More Quality Time with Family</h3>
+					<p>Instead of spending Saturday cleaning bathrooms and mopping floors, you could be:</p>
+					<ul>
+						<li>At your kid's soccer game</li>
+						<li>Hiking in the Smoky Mountains</li>
+						<li>Enjoying a relaxing brunch</li>
+						<li>Pursuing hobbies you actually enjoy</li>
+					</ul>
+					<p class="roi-benefit">Those moments are priceless and impossible to get back.</p>
+				</div>
+
+				<div class="roi-card">
+					<div class="roi-icon">✨</div>
+					<h3>Professional Results vs DIY</h3>
+					<p>Professional cleaners have commercial-grade equipment, professional techniques, efficiency from doing this daily, eco-friendly products that work better, and knowledge of what to clean and how. The results simply aren't comparable to rushed weekend cleaning.</p>
+				</div>
+
+				<div class="roi-card highlight-roi">
+					<div class="roi-icon">💰</div>
+					<h3>The Bottom Line</h3>
+					<p class="roi-stat">$160 every 2 weeks = $320/month</p>
+					<p>For the cost of a few dinners out, you get:</p>
+					<ul>
+						<li><strong>6-8 hours of your life back every 2 weeks</strong></li>
+						<li><strong>Professionally cleaned home</strong> you're proud to live in</li>
+						<li><strong>Reduced stress</strong> and mental load</li>
+						<li><strong>More time</strong> for what actually matters</li>
+						<li><strong>Healthier home</strong> environment</li>
+					</ul>
+					<p class="roi-benefit">That's less than $20/hour for professional results. When you factor in your time savings and quality of life improvement, it's one of the best investments you can make.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Form Section -->
+	<section class="contact-form-section" id="cost-calculator">
+		<div class="container">
+			<div class="form-content">
+				<h2>Get Your Exact Quote</h2>
+				<p>Ready to see exactly what house cleaning will cost for your Knoxville home? Get a free, no-obligation quote in minutes.</p>
+
+				<div class="form-features">
+					<div class="form-feature">
+						<span class="check-icon">✓</span>
+						<span>Instant online quote</span>
+					</div>
+					<div class="form-feature">
+						<span class="check-icon">✓</span>
+						<span>No obligation or pressure</span>
+					</div>
+					<div class="form-feature">
+						<span class="check-icon">✓</span>
+						<span>Transparent flat-rate pricing</span>
+					</div>
+					<div class="form-feature">
+						<span class="check-icon">✓</span>
+						<span>Same-day response guaranteed</span>
+					</div>
+				</div>
+
+				<!-- GoHighLevel Form Embed -->
+				<div class="ghl-form-container">
+					<!-- Replace with actual GoHighLevel form embed code -->
+					<div class="form-placeholder">
+						<p style="text-align: center; color: var(--text-light); font-style: italic;">
+							[GoHighLevel contact form will be embedded here]
+						</p>
+						<div class="temp-form">
+							<input type="text" placeholder="Your Name" />
+							<input type="email" placeholder="Email Address" />
+							<input type="tel" placeholder="Phone Number" />
+							<input type="text" placeholder="Address / Zip Code" />
+							<select>
+								<option>Select Home Size</option>
+								<option>1,000-1,500 sq ft</option>
+								<option>1,500-2,000 sq ft</option>
+								<option>2,000-2,500 sq ft</option>
+								<option>2,500-3,000 sq ft</option>
+								<option>3,000+ sq ft</option>
+							</select>
+							<select>
+								<option>Select Service Type</option>
+								<option>Regular Cleaning</option>
+								<option>Deep Cleaning</option>
+								<option>Move In/Out</option>
+								<option>Other</option>
+							</select>
+							<button class="btn btn-primary btn-large">Get My Free Quote</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="contact-alternatives">
+					<p><strong>Prefer to talk?</strong> Call us at <a href="tel:865-507-1405">(865) 507-1405</a></p>
+					<p>or visit our <a href="/contact">contact page</a> for more options</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Final CTA -->
+	<section class="final-cta">
+		<div class="container">
+			<h2>Ready for a Cleaner Home Without the Guesswork?</h2>
+			<p>Join 175+ happy Knoxville homeowners who trust Hero House Cleaning for transparent pricing, reliable service, and spotless results.</p>
+			<div class="cta-stats">
+				<div class="stat">
+					<strong>4.8 ⭐</strong>
+					<span>Average Rating</span>
+				</div>
+				<div class="stat">
+					<strong>175+</strong>
+					<span>Happy Customers</span>
+				</div>
+				<div class="stat">
+					<strong>$160</strong>
+					<span>Starting Price</span>
+				</div>
+				<div class="stat">
+					<strong>100%</strong>
+					<span>Satisfaction Guarantee</span>
+				</div>
+			</div>
+			<div class="final-buttons">
+				<a href="/contact" class="btn btn-large btn-white">Get Your Free Quote</a>
+				<a href="tel:865-507-1405" class="btn btn-large btn-white-outline">Call (865) 507-1405</a>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	/* Hero Section */
+	.cost-hero {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+		opacity: 0.9;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	}
+
+	.breadcrumb a:hover {
+		border-bottom-color: white;
+	}
+
+	.hero-badge {
+		background: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		display: inline-block;
+		padding: 0.5rem 1.5rem;
+		border-radius: 2rem;
+		margin-bottom: 1.5rem;
+		font-size: 0.95rem;
+		font-weight: 600;
+	}
+
+	.cost-hero h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: rgba(255, 255, 255, 0.95);
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 2rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+		border: none;
+		cursor: pointer;
+	}
+
+	.btn-large {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.btn-primary {
+		background: var(--secondary);
+		color: white;
+	}
+
+	.btn-primary:hover {
+		background: #059669;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-secondary {
+		background: white;
+		color: var(--primary);
+	}
+
+	.btn-secondary:hover {
+		background: var(--bg-light);
+		transform: translateY(-2px);
+	}
+
+	.btn-white {
+		background: white;
+		color: var(--primary);
+	}
+
+	.btn-white:hover {
+		background: var(--bg-light);
+		transform: translateY(-2px);
+	}
+
+	.btn-white-outline {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn-white-outline:hover {
+		background: white;
+		color: var(--secondary);
+	}
+
+	/* Quick Answer Section */
+	.quick-answer {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.answer-box {
+		max-width: 1000px;
+		margin: 0 auto;
+		background: white;
+		padding: 3rem;
+		border-radius: 1rem;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	.quick-answer-title {
+		text-align: center;
+		color: var(--primary);
+		margin-bottom: 1.5rem;
+	}
+
+	.answer-highlight {
+		font-size: 1.3rem;
+		text-align: center;
+		color: var(--text);
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		background: var(--bg-light);
+		border-radius: 0.5rem;
+	}
+
+	.answer-highlight strong {
+		color: var(--secondary);
+		font-size: 1.5rem;
+	}
+
+	.pricing-comparison {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.comparison-column {
+		padding: 2rem;
+		border: 2px solid var(--border);
+		border-radius: 0.5rem;
+	}
+
+	.highlight-column {
+		background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(16, 185, 129, 0.05));
+		border-color: var(--secondary);
+		border-width: 3px;
+		position: relative;
+	}
+
+	.comparison-column h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
+	}
+
+	.pricing-list {
+		list-style: none;
+		margin-bottom: 1rem;
+	}
+
+	.pricing-list li {
+		padding: 0.5rem 0;
+		color: var(--text-light);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.pricing-list li:last-child {
+		border-bottom: none;
+	}
+
+	.note {
+		font-size: 0.9rem;
+		color: var(--text-light);
+		font-style: italic;
+		margin-top: 1rem;
+	}
+
+	.note.highlight {
+		color: var(--secondary);
+		font-weight: 600;
+		font-style: normal;
+	}
+
+	.quick-link {
+		display: inline-block;
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+		margin-top: 1rem;
+		transition: color 0.3s;
+	}
+
+	.quick-link:hover {
+		color: var(--primary-dark);
+	}
+
+	/* Cost by Service Section */
+	.cost-by-service {
+		padding: 4rem 2rem;
+	}
+
+	.section-intro {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 3rem;
+		font-size: 1.1rem;
+		color: var(--text-light);
+	}
+
+	.service-breakdown {
+		display: grid;
+		gap: 2rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.service-detail-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	.service-detail-card.featured {
+		border-color: var(--secondary);
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.service-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.service-header h3 {
+		color: var(--text);
+		margin: 0;
+	}
+
+	.price-badge {
+		background: var(--primary);
+		color: white;
+		padding: 0.5rem 1.5rem;
+		border-radius: 2rem;
+		font-weight: 700;
+		font-size: 1.1rem;
+	}
+
+	.service-detail-card.featured .price-badge {
+		background: var(--secondary);
+	}
+
+	.service-description {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.service-detail-card h4 {
+		color: var(--text);
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.inclusion-list {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.inclusion-list li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.inclusion-list li:before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.best-for {
+		background: var(--bg-light);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.service-link {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s;
+	}
+
+	.service-link:hover {
+		color: var(--primary-dark);
+	}
+
+	.specialty-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.specialty-item h4 {
+		font-size: 1rem;
+		margin-top: 0;
+	}
+
+	.specialty-price {
+		color: var(--secondary);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	/* Cost by Square Footage */
+	.cost-by-sqft {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.pricing-table {
+		max-width: 1000px;
+		margin: 0 auto 2rem;
+		overflow-x: auto;
+	}
+
+	table {
+		width: 100%;
+		background: white;
+		border-radius: 0.5rem;
+		overflow: hidden;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	thead {
+		background: var(--primary);
+		color: white;
+	}
+
+	th, td {
+		padding: 1rem;
+		text-align: left;
+	}
+
+	th {
+		font-weight: 600;
+	}
+
+	tbody tr {
+		border-bottom: 1px solid var(--border);
+	}
+
+	tbody tr:last-child {
+		border-bottom: none;
+	}
+
+	tbody tr:hover {
+		background: var(--bg-light);
+	}
+
+	.highlight-row {
+		background: rgba(16, 185, 129, 0.05);
+	}
+
+	.table-note {
+		font-size: 0.85rem;
+		color: var(--text-light);
+		display: block;
+		font-weight: normal;
+	}
+
+	.custom-quote {
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.custom-quote a {
+		color: var(--primary);
+		text-decoration: none;
+	}
+
+	.table-notes {
+		max-width: 1000px;
+		margin: 0 auto;
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+	}
+
+	.table-notes h4 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.table-notes ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.table-notes li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.table-notes li:before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--primary);
+		font-weight: bold;
+	}
+
+	/* Cost Factors */
+	.cost-factors {
+		padding: 4rem 2rem;
+	}
+
+	.factors-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.factor-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		transition: all 0.3s;
+	}
+
+	.factor-card:hover {
+		border-color: var(--primary);
+		transform: translateY(-4px);
+		box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+	}
+
+	.featured-factor {
+		border-color: var(--secondary);
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.factor-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.factor-card h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.factor-card p {
+		color: var(--text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.factor-tip {
+		background: var(--bg-light);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--secondary);
+		margin-top: 1rem;
+	}
+
+	.discount-info {
+		background: var(--bg-light);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin: 1rem 0;
+	}
+
+	.discount-info ul {
+		list-style: none;
+		padding-left: 0;
+		margin-top: 0.5rem;
+	}
+
+	.discount-info li {
+		padding: 0.25rem 0;
+	}
+
+	/* Pricing Models */
+	.pricing-models {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.pricing-comparison-detailed {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto 3rem;
+	}
+
+	.pricing-model-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	.featured-model {
+		border-color: var(--secondary);
+		border-width: 3px;
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.pricing-model-card h3 {
+		color: var(--text);
+		margin-bottom: 0.5rem;
+	}
+
+	.model-rate {
+		color: var(--secondary);
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.model-description {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+	}
+
+	.pricing-model-card h4 {
+		color: var(--text);
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+
+	.pros-list, .cons-list {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.pros-list li, .cons-list li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.pros-list li:before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.cons-list li:before {
+		content: "✗";
+		position: absolute;
+		left: 0;
+		color: #ef4444;
+		font-weight: bold;
+	}
+
+	.example-box {
+		background: var(--bg-light);
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--primary);
+		margin-top: 1.5rem;
+	}
+
+	.example-box.highlight {
+		border-left-color: var(--secondary);
+		background: rgba(16, 185, 129, 0.05);
+	}
+
+	.why-flat-rate {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.5rem;
+	}
+
+	.why-flat-rate h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.why-flat-rate p {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	/* Save Money Section */
+	.save-money {
+		padding: 4rem 2rem;
+	}
+
+	.savings-tips {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto 3rem;
+	}
+
+	.tip-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		position: relative;
+	}
+
+	.highlight-tip {
+		border-color: var(--secondary);
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.tip-number {
+		position: absolute;
+		top: -1rem;
+		left: 1.5rem;
+		background: var(--primary);
+		color: white;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+	}
+
+	.highlight-tip .tip-number {
+		background: var(--secondary);
+	}
+
+	.tip-card h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.tip-card p {
+		color: var(--text-light);
+		line-height: 1.6;
+	}
+
+	.savings-example {
+		background: var(--bg-light);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-top: 1rem;
+		border-left: 3px solid var(--secondary);
+	}
+
+	.warning-box {
+		max-width: 800px;
+		margin: 0 auto;
+		background: #fef2f2;
+		border: 2px solid #fca5a5;
+		padding: 2rem;
+		border-radius: 0.5rem;
+	}
+
+	.warning-box h3 {
+		color: #dc2626;
+		margin-bottom: 1rem;
+	}
+
+	.warning-box p {
+		color: #7f1d1d;
+		line-height: 1.6;
+	}
+
+	/* Red Flags Section */
+	.red-flags {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.red-flags-list {
+		display: grid;
+		gap: 2rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.red-flag-item {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border-left: 4px solid #ef4444;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	.flag-icon {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.red-flag-item h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.red-flag-item p {
+		color: var(--text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.hero-difference {
+		background: rgba(16, 185, 129, 0.1);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		border-left: 3px solid var(--secondary);
+	}
+
+	/* FAQ Section */
+	.faq-section {
+		padding: 4rem 2rem;
+	}
+
+	.faq-list {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.faq-item {
+		background: white;
+		padding: 2rem;
+		margin-bottom: 1.5rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		transition: all 0.3s;
+	}
+
+	.faq-item:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+	}
+
+	.faq-item h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+		font-size: 1.2rem;
+	}
+
+	.faq-item p {
+		color: var(--text-light);
+		line-height: 1.7;
+	}
+
+	/* ROI Section */
+	.roi-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.roi-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.roi-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	}
+
+	.highlight-roi {
+		border-color: var(--secondary);
+		border-width: 3px;
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.roi-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.roi-card h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.roi-stat {
+		color: var(--secondary);
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.roi-card p {
+		color: var(--text-light);
+		line-height: 1.6;
+	}
+
+	.roi-comparison {
+		background: var(--bg-light);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.roi-benefit {
+		background: rgba(16, 185, 129, 0.1);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-top: 1rem;
+		border-left: 3px solid var(--secondary);
+	}
+
+	.roi-card ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.roi-card li {
+		padding: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.roi-card li:before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	/* Contact Form Section */
+	.contact-form-section {
+		padding: 4rem 2rem;
+	}
+
+	.form-content {
+		max-width: 700px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.form-content h2 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.form-content > p {
+		color: var(--text-light);
+		margin-bottom: 2rem;
+	}
+
+	.form-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.form-feature {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		justify-content: center;
+	}
+
+	.check-icon {
+		color: var(--secondary);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.ghl-form-container {
+		background: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		margin-bottom: 2rem;
+	}
+
+	.form-placeholder {
+		min-height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.temp-form {
+		width: 100%;
+		max-width: 500px;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	.temp-form input,
+	.temp-form select {
+		padding: 0.75rem;
+		border: 2px solid var(--border);
+		border-radius: 0.5rem;
+		font-size: 1rem;
+		font-family: inherit;
+	}
+
+	.temp-form input:focus,
+	.temp-form select:focus {
+		outline: none;
+		border-color: var(--primary);
+	}
+
+	.contact-alternatives {
+		text-align: center;
+		color: var(--text-light);
+	}
+
+	.contact-alternatives a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.contact-alternatives a:hover {
+		text-decoration: underline;
+	}
+
+	/* Final CTA */
+	.final-cta {
+		background: var(--secondary);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.final-cta h2 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.final-cta > p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: white;
+	}
+
+	.cta-stats {
+		display: flex;
+		justify-content: center;
+		gap: 3rem;
+		flex-wrap: wrap;
+		margin-bottom: 2rem;
+	}
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.stat strong {
+		font-size: 2rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.stat span {
+		font-size: 0.9rem;
+		opacity: 0.9;
+	}
+
+	.final-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.cost-hero h1 {
+			font-size: 1.8rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.pricing-comparison {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-comparison-detailed {
+			grid-template-columns: 1fr;
+		}
+
+		.factors-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-table {
+			font-size: 0.9rem;
+		}
+
+		th, td {
+			padding: 0.75rem 0.5rem;
+		}
+
+		.answer-box {
+			padding: 1.5rem;
+		}
+
+		.service-detail-card {
+			padding: 1.5rem;
+		}
+
+		.service-header {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.cta-stats {
+			gap: 1.5rem;
+		}
+
+		.stat strong {
+			font-size: 1.5rem;
+		}
+	}
+</style>

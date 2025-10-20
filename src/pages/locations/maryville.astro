@@ -1,0 +1,1327 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Cleaning Service Maryville TN | Hero"
+  description="Cleaning service in Maryville TN serving Heritage, Wildwood & Springbrook. Gateway to the Smokies. Trusted by families. Call (865) 507-1405"
+>
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://herohousecleaning.com/locations/maryville#business",
+        "name": "Hero House Cleaning - Maryville",
+        "image": "https://herohousecleaning.com/images/hero-logo.png",
+        "url": "https://herohousecleaning.com/locations/maryville",
+        "telephone": "(865) 507-1405",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Maryville",
+          "addressRegion": "TN",
+          "postalCode": "37801",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.7565,
+          "longitude": -83.9705
+        },
+        "areaServed": {
+          "@type": "GeoShape",
+          "name": "Maryville Service Area",
+          "description": "Serving all Maryville neighborhoods including Heritage, Laurel Church area, Foothills Mall area, Springbrook, Wildwood, Louisville Road corridor, and Alcoa Highway corridor"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "175"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://herohousecleaning.com/locations/maryville#service",
+        "serviceType": "House Cleaning Service",
+        "provider": {
+          "@id": "https://herohousecleaning.com/locations/maryville#business"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Maryville",
+            "containedIn": {
+              "@type": "State",
+              "name": "Tennessee"
+            }
+          },
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37801"
+          },
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37803"
+          },
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37804"
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Regular House Cleaning",
+            "price": "160",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Deep Cleaning",
+            "price": "330",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Move In/Out Cleaning",
+            "price": "378",
+            "priceCurrency": "USD"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://herohousecleaning.com/locations/maryville#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://herohousecleaning.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Locations",
+            "item": "https://herohousecleaning.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Maryville",
+            "item": "https://herohousecleaning.com/locations/maryville"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://herohousecleaning.com/locations/maryville#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you serve my neighborhood in Maryville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We serve all Maryville neighborhoods including Heritage, Laurel Church area, Foothills Mall area, Springbrook, Wildwood, Louisville Road corridor, and Alcoa Highway corridor. We cover ZIP codes 37801, 37803, and 37804. We also service nearby Alcoa and parts of South Knoxville upon request. If you're anywhere in the Maryville area, we've got you covered!"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you serve Alcoa as well as Maryville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! We serve both Maryville and Alcoa. Since the two cities are so close together, we regularly service homes and properties throughout both communities. Whether you're near McGhee Tyson Airport in Alcoa or closer to downtown Maryville, we provide the same reliable, professional cleaning service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far are you from Knoxville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Maryville is about 15-20 miles south of Knoxville—just a quick drive down Alcoa Highway (US-129). While we're based in the greater Knoxville area, we proudly serve Maryville, Alcoa, and the surrounding communities. We understand the unique needs of Maryville residents, from seasonal pollen that comes with living near the Smoky Mountains to the dirt and debris tracked in from outdoor adventures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you clean vacation rentals near the Smoky Mountains?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Maryville's location as a gateway to the Great Smoky Mountains makes it a popular spot for vacation rentals. We offer fast, reliable turnover cleaning for short-term rentals, Airbnb properties, and vacation homes. We can work around your guest check-in/check-out schedule, provide before-and-after photos, and ensure your rental is spotless for every arrival. Same-day service is often available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What cleaning challenges are common in Maryville homes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Maryville homes face unique cleaning challenges due to the area's proximity to the Smoky Mountains and the active outdoor lifestyle. We regularly deal with mountain dirt and red clay tracked inside, heavy pollen during spring allergy season, dust from nearby hiking trails, and debris from outdoor activities like camping and fishing. Our team understands these local conditions and has the right tools and techniques to keep your Maryville home clean year-round."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer deep cleaning for allergy season?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Spring and fall allergy seasons can be rough in Maryville due to pollen from the surrounding mountains and trees. Our deep cleaning service is perfect for allergy season—we thoroughly dust all surfaces, clean window sills where pollen accumulates, vacuum with HEPA filtration, and use eco-friendly products that won't trigger sensitivities. Many Maryville families schedule deep cleans in March/April and again in September/October."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's included in your Maryville cleaning service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our standard cleaning includes: dusting all surfaces, vacuuming and mopping floors, cleaning and sanitizing bathrooms (toilets, sinks, showers, tubs, mirrors), kitchen cleaning (countertops, sinks, outside of appliances, cabinet fronts), wiping down baseboards, emptying trash, and making beds. Our deep cleaning service adds interior appliances, inside cabinets, window sills, detailed baseboard cleaning, and more. We customize every service to fit your Maryville home's specific needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I schedule cleaning service in Maryville?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scheduling is easy! Call us at (865) 507-1405, fill out our online booking form, or request a free quote on our website. We'll ask about your home size, location in Maryville, cleaning preferences, and schedule. Most clients choose weekly, bi-weekly, or monthly recurring service, but we also offer one-time cleanings for move-ins, move-outs, deep cleans, and special occasions. We're flexible with scheduling to accommodate the unique needs of college town life and vacation rental turnovers."
+            }
+          }
+        ]
+      }
+    ]
+  })} />
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Trust Badge -->
+        <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+          <span class="text-sm font-semibold">Trusted by 175+ Maryville families</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          Cleaning Service Maryville TN | Trusted by Maryville Families
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-xl md:text-2xl mb-8 text-blue-100">
+          Serving Heritage, Wildwood, Springbrook & All Maryville Neighborhoods - Gateway to the Smokies
+        </p>
+
+        <!-- Phone Number -->
+        <div class="mb-8">
+          <a href="tel:8655071405" class="inline-block text-3xl md:text-4xl font-bold hover:text-blue-200 transition">
+            (865) 507-1405
+          </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="#contact-form" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Get Your Free Quote
+          </a>
+          <a href="/pricing-guide" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            View Pricing
+          </a>
+        </div>
+
+        <!-- Quick Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left">
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">✓</div>
+            <h3 class="font-bold text-lg mb-2">Family-Owned & Local</h3>
+            <p class="text-blue-100 text-sm">We understand Maryville living and Smoky Mountain conditions</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">✓</div>
+            <h3 class="font-bold text-lg mb-2">Eco-Friendly Products</h3>
+            <p class="text-blue-100 text-sm">Safe for families, pets, and the mountain environment</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">✓</div>
+            <h3 class="font-bold text-lg mb-2">Vacation Rental Ready</h3>
+            <p class="text-blue-100 text-sm">Fast turnovers for Smoky Mountain vacation properties</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <nav class="text-sm">
+        <ol class="flex items-center space-x-2">
+          <li><a href="/" class="text-blue-600 hover:text-blue-800">Home</a></li>
+          <li class="text-gray-500">/</li>
+          <li><a href="/locations" class="text-blue-600 hover:text-blue-800">Service Locations</a></li>
+          <li class="text-gray-500">/</li>
+          <li class="text-gray-700">Maryville</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          Proudly Serving Maryville Since 2015
+        </h2>
+
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Looking for a trusted <strong>cleaning service in Maryville, TN</strong>? Hero House Cleaning has served Maryville families, Maryville College faculty, and local professionals since 2015 with reliable, eco-friendly <strong>house cleaning in Maryville</strong>. Our <strong>Maryville cleaning service</strong> is family-owned, background-checked, and rated 4.8 stars by your neighbors throughout Heritage, Wildwood, and Springbrook. Maryville is more than just a gateway to the Great Smoky Mountains—it's a vibrant college town, a thriving business community, and a wonderful place to raise a family with excellent schools and proximity to outdoor recreation.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            At Hero House Cleaning, we're proud to serve the Maryville community with professional, reliable house cleaning services. Whether you're a busy family in Heritage trying to balance work and kids' activities, a Maryville College student or faculty member with a packed schedule, a vacation rental owner near the Foothills Parkway, or someone who simply wants more time to enjoy Greenbelt Park and the stunning mountain views—we're here to help.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Living in Maryville comes with unique cleaning challenges. The proximity to the Smoky Mountains means dealing with heavy pollen in spring, mountain dirt and red clay tracked in from hiking trails, and dust from outdoor adventures. Our team understands these local conditions because we live and work here too. We know how to handle the seasonal pollen that blankets cars and windowsills, the mud from rainy mountain weather, and the general wear-and-tear that comes from an active, outdoor lifestyle.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We're not a corporate cleaning chain that treats every home the same. We're a family-owned, local business that takes the time to understand your specific needs. Our team members are background-checked, fully insured, and trained to deliver exceptional results every single time. We use eco-friendly cleaning products that are safe for your family, pets, and the beautiful natural environment that makes Maryville so special.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Many Maryville homeowners struggle to keep up with regular cleaning while managing careers, family responsibilities, and enjoying everything the area has to offer—from the Clayton Center for the Arts to weekend trips into the Smokies. That's where we come in. We handle the cleaning so you can focus on what matters most: spending time with loved ones, exploring the mountains, or simply relaxing in your clean, comfortable home.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            From Heritage to Wildwood, from Springbrook to the Louisville Road corridor, Hero House Cleaning is your trusted partner for a cleaner, healthier home. We offer flexible scheduling, transparent pricing with no hidden fees, and a satisfaction guarantee that backs up our commitment to excellence. Join the growing number of Maryville families who trust Hero House Cleaning for all their cleaning needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Understanding Maryville Homes Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          We Understand Maryville Living
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Our local knowledge means we know exactly what Maryville homes need
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🏔️</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Smoky Mountain Conditions</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Living near the Great Smoky Mountains is beautiful, but it comes with cleaning challenges. We deal with heavy pollen from surrounding forests, mountain dirt and red clay tracked inside from hiking and outdoor activities, and dust that settles on surfaces. Our team knows how to tackle these issues effectively, keeping your home fresh and clean year-round despite the mountain environment.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🌸</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Seasonal Allergy Considerations</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Spring and fall allergy seasons hit hard in Maryville. Pollen from trees, grasses, and mountain flora can make life miserable. Our deep cleaning service includes thorough dusting, window sill cleaning, HEPA vacuum filtration, and eco-friendly products that won't aggravate allergies. Many clients schedule seasonal deep cleans in March/April and September/October to stay ahead of pollen buildup.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🏡</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Varied Home Styles</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Maryville's housing ranges from historic homes near downtown to modern suburban developments in Heritage and Wildwood, from cozy college rentals to spacious family homes. We have experience cleaning all types of properties—ranch-style homes, two-story traditional builds, townhomes, condos, and everything in between. We tailor our approach to your home's specific layout and needs.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🎓</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">College Town Flexibility</h3>
+            <p class="text-gray-700 leading-relaxed">
+              As home to Maryville College, the area has unique scheduling needs. We're flexible with semester-end deep cleans, move-in/move-out services for student housing, and cleaning schedules that work around academic calendars. Whether you're a student, parent, or landlord managing rental properties near campus, we can accommodate your timeline.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neighborhoods We Serve -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Maryville Neighborhoods & Areas We Serve
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Professional house cleaning throughout Maryville's most popular communities
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Heritage</h3>
+            <p class="text-gray-700">
+              Established neighborhood with family-friendly atmosphere, tree-lined streets, and well-maintained homes. A staple of Maryville suburban living.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Wildwood</h3>
+            <p class="text-gray-700">
+              Popular residential area with a mix of established and newer homes. Great schools and easy access to shopping and dining.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Springbrook</h3>
+            <p class="text-gray-700">
+              Peaceful neighborhood known for its quiet streets and family-oriented community. Close to schools and parks.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Laurel Church Area</h3>
+            <p class="text-gray-700">
+              Convenient location with access to Laurel Church Road amenities. Mix of residential properties perfect for families and professionals.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Foothills Mall Area</h3>
+            <p class="text-gray-700">
+              Central Maryville location with shopping, dining, and entertainment nearby. Perfect blend of convenience and residential comfort.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Louisville Road Corridor</h3>
+            <p class="text-gray-700">
+              Major thoroughfare with a variety of housing options. Easy access to Alcoa Highway and downtown Maryville.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Alcoa Highway Corridor</h3>
+            <p class="text-gray-700">
+              Convenient access to both Maryville and Knoxville. Popular with commuters and professionals who work in the greater Knoxville area.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Maryville College Area</h3>
+            <p class="text-gray-700">
+              Historic college neighborhood with charming homes and rental properties. Active community with cultural amenities and events.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Downtown Maryville</h3>
+            <p class="text-gray-700">
+              Historic downtown district with renovated homes, local businesses, and walkable streets. The heart of Maryville's community life.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmarks -->
+        <div class="mt-12 bg-blue-50 rounded-lg p-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Serving Homes Throughout Maryville</h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Whether you're near Maryville College, Foothills Mall, or Greenbelt Park, we've got you covered. Our team cleans homes throughout the Maryville area, including properties near:
+          </p>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Maryville College & historic campus area</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Foothills Mall shopping center</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Greenbelt Park & Trail system</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Maryville High School & John Sevier Elementary</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Blount Memorial Hospital</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Clayton Center for the Arts</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Sam Houston Schoolhouse historic site</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Downtown Maryville & Court Square</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZIP Codes -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-bold mb-4 text-gray-900">Maryville ZIP Codes We Serve</h3>
+        <p class="text-gray-700 mb-6">
+          We proudly serve all Maryville ZIP codes including:
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mb-6">
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">37801</span>
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">37803</span>
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">37804</span>
+        </div>
+        <p class="text-gray-600 text-sm">
+          (We also service nearby Alcoa, Rockford, and parts of South Knoxville upon request)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          House Cleaning Services Popular in Maryville
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          From regular maintenance cleaning to vacation rental turnovers and seasonal deep cleans, we offer comprehensive services tailored to Maryville homeowners, property managers, and Airbnb hosts.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Regular Cleaning -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🏠</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Regular Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $160</p>
+            <p class="text-gray-700 mb-6">
+              Perfect for busy Maryville families juggling work, school activities, and mountain adventures. Keep your home consistently clean without lifting a finger.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>All rooms dusted and vacuumed</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Bathrooms cleaned and sanitized</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Kitchen surfaces wiped and disinfected</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Floors mopped and baseboards wiped</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Deep Cleaning -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-blue-500">
+            <div class="inline-block bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">MOST POPULAR</div>
+            <div class="text-4xl mb-4">✨</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Deep Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $330</p>
+            <p class="text-gray-700 mb-6">
+              Ideal for seasonal cleaning (especially during allergy season), spring refreshes, or first-time service. Tackles mountain pollen and deep-down dirt.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Everything in regular cleaning, plus...</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Inside appliances (oven, fridge, microwave)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Interior cabinets and drawers</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Window sills (removes pollen buildup)</span>
+              </li>
+            </ul>
+            <a href="/deep-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Move In/Out -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">📦</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Move In/Out Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $378</p>
+            <p class="text-gray-700 mb-6">
+              Comprehensive cleaning for moving transitions. Perfect for Maryville's active rental market near Maryville College and vacation properties.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Deep clean of entire empty property</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>All cabinets, closets, and storage cleaned</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Appliances inside and out</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Perfect for landlords and real estate agents</span>
+              </li>
+            </ul>
+            <a href="/move-in-out-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Vacation Rental -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🏔️</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Vacation Rental Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Custom Pricing</p>
+            <p class="text-gray-700 mb-6">
+              Fast, reliable turnovers for Smoky Mountain vacation rentals and Airbnb properties. Same-day service available for your gateway location.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Quick turnaround between guests</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Fresh linens, restocked supplies</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Before/after photos for your records</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Flexible scheduling around check-ins</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Post-Construction -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🔨</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Post-Construction Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Custom Pricing</p>
+            <p class="text-gray-700 mb-6">
+              Remove construction dust, debris, and residue after renovations, additions, or new builds in Maryville and Alcoa.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Heavy-duty dust and debris removal</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Window and fixture cleaning</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Floor cleaning and polishing</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Ready-to-occupy condition</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Eco-Friendly -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🌿</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Eco-Friendly Products</h3>
+            <p class="text-lg font-semibold text-green-600 mb-4">Included With Every Service</p>
+            <p class="text-gray-700 mb-6">
+              We use professional-grade, eco-friendly cleaning products that are safe for Maryville families, pets, and the Smoky Mountain environment.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Non-toxic, biodegradable formulas</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Safe for children and pets</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Won't aggravate allergies</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Effective cleaning without harsh chemicals</span>
+              </li>
+            </ul>
+            <a href="/about" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            <strong>Transparent pricing for all Maryville homes.</strong> No travel fees within our Maryville service area.
+          </p>
+          <a href="/pricing-guide" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            View Our Complete Pricing Guide
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Hero -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Why Maryville Residents Choose Hero House Cleaning
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          We're not just another cleaning service. We're your trusted neighbors who understand the unique needs of Maryville living and the Smoky Mountain environment.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🏔️</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Local Service, Not Knoxville-Only Companies</h3>
+              <p class="text-gray-700">
+                Unlike cleaning companies based solely in Knoxville that may not travel to Maryville or charge extra for the trip, we proudly serve the entire Maryville area with no additional travel fees. We understand the gateway to the Smokies and the unique challenges of maintaining homes near the mountains.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🌸</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Understanding of Local Conditions</h3>
+              <p class="text-gray-700">
+                We know Maryville living means dealing with mountain pollen, seasonal allergies, red clay and dirt from hiking trails, and the outdoor lifestyle that comes with living near the Smokies. Our cleaning methods and products are tailored to address these specific challenges effectively.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">📅</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Flexible Scheduling for College Town Life</h3>
+              <p class="text-gray-700">
+                As a college town, Maryville has unique scheduling needs. We accommodate semester transitions, student move-ins/move-outs, vacation rental turnovers, and flexible timing that works around your busy lifestyle—whether you're a student, parent, professional, or vacation rental host.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🏡</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Experience with All Home Types</h3>
+              <p class="text-gray-700">
+                From historic homes near downtown Maryville to modern developments in Heritage and Wildwood, from cozy college rentals to large family homes, we've cleaned them all. We understand the varied housing stock in Maryville and adapt our service to fit your specific property type.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">✓</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Background-Checked Team You Can Trust</h3>
+              <p class="text-gray-700">
+                Every member of our cleaning team undergoes thorough background checks. We're fully insured and bonded, and we can provide certificates of insurance (COI) for property managers and landlords. Your safety and security are our top priorities.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">💪</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Reliable Service—We'll Never Cancel on You</h3>
+              <p class="text-gray-700">
+                Unlike other services that cancel at the last minute, we show up when we say we will. You get the same trusted team every visit, consistent quality, and reliable communication. We treat your Maryville home like our own.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">💲</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Upfront Pricing, No Hidden Fees</h3>
+              <p class="text-gray-700">
+                We provide clear, transparent pricing before we start. No hidden fees, no surprise charges, no pressure tactics. You'll know exactly what you're paying for, and we guarantee the quality of every clean.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🌟</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Family-Owned—Not a National Franchise</h3>
+              <p class="text-gray-700">
+                We're proud to be a locally owned and operated business serving our Maryville neighbors. When you call, you talk to real people who care about your satisfaction and take pride in their work. We're invested in this community for the long haul.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 text-center">
+          <h3 class="text-2xl font-bold mb-4">Ready to Experience the Hero Difference?</h3>
+          <p class="text-lg mb-6 text-blue-100">
+            Join 175+ satisfied families in Maryville and the greater Knoxville area who trust Hero House Cleaning for a cleaner, healthier home.
+          </p>
+          <a href="tel:8655071405" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405 Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Map -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Our Maryville Service Area
+        </h2>
+        <p class="text-center text-gray-600 mb-8 text-lg">
+          Covering all of Maryville from Heritage to Wildwood, Downtown to Alcoa Highway corridor
+        </p>
+
+        <!-- Map Placeholder -->
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+            <!-- Google Maps embed will go here -->
+            <div class="text-center">
+              <p class="text-lg font-semibold mb-2">Maryville Service Area Map</p>
+              <p class="text-sm">Interactive map showing our complete Maryville coverage area</p>
+            </div>
+          </div>
+          <div class="mt-6 text-center">
+            <p class="text-gray-700 mb-2">
+              <strong>Complete coverage of Maryville including:</strong>
+            </p>
+            <p class="text-gray-600">
+              ZIP codes 37801, 37803, 37804 plus nearby Alcoa and Rockford
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          What Your Maryville Neighbors Are Saying
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Real reviews from real Maryville homeowners, property managers, and vacation rental hosts
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "Hero House Cleaning has been cleaning our home in Heritage for over a year now. They understand the pollen issues we face every spring and do an amazing job keeping our home allergen-free. Highly recommend them to any Maryville family!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Jennifer M.</p>
+              <p class="text-gray-600">Heritage, Maryville TN 37803</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We manage several vacation rentals near the Smokies, and Hero is our go-to for turnovers. They're fast, reliable, and always accommodate our tight schedules. Our guests consistently comment on how clean the properties are. Worth every penny!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">David & Lisa K.</p>
+              <p class="text-gray-600">Wildwood, Maryville TN 37801</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "As a Maryville College professor, I don't have time to keep up with housework during the semester. Hero's team comes every two weeks like clockwork and my home is always pristine. They're trustworthy, professional, and reasonably priced."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Dr. Rebecca T.</p>
+              <p class="text-gray-600">Maryville College Area, TN 37804</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We hired Hero for a move-out clean on our rental property near Foothills Mall. They did an incredible job—the place looked better than when we moved in! Great communication, fair pricing, and excellent results. We'll definitely use them again."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Michael S.</p>
+              <p class="text-gray-600">Property Owner, Maryville TN 37801</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            Join the growing number of satisfied Maryville homeowners who trust Hero House Cleaning.
+          </p>
+          <a href="#contact-form" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg">
+            Get Your Free Quote Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          See the Hero Difference in Maryville Homes
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Real results from Maryville homes we've transformed
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Before/After 1 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-500">
+              <span>Before/After Photo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Heritage Home - Deep Clean</h3>
+              <p class="text-gray-600">Seasonal deep clean removing pollen and mountain dust buildup</p>
+            </div>
+          </div>
+
+          <!-- Before/After 2 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-500">
+              <span>Before/After Photo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Vacation Rental - Turnover Clean</h3>
+              <p class="text-gray-600">Quick turnover for Smoky Mountain gateway vacation rental</p>
+            </div>
+          </div>
+
+          <!-- Before/After 3 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-500">
+              <span>Before/After Photo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Wildwood Kitchen - Move-Out</h3>
+              <p class="text-gray-600">Move-out cleaning for rental property transition</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Everything you need to know about cleaning service in Maryville TN
+        </p>
+
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you serve my neighborhood in Maryville?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We serve all Maryville neighborhoods including Heritage, Laurel Church area, Foothills Mall area, Springbrook, Wildwood, Louisville Road corridor, and Alcoa Highway corridor. We cover ZIP codes 37801, 37803, and 37804. We also service nearby Alcoa and parts of South Knoxville upon request. If you're anywhere in the Maryville area, we've got you covered!
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you serve Alcoa as well as Maryville?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Absolutely! We serve both Maryville and Alcoa. Since the two cities are so close together, we regularly service homes and properties throughout both communities. Whether you're near McGhee Tyson Airport in Alcoa or closer to downtown Maryville, we provide the same reliable, professional cleaning service with no additional travel fees.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How far are you from Knoxville?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Maryville is about 15-20 miles south of Knoxville—just a quick drive down Alcoa Highway (US-129). While we're based in the greater Knoxville area, we proudly serve Maryville, Alcoa, and the surrounding communities. We understand the unique needs of Maryville residents, from seasonal pollen that comes with living near the Smoky Mountains to the dirt and debris tracked in from outdoor adventures. We're local to the area and committed to serving the entire community.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you clean vacation rentals near the Smoky Mountains?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! Maryville's location as a gateway to the Great Smoky Mountains makes it a popular spot for vacation rentals. We offer fast, reliable turnover cleaning for short-term rentals, Airbnb properties, and vacation homes. We can work around your guest check-in/check-out schedule, provide before-and-after photos for your records, and ensure your rental is spotless for every arrival. Same-day service is often available for urgent turnovers.
+            </p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What cleaning challenges are common in Maryville homes?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Maryville homes face unique cleaning challenges due to the area's proximity to the Smoky Mountains and the active outdoor lifestyle. We regularly deal with mountain dirt and red clay tracked inside, heavy pollen during spring allergy season, dust from nearby hiking trails, and debris from outdoor activities like camping and fishing. Our team understands these local conditions and has the right tools and techniques to keep your Maryville home clean year-round, no matter what the mountains throw at you.
+            </p>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you offer deep cleaning for allergy season?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! Spring and fall allergy seasons can be rough in Maryville due to pollen from the surrounding mountains and trees. Our <a href="/deep-cleaning" class="text-blue-600 hover:text-blue-800 font-semibold">deep cleaning service</a> is perfect for allergy season—we thoroughly dust all surfaces, clean window sills where pollen accumulates, vacuum with HEPA filtration, and use eco-friendly products that won't trigger sensitivities. Many Maryville families schedule deep cleans in March/April and again in September/October to stay ahead of seasonal allergens.
+            </p>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What's included in your Maryville cleaning service?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Our standard cleaning includes: dusting all surfaces, vacuuming and mopping floors, cleaning and sanitizing bathrooms (toilets, sinks, showers, tubs, mirrors), kitchen cleaning (countertops, sinks, outside of appliances, cabinet fronts), wiping down baseboards, emptying trash, and making beds. Our deep cleaning service adds interior appliances, inside cabinets, window sills, detailed baseboard cleaning, and more. We customize every service to fit your Maryville home's specific needs and the unique challenges of living near the Smokies.
+            </p>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How do I schedule cleaning service in Maryville?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Scheduling is easy! Call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>, fill out our online booking form, or <a href="/contact" class="text-blue-600 hover:text-blue-800 font-semibold">request a free quote</a> on our website. We'll ask about your home size, location in Maryville, cleaning preferences, and schedule. Most clients choose weekly, bi-weekly, or monthly recurring service, but we also offer one-time cleanings for move-ins, move-outs, deep cleans, and special occasions. We're flexible with scheduling to accommodate the unique needs of college town life and vacation rental turnovers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-50 to-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          Transparent Pricing for Maryville Homes
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          No hidden fees. No surprise charges. Just honest, upfront pricing you can count on.
+        </p>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$160+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Regular Cleaning</div>
+              <div class="text-sm text-gray-600">Weekly or bi-weekly service</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$330+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Deep Cleaning</div>
+              <div class="text-sm text-gray-600">Seasonal or first-time clean</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$378+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Move In/Out</div>
+              <div class="text-sm text-gray-600">Complete empty home clean</div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-6">
+            <p class="text-gray-700 mb-4">
+              <strong>No travel fees within Maryville service area</strong><br />
+              All pricing is based on home size, condition, and service type. We'll provide an exact quote before starting.
+            </p>
+            <a href="/pricing-guide" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              View Complete Pricing Guide
+            </a>
+          </div>
+        </div>
+
+        <p class="text-gray-600">
+          Serving all Maryville ZIP codes: 37801, 37803, 37804
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Book Your Maryville Cleaning Today
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Join 175+ satisfied families in Maryville and the greater Knoxville area who trust Hero House Cleaning. Get your free quote in minutes.
+          </p>
+          <div class="inline-block bg-blue-50 rounded-lg px-6 py-3 mb-6">
+            <p class="text-2xl font-bold text-blue-600">
+              <a href="tel:8655071405" class="hover:text-blue-800 transition">(865) 507-1405</a>
+            </p>
+            <p class="text-sm text-gray-600">Call now for same-day availability</p>
+          </div>
+        </div>
+
+        <!-- Form Placeholder -->
+        <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+          <div class="text-center text-gray-500 py-12">
+            <!-- GoHighLevel form embed will go here -->
+            <p class="text-lg mb-4">Contact Form</p>
+            <p class="text-sm mb-6">GoHighLevel form integration for Maryville location</p>
+            <div class="space-y-4 max-w-md mx-auto text-left">
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Name *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Your name</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Phone *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">(865) 123-4567</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">your@email.com</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Service Needed *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Select service type</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Neighborhood</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Maryville (pre-selected)</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400 h-24">Tell us about your home...</div>
+              </div>
+              <button class="w-full bg-yellow-400 text-gray-900 px-6 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition">
+                Get My Free Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center text-gray-600">
+          <p class="mb-2">
+            <strong>Prefer to talk?</strong> Call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>
+          </p>
+          <p class="text-sm">
+            Monday-Friday: 8am-6pm | Saturday: 9am-5pm | Sunday: Closed
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready for a Cleaner Maryville Home?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100">
+          Experience the Hero difference. Local service, transparent pricing, and exceptional results for your Maryville home—every single time.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <a href="tel:8655071405" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405
+          </a>
+          <a href="#contact-form" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            Get Free Quote
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">No Travel Fees</div>
+              <div class="text-blue-100 text-sm">We proudly serve all of Maryville</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">4.8 Stars from 175+ Families</div>
+              <div class="text-blue-100 text-sm">Trusted throughout the area</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">100% Satisfaction</div>
+              <div class="text-blue-100 text-sm">Guaranteed or money back</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Internal Links Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6 text-center text-gray-900">Explore Our Services</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <a href="/services" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏠</div>
+            <div class="font-semibold text-gray-900">All Services</div>
+          </a>
+          <a href="/deep-cleaning" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">✨</div>
+            <div class="font-semibold text-gray-900">Deep Cleaning</div>
+          </a>
+          <a href="/move-in-out-cleaning" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📦</div>
+            <div class="font-semibold text-gray-900">Move In/Out</div>
+          </a>
+          <a href="/pricing-guide" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">💲</div>
+            <div class="font-semibold text-gray-900">Pricing</div>
+          </a>
+          <a href="/locations" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📍</div>
+            <div class="font-semibold text-gray-900">Service Areas</div>
+          </a>
+          <a href="/locations/west-knoxville" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏙️</div>
+            <div class="font-semibold text-gray-900">West Knoxville</div>
+          </a>
+          <a href="/about" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">👥</div>
+            <div class="font-semibold text-gray-900">About Us</div>
+          </a>
+          <a href="/contact" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📞</div>
+            <div class="font-semibold text-gray-900">Contact</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Custom styles for this location page */
+  .hero-section {
+    background-image: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  }
+
+  .prose {
+    max-width: none;
+  }
+
+  .prose p {
+    margin-bottom: 1.5em;
+  }
+
+  /* Ensure proper spacing and readability */
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

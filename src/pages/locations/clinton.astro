@@ -1,0 +1,1387 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="House Cleaning Clinton TN | Anderson County Cleaners"
+  description="Professional house cleaning Clinton TN serving Anderson County's seat. Residential & vacation home cleaning near Norris Lake. Trusted, reliable service. Call (865) 507-1405!"
+>
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://herohousecleaning.com/locations/clinton#business",
+        "name": "Hero House Cleaning - Clinton",
+        "image": "https://herohousecleaning.com/images/hero-logo.png",
+        "url": "https://herohousecleaning.com/locations/clinton",
+        "telephone": "(865) 507-1405",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Clinton",
+          "addressRegion": "TN",
+          "postalCode": "37716",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 36.1034,
+          "longitude": -84.1316
+        },
+        "areaServed": {
+          "@type": "GeoShape",
+          "name": "Clinton Service Area",
+          "description": "Serving all Clinton neighborhoods including downtown, North Clinton, South Clinton, and the Norris Lake vacation home areas"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "187"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://herohousecleaning.com/locations/clinton#service",
+        "serviceType": "House Cleaning Service",
+        "provider": {
+          "@id": "https://herohousecleaning.com/locations/clinton#business"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Clinton",
+            "containedIn": {
+              "@type": "State",
+              "name": "Tennessee"
+            }
+          },
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37716"
+          },
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37717"
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Regular House Cleaning",
+            "price": "160",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Deep Cleaning",
+            "price": "330",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Vacation Rental Turnover",
+            "price": "378",
+            "priceCurrency": "USD"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://herohousecleaning.com/locations/clinton#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://herohousecleaning.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Locations",
+            "item": "https://herohousecleaning.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Clinton",
+            "item": "https://herohousecleaning.com/locations/clinton"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://herohousecleaning.com/locations/clinton#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you clean vacation rentals near Norris Lake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We specialize in vacation rental turnover cleaning for Norris Lake properties. Many Clinton homeowners have vacation rentals at Norris Lake, and we provide fast, thorough turnover cleaning between guests. We understand the tight timelines and high standards required for vacation rental properties, ensuring your guests arrive to a spotless home every time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you serve all Clinton neighborhoods?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! We serve all Clinton neighborhoods including downtown Clinton, North Clinton, South Clinton, and surrounding areas. We cover ZIP codes 37716 and 37717. Whether you're near the Anderson County Courthouse, Green McAdoo Cultural Center, or anywhere in the Clinton area, we provide reliable house cleaning service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you handle both residential homes and vacation properties?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We clean both primary residences in Clinton and vacation properties near Norris Lake. For residential homes, we offer weekly, bi-weekly, and monthly recurring cleaning. For vacation properties, we provide fast turnover cleaning between guests with flexible scheduling to meet your rental calendar needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's included in your Clinton cleaning service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our standard cleaning includes: dusting all surfaces, vacuuming and mopping floors, cleaning and sanitizing bathrooms (toilets, sinks, showers, tubs, mirrors), kitchen cleaning (countertops, sinks, outside of appliances, cabinet fronts), wiping down baseboards, emptying trash, and making beds. Our deep cleaning adds interior appliances, inside cabinets, window sills, and detailed baseboard cleaning. Vacation rental turnover includes fresh linens, restocking supplies, and inspection for damages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can you turn over a vacation rental?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We understand that vacation rental turnovers often have tight deadlines. For standard-sized vacation homes, we can typically complete turnover cleaning within 3-4 hours. We offer same-day service when your schedule requires it and can coordinate with your check-out and check-in times. Just let us know your rental calendar and we'll work around it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you insured to work in Clinton homes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Hero House Cleaning is fully insured and bonded. We carry comprehensive liability insurance and workers' compensation coverage. This is especially important for vacation rental owners who need documentation for their property insurance. We can provide certificates of insurance (COI) when needed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide cleaning supplies or do I need to supply them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We bring all professional-grade cleaning supplies and equipment for every job. Our eco-friendly products are safe for families, pets, and the environment. For vacation rentals, if you prefer specific products or brands, we're happy to use what you provide. Just let us know your preferences when booking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I schedule cleaning service in Clinton?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Scheduling is easy! Call us at (865) 507-1405, fill out our online booking form, or request a free quote on our website. For residential homes, we'll discuss your preferred frequency (weekly, bi-weekly, or monthly). For vacation rentals, we can integrate with your booking calendar or you can notify us of upcoming turnovers as needed."
+            }
+          }
+        ]
+      }
+    ]
+  })} />
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Trust Badge -->
+        <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+          <span class="text-sm font-semibold">⭐ Trusted by Clinton families and Norris Lake property owners</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          House Cleaning Clinton TN | Residential & Vacation Home Experts
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-xl md:text-2xl mb-8 text-blue-100">
+          Serving Anderson County's Seat - From Downtown Clinton to Norris Lake Vacation Homes
+        </p>
+
+        <!-- Phone Number -->
+        <div class="mb-8">
+          <a href="tel:8655071405" class="inline-block text-3xl md:text-4xl font-bold hover:text-blue-200 transition">
+            (865) 507-1405
+          </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="#contact-form" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Get Your Free Quote
+          </a>
+          <a href="/pricing-guide" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            View Pricing
+          </a>
+        </div>
+
+        <!-- Quick Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left">
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">✓</div>
+            <h3 class="font-bold text-lg mb-2">Residential & Vacation Homes</h3>
+            <p class="text-blue-100 text-sm">Expert cleaning for primary residences and Norris Lake rentals</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">✓</div>
+            <h3 class="font-bold text-lg mb-2">Fast Turnover Service</h3>
+            <p class="text-blue-100 text-sm">Same-day vacation rental cleaning between guests</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">✓</div>
+            <h3 class="font-bold text-lg mb-2">Anderson County Local</h3>
+            <p class="text-blue-100 text-sm">Proudly serving Clinton and surrounding communities</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <nav class="text-sm">
+        <ol class="flex items-center space-x-2">
+          <li><a href="/" class="text-blue-600 hover:text-blue-800">Home</a></li>
+          <li class="text-gray-500">/</li>
+          <li><a href="/locations" class="text-blue-600 hover:text-blue-800">Service Locations</a></li>
+          <li class="text-gray-500">/</li>
+          <li class="text-gray-700">Clinton</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          Clinton's Premier House Cleaning Service - Residential & Vacation Properties
+        </h2>
+
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Looking for professional <strong>house cleaning Clinton TN</strong> services? Hero House Cleaning is the trusted choice for Anderson County residents and Norris Lake vacation property owners. Our experienced team provides comprehensive <strong>house cleaning in Clinton</strong> for both primary residences and vacation homes near Norris Lake. Whether you need recurring <strong>house cleaning service in Clinton TN</strong> for your family home or fast vacation rental turnover cleaning, we deliver reliable, high-quality results every time. Rated 4.8 stars and serving Clinton, Anderson County's historic seat, since 2020.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Clinton is the county seat of Anderson County and a thriving community located just north of Knoxville along Interstate 75. With a rich history dating back to the early 1800s, Clinton combines small-town charm with convenient access to both urban amenities and outdoor recreation. The city serves as a gateway to Norris Lake, one of Tennessee's premier recreational destinations, making it home to both year-round residents and vacation property owners who capitalize on the lake's tourist appeal.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            At Hero House Cleaning, we understand the unique cleaning needs of Clinton homeowners. For residential clients, we provide consistent, reliable house cleaning service that fits your family's schedule and budget. Whether you live in downtown Clinton near the historic Anderson County Courthouse, in one of the residential neighborhoods north or south of town, or anywhere in the Clinton area, our background-checked team delivers the thorough, professional cleaning you deserve.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            For vacation property owners with rentals near Norris Lake, we specialize in fast, efficient turnover cleaning that meets the high standards vacation rental guests expect. We understand tight deadlines between check-out and check-in times, the importance of guest reviews, and the need for reliable service you can count on during peak season. Our vacation rental cleaning includes everything from fresh linens to thorough sanitization, damage inspection, and restocking supplies—ensuring your property is guest-ready every single time.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Clinton homes vary from historic properties downtown to modern developments in newer neighborhoods, and vacation rentals range from cozy lakefront cottages to spacious luxury homes overlooking Norris Lake. Our team has experience with all property types and sizes, and we tailor our services to match each home's specific needs. We use professional-grade, eco-friendly cleaning products that are safe for families, pets, and the environment—important for both residential homes with children and vacation rentals where guests have sensitivities.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            We're not a national franchise with inconsistent service. We're a local, family-owned business that takes pride in serving Clinton and the greater Knoxville area. When you choose Hero House Cleaning, you get upfront pricing with no hidden fees, the same trusted team every visit, flexible scheduling that works around your life or rental calendar, and the reliability that Clinton residents and vacation rental owners require. From Market Street to Norris Freeway, from downtown to the lakefront, Hero House Cleaning is your partner for exceptional cleaning service.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neighborhoods We Serve -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Clinton Areas We Serve
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Professional house cleaning throughout Clinton and the Norris Lake vacation home area
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Downtown Clinton</h3>
+            <p class="text-gray-700">
+              Historic downtown area near the Anderson County Courthouse and Market Street. Charming homes with character and history.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">North Clinton</h3>
+            <p class="text-gray-700">
+              Residential neighborhoods north of downtown with a mix of established homes and newer developments. Family-friendly communities.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">South Clinton</h3>
+            <p class="text-gray-700">
+              Growing area south of downtown near the Clinch River. Convenient location with access to schools and shopping.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Norris Lake Area</h3>
+            <p class="text-gray-700">
+              Vacation homes and lakefront properties near Norris Lake. Popular for vacation rentals and weekend retreats.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Norris Freeway Corridor</h3>
+            <p class="text-gray-700">
+              Properties along US-441 heading toward Norris. Mix of residential and vacation homes with lake access.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Clinton Lakes Area</h3>
+            <p class="text-gray-700">
+              Neighborhoods near Clinton's local recreation areas. Peaceful setting popular with families and retirees.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmarks -->
+        <div class="mt-12 bg-blue-50 rounded-lg p-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Serving Properties Throughout Clinton</h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Whether you're in downtown Clinton or managing a Norris Lake vacation rental, we've got you covered. Our team cleans homes throughout the Clinton area, including properties near:
+          </p>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Anderson County Courthouse</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Green McAdoo Cultural Center</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Clinton High School</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Norris Lake (vacation home area)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Market Street historic district</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Clinton Community Center</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Museum of Appalachia (nearby)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Clinch River waterfront areas</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZIP Codes -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-2xl font-bold mb-4 text-gray-900">Clinton ZIP Codes We Serve</h3>
+        <p class="text-gray-700 mb-6">
+          We proudly serve all Clinton ZIP codes including:
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mb-6">
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">37716</span>
+          <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg font-semibold">37717</span>
+        </div>
+        <p class="text-gray-600 text-sm">
+          Complete coverage of Clinton and the Norris Lake vacation home area
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          House Cleaning Services for Clinton & Norris Lake Properties
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          From regular maintenance for residential homes to fast vacation rental turnovers, we offer comprehensive cleaning services tailored to Clinton homeowners and property managers.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Regular Cleaning -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🏠</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Regular Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $160</p>
+            <p class="text-gray-700 mb-6">
+              Perfect for Clinton families and busy professionals. Keep your home consistently clean with weekly, bi-weekly, or monthly service.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>All rooms dusted and vacuumed</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Bathrooms cleaned and sanitized</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Kitchen surfaces wiped and disinfected</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Floors mopped and baseboards wiped</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Deep Cleaning -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-blue-500">
+            <div class="inline-block bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">MOST POPULAR</div>
+            <div class="text-4xl mb-4">✨</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Deep Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $330</p>
+            <p class="text-gray-700 mb-6">
+              Ideal for spring cleaning, pre-listing preparation, or first-time service. Top-to-bottom detailed cleaning of your Clinton home.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Everything in regular cleaning, plus...</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Inside appliances (oven, fridge, microwave)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Interior cabinets and drawers</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Detailed baseboard and window sill cleaning</span>
+              </li>
+            </ul>
+            <a href="/deep-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Vacation Rental Turnover -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-green-500">
+            <div class="inline-block bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">NORRIS LAKE SPECIAL</div>
+            <div class="text-4xl mb-4">🏖️</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Vacation Rental Turnover</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $378</p>
+            <p class="text-gray-700 mb-6">
+              Fast, thorough cleaning for Norris Lake vacation rentals. Guest-ready quality with same-day service available.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Complete cleaning and sanitization</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Fresh linens and towels</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Damage inspection and reporting</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Restocking supplies and amenities</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Move In/Out -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">📦</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Move In/Out Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $378</p>
+            <p class="text-gray-700 mb-6">
+              Essential for real estate transactions and relocations. Comprehensive cleaning for empty Clinton properties.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Deep clean of entire empty property</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>All cabinets, closets, and storage cleaned</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Appliances inside and out</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Perfect for deposit returns and new buyers</span>
+              </li>
+            </ul>
+            <a href="/move-in-out-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Post-Construction -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🔨</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Post-Construction Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Custom Pricing</p>
+            <p class="text-gray-700 mb-6">
+              Specialized cleaning after renovations or new construction. Remove dust, debris, and construction residue.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Heavy-duty cleaning of all surfaces</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Window and fixture detailing</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Removal of construction dust and residue</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Move-in ready for new or renovated homes</span>
+              </li>
+            </ul>
+            <a href="/services" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Eco-Friendly -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🌿</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Eco-Friendly Products</h3>
+            <p class="text-lg font-semibold text-green-600 mb-4">Included With Every Service</p>
+            <p class="text-gray-700 mb-6">
+              Professional-grade, eco-friendly cleaning products safe for Clinton families, vacation rental guests, and pets.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Non-toxic, biodegradable formulas</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Safe for children and pets</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>No harsh chemical odors</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Effective cleaning without compromise</span>
+              </li>
+            </ul>
+            <a href="/about" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            <strong>Transparent pricing for all Clinton properties.</strong> No travel fees within our service area.
+          </p>
+          <a href="/pricing-guide" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            View Our Complete Pricing Guide
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Hero -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Why Clinton Residents Choose Hero House Cleaning
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          We understand the unique needs of both residential homeowners and vacation rental property managers in the Clinton area.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🏖️</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Norris Lake Vacation Rental Specialists</h3>
+              <p class="text-gray-700">
+                Many Clinton residents own vacation rental properties at nearby Norris Lake. We specialize in fast, thorough turnover cleaning that meets the high standards vacation rental guests expect. We understand tight timelines between check-out and check-in, the importance of 5-star reviews, and the need for consistent, reliable service during peak season. From lakefront cottages to luxury vacation homes, we ensure your property is guest-ready every time.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">⚡</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Same-Day Turnover Service Available</h3>
+              <p class="text-gray-700">
+                Vacation rental schedules can change quickly, and sometimes you need cleaning completed on short notice. We offer same-day turnover service when your calendar requires it. Just let us know your check-out and check-in times, and we'll coordinate our team to ensure your property is spotless and ready for the next guests. Flexible scheduling that adapts to your rental calendar.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🏠</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Residential Home Expertise</h3>
+              <p class="text-gray-700">
+                For Clinton families and homeowners, we provide consistent, reliable recurring cleaning service. Whether you need weekly, bi-weekly, or monthly cleaning, we deliver the same high-quality results every visit. Our background-checked team becomes familiar with your home, your preferences, and your schedule—making the process seamless and stress-free. You deserve to enjoy your Clinton home without spending weekends cleaning it.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">📋</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Detailed Checklists & Quality Assurance</h3>
+              <p class="text-gray-700">
+                Every cleaning follows detailed checklists to ensure nothing is missed. For residential homes, this means consistent quality visit after visit. For vacation rentals, it means every turnover meets the same high standard—critical for maintaining excellent guest reviews. We can provide cleaning reports and photos for vacation rental owners who aren't on-site, giving you peace of mind that your property is in great condition.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🔐</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Trusted, Background-Checked Team</h3>
+              <p class="text-gray-700">
+                Whether cleaning your primary residence or a vacation rental property worth hundreds of thousands of dollars, trust matters. All our team members are thoroughly background-checked, trained professionals. We're fully insured and bonded, and can provide certificates of insurance (COI) for property managers and vacation rental owners who require documentation for their insurance policies or property management companies.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">📍</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Anderson County Local Knowledge</h3>
+              <p class="text-gray-700">
+                We're proud to serve Clinton and Anderson County. As a local business, we understand the area, from downtown Clinton's historic neighborhoods to the lakefront properties near Norris Lake. We know the community, we value our reputation, and we're invested in providing excellent service to our neighbors. When you call, you talk to real people who care about your satisfaction.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🔍</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Damage Inspection & Reporting</h3>
+              <p class="text-gray-700">
+                For vacation rental owners, our turnover cleaning includes inspection for damages or maintenance issues. We'll alert you to anything that needs attention—broken fixtures, stains, missing items, or maintenance concerns—so you can address issues before the next guests arrive. This proactive approach helps protect your investment and maintain your property's excellent condition.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">💲</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Transparent Pricing, No Surprises</h3>
+              <p class="text-gray-700">
+                We provide clear, upfront pricing before we start. No hidden fees, no surprise charges, no pressure tactics. For residential cleaning, you'll know exactly what you're paying based on your home size and service frequency. For vacation rental turnovers, we provide consistent pricing so you can accurately budget your rental property operating costs. Pricing you can count on, every time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 text-center">
+          <h3 class="text-2xl font-bold mb-4">Ready to Experience the Hero Difference?</h3>
+          <p class="text-lg mb-6 text-blue-100">
+            Join Clinton families and Norris Lake property owners who trust Hero House Cleaning for exceptional results.
+          </p>
+          <a href="tel:8655071405" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405 Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinton & Norris Lake Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          Serving Clinton Homes & Norris Lake Vacation Properties
+        </h2>
+
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Clinton, Tennessee, occupies a unique position as both a historic Anderson County community and a gateway to one of Tennessee's most popular recreational destinations—Norris Lake. This dual identity creates distinct cleaning needs that Hero House Cleaning is perfectly positioned to serve. For residential homeowners in Clinton proper, we provide the reliable, consistent house cleaning service that busy families and professionals need to maintain a comfortable, clean living space without sacrificing precious free time.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            The Clinton community features a diverse housing landscape, from charming historic homes in the downtown area near the Anderson County Courthouse to modern developments in newer neighborhoods north and south of the city. Many residents commute to nearby Knoxville or work in Oak Ridge, making their time at home especially valuable. Our recurring cleaning services—available weekly, bi-weekly, or monthly—ensure that Clinton families come home to a clean, welcoming environment without spending weekends scrubbing bathrooms or mopping floors.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Just minutes north of Clinton lies Norris Lake, a 34,000-acre TVA reservoir renowned for its crystal-clear water, scenic beauty, and excellent recreational opportunities. The lake attracts thousands of visitors annually for boating, fishing, swimming, and water sports, making it a prime location for vacation rental properties. Many Clinton-area residents own vacation homes near Norris Lake that they rent to tourists during peak season, creating a lucrative supplemental income stream—but also creating the need for fast, reliable turnover cleaning service.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our vacation rental cleaning service is specifically designed for Norris Lake property owners who need dependable turnover cleaning between guests. We understand the unique challenges of vacation rental management: tight timelines between check-out and check-in, the critical importance of guest reviews and ratings, the need for thorough sanitization and quality control, and the requirement for consistent, reliable service you can count on week after week during busy summer months.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Vacation rental turnover cleaning is fundamentally different from residential house cleaning. It requires speed without sacrificing quality, attention to detail that satisfies guests paying premium rates, thorough sanitization of high-touch surfaces, fresh linens and towels for every guest, inspection for damages or maintenance issues, and coordination with tight booking calendars. Our team has extensive experience with all these requirements and delivers guest-ready results every single time.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            For Norris Lake vacation rental owners, we offer same-day turnover service when your schedule requires it. Whether you have back-to-back bookings with just a few hours between guests or need emergency cleaning due to a last-minute booking or cancellation, we're equipped to handle it. We bring all necessary cleaning supplies and equipment, work efficiently to complete turnover in 3-4 hours for standard-sized properties, and provide cleaning reports and photos so you can verify your property's condition even when you're not on-site.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our vacation rental cleaning includes everything needed to prepare your property for the next guests: complete cleaning and sanitization of all rooms, bathrooms, and common areas; fresh, professionally laundered linens and towels; kitchen cleaning including dishes, appliances, and countertops; restocking of basic supplies like toilet paper, paper towels, and soap; trash removal and recycling; inspection for damages, stains, or maintenance issues; and a final walk-through to ensure everything meets our quality standards. We can customize our service to match your specific property requirements and guest expectations.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Whether you're a Clinton resident who needs reliable house cleaning for your family home or a vacation rental owner managing properties near Norris Lake, Hero House Cleaning brings the same commitment to quality, reliability, and customer service. We're not a faceless national franchise with inconsistent results. We're a local, family-owned business that takes pride in serving our Anderson County neighbors and delivering exceptional cleaning service that exceeds expectations.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            From Market Street in downtown Clinton to lakefront properties overlooking Norris Lake's pristine waters, Hero House Cleaning is your trusted partner for professional cleaning service. We understand this community, we value our reputation, and we're committed to delivering the reliable, high-quality results that Clinton homeowners and vacation rental property managers deserve. Let us handle the cleaning so you can focus on what matters most—whether that's spending time with family, managing your rental business, or simply enjoying everything this beautiful area has to offer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vacation Rental Owner Benefits -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Benefits for Norris Lake Vacation Rental Owners
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Professional turnover cleaning that protects your investment and maximizes your rental income
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <div class="text-4xl mb-4">⭐</div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Protect Your Guest Reviews</h3>
+            <p class="text-gray-700">
+              On platforms like Airbnb and VRBO, cleanliness is the number one factor in guest reviews. One bad review about cleanliness can damage your listing's reputation and cost you thousands in lost bookings. Our thorough, consistent cleaning ensures your property earns 5-star cleanliness ratings every time, protecting your hard-earned reputation.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Maximize Booking Availability</h3>
+            <p class="text-gray-700">
+              Fast, reliable turnover cleaning means you can confidently accept back-to-back bookings without worrying whether your property will be ready on time. Same-day service lets you maximize your rental calendar during peak Norris Lake season, increasing your rental income potential by reducing downtime between guests.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <div class="text-4xl mb-4">🔍</div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Damage Detection & Reporting</h3>
+            <p class="text-gray-700">
+              Our team inspects your property during each turnover and reports any damages, stains, missing items, or maintenance issues. This proactive approach lets you address problems before they worsen and provides documentation if you need to make guest damage claims. Protect your investment with professional oversight.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <div class="text-4xl mb-4">💼</div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Professional Property Management</h3>
+            <p class="text-gray-700">
+              Many vacation rental owners don't live near their Norris Lake properties. We provide cleaning reports and photos after each turnover so you can verify your property's condition remotely. Consistent pricing and detailed invoicing make budgeting and accounting simple. Professional service that supports your rental business.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <div class="text-4xl mb-4">🧴</div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Professional Supplies & Equipment</h3>
+            <p class="text-gray-700">
+              We bring all professional-grade cleaning supplies and equipment to every job. Our eco-friendly products are safe for vacation rental guests with sensitivities and leave no harsh chemical odors. You don't need to stock cleaning supplies or worry about running out between turnovers—we've got it covered.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+            <div class="text-4xl mb-4">🤝</div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900">Reliable Partnership You Can Trust</h3>
+            <p class="text-gray-700">
+              Your vacation rental income depends on reliable service you can count on. We'll never leave you scrambling to find last-minute cleaning before guests arrive. Background-checked team, consistent quality, clear communication, and the professionalism that serious vacation rental owners require. We're invested in your success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Map -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Our Clinton Service Area
+        </h2>
+        <p class="text-center text-gray-600 mb-8 text-lg">
+          Covering all of Clinton and the Norris Lake vacation rental area
+        </p>
+
+        <!-- Map Placeholder -->
+        <div class="bg-white rounded-lg shadow-lg p-4">
+          <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+            <!-- Google Maps embed will go here -->
+            <div class="text-center">
+              <p class="text-lg font-semibold mb-2">Clinton & Norris Lake Service Area Map</p>
+              <p class="text-sm">Interactive map showing coverage of Clinton and surrounding vacation rental areas</p>
+            </div>
+          </div>
+          <div class="mt-6 text-center">
+            <p class="text-gray-700 mb-2">
+              <strong>Complete coverage including:</strong>
+            </p>
+            <p class="text-gray-600">
+              ZIP codes 37716, 37717 and all Clinton neighborhoods plus Norris Lake vacation home areas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          What Clinton Residents Are Saying
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Real reviews from Clinton families and Norris Lake vacation rental owners
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "I own three vacation rentals near Norris Lake and Hero House Cleaning has been a game-changer for my business. They're fast, thorough, and incredibly reliable—even during peak summer season when I have back-to-back bookings. My guest reviews consistently mention how clean the properties are. Highly recommend!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Michael T.</p>
+              <p class="text-gray-600">Vacation Rental Owner, Clinton TN 37716</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "Between work and kids, keeping our Clinton home clean was impossible. Hero House Cleaning comes bi-weekly and does an amazing job. It's such a relief to come home to a clean house without spending my weekends cleaning. The team is professional, friendly, and trustworthy."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Jennifer & David M.</p>
+              <p class="text-gray-600">North Clinton, TN 37716</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "I live in Knoxville but own a lakefront vacation rental near Clinton. Hero House Cleaning provides cleaning reports and photos after each turnover so I know my property is in great shape even though I'm not there. They've caught maintenance issues before they became big problems. Worth every penny."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Sarah K.</p>
+              <p class="text-gray-600">Norris Lake Rental Owner</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We hired Hero for a deep clean before listing our Clinton home for sale. They did an incredible job—every room looked amazing. Our realtor said it was one of the cleanest listings she'd photographed. We ended up getting multiple offers and sold above asking price. Thanks Hero!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Robert & Linda S.</p>
+              <p class="text-gray-600">Downtown Clinton, TN 37716</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            Join the growing number of satisfied Clinton residents and vacation rental owners who trust Hero House Cleaning.
+          </p>
+          <a href="#contact-form" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg">
+            Get Your Free Quote Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          See the Hero Difference in Clinton Properties
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Real results from Clinton homes and Norris Lake vacation rentals we've transformed
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Before/After 1 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-500">
+              <span>Before/After Photo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Norris Lake Rental - Turnover Clean</h3>
+              <p class="text-gray-600">Fast turnover cleaning for vacation rental between back-to-back bookings</p>
+            </div>
+          </div>
+
+          <!-- Before/After 2 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-500">
+              <span>Before/After Photo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Clinton Residence - Deep Clean</h3>
+              <p class="text-gray-600">Complete deep cleaning for Clinton family home</p>
+            </div>
+          </div>
+
+          <!-- Before/After 3 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="aspect-video bg-gray-200 flex items-center justify-center text-gray-500">
+              <span>Before/After Photo</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Vacation Home Kitchen - Move-Out</h3>
+              <p class="text-gray-600">Move-out cleaning for seasonal vacation property closure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Everything you need to know about house cleaning service in Clinton and vacation rental turnover for Norris Lake properties
+        </p>
+
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you clean vacation rentals near Norris Lake?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We specialize in vacation rental turnover cleaning for Norris Lake properties. Many Clinton homeowners have vacation rentals at Norris Lake, and we provide fast, thorough turnover cleaning between guests. We understand the tight timelines and high standards required for vacation rental properties, ensuring your guests arrive to a spotless home every time. Same-day service available for last-minute bookings.
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you serve all Clinton neighborhoods?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Absolutely! We serve all Clinton neighborhoods including downtown Clinton, North Clinton, South Clinton, and surrounding areas. We cover ZIP codes 37716 and 37717. Whether you're near the Anderson County Courthouse, Green McAdoo Cultural Center, or anywhere in the Clinton area, we provide reliable <strong>house cleaning service</strong>. We also serve vacation properties in the Norris Lake area north of Clinton.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Can you handle both residential homes and vacation properties?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We clean both primary residences in Clinton and vacation properties near Norris Lake. For residential homes, we offer weekly, bi-weekly, and monthly recurring cleaning. For vacation properties, we provide fast turnover cleaning between guests with flexible scheduling to meet your rental calendar needs. Many of our clients use us for both their Clinton home and their Norris Lake vacation rental.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What's included in your Clinton cleaning service?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Our standard cleaning includes: dusting all surfaces, vacuuming and mopping floors, cleaning and sanitizing bathrooms (toilets, sinks, showers, tubs, mirrors), kitchen cleaning (countertops, sinks, outside of appliances, cabinet fronts), wiping down baseboards, emptying trash, and making beds. Our <a href="/deep-cleaning" class="text-blue-600 hover:text-blue-800 font-semibold">deep cleaning</a> adds interior appliances, inside cabinets, window sills, and detailed baseboard cleaning. Vacation rental turnover includes fresh linens, restocking supplies, and damage inspection.
+            </p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How quickly can you turn over a vacation rental?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              We understand that vacation rental turnovers often have tight deadlines. For standard-sized vacation homes (1,500-2,500 square feet), we can typically complete turnover cleaning within 3-4 hours. We offer same-day service when your schedule requires it and can coordinate with your check-out and check-in times. Just let us know your rental calendar and we'll work around it. For larger luxury properties, we allocate additional time to ensure thorough cleaning.
+            </p>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Are you insured to work in Clinton homes?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes, Hero House Cleaning is fully insured and bonded. We carry comprehensive liability insurance and workers' compensation coverage. This is especially important for vacation rental owners who need documentation for their property insurance. We can provide certificates of insurance (COI) when needed for property managers, landlords, or insurance requirements.
+            </p>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you provide cleaning supplies or do I need to supply them?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              We bring all professional-grade cleaning supplies and equipment for every job. Our eco-friendly products are safe for families, pets, and the environment—important for both residential homes with children and vacation rentals where guests may have sensitivities. For vacation rentals, if you prefer specific products or brands to maintain consistency, we're happy to use what you provide. Just let us know your preferences when booking.
+            </p>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you provide cleaning reports for vacation rentals?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We understand that many vacation rental owners don't live near their properties. We can provide cleaning reports and photos after each turnover so you can verify your property's condition remotely. These reports include confirmation of completed tasks, any damages or maintenance issues discovered, inventory of supplies that need restocking, and photos of key areas. This documentation is valuable for insurance claims and property management.
+            </p>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How do I schedule cleaning service in Clinton?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Scheduling is easy! Call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>, fill out our online booking form, or <a href="/contact" class="text-blue-600 hover:text-blue-800 font-semibold">request a free quote</a> on our website. For residential homes, we'll discuss your preferred frequency (weekly, bi-weekly, or monthly). For vacation rentals, we can integrate with your booking calendar or you can notify us of upcoming turnovers as needed. Many vacation rental owners set up recurring service during peak season for consistent, reliable turnover.
+            </p>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="bg-gray-50 rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What makes Hero House Cleaning different from other cleaning services?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              We're a local, family-owned business—not a national franchise with rotating staff. You get the same trusted, background-checked team every visit, whether for your Clinton home or Norris Lake vacation rental. We specialize in both residential and vacation rental cleaning, understanding the unique needs of each. Our pricing is transparent with no hidden fees, our service is reliable (we'll never cancel on you), and we're fully insured and bonded. We take pride in serving our Anderson County neighbors and building long-term relationships with our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-50 to-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          Transparent Pricing for Clinton & Norris Lake Properties
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          No hidden fees. No surprise charges. Just honest, upfront pricing for residential homes and vacation rentals.
+        </p>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$160+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Regular Cleaning</div>
+              <div class="text-sm text-gray-600">Weekly or bi-weekly residential service</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$330+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Deep Cleaning</div>
+              <div class="text-sm text-gray-600">Top-to-bottom detail clean</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$378+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Vacation Rental Turnover</div>
+              <div class="text-sm text-gray-600">Fast turnover between guests</div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-6">
+            <p class="text-gray-700 mb-4">
+              <strong>No travel fees within Clinton service area</strong><br />
+              Pricing based on property size and condition. Residential homes and vacation rentals—we serve them all with transparent, fair pricing.
+            </p>
+            <a href="/pricing-guide" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              View Complete Pricing Guide
+            </a>
+          </div>
+        </div>
+
+        <p class="text-gray-600">
+          Serving all Clinton ZIP codes: 37716, 37717 and Norris Lake vacation rental areas
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Book Your Clinton Cleaning Today
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Join Clinton families and Norris Lake vacation rental owners who trust Hero House Cleaning. Get your free quote in minutes.
+          </p>
+          <div class="inline-block bg-blue-50 rounded-lg px-6 py-3 mb-6">
+            <p class="text-2xl font-bold text-blue-600">
+              <a href="tel:8655071405" class="hover:text-blue-800 transition">(865) 507-1405</a>
+            </p>
+            <p class="text-sm text-gray-600">Residential homes & vacation rental turnover service</p>
+          </div>
+        </div>
+
+        <!-- Form Placeholder -->
+        <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+          <div class="text-center text-gray-500 py-12">
+            <!-- GoHighLevel form embed will go here -->
+            <p class="text-lg mb-4">Contact Form</p>
+            <p class="text-sm mb-6">GoHighLevel form integration for Clinton location</p>
+            <div class="space-y-4 max-w-md mx-auto text-left">
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Name *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Your name</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Phone *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">(865) 123-4567</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">your@email.com</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Service Needed *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Select service type</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Property Type</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Residential or Vacation Rental</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400 h-24">Tell us about your property...</div>
+              </div>
+              <button class="w-full bg-yellow-400 text-gray-900 px-6 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition">
+                Get My Free Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center text-gray-600">
+          <p class="mb-2">
+            <strong>Prefer to talk?</strong> Call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>
+          </p>
+          <p class="text-sm">
+            Monday-Friday: 8am-6pm | Saturday: 9am-5pm | Sunday: Closed
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready for a Cleaner Clinton Home or Vacation Rental?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100">
+          Experience the Hero difference. Reliable service for Clinton families and Norris Lake vacation rental owners. Transparent pricing and exceptional results—every single time.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <a href="tel:8655071405" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405
+          </a>
+          <a href="#contact-form" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            Get Free Quote
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">Residential & Vacation Homes</div>
+              <div class="text-blue-100 text-sm">Expert service for both property types</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">Same-Day Turnover Available</div>
+              <div class="text-blue-100 text-sm">Fast service for tight schedules</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">100% Satisfaction</div>
+              <div class="text-blue-100 text-sm">Guaranteed or money back</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Internal Links Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6 text-center text-gray-900">Explore Our Services</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <a href="/services" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏠</div>
+            <div class="font-semibold text-gray-900">All Services</div>
+          </a>
+          <a href="/deep-cleaning" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">✨</div>
+            <div class="font-semibold text-gray-900">Deep Cleaning</div>
+          </a>
+          <a href="/move-in-out-cleaning" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📦</div>
+            <div class="font-semibold text-gray-900">Move In/Out</div>
+          </a>
+          <a href="/pricing-guide" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">💲</div>
+            <div class="font-semibold text-gray-900">Pricing</div>
+          </a>
+          <a href="/locations" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📍</div>
+            <div class="font-semibold text-gray-900">Service Areas</div>
+          </a>
+          <a href="/locations/oak-ridge" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏛️</div>
+            <div class="font-semibold text-gray-900">Oak Ridge</div>
+          </a>
+          <a href="/about" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">👥</div>
+            <div class="font-semibold text-gray-900">About Us</div>
+          </a>
+          <a href="/contact" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📞</div>
+            <div class="font-semibold text-gray-900">Contact</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Custom styles for this location page */
+  .hero-section {
+    background-image: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  }
+
+  .prose {
+    max-width: none;
+  }
+
+  .prose p {
+    margin-bottom: 1.5em;
+  }
+
+  /* Ensure proper spacing and readability */
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

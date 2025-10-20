@@ -1,0 +1,2502 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const pageTitle = "Move Out Cleaning Service Knoxville TN | Hero House";
+const pageDescription = "Move out cleaning in Knoxville TN. $378+, deposit-back guarantee. Same-day available. Background-checked team. Call (865) 507-1405!";
+const phoneNumber = "(865) 507-1405";
+const phoneNumberLink = "tel:+18655071405";
+
+// Structured Data - LocalBusiness Schema
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Hero House Cleaning - Move Out Cleaning",
+  "image": "https://herohousecleaning.com/logo.png",
+  "@id": "https://herohousecleaning.com/services/move-out-cleaning",
+  "url": "https://herohousecleaning.com/services/move-out-cleaning",
+  "telephone": "865-507-1405",
+  "priceRange": "$378+",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Knoxville",
+    "addressLocality": "Knoxville",
+    "addressRegion": "TN",
+    "postalCode": "37919",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.9606,
+    "longitude": -83.9207
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "175"
+  }
+};
+
+// Service Schema
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Move Out Cleaning Service",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Hero House Cleaning"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Knoxville",
+    "@id": "https://en.wikipedia.org/wiki/Knoxville,_Tennessee"
+  },
+  "offers": {
+    "@type": "Offer",
+    "name": "Move Out Cleaning",
+    "price": "378",
+    "priceCurrency": "USD",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "378",
+      "priceCurrency": "USD",
+      "referenceQuantity": {
+        "@type": "QuantitativeValue",
+        "value": "1",
+        "unitText": "service"
+      }
+    }
+  }
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does move out cleaning cost in Knoxville?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our move out cleaning service starts at $378 for a standard home (1,500 sq ft). The final price depends on your home's size, condition, and any add-ons you need. We provide transparent, upfront pricing before we start. Call (865) 507-1405 for an exact quote based on your specific home."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will move out cleaning help me get my security deposit back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our thorough move out cleaning is specifically designed to meet landlord and property manager standards. We clean every detail that landlords inspect, from baseboards to inside appliances. Many clients report getting 100% of their deposit back after our service. We even offer a deposit back guarantee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How soon before move-out day should I book cleaning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend booking 5-7 days in advance to ensure availability. However, we also offer same-day and next-day emergency move out cleaning for urgent situations. The ideal timing is to schedule cleaning after you've moved all furniture and belongings out, but before your final walk-through with your landlord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in move out cleaning service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our move out cleaning includes everything: deep cleaning all rooms, inside all appliances (oven, refrigerator, dishwasher), inside all cabinets and closets, baseboards and trim, window sills, doors and frames, light fixtures, bathrooms deep scrubbed, kitchen completely sanitized, and all floors vacuumed and mopped. It's our most comprehensive service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer same-day move out cleaning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We understand moving situations can be unpredictable. We offer same-day move out cleaning service in Knoxville when our schedule allows. Call (865) 507-1405 as early as possible for same-day availability. We'll do our best to accommodate your urgent moving timeline."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does move out cleaning take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Move out cleaning typically takes 4-8 hours depending on your home's size and condition. A 1,500 sq ft home usually takes 4-5 hours, while larger homes (2,500+ sq ft) can take 6-8 hours. Empty homes clean faster than furnished ones. We'll provide an estimated timeframe when you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my landlord says the cleaning isn't good enough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer a 100% satisfaction guarantee. If your landlord or property manager identifies any areas that need additional cleaning, contact us within 24 hours and we'll return to re-clean those areas at no additional charge. Your satisfaction and getting your deposit back are our top priorities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be present during move out cleaning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you don't need to be present. Most clients provide us with keys or access codes and go about their moving day. We'll text you when we arrive and when we finish. You're also welcome to be there if you prefer - whatever works best for your moving schedule."
+      }
+    }
+  ]
+};
+
+// Breadcrumb Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://herohousecleaning.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://herohousecleaning.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Move Out Cleaning",
+      "item": "https://herohousecleaning.com/services/move-out-cleaning"
+    }
+  ]
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> / <a href="/services">Services</a> / Move Out Cleaning
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="trust-badges">
+            <span class="badge">4.8 Stars</span>
+            <span class="badge">175+ Reviews</span>
+            <span class="badge">Same-Day Available</span>
+          </div>
+
+          <h1>Move Out Cleaning Service Knoxville TN | Get Your Deposit Back</h1>
+
+          <p class="hero-subtitle">Professional move out cleaning service that helps you get your full security deposit back. Thorough, detail-oriented, and trusted by tenants, landlords, and real estate agents across Knoxville.</p>
+
+          <div class="hero-features">
+            <span>Starting at $378+</span>
+            <span>100% Satisfaction Guarantee</span>
+            <span>Background-Checked Team</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#quote-form" class="btn btn-primary btn-large">Get Your Free Quote</a>
+            <a href={phoneNumberLink} class="btn btn-secondary btn-large">
+              <span class="phone-icon">📞</span>
+              Call {phoneNumber}
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-placeholder">
+          <div class="placeholder-content">
+            <p>Before/After Move-Out Photo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Your Deposit Back Section -->
+  <section class="deposit-guarantee-section">
+    <div class="container">
+      <div class="guarantee-content">
+        <h2>Get Your Security Deposit Back - Guaranteed</h2>
+        <p class="section-intro">Moving out? Don't lose hundreds or thousands of dollars because of cleaning issues. Our professional move out cleaning service ensures your rental passes even the most demanding landlord inspection.</p>
+
+        <div class="guarantee-grid">
+          <div class="guarantee-card">
+            <div class="guarantee-icon">💰</div>
+            <h3>Average Deposit: $1,200</h3>
+            <p>That's what most Knoxville tenants stand to lose if cleaning isn't up to landlord standards. Our $378+ service protects your $1,200+ deposit - that's over 3x ROI.</p>
+          </div>
+
+          <div class="guarantee-card featured">
+            <div class="guarantee-icon">✓</div>
+            <h3>100% Deposit Back Guarantee</h3>
+            <p>If your landlord deducts cleaning fees after our service, we'll return to re-clean those areas free of charge. Your satisfaction and your deposit are fully protected.</p>
+          </div>
+
+          <div class="guarantee-card">
+            <div class="guarantee-icon">⭐</div>
+            <h3>Landlord-Approved Standards</h3>
+            <p>We know exactly what landlords and property managers look for during move-out inspections. Our checklist covers every detail they'll check.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section class="whats-included-section">
+    <div class="container">
+      <h2>What's Included in Move Out Cleaning Service</h2>
+      <p class="section-intro">Our move out cleaning is the most thorough service we offer - designed specifically to meet landlord standards and pass final inspections. Here's exactly what we clean:</p>
+
+      <div class="checklist-grid">
+        <div class="checklist-column">
+          <h3>Kitchen Deep Clean</h3>
+          <ul class="checklist">
+            <li>Inside oven - Remove all grease and baked-on food</li>
+            <li>Inside refrigerator - Including shelves and drawers</li>
+            <li>Inside dishwasher - Remove buildup and residue</li>
+            <li>Inside microwave - Scrub clean</li>
+            <li>Inside all cabinets and drawers</li>
+            <li>Countertops deep cleaned and sanitized</li>
+            <li>Sink scrubbed and polished</li>
+            <li>Stovetop and range hood degreased</li>
+            <li>Backsplash cleaned thoroughly</li>
+            <li>Cabinet fronts wiped down</li>
+            <li>Baseboards and trim</li>
+            <li>Floors swept, mopped, and scrubbed</li>
+            <li>Light fixtures cleaned</li>
+            <li>Walls spot-cleaned</li>
+          </ul>
+        </div>
+
+        <div class="checklist-column">
+          <h3>Bathrooms Complete Clean</h3>
+          <ul class="checklist">
+            <li>Toilets deep cleaned inside and out</li>
+            <li>Showers and tubs scrubbed (grout included)</li>
+            <li>Sinks and vanities cleaned and sanitized</li>
+            <li>Mirrors and glass spotless</li>
+            <li>Inside medicine cabinets and vanity drawers</li>
+            <li>Faucets and fixtures polished</li>
+            <li>Exhaust fans cleaned</li>
+            <li>Tile and grout detailed</li>
+            <li>Baseboards and trim</li>
+            <li>Floors scrubbed on hands and knees</li>
+            <li>Walls and doors spot-cleaned</li>
+            <li>Light fixtures cleaned</li>
+          </ul>
+        </div>
+
+        <div class="checklist-column">
+          <h3>All Rooms Throughout Home</h3>
+          <ul class="checklist">
+            <li>Inside all closets - Wiped down and vacuumed</li>
+            <li>All baseboards and trim throughout</li>
+            <li>Door frames and doors (both sides)</li>
+            <li>Light switches and outlet covers</li>
+            <li>Ceiling fans (top and bottom of blades)</li>
+            <li>Light fixtures and ceiling lights</li>
+            <li>Window sills and tracks</li>
+            <li>Blinds dusted or wet-wiped</li>
+            <li>Walls spot-cleaned for marks</li>
+            <li>Carpet vacuumed thoroughly (all edges)</li>
+            <li>Hard floors mopped and detailed</li>
+            <li>Vents and registers cleaned</li>
+            <li>Cobwebs removed</li>
+          </ul>
+        </div>
+
+        <div class="checklist-column">
+          <h3>Additional Areas</h3>
+          <ul class="checklist">
+            <li>Laundry room - Washer/dryer area cleaned</li>
+            <li>Garage swept (if applicable)</li>
+            <li>Patio/deck swept (if applicable)</li>
+            <li>Entry doors and frames</li>
+            <li>Stairways vacuumed/mopped</li>
+            <li>Handrails wiped down</li>
+            <li>All trash removed</li>
+            <li>Final walkthrough inspection</li>
+          </ul>
+
+          <div class="additional-note">
+            <h4>Not Included (But Available):</h4>
+            <ul class="not-included-list">
+              <li>Interior window washing ($12/window)</li>
+              <li>Carpet steam cleaning (separate quote)</li>
+              <li>Exterior window washing</li>
+              <li>Yard work or landscaping</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="checklist-cta">
+        <p>This comprehensive checklist ensures every detail landlords inspect is spotless. That's why our clients consistently get their full deposits back.</p>
+        <a href="#quote-form" class="btn btn-primary">Get Your Move-Out Cleaning Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Move-Out vs Regular Cleaning -->
+  <section class="comparison-section">
+    <div class="container">
+      <h2>Move Out Cleaning vs Regular Cleaning: What's the Difference?</h2>
+      <p class="section-intro">Understanding the difference helps you choose the right service for your needs.</p>
+
+      <div class="comparison-table">
+        <table>
+          <thead>
+            <tr>
+              <th>What We Clean</th>
+              <th>Regular Cleaning</th>
+              <th>Move Out Cleaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Inside Appliances</strong></td>
+              <td>Exterior only</td>
+              <td class="included">✓ Inside oven, fridge, dishwasher, microwave</td>
+            </tr>
+            <tr>
+              <td><strong>Cabinets & Closets</strong></td>
+              <td>Exterior only</td>
+              <td class="included">✓ Inside all cabinets, drawers, and closets</td>
+            </tr>
+            <tr>
+              <td><strong>Baseboards</strong></td>
+              <td>Spot cleaned</td>
+              <td class="included">✓ All baseboards detailed throughout</td>
+            </tr>
+            <tr>
+              <td><strong>Window Sills & Tracks</strong></td>
+              <td>Quick wipe</td>
+              <td class="included">✓ Detailed cleaning of all sills and tracks</td>
+            </tr>
+            <tr>
+              <td><strong>Light Fixtures</strong></td>
+              <td>Dusted</td>
+              <td class="included">✓ Removed and deep cleaned</td>
+            </tr>
+            <tr>
+              <td><strong>Walls</strong></td>
+              <td>Not included</td>
+              <td class="included">✓ Spot-cleaned for marks and scuffs</td>
+            </tr>
+            <tr>
+              <td><strong>Time Required</strong></td>
+              <td>2-3 hours</td>
+              <td>4-8 hours</td>
+            </tr>
+            <tr>
+              <td><strong>Intensity Level</strong></td>
+              <td>Maintenance cleaning</td>
+              <td>Deep, detailed, inspection-ready</td>
+            </tr>
+            <tr>
+              <td><strong>Best For</strong></td>
+              <td>Ongoing maintenance</td>
+              <td>Moving out, getting deposit back</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="comparison-note">
+        <p><strong>Bottom line:</strong> Move out cleaning is 2-3x more detailed and time-intensive than regular cleaning. It's specifically designed to pass landlord inspections and meet lease agreement cleaning requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <h2>Move Out Cleaning Pricing - Transparent & Upfront</h2>
+      <p class="section-intro">No hidden fees, no surprises. Here's exactly what move out cleaning costs in Knoxville:</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>1,000-1,500 sq ft</h3>
+          <div class="price">$378-$450</div>
+          <p class="price-description">1-2 bedroom apartments or small homes</p>
+          <ul class="price-features">
+            <li>2-3 bathrooms included</li>
+            <li>All appliances deep cleaned</li>
+            <li>Typically 4-5 hours</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Common</div>
+          <h3>1,500-2,000 sq ft</h3>
+          <div class="price">$450-$520</div>
+          <p class="price-description">2-3 bedroom homes (standard size)</p>
+          <ul class="price-features">
+            <li>2-3 bathrooms included</li>
+            <li>All appliances deep cleaned</li>
+            <li>Typically 5-6 hours</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <h3>2,000-2,500 sq ft</h3>
+          <div class="price">$520-$590</div>
+          <p class="price-description">3-4 bedroom larger homes</p>
+          <ul class="price-features">
+            <li>3+ bathrooms included</li>
+            <li>All appliances deep cleaned</li>
+            <li>Typically 6-7 hours</li>
+          </ul>
+        </div>
+
+        <div class="pricing-card">
+          <h3>2,500-3,000 sq ft</h3>
+          <div class="price">$590-$660</div>
+          <p class="price-description">Large 4-5 bedroom homes</p>
+          <ul class="price-features">
+            <li>3+ bathrooms included</li>
+            <li>All appliances deep cleaned</li>
+            <li>Typically 7-8 hours</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pricing-notes">
+        <h3>What Affects Your Final Price:</h3>
+        <ul>
+          <li><strong>Home size</strong> - Larger homes take more time and supplies</li>
+          <li><strong>Home condition</strong> - Heavily soiled homes may require extra attention</li>
+          <li><strong>Number of appliances</strong> - Additional appliances add cleaning time</li>
+          <li><strong>Carpet condition</strong> - Deep stains may need professional carpet cleaning (separate service)</li>
+          <li><strong>Timeline urgency</strong> - Same-day service may have premium pricing</li>
+        </ul>
+
+        <p class="pricing-cta-text">Want an exact quote for your home? Get instant pricing online or call us.</p>
+        <div class="pricing-cta-buttons">
+          <a href="/house-cleaning-cost-knoxville" class="btn btn-outline">View Detailed Pricing Guide</a>
+          <a href="#quote-form" class="btn btn-primary">Get Your Instant Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Landlords Trust Us -->
+  <section class="landlords-section">
+    <div class="container">
+      <h2>Why Landlords & Property Managers Trust Hero House Cleaning</h2>
+      <p class="section-intro">We're not just hired by tenants - landlords and property management companies across Knoxville regularly hire us to prepare properties for new tenants. Here's why:</p>
+
+      <div class="landlord-benefits">
+        <div class="benefit-card">
+          <div class="benefit-icon">✓</div>
+          <h3>We Know What You Inspect</h3>
+          <p>After cleaning hundreds of move-outs in Knoxville, we know exactly what landlords check during final walk-throughs. Baseboards, appliance interiors, closet shelves, bathroom grout - we don't miss a single detail on your inspection checklist.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">📋</div>
+          <h3>Documentation Available</h3>
+          <p>Need proof of professional cleaning for your records? We provide detailed checklists and before/after photo documentation upon request, making your rental turnover process smooth and documented.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3>Fast Turnaround</h3>
+          <p>Time between tenants costs you money. We offer same-day and next-day service to get your property rent-ready fast. Many property managers keep us on speed dial for quick turnarounds between leases.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3>Insured & Professional</h3>
+          <p>Fully insured and bonded, with background-checked team members. You can trust us with keys and property access. We treat every rental like it's our own investment property.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🤝</div>
+          <h3>Flexible Scheduling</h3>
+          <p>Work around your showing schedule and new tenant move-in dates. We coordinate seamlessly with your timeline to ensure the property is spotless exactly when you need it.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3>Volume Discounts Available</h3>
+          <p>Manage multiple properties? We offer discounted rates for property management companies and landlords with multiple units. Let's discuss a partnership that saves you time and money.</p>
+        </div>
+      </div>
+
+      <div class="landlord-cta">
+        <h3>Property Managers & Landlords:</h3>
+        <p>Call <a href={phoneNumberLink}>{phoneNumber}</a> to discuss volume pricing and priority scheduling for your properties.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- When to Book Section -->
+  <section class="timing-section">
+    <div class="container">
+      <h2>When to Book Your Move Out Cleaning</h2>
+      <p class="section-intro">Timing matters when coordinating move out cleaning with your moving schedule. Here's our recommended timeline:</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">7-10 Days Before</div>
+          <div class="timeline-content">
+            <h3>Ideal Booking Window</h3>
+            <p>Book your move out cleaning 7-10 days in advance to ensure availability at your preferred date and time. This gives you peace of mind and secures your spot on our schedule.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">2-3 Days Before</div>
+          <div class="timeline-content">
+            <h3>Last-Minute Booking</h3>
+            <p>Still time to book! We can usually accommodate bookings 2-3 days out, though your preferred time slot may be limited. Call us directly for fastest scheduling.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item highlighted">
+          <div class="timeline-marker">Move-Out Day</div>
+          <div class="timeline-content">
+            <h3>Perfect Timing: Clean AFTER Moving</h3>
+            <p>Schedule cleaning for after you've completely moved out all furniture and belongings. An empty home allows us to clean more thoroughly and faster. Ideally, book cleaning 1-2 days before your final walk-through with your landlord.</p>
+            <p class="pro-tip"><strong>Pro tip:</strong> Remove all personal items, but leave cleaning supplies and trash bags for our team to use and dispose of.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">Same-Day</div>
+          <div class="timeline-content">
+            <h3>Emergency Move-Out Cleaning</h3>
+            <p>Unexpected timeline change? Need cleaning TODAY? We offer same-day move out cleaning when our schedule allows. Call {phoneNumber} as early as possible. We'll do our best to accommodate urgent moving situations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timing-tips">
+        <h3>Common Scheduling Questions:</h3>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h4>Should I clean before you arrive?</h4>
+            <p>No need! That's literally what you're paying us for. Just remove all personal belongings and we'll handle the rest. However, clearing out trash and organizing items for disposal helps us work more efficiently.</p>
+          </div>
+          <div class="tip-card">
+            <h4>Do I need to be present?</h4>
+            <p>No, you don't need to be there. Most clients provide us with keys or access codes and focus on their moving day. We'll text you when we arrive and when we're finished. You're welcome to be present if you prefer.</p>
+          </div>
+          <div class="tip-card">
+            <h4>What if my move-out date changes?</h4>
+            <p>Life happens! Just contact us as soon as you know your timeline has changed. We'll do our best to reschedule you without any penalties. We understand moving dates can be unpredictable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Same-Day Service Highlight -->
+  <section class="same-day-section">
+    <div class="container">
+      <div class="same-day-content">
+        <div class="same-day-icon">⚡</div>
+        <h2>Need Move Out Cleaning Today? We've Got You.</h2>
+        <p>Unexpected move-out? Landlord demanding immediate cleaning? Security deposit on the line? We understand moving can throw curveballs. That's why we offer same-day emergency move out cleaning service when our schedule allows.</p>
+
+        <div class="same-day-features">
+          <div class="same-day-feature">
+            <h3>Call Before Noon</h3>
+            <p>Best chance for same-day service</p>
+          </div>
+          <div class="same-day-feature">
+            <h3>Available 7 Days/Week</h3>
+            <p>Including weekends</p>
+          </div>
+          <div class="same-day-feature">
+            <h3>Fast Response</h3>
+            <p>We'll confirm availability within 30 minutes</p>
+          </div>
+        </div>
+
+        <div class="same-day-cta">
+          <a href={phoneNumberLink} class="btn btn-primary btn-large">Call Now for Same-Day: {phoneNumber}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Gallery -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Move Out Cleaning Results - Before & After</h2>
+      <p class="section-intro">See the dramatic transformations our professional move out cleaning delivers:</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <div class="image-comparison">
+            <div class="before-image">
+              <span class="label">Before</span>
+              <div class="placeholder-image">Kitchen Before</div>
+            </div>
+            <div class="after-image">
+              <span class="label">After</span>
+              <div class="placeholder-image">Kitchen After</div>
+            </div>
+          </div>
+          <h3>Kitchen Deep Clean</h3>
+          <p>Greasy oven and grimy appliances transformed to showroom condition. This kitchen passed landlord inspection with flying colors.</p>
+        </div>
+
+        <div class="gallery-item">
+          <div class="image-comparison">
+            <div class="before-image">
+              <span class="label">Before</span>
+              <div class="placeholder-image">Bathroom Before</div>
+            </div>
+            <div class="after-image">
+              <span class="label">After</span>
+              <div class="placeholder-image">Bathroom After</div>
+            </div>
+          </div>
+          <h3>Bathroom Restoration</h3>
+          <p>Stubborn soap scum and hard water stains completely removed. Grout scrubbed and sanitized. Looks brand new.</p>
+        </div>
+
+        <div class="gallery-item">
+          <div class="image-comparison">
+            <div class="before-image">
+              <span class="label">Before</span>
+              <div class="placeholder-image">Living Room Before</div>
+            </div>
+            <div class="after-image">
+              <span class="label">After</span>
+              <div class="placeholder-image">Living Room After</div>
+            </div>
+          </div>
+          <h3>Living Space Transformation</h3>
+          <p>From cluttered and dusty to pristine and move-in ready. Baseboards, windows, and every detail addressed.</p>
+        </div>
+      </div>
+
+      <div class="gallery-cta">
+        <p>Your rental can look this good too. Book your move out cleaning today.</p>
+        <a href="#quote-form" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Move-Out Cleaning Checklist Download -->
+  <section class="checklist-download-section">
+    <div class="container">
+      <div class="checklist-download-content">
+        <h2>Free Move-Out Cleaning Checklist</h2>
+        <p>Want to know exactly what your landlord will inspect? Download our comprehensive move-out cleaning checklist used by Knoxville landlords and property managers. Use it to inspect your own cleaning or to verify we've covered everything.</p>
+
+        <div class="checklist-visual">
+          <div class="checklist-preview">
+            <h3>Included in Checklist:</h3>
+            <ul>
+              <li>✓ Room-by-room inspection items</li>
+              <li>✓ Common landlord deduction areas</li>
+              <li>✓ Cleaning supply recommendations</li>
+              <li>✓ Time estimates for DIY cleaning</li>
+              <li>✓ When to hire professionals vs DIY</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="checklist-cta">
+          <a href="#quote-form" class="btn btn-primary btn-large">Get Free Checklist + Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2>What Knoxville Tenants Say About Our Move-Out Cleaning</h2>
+      <p class="section-intro">Real reviews from real people who got their deposits back:</p>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Kayla was awesome! She did an amazing job with our move in cleaning! Whenever we need cleaning service we will definitely request her! Thank you Kayla and everyone at Hero House Cleaning! They made our moving transition so much easier."</p>
+          <div class="testimonial-author">
+            <strong>Elizabeth W.</strong>
+            <span>Move-In Clean - Knoxville</span>
+          </div>
+          <div class="testimonial-result">
+            <span class="result-badge">✓ Full Deposit Returned</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"I was stressed about getting my $1,500 deposit back from a very picky landlord. Hero House Cleaning was thorough, professional, and cleaned things I didn't even think about. My landlord did the walk-through and didn't find a single thing to complain about. Got my full deposit back! Worth every penny."</p>
+          <div class="testimonial-author">
+            <strong>Michael R.</strong>
+            <span>Move-Out Clean - West Knoxville</span>
+          </div>
+          <div class="testimonial-result">
+            <span class="result-badge">✓ $1,500 Deposit Returned</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Needed same-day cleaning because our move-out date got moved up unexpectedly. Hero House Cleaning came through for us! They fit us in same day, spent 6 hours making our apartment spotless, and we passed the final inspection with zero cleaning deductions. Lifesavers!"</p>
+          <div class="testimonial-author">
+            <strong>Amanda & Jake T.</strong>
+            <span>Move-Out Clean - Farragut</span>
+          </div>
+          <div class="testimonial-result">
+            <span class="result-badge">✓ Same-Day Service Success</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"As a property manager, I've tried at least 5 different cleaning companies in Knoxville. Hero House Cleaning is now the only one I use for tenant turnover. They're reliable, thorough, and understand exactly what needs to be done to get a property rent-ready. Highly recommend to landlords and tenants alike."</p>
+          <div class="testimonial-author">
+            <strong>Jennifer M.</strong>
+            <span>Property Manager - Knoxville</span>
+          </div>
+          <div class="testimonial-result">
+            <span class="result-badge">✓ Trusted by Property Managers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-footer">
+        <p>Join hundreds of Knoxville tenants who got their deposits back. <a href="#quote-form">Book your move-out cleaning now</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Move Out Cleaning FAQs</h2>
+      <p class="section-intro">Everything you need to know about our move out cleaning service in Knoxville:</p>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How much does move out cleaning cost in Knoxville?</h3>
+          <div class="faq-answer">
+            <p>Our move out cleaning service starts at $378 for a standard home (1,500 sq ft). The final price depends on your home's size, condition, and any add-ons you need. A 1,000-1,500 sq ft apartment typically runs $378-$450, while a 2,000-2,500 sq ft home costs $520-$590. We provide transparent, upfront pricing before we start - no hidden fees or surprise charges. Call <a href={phoneNumberLink}>{phoneNumber}</a> for an exact quote based on your specific home and move-out timeline.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>Will move out cleaning help me get my security deposit back?</h3>
+          <div class="faq-answer">
+            <p>Yes! Our thorough move out cleaning is specifically designed to meet landlord and property manager standards in Knoxville. We clean every single detail that landlords inspect during final walk-throughs - from inside appliances to baseboards to closet shelves. Many of our clients report getting 100% of their deposit back after our service. We even offer a deposit back guarantee: if your landlord deducts cleaning fees after our service, we'll return to re-clean those areas at no additional charge. We're invested in your deposit being fully returned.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>How soon before move-out day should I book cleaning?</h3>
+          <div class="faq-answer">
+            <p>We recommend booking 5-7 days in advance to ensure availability at your preferred date and time. However, we understand that moving timelines can be unpredictable - we also offer same-day and next-day emergency move out cleaning for urgent situations. The ideal timing is to schedule cleaning after you've completely moved all furniture and belongings out (empty homes clean faster and more thoroughly), but before your final walk-through with your landlord. If you need cleaning TODAY, call <a href={phoneNumberLink}>{phoneNumber}</a> as early as possible and we'll do our absolute best to accommodate you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>What's included in move out cleaning service?</h3>
+          <div class="faq-answer">
+            <p>Our move out cleaning is the most comprehensive service we offer. It includes: deep cleaning all rooms, inside ALL appliances (oven, refrigerator, dishwasher, microwave), inside all cabinets, drawers, and closets, all baseboards and trim throughout the home, window sills and tracks, doors and frames (both sides), light fixtures and ceiling fans, bathroom deep scrubbing (including grout), kitchen completely degreased and sanitized, walls spot-cleaned for marks and scuffs, and all floors vacuumed and mopped. We also clean inside the laundry area, sweep the garage if applicable, and do a final walkthrough inspection. This checklist covers everything landlords look for during move-out inspections.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer same-day move out cleaning?</h3>
+          <div class="faq-answer">
+            <p>Yes! We understand that moving situations can be unpredictable and timelines can change suddenly. We offer same-day move out cleaning service in Knoxville when our schedule allows. For the best chance of same-day availability, call <a href={phoneNumberLink}>{phoneNumber}</a> as early in the day as possible (ideally before noon). We'll check our schedule and confirm availability within 30 minutes. Same-day service is available 7 days a week, including weekends. While we can't always guarantee same-day availability (especially during peak moving season in summer), we'll do everything possible to accommodate your urgent moving timeline.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does move out cleaning take?</h3>
+          <div class="faq-answer">
+            <p>Move out cleaning typically takes 4-8 hours depending on your home's size, condition, and how much detail work is needed. A 1,500 sq ft home usually takes 4-5 hours, a 2,000 sq ft home takes 5-6 hours, and larger homes (2,500+ sq ft) can take 6-8 hours. Empty homes clean significantly faster than furnished ones. Heavily soiled homes that haven't been cleaned in months may take longer. We'll provide an estimated timeframe when you book based on your specific situation. Our team works efficiently without sacrificing quality - we want to get your deposit back while respecting your moving timeline.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if my landlord says the cleaning isn't good enough?</h3>
+          <div class="faq-answer">
+            <p>We offer a 100% satisfaction guarantee on every move out cleaning. If your landlord or property manager identifies any areas that need additional cleaning or attention, contact us within 24 hours and we'll return to re-clean those specific areas at absolutely no additional charge. Simply send us the landlord's feedback or inspection report, and we'll address every item they mentioned. We're committed to getting your deposit back - that's our entire goal. If you're still not satisfied after we re-clean, we'll refund your money. That's how confident we are in our work and how seriously we take your deposit being returned.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I need to be present during move out cleaning?</h3>
+          <div class="faq-answer">
+            <p>No, you absolutely don't need to be present during the cleaning. In fact, most of our clients provide us with keys, garage codes, or lockbox access and focus on their moving day activities. We understand you have a million things to coordinate on move-out day. Our background-checked, insured team will arrive at the scheduled time, complete the thorough cleaning, secure your property, and text you when we're finished. You'll come back to a spotless, inspection-ready home. Of course, you're also welcome to be there if you prefer to see the work being done or have specific areas you want to point out - whatever makes you most comfortable.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-footer">
+        <p>Have more questions? Call <a href={phoneNumberLink}>{phoneNumber}</a> or <a href="/contact">contact us online</a> - we're happy to help!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Hero Section -->
+  <section class="why-choose-section">
+    <div class="container">
+      <h2>Why Choose Hero House Cleaning for Your Move-Out?</h2>
+      <p class="section-intro">When your security deposit is on the line, you need a cleaning service you can trust. Here's what sets us apart from other cleaning companies in Knoxville:</p>
+
+      <div class="why-choose-grid">
+        <div class="why-card">
+          <div class="why-icon">💰</div>
+          <h3>Transparent Pricing - No Hidden Fees</h3>
+          <p>We show our prices upfront on our website. You'll know exactly what you're paying before we start - no surprise charges, no hidden fees, no bait-and-switch tactics. What we quote is what you pay, guaranteed. This transparency is rare in our industry, but we believe it's how business should be done.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">👥</div>
+          <h3>Background-Checked Team You Can Trust</h3>
+          <p>Every single team member undergoes comprehensive background checks before we give them your keys. We're fully insured and bonded. You can trust us with property access while you're coordinating your move. Many landlords and property managers trust us with master keys for multiple properties - that's the level of reliability we deliver.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">⭐</div>
+          <h3>4.8 Stars from 175+ Real Customers</h3>
+          <p>Don't just take our word for it - we have 175+ verified reviews from real Knoxville customers who've used our services. Many specifically mention getting their full deposits back after our move-out cleaning. Our reputation is built on consistent results and happy customers, not flashy marketing.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🎓</div>
+          <h3>We Know What Landlords Inspect</h3>
+          <p>After cleaning hundreds of move-outs across Knoxville, we know exactly what landlords check during final inspections. We've seen every type of lease cleaning requirement, worked with countless property managers, and understand tenant law in Tennessee. This experience means we don't miss details that could cost you your deposit.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h3>Same-Day Service When You Need It</h3>
+          <p>Moving date got moved up? Need cleaning TODAY? Unlike larger franchises with rigid scheduling, we're a family-owned local business that can be flexible when you have an emergency. We offer same-day move-out cleaning 7 days a week when our schedule allows. Call us and we'll do everything possible to accommodate your timeline.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h3>100% Satisfaction Guarantee</h3>
+          <p>We guarantee your satisfaction and stand behind our work. If your landlord finds any areas that need additional cleaning, we'll return free of charge to address them. Still not happy? We'll refund your money. We've never had a client not get their deposit back when they followed our recommendations, but if it happens, we'll make it right.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🌱</div>
+          <h3>Eco-Friendly Products Safe for Families</h3>
+          <p>We use professional-grade, eco-friendly cleaning products that are safe for children, pets, and the environment - but tough on dirt and grime. You don't have to choose between a clean home and safe products. All supplies are included in our pricing at no extra charge.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">🚫</div>
+          <h3>No Contracts, No Cancellation Fees</h3>
+          <p>Book your move-out cleaning with confidence. We don't require long-term contracts or charge cancellation fees if your moving date changes. Life happens, timelines shift - we understand. Just give us reasonable notice if you need to reschedule and we'll work with you.</p>
+        </div>
+      </div>
+
+      <div class="why-choose-footer">
+        <p class="emphasis">The bottom line: We're a family-owned Knoxville business that treats your home and your deposit like they're our own. We're not a national franchise following corporate scripts - we're your neighbors who genuinely care about helping you get your deposit back and reducing your moving stress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="service-areas-section">
+    <div class="container">
+      <h2>Move Out Cleaning Throughout Greater Knoxville</h2>
+      <p class="section-intro">We provide professional move-out cleaning service throughout Knoxville and surrounding communities:</p>
+
+      <div class="areas-grid">
+        <a href="/locations/west-knoxville" class="area-card">
+          <h3>West Knoxville</h3>
+          <p>Move-out cleaning for apartments and homes in West Knoxville's neighborhoods</p>
+        </a>
+        <div class="area-card">
+          <h3>Farragut</h3>
+          <p>Professional end-of-lease cleaning in Farragut rental properties</p>
+        </div>
+        <div class="area-card">
+          <h3>Bearden</h3>
+          <p>Trusted move-out cleaning service in the Bearden community</p>
+        </div>
+        <div class="area-card">
+          <h3>Oak Ridge</h3>
+          <p>Security deposit cleaning services in Oak Ridge rentals</p>
+        </div>
+        <div class="area-card">
+          <h3>Maryville</h3>
+          <p>End-of-lease cleaning for Maryville tenants and landlords</p>
+        </div>
+        <div class="area-card">
+          <h3>Powell</h3>
+          <p>Move-out cleaning service for Powell area rentals</p>
+        </div>
+        <div class="area-card">
+          <h3>Halls</h3>
+          <p>Deposit-back cleaning in Halls and North Knox County</p>
+        </div>
+        <div class="area-card">
+          <h3>Downtown Knoxville</h3>
+          <p>Apartment move-out cleaning in downtown Knoxville</p>
+        </div>
+      </div>
+
+      <p class="areas-note">Don't see your area? We serve many additional communities throughout East Tennessee. Call <a href={phoneNumberLink}>{phoneNumber}</a> to confirm we service your rental property location.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta-section">
+    <div class="container">
+      <div class="final-cta-content">
+        <h2>Protect Your Deposit. Book Your Move-Out Cleaning Today.</h2>
+        <p class="cta-subtitle">Don't risk losing hundreds or thousands of dollars in deposit deductions. Our professional move-out cleaning ensures you pass inspection and get your full deposit back.</p>
+
+        <div class="cta-stats">
+          <div class="stat">
+            <div class="stat-number">$378+</div>
+            <div class="stat-label">Starting Price</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">4-8 hrs</div>
+            <div class="stat-label">Thorough Cleaning</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Satisfaction Guaranteed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">175+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href={phoneNumberLink} class="btn btn-primary btn-large">
+            <span class="phone-icon">📞</span>
+            Call {phoneNumber}
+          </a>
+          <a href="#quote-form" class="btn btn-secondary btn-large">Get Your Free Quote</a>
+        </div>
+
+        <p class="cta-features">Same-Day Available • Background-Checked Team • Deposit Back Guarantee</p>
+      </div>
+
+      <!-- Quote Form -->
+      <div class="quote-form-container" id="quote-form">
+        <h3>Get Your Free Move-Out Cleaning Quote</h3>
+        <p>Fill out this quick form and we'll provide instant pricing for your move-out cleaning:</p>
+
+        <div class="form-embed-placeholder">
+          <!-- GoHighLevel Form Embed Goes Here -->
+          <p style="text-align: center; color: #666; padding: 40px 20px; background: #f9f9f9; border-radius: 8px;">
+            <strong>GoHighLevel Contact Form Integration</strong><br>
+            Call {phoneNumber} or email info@herohousecleaning.com to book your move-out cleaning
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Content Section -->
+  <section class="seo-content-section">
+    <div class="container">
+      <div class="seo-content">
+        <h2>Professional Move Out Cleaning Service in Knoxville, Tennessee</h2>
+
+        <p>Moving out of a rental property in Knoxville is stressful enough without worrying about whether your cleaning will pass your landlord's final inspection. At Hero House Cleaning, we specialize in professional move-out cleaning services that help Knoxville tenants get their full security deposits back. Our thorough, detail-oriented approach covers every single item landlords check during walk-throughs, from inside appliances to behind toilets to the tops of ceiling fans.</p>
+
+        <h3>Why Move Out Cleaning Matters for Your Security Deposit</h3>
+
+        <p>Most <a href="/maid-service-knoxville">Knoxville rental properties</a> require tenants to return the home in "broom-clean" condition - but that vague term often means much more than basic cleaning. Landlords and property managers inspect dozens of specific areas, and any shortcomings can result in significant deductions from your security deposit. The average security deposit in Knoxville ranges from $800 to $1,500, and we've heard countless stories of tenants losing hundreds of dollars because they missed cleaning inside the oven, forgot about baseboards, or didn't deep clean bathroom grout.</p>
+
+        <p>Our $378+ move-out cleaning service protects your much larger deposit investment. When you consider that we thoroughly clean areas that would take you 8-12 hours of labor-intensive work (with specialized supplies you don't own), it's one of the smartest investments you can make during your move. We've helped hundreds of Knoxville tenants recover their full deposits, and many have told us we saved them far more money than our service cost.</p>
+
+        <h3>What Makes Our Move-Out Cleaning Different</h3>
+
+        <p>Not all cleaning services understand the specific requirements of move-out situations. Many <a href="/house-cleaning-cost-knoxville">house cleaning companies in Knoxville</a> focus on occupied homes and don't have experience with the detail level landlords demand. We've specialized in move-out cleaning for years, working with tenants, landlords, and property management companies across Knoxville. This experience means we know exactly what gets scrutinized during final inspections.</p>
+
+        <p>Our team doesn't cut corners or rush through jobs. We spend 4-8 hours on each move-out cleaning, using professional-grade equipment and cleaning solutions to tackle tough problems like baked-on oven grease, hard water stains, soap scum buildup, and ground-in carpet dirt. We clean inside every cabinet, wipe down every baseboard, scrub every inch of grout, and detail every appliance interior. This isn't maintenance cleaning - it's restoration-level cleaning designed to make your rental look as close to move-in condition as possible.</p>
+
+        <h3>The Move-Out Cleaning Process: How We Work</h3>
+
+        <p>Booking your move-out cleaning with Hero House Cleaning is straightforward and stress-free. Once you know your move-out date, contact us by phone at {phoneNumber} or through our <a href="/contact">online booking form</a>. We'll ask about your home's size, how many bathrooms, the general condition, and whether there are any specific trouble areas your landlord has mentioned. Based on this information, we provide transparent, upfront pricing - no hidden fees or surprise charges after the work is done.</p>
+
+        <p>We recommend scheduling your move-out cleaning for after you've completely moved all furniture and belongings out of the property. Empty homes allow us to clean faster and more thoroughly, reaching corners and areas that furniture would otherwise block. The ideal timing is 1-2 days before your final walk-through with your landlord, giving you a buffer in case you want us to touch up anything specific.</p>
+
+        <p>On cleaning day, our background-checked team arrives with all necessary supplies and equipment. You don't need to be present - most clients give us keys or access codes and focus on their moving tasks. We'll text you when we arrive and again when we complete the job. Our team works systematically through every room, following a detailed checklist that covers everything from light fixtures to door frames to closet shelves. We end with a final walk-through to ensure nothing was missed.</p>
+
+        <h3>Common Move-Out Cleaning Challenges We Handle</h3>
+
+        <p>Certain areas of rental homes consistently cause deposit deductions because they're difficult to clean thoroughly without professional tools and experience. Inside ovens are notorious trouble spots - years of baked-on grease and spills don't come off with standard oven cleaner and elbow grease. We use commercial-grade degreasers and specialized techniques to restore oven interiors to nearly new condition.</p>
+
+        <p>Bathroom grout is another common issue. Mildew and soap scum work their way deep into grout lines over time, causing discoloration that regular mopping doesn't fix. Our team scrubs grout with professional tile and grout cleaners, and we can even address minor mildew staining that makes bathrooms look dingy. Similarly, hard water stains on shower doors and fixtures require specific solutions and techniques that most people don't have access to.</p>
+
+        <p>Kitchen cabinets and drawers often accumulate sticky residue, crumbs, and grime inside that tenants forget to clean. We pull out all shelves, wipe down interiors, clean the tracks, and ensure every cabinet is spotless. This detailed work takes time but makes a huge difference in how clean your kitchen looks during inspection. The same goes for closets, where dust bunnies and debris collect on shelves and in corners.</p>
+
+        <h3>Move Out Cleaning vs. Deep Cleaning: Understanding the Difference</h3>
+
+        <p>Some Knoxville residents wonder if they should book a <a href="/services">deep cleaning</a> or specifically request move-out cleaning. While these services overlap significantly, move-out cleaning includes several additional elements that make it more comprehensive. Deep cleaning focuses on intensive cleaning of an occupied home, including inside appliances and detailed work in kitchens and bathrooms.</p>
+
+        <p>Move-out cleaning includes everything in deep cleaning, plus: inside ALL cabinets, drawers, and closets (which are typically occupied during deep cleaning); more detailed wall and door cleaning to remove marks and scuffs; thorough cleaning of baseboards and trim throughout the entire home; and extra attention to areas like window tracks, door frames, and light switch covers that landlords specifically inspect. Move-out cleaning also assumes an empty home, allowing us to clean more thoroughly behind where furniture was placed and address any floor or wall damage that needs attention.</p>
+
+        <p>If you're preparing for a landlord inspection and want your deposit back, always book move-out cleaning rather than deep cleaning. The difference in scope matters when someone is inspecting your home with a critical eye and a checklist.</p>
+
+        <h3>Working with Knoxville Property Managers and Landlords</h3>
+
+        <p>We don't just serve tenants moving out - many Knoxville landlords and property management companies hire us regularly for tenant turnover cleaning. This dual perspective helps us understand both sides of the move-out equation. We know what property managers consider deal-breakers, which areas they always check, and what level of clean qualifies as "acceptable condition" per Tennessee rental law.</p>
+
+        <p>Property managers appreciate our reliability, fast turnaround times, and consistent quality. When a tenant moves out unexpectedly or leaves a property in poor condition, landlords call us for emergency cleaning to get the unit rent-ready for showings. We've cleaned everything from <a href="/locations/west-knoxville">West Knoxville luxury apartments</a> to student rentals near UT to single-family homes in Farragut. This variety of experience means we're prepared for any condition or challenge.</p>
+
+        <p>If you're a landlord or property manager reading this, we offer volume discounts for multiple properties and can provide priority scheduling for your tenant turnovers. We understand the financial pressure of vacant units and work quickly without sacrificing quality. We can also provide detailed photo documentation of cleaning for your records and insurance purposes.</p>
+
+        <h3>Same-Day Move-Out Cleaning for Emergency Situations</h3>
+
+        <p>Moving timelines don't always go as planned. We've worked with countless Knoxville tenants whose move-out dates got moved up unexpectedly, whose moving trucks arrived early, or who suddenly realized they needed professional cleaning after attempting DIY cleaning. For these situations, we offer same-day move-out cleaning service when our schedule allows.</p>
+
+        <p>Same-day service works best when you call us as early in the morning as possible, ideally before 10 AM. We'll check our schedule and confirm whether we can accommodate you that same day. While we can't always guarantee same-day availability (especially during peak moving season in June, July, and August), we make every effort to help when you're in a bind. We understand that your deposit and your lease obligations are on the line.</p>
+
+        <p>Even if we can't fit you in same day, we often have next-day availability. As a family-owned local business rather than a large franchise, we have more scheduling flexibility than corporate chains with rigid policies. Your emergency becomes our priority whenever possible.</p>
+
+        <h3>Cost-Benefit Analysis: DIY vs. Professional Move-Out Cleaning</h3>
+
+        <p>Some tenants consider doing their own move-out cleaning to save money. While this is certainly possible, there are important factors to consider. Professional move-out cleaning typically costs $378-$660 depending on home size, which might seem expensive when you're already facing moving costs. However, consider that the average security deposit deduction for insufficient cleaning in Knoxville ranges from $200 to $800.</p>
+
+        <p>DIY move-out cleaning also requires significant time investment - typically 8-12 hours for a thorough job, plus the cost of cleaning supplies you'll need to purchase. Professional-grade oven cleaner, grout scrubber, baseboard cleaner, stainless steel polish, and other specialized products can easily cost $50-$100, and you probably won't have the right tools (like extension poles for ceiling fans, steam cleaners for floors, or commercial vacuums for deep carpet cleaning).</p>
+
+        <p>Most importantly, professional cleaners know what they're doing. We've cleaned hundreds of move-outs and know the techniques that work for stubborn problems. We know how to remove hard water stains from glass, how to get baked-on grease out of ovens, and how to make old grout look new again. This expertise means better results in less time, maximizing your chances of full deposit return.</p>
+
+        <h3>Tips for Maximizing Your Deposit Return</h3>
+
+        <p>Even with professional cleaning, there are steps you can take to protect your security deposit. First, document everything with photos or video before you move in. These dated images prove the condition you received the property in and protect you from being charged for pre-existing damage or wear.</p>
+
+        <p>Second, address any damage beyond normal wear and tear before your final inspection. Small nail holes should be spackled and painted, broken fixtures should be replaced, and any damage you caused should be repaired. Professional cleaning can't fix physical damage, and landlords can still deduct for repairs even if the home is spotless.</p>
+
+        <p>Third, read your lease carefully to understand your specific cleaning obligations. Some leases require professional carpet cleaning (which is separate from our move-out cleaning service), window washing, or specific tasks. Make sure you meet every requirement listed in your lease agreement.</p>
+
+        <p>Finally, attend your final walk-through with your landlord if at all possible. This gives you the opportunity to address any concerns immediately. If the landlord points out an area they feel needs more attention, you can either clean it yourself on the spot or call us to come back under our satisfaction guarantee. It's much easier to resolve issues during the walk-through than to dispute deposit deductions later.</p>
+
+        <h3>Move-In Cleaning: Starting Fresh in Your New Knoxville Home</h3>
+
+        <p>While we specialize in move-out cleaning, many Knoxville residents also book move-in cleaning for their new homes. Even when previous tenants had professional cleaning done, landlords don't always deep-clean between occupants as thoroughly as you might want. Our move-in cleaning service ensures your new place is truly clean before you unpack your belongings and start settling in.</p>
+
+        <p>Move-in cleaning is especially important if you have allergies, young children, or pets. You want to know that the previous tenant's pet dander, cleaning product residue, and general dirt are completely removed before your family moves in. Think of it as a fresh start - making your new rental truly yours from day one.</p>
+
+        <p>The process and pricing for move-in cleaning are identical to move-out cleaning. The only difference is timing - we recommend scheduling move-in cleaning the day before your move-in date, after you've signed the lease and have keys, but before you bring in furniture. This gives you a clean slate to start your tenancy.</p>
+
+        <h3>Serving the Greater Knoxville Community</h3>
+
+        <p>Hero House Cleaning is proud to be a family-owned, local Knoxville business. We're not a national franchise with corporate policies and distant ownership - we're your neighbors who genuinely care about this community and our reputation within it. When you hire us, you're supporting a local small business and keeping money in the Knoxville economy.</p>
+
+        <p>We serve all of greater Knoxville including West Knoxville, East Knoxville, North Knoxville, South Knoxville, Farragut, Bearden, Karns, Powell, Halls, Oak Ridge, Maryville, Lenoir City, and surrounding areas. No job is too far or too small. Whether you're moving out of a studio apartment downtown or a large family home in Farragut, we bring the same level of professionalism and care to every property.</p>
+
+        <p>Our commitment to transparency, fair pricing, and excellent customer service has earned us a 4.8-star rating from 175+ real customers across Knoxville. We don't run misleading promotions or use bait-and-switch tactics. What we quote is what you pay, and the quality you expect is the quality we deliver. Every single time.</p>
+
+        <h3>Book Your Move-Out Cleaning Today</h3>
+
+        <p>Don't risk losing your security deposit because of insufficient cleaning. Whether you're moving out next week or need same-day emergency cleaning, Hero House Cleaning has you covered. Our professional team, transparent pricing, and deposit-back guarantee give you confidence that your rental will pass inspection.</p>
+
+        <p>Call us today at {phoneNumber} to get an exact quote for your move-out cleaning. Our friendly team will ask a few quick questions about your home and provide instant pricing over the phone. You can also <a href="/contact">book online</a> 24/7 through our website. We look forward to helping you get your full deposit back and making your Knoxville move as stress-free as possible.</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+  }
+
+  .breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .breadcrumb a:hover {
+    border-bottom-color: white;
+  }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .trust-badges {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.95;
+  }
+
+  .hero-features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .hero-features span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-features span:before {
+    content: "✓";
+    font-weight: bold;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .btn-large {
+    padding: 18px 36px;
+    font-size: 18px;
+  }
+
+  .btn-primary {
+    background: white;
+    color: #667eea;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+  }
+
+  .btn-secondary:hover {
+    background: white;
+    color: #667eea;
+  }
+
+  .btn-outline {
+    background: transparent;
+    border: 2px solid #667eea;
+    color: #667eea;
+  }
+
+  .btn-outline:hover {
+    background: #667eea;
+    color: white;
+  }
+
+  .phone-icon {
+    margin-right: 8px;
+  }
+
+  .hero-image-placeholder {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 80px 40px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .placeholder-content {
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+
+  /* Deposit Guarantee Section */
+  .deposit-guarantee-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .guarantee-content h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .section-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+  }
+
+  .guarantee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .guarantee-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .guarantee-card.featured {
+    border: 3px solid #10b981;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.1));
+  }
+
+  .guarantee-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .guarantee-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .guarantee-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* What's Included Section */
+  .whats-included-section {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .whats-included-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .checklist-column h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #667eea;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+  }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+
+  .checklist li {
+    padding: 12px 0 12px 28px;
+    position: relative;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    line-height: 1.5;
+  }
+
+  .checklist li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .additional-note {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fef3c7;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+  }
+
+  .additional-note h4 {
+    color: #92400e;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .not-included-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .not-included-list li {
+    padding: 6px 0 6px 24px;
+    position: relative;
+    color: #78350f;
+    border: none;
+  }
+
+  .not-included-list li:before {
+    content: "•";
+    color: #f59e0b;
+  }
+
+  .checklist-cta {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: #f7fafc;
+    border-radius: 12px;
+  }
+
+  .checklist-cta p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #4a5568;
+  }
+
+  /* Comparison Section */
+  .comparison-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .comparison-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .comparison-table {
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  thead {
+    background: #667eea;
+    color: white;
+  }
+
+  th, td {
+    padding: 18px 20px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  tbody tr:hover {
+    background: #f7fafc;
+  }
+
+  td.included {
+    color: #10b981;
+    font-weight: 500;
+  }
+
+  .comparison-note {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+  }
+
+  .comparison-note p {
+    color: #4a5568;
+    line-height: 1.7;
+  }
+
+  /* Pricing Section */
+  .pricing-section {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .pricing-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .pricing-card {
+    background: white;
+    padding: 35px 28px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  .pricing-card.featured {
+    border-color: #10b981;
+    border-width: 3px;
+    transform: scale(1.05);
+  }
+
+  .popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #10b981;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .price {
+    font-size: 38px;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 15px;
+  }
+
+  .price-description {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .price-features {
+    list-style: none;
+    padding: 0;
+  }
+
+  .price-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+  }
+
+  .price-features li:before {
+    content: "✓ ";
+    color: #10b981;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .pricing-notes {
+    max-width: 900px;
+    margin: 50px auto 0;
+    padding: 40px;
+    background: #f7fafc;
+    border-radius: 12px;
+  }
+
+  .pricing-notes h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .pricing-notes ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .pricing-notes li {
+    padding: 12px 0 12px 28px;
+    position: relative;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  .pricing-notes li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .pricing-cta-text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4a5568;
+  }
+
+  .pricing-cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Landlords Section */
+  .landlords-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .landlords-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .landlord-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s;
+  }
+
+  .benefit-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.15);
+    transform: translateY(-5px);
+  }
+
+  .benefit-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+    display: block;
+    color: #10b981;
+  }
+
+  .benefit-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .benefit-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .landlord-cta {
+    max-width: 800px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+  }
+
+  .landlord-cta h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .landlord-cta p {
+    font-size: 18px;
+    color: white;
+  }
+
+  .landlord-cta a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  /* Timing Section */
+  .timing-section {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .timing-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .timeline {
+    max-width: 900px;
+    margin: 50px auto;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+
+  .timeline-item:last-child {
+    border-bottom: none;
+  }
+
+  .timeline-item.highlighted {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.1));
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #10b981;
+    border-bottom: 2px solid #10b981;
+  }
+
+  .timeline-marker {
+    background: #667eea;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    align-self: start;
+  }
+
+  .timeline-item.highlighted .timeline-marker {
+    background: #10b981;
+  }
+
+  .timeline-content h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #2d3748;
+  }
+
+  .timeline-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .pro-tip {
+    padding: 15px;
+    background: #fef3c7;
+    border-radius: 6px;
+    border-left: 4px solid #f59e0b;
+    margin-top: 15px;
+  }
+
+  .timing-tips {
+    max-width: 1000px;
+    margin: 60px auto 0;
+  }
+
+  .timing-tips h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2d3748;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+
+  .tip-card {
+    background: #f7fafc;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+  }
+
+  .tip-card h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #2d3748;
+  }
+
+  .tip-card p {
+    color: #4a5568;
+    line-height: 1.6;
+  }
+
+  /* Same-Day Section */
+  .same-day-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+  }
+
+  .same-day-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .same-day-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+
+  .same-day-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .same-day-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    opacity: 0.95;
+  }
+
+  .same-day-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .same-day-feature {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  .same-day-feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .same-day-feature p {
+    font-size: 15px;
+    margin: 0;
+    opacity: 0.9;
+  }
+
+  /* Gallery Section */
+  .gallery-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .gallery-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+
+  .gallery-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .image-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .before-image, .after-image {
+    position: relative;
+    padding-bottom: 75%;
+    background: #e2e8f0;
+  }
+
+  .label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 10;
+  }
+
+  .placeholder-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #666;
+  }
+
+  .gallery-item h3 {
+    font-size: 20px;
+    padding: 20px 20px 10px;
+    color: #2d3748;
+  }
+
+  .gallery-item p {
+    padding: 0 20px 20px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .gallery-cta {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .gallery-cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4a5568;
+  }
+
+  /* Checklist Download Section */
+  .checklist-download-section {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .checklist-download-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .checklist-download-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .checklist-download-content > p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+
+  .checklist-visual {
+    background: #f7fafc;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+  }
+
+  .checklist-preview h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .checklist-preview ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .checklist-preview li {
+    padding: 12px 0 12px 28px;
+    position: relative;
+    color: #4a5568;
+    font-size: 16px;
+  }
+
+  .checklist-preview li:before {
+    position: absolute;
+    left: 0;
+  }
+
+  /* Testimonials Section */
+  .testimonials-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .testimonials-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .stars {
+    color: #fbbf24;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-text {
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .testimonial-author strong {
+    color: #2d3748;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .testimonial-author span {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .testimonial-result {
+    margin-top: 15px;
+  }
+
+  .result-badge {
+    display: inline-block;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .testimonials-footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .testimonials-footer p {
+    font-size: 18px;
+    color: #4a5568;
+  }
+
+  .testimonials-footer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .testimonials-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .faq-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .faq-item {
+    background: #f7fafc;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+  }
+
+  .faq-item h3 {
+    font-size: 20px;
+    color: #2d3748;
+    margin-bottom: 15px;
+  }
+
+  .faq-answer {
+    color: #4a5568;
+    line-height: 1.8;
+  }
+
+  .faq-answer p {
+    margin-bottom: 10px;
+  }
+
+  .faq-answer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .faq-answer a:hover {
+    text-decoration: underline;
+  }
+
+  .faq-footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .faq-footer p {
+    font-size: 18px;
+    color: #4a5568;
+  }
+
+  .faq-footer a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Why Choose Section */
+  .why-choose-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .why-choose-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .why-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s;
+  }
+
+  .why-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.15);
+    transform: translateY(-5px);
+  }
+
+  .why-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .why-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .why-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .why-choose-footer {
+    max-width: 900px;
+    margin: 50px auto 0;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    border-left: 4px solid #10b981;
+  }
+
+  .why-choose-footer .emphasis {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2d3748;
+  }
+
+  /* Service Areas Section */
+  .service-areas-section {
+    padding: 80px 20px;
+    background: white;
+  }
+
+  .service-areas-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .area-card {
+    background: #f7fafc;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: block;
+  }
+
+  .area-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .area-card h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .area-card p {
+    color: #666;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .areas-note {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+  }
+
+  .areas-note a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Final CTA Section */
+  .final-cta-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .final-cta-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .final-cta-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .cta-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.95;
+  }
+
+  .cta-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 15px;
+    opacity: 0.9;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+  }
+
+  .cta-features {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  .quote-form-container {
+    max-width: 700px;
+    margin: 60px auto 0;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    color: #2d3748;
+  }
+
+  .quote-form-container h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2d3748;
+  }
+
+  .quote-form-container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .form-embed-placeholder {
+    margin-top: 20px;
+  }
+
+  /* SEO Content Section */
+  .seo-content-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .seo-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .seo-content h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #2d3748;
+  }
+
+  .seo-content h3 {
+    font-size: 24px;
+    margin: 35px 0 20px;
+    color: #2d3748;
+  }
+
+  .seo-content p {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .seo-content a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .seo-content a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+      font-size: 32px;
+    }
+
+    .hero-subtitle {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .section-intro {
+      font-size: 16px;
+    }
+
+    .checklist-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+      transform: scale(1);
+    }
+
+    .timeline-item {
+      grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .same-day-content h2 {
+      font-size: 28px;
+    }
+
+    .final-cta-content h2 {
+      font-size: 32px;
+    }
+
+    .quote-form-container {
+      padding: 30px 20px;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+</style>

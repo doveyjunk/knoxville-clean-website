@@ -1,0 +1,1247 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Vacation Rental Cleaning Gatlinburg TN | Airbnb Turnover"
+  description="Vacation rental cleaning in Gatlinburg TN. Expert Airbnb turnover service for Smoky Mountain cabins. Same-day turnover available. Call (865) 507-1405"
+>
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://herohousecleaning.com/locations/gatlinburg#business",
+        "name": "Hero House Cleaning - Gatlinburg Vacation Rental Cleaning",
+        "image": "https://herohousecleaning.com/images/hero-logo.png",
+        "url": "https://herohousecleaning.com/locations/gatlinburg",
+        "telephone": "(865) 507-1405",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gatlinburg",
+          "addressRegion": "TN",
+          "postalCode": "37738",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.7143,
+          "longitude": -83.5102
+        },
+        "areaServed": {
+          "@type": "GeoShape",
+          "name": "Gatlinburg Service Area",
+          "description": "Serving all Gatlinburg vacation rentals including downtown cabins, Arts & Crafts Loop properties, Ski Mountain area, Glades Road corridor, and all mountain chalets throughout the Smoky Mountains"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "07:00",
+            "closes": "20:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "175"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://herohousecleaning.com/locations/gatlinburg#service",
+        "serviceType": "Vacation Rental Cleaning Service",
+        "provider": {
+          "@id": "https://herohousecleaning.com/locations/gatlinburg#business"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Gatlinburg",
+            "containedIn": {
+              "@type": "State",
+              "name": "Tennessee"
+            }
+          },
+          {
+            "@type": "PostalCodeArea",
+            "postalCode": "37738"
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Vacation Rental Turnover Cleaning",
+            "price": "180",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Cabin Deep Cleaning",
+            "price": "350",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Same-Day Airbnb Turnover",
+            "price": "200",
+            "priceCurrency": "USD"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://herohousecleaning.com/locations/gatlinburg#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://herohousecleaning.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Service Locations",
+            "item": "https://herohousecleaning.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Gatlinburg",
+            "item": "https://herohousecleaning.com/locations/gatlinburg"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://herohousecleaning.com/locations/gatlinburg#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you offer same-day turnover for Gatlinburg vacation rentals?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We specialize in same-day turnover cleaning for Gatlinburg vacation rentals, cabins, and Airbnb properties. During peak tourism season (summer, fall foliage, winter holidays), we recommend booking 24 hours in advance when possible. For emergency same-day service, call us before 9 AM at (865) 507-1405. We understand the high-demand nature of Gatlinburg tourism and prioritize quick turnarounds to maximize your rental income."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle the unique cleaning challenges of Smoky Mountain cabins?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gatlinburg mountain cabins face unique challenges including heavy pollen from surrounding forests, mountain dirt and red clay tracked inside, dust from unpaved mountain roads, wildlife activity, and seasonal debris. We use specialized equipment including HEPA vacuums for pollen, commercial-grade cleaners for mountain dirt, and detailed checklists specific to cabin properties (decks, hot tubs, wood surfaces, stone fireplaces). We also inspect for wildlife intrusion and weather-related issues during each turnover."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What areas of Gatlinburg do you serve for vacation rental cleaning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We serve all Gatlinburg vacation rental areas including downtown cabins and condos, Arts & Crafts Loop properties, Ski Mountain/Ober area, Glades Road corridor, Buckhorn Road cabins, Chalet Village, Mountain communities off Highway 321, and all mountain roads throughout the Great Smoky Mountains National Park gateway area. We're experienced with difficult mountain access roads and can reach properties throughout the Gatlinburg tourism corridor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you clean hot tubs and handle outdoor spaces at Gatlinburg cabins?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Hot tub cleaning and maintenance is included with our vacation rental turnover service. We drain, clean, sanitize, and refill hot tubs between guests, test chemical levels, and ensure proper operation. We also clean outdoor spaces including decks, porches, outdoor furniture, grills (exterior), and remove debris. For mountain cabins, we inspect and clean outdoor amenities that are critical to guest satisfaction and 5-star reviews."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle high seasonal demand during peak Gatlinburg tourism season?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Peak seasons in Gatlinburg (summer vacation, fall foliage October, winter holidays, spring break) see extremely high demand. We scale our team specifically for Gatlinburg vacation rental needs during these periods. Monthly package clients receive priority scheduling during peak times. We recommend establishing a recurring cleaning relationship before peak season to ensure availability. During sold-out tourism weekends, advance booking is essential. We work 7 days a week during peak seasons to accommodate turnover demand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's included in your Gatlinburg vacation rental cleaning service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our comprehensive vacation rental turnover includes: complete cleaning of all bedrooms, bathrooms, kitchen, living areas; fresh linen service (strip, wash, remake beds); hot tub drain/clean/refill; deck and outdoor space cleaning; trash removal; restocking supplies (if requested); damage inspection and photo documentation; amenity check (WiFi, appliances, remotes); and a final quality walkthrough. We provide before/after photos and immediate damage reporting to protect your investment and maintain 5-star guest reviews."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does vacation rental cleaning cost in Gatlinburg?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gatlinburg vacation rental cleaning typically ranges from $180-$400 per turnover depending on cabin size (1-bedroom condo vs. 5-bedroom cabin), amenities (hot tubs, multiple decks, game rooms), mountain access difficulty, and service level. Monthly packages for owners with frequent bookings save 15-20% per cleaning. Seasonal deep cleans and post-construction cleans are quoted separately. Call (865) 507-1405 for exact pricing based on your specific Gatlinburg property."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you integrate with my vacation rental management software?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! We integrate with all major vacation rental platforms including Airbnb, VRBO, Booking.com, Evolve, Vacasa, and property management systems like Guesty, Hospitable, and OwnerRez. Calendar integration allows automatic turnover scheduling based on guest check-ins/check-outs. We can also work with simple iCal syncs or shared Google calendars. Once integrated, cleanings happen automatically without manual coordination—you just receive guest-ready confirmations with photos after each turnover."
+            }
+          }
+        ]
+      }
+    ]
+  })} />
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Trust Badge -->
+        <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+          <span class="text-sm font-semibold">Trusted by 100+ Gatlinburg Vacation Rental Owners</span>
+        </div>
+
+        <!-- H1 -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          Vacation Rental Cleaning Gatlinburg TN | Expert Airbnb Turnover Service
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-xl md:text-2xl mb-8 text-blue-100">
+          Professional turnover cleaning for Smoky Mountain cabins, chalets & Airbnb properties. Same-day service available for your Gatlinburg vacation rental.
+        </p>
+
+        <!-- Phone Number -->
+        <div class="mb-8">
+          <a href="tel:8655071405" class="inline-block text-3xl md:text-4xl font-bold hover:text-blue-200 transition">
+            (865) 507-1405
+          </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="#contact-form" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Get Your Free Quote
+          </a>
+          <a href="/services/airbnb-cleaning" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            Learn About Airbnb Cleaning
+          </a>
+        </div>
+
+        <!-- Quick Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 text-left">
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">⚡</div>
+            <h3 class="font-bold text-lg mb-2">Same-Day Turnover Available</h3>
+            <p class="text-blue-100 text-sm">Quick turnarounds to maximize your Gatlinburg booking calendar</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">🏔️</div>
+            <h3 class="font-bold text-lg mb-2">Mountain Cabin Specialists</h3>
+            <p class="text-blue-100 text-sm">Expert cleaning for Smoky Mountain vacation properties & hot tubs</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div class="text-3xl mb-2">⭐</div>
+            <h3 class="font-bold text-lg mb-2">Maintain 5-Star Reviews</h3>
+            <p class="text-blue-100 text-sm">Photo documentation & quality checks for every guest arrival</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <nav class="text-sm">
+        <ol class="flex items-center space-x-2">
+          <li><a href="/" class="text-blue-600 hover:text-blue-800">Home</a></li>
+          <li class="text-gray-500">/</li>
+          <li><a href="/locations" class="text-blue-600 hover:text-blue-800">Service Locations</a></li>
+          <li class="text-gray-500">/</li>
+          <li class="text-gray-700">Gatlinburg</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+          Expert Vacation Rental Cleaning in Gatlinburg, Tennessee
+        </h2>
+
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Looking for reliable <strong>vacation rental cleaning in Gatlinburg, TN</strong>? Hero House Cleaning specializes in professional <strong>Airbnb cleaning Gatlinburg</strong> services for cabins, chalets, and mountain vacation properties throughout the Great Smoky Mountains. Our <strong>house cleaning Gatlinburg TN</strong> team provides same-day turnover service to help you maximize bookings and maintain the 5-star reviews that drive your vacation rental business. As the premier <strong>vacation rental cleaning Gatlinburg</strong> service, we understand that tourism is Gatlinburg's lifeblood, and clean, guest-ready properties are essential to your success in this competitive market.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Gatlinburg is one of Tennessee's premier tourism destinations, welcoming millions of visitors each year to experience the Great Smoky Mountains National Park, downtown attractions, ski resorts, and mountain recreation. This constant flow of tourists creates enormous opportunity for vacation rental owners—but it also demands exceptional cleaning standards and lightning-fast turnover times. Whether you own a downtown Gatlinburg condo near the Space Needle, a luxury cabin on the Arts & Crafts Loop, a ski-in property near Ober Gatlinburg, or a secluded mountain chalet with panoramic Smoky Mountain views, we provide the specialized vacation rental cleaning services you need to thrive in Gatlinburg's year-round tourism economy.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our <strong>vacation rental cleaning Gatlinburg</strong> service is designed specifically for the unique challenges of Smoky Mountain properties. We're not a residential maid service trying to adapt to vacation rentals—we're vacation rental cleaning specialists who understand what it takes to earn and maintain 5-star Airbnb and VRBO reviews. We handle everything from heavy mountain pollen and red clay that guests track inside from hiking trails, to hot tub sanitation, deck cleaning, wildlife debris removal, and the comprehensive turnover checklists that separate exceptional vacation rentals from average ones. Every property we clean is treated with the hotel-quality standards your guests expect when they're paying premium rates for their Gatlinburg mountain getaway.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Gatlinburg's tourism season never truly ends—summer brings families seeking mountain coolness and national park adventures, fall delivers the spectacular color-changing foliage that fills every cabin from September through November, winter attracts skiers to Ober Gatlinburg and holiday visitors to the Winter Magic lights, and spring ushers in wildflower season and the return of outdoor recreation. This year-round demand means vacation rental owners need cleaning partners who can handle high-volume turnovers during peak weekends, accommodate last-minute bookings, work around tight check-in/check-out windows, and maintain consistent quality even when tourism demand is at its highest. That's exactly what Hero House Cleaning delivers.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We serve vacation rentals throughout the entire Gatlinburg area including downtown properties within walking distance of Parkway attractions, Arts & Crafts Loop cabins showcasing local artisan culture, Ski Mountain properties near Ober Gatlinburg and the aerial tramway, Glades Road corridor vacation homes, Buckhorn Road mountain cabins, Chalet Village communities, and remote mountain properties accessible via winding forest roads. We're experienced with the mountain terrain, unpaved access roads, and unique challenges of cleaning properties at various elevations throughout the Smokies. No property is too remote, too large, or too challenging for our experienced Gatlinburg vacation rental cleaning team.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Hot tub maintenance is critical for Gatlinburg vacation rentals—it's often the amenity that drives bookings and generates 5-star reviews. We include hot tub drain, deep clean, sanitization, refill, and water chemistry testing with every turnover service. We inspect hot tubs for proper operation, clean jets and filters, scrub away biofilm and residue, and ensure the water is crystal clear and properly balanced before your next guest arrives. We also clean outdoor spaces including expansive mountain-view decks, covered porches, outdoor furniture, fire pit areas, and grills. Mountain cabins require attention to outdoor amenities, and we ensure every aspect of your property—inside and out—meets guest expectations.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Our <strong>Airbnb cleaning Gatlinburg</strong> service integrates seamlessly with your property management system or booking calendar. Whether you use Airbnb, VRBO, Booking.com, Evolve, Vacasa, or independent calendar systems, we can automate turnover scheduling based on your guest check-ins and check-outs. This eliminates manual coordination—cleanings happen automatically, and you receive guest-ready confirmations with before/after photos after each turnover. For vacation rental owners managing multiple Gatlinburg properties or investors with portfolios throughout the Smokies, this automation saves hours of administrative time every week while ensuring no turnover ever gets missed.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Damage reporting and documentation are included with every vacation rental turnover. We photograph each property before and after cleaning, inspect for damage or missing items, report maintenance issues immediately (burnt-out bulbs, clogged drains, HVAC problems, wildlife intrusion), and provide detailed notes about property condition. This protects you from false damage claims, helps you file timely guest damage reports with platforms, and ensures maintenance problems are addressed before they affect future guest reviews. We're your eyes on the property when you can't be there in person—especially valuable for out-of-town owners who rely on local teams to manage their Gatlinburg investments.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Peak season in Gatlinburg demands exceptional planning and execution. October fall foliage weekends often see 100% occupancy with back-to-back bookings and 11 AM checkout/4 PM check-in windows that require precise turnover timing. Summer family vacation season brings high volume and increased wear-and-tear requiring thorough cleaning. Winter holiday weeks attract premium-paying guests with elevated expectations. We scale our Gatlinburg team specifically for these peak periods, and monthly package clients receive priority scheduling during sold-out tourism weekends. If your vacation rental business depends on maximizing occupancy during Gatlinburg's busiest seasons, you need a cleaning partner with the capacity and reliability to deliver—that's us.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            From downtown Gatlinburg condos to remote mountain chalets, from cozy 1-bedroom honeymoon cabins to sprawling 6-bedroom luxury lodges with game rooms and home theaters, Hero House Cleaning is your trusted partner for <strong>vacation rental cleaning Gatlinburg</strong> services that protect your investment and maximize your rental income. We're local to East Tennessee, we understand the Gatlinburg tourism market, and we're committed to helping your vacation rental business succeed with cleaning services that earn 5-star reviews, prevent negative feedback, and keep your calendar fully booked year-round. Contact us today at (865) 507-1405 to discuss your Gatlinburg vacation rental cleaning needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Understanding Gatlinburg Vacation Rentals -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Why Gatlinburg Vacation Rentals Need Specialized Cleaning
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Smoky Mountain vacation properties face unique challenges that require expert cleaning knowledge and specialized equipment
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🌲</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Heavy Mountain Pollen & Forest Debris</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Gatlinburg's location surrounded by Great Smoky Mountains National Park means extreme pollen from pine, oak, and maple trees—especially during spring and fall. Yellow-green pollen coats decks, railings, outdoor furniture, and tracks inside on shoes. We use HEPA filtration vacuums specifically designed for pollen removal, specialized cleaning solutions for outdoor surfaces, and detailed window sill and door track cleaning to eliminate pollen buildup that triggers guest allergies and negative reviews.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🏔️</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Mountain Dirt & Red Clay from Hiking Trails</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Guests visit Gatlinburg to explore the Smokies—hiking Alum Cave, Chimney Tops, Laurel Falls, and countless trails. They return with boots and shoes covered in mountain dirt, red Tennessee clay, and trail mud that gets tracked throughout your property. Standard residential cleaning doesn't cut it. We use commercial-grade extraction equipment, specialized floor cleaners, and intensive carpet treatments to remove embedded mountain dirt that ruins carpets and floors if not properly addressed during every turnover.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🛁</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Hot Tub Sanitation & Water Quality</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Hot tubs are the #1 amenity driving Gatlinburg cabin bookings—and the #1 source of negative reviews when not properly maintained. Biofilm, improper chemical balance, dirty filters, and cloudy water destroy guest experiences instantly. We drain, deep clean, sanitize, and refill hot tubs between every guest. We test and balance water chemistry (pH, alkalinity, sanitizer levels), clean jets and filters, scrub away biofilm and body oil residue, and inspect equipment for proper operation. Your hot tub will be crystal clear and guest-ready for every arrival.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">🦌</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Wildlife Activity & Mountain Environment</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Gatlinburg cabins coexist with Smoky Mountain wildlife—black bears, deer, raccoons, birds, and insects. We inspect for and address wildlife-related issues during turnovers including deck debris from animals, inspection for wildlife intrusion attempts, removal of nests or evidence of pest activity, and reporting of serious wildlife encounters that may require property owner attention. We also check for weather-related damage from mountain storms including water intrusion, fallen branches, and wind damage to outdoor furnishings.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Year-Round Tourism & High-Volume Turnovers</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Unlike seasonal vacation markets, Gatlinburg operates year-round with peak demand in summer, October (fall foliage), winter holidays, and spring break. Back-to-back bookings during sold-out weekends require same-day turnover with tight windows between 11 AM checkout and 4 PM check-in. We specialize in high-volume turnover cleaning with dedicated teams, efficient systems, and the capacity to handle multiple properties on the same day during peak seasons. Your calendar stays full, and we ensure every guest arrives to a spotless cabin.
+          </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md p-8">
+            <div class="text-4xl mb-4">⭐</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Elevated Guest Expectations & Premium Pricing</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Gatlinburg vacation rentals command premium rates—$200-$800+ per night during peak seasons. Guests paying these prices expect hotel-quality cleanliness, pristine hot tubs, perfectly staged cabins matching listing photos, and meticulous attention to detail. A single hair in the shower or unmade bed destroys 5-star reviews instantly. We maintain the hotel-quality standards that justify your premium pricing, protect your reputation, and ensure guests leave glowing reviews that drive future bookings and higher nightly rates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas We Serve -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Gatlinburg Vacation Rental Areas We Serve
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Professional vacation rental cleaning throughout all Gatlinburg and Smoky Mountain communities
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Downtown Gatlinburg</h3>
+            <p class="text-gray-700">
+              Condos and properties within walking distance of Parkway attractions, Space Needle, Ripley's Aquarium, and downtown shopping. High turnover volume with tourist season demand.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Arts & Crafts Loop</h3>
+            <p class="text-gray-700">
+              Cabins and vacation homes along the famous 8-mile Arts & Crafts Community. Properties showcasing local artisan culture with convenient access to galleries, shops, and restaurants.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Ski Mountain / Ober Gatlinburg Area</h3>
+            <p class="text-gray-700">
+              Mountain cabins and chalets near Ober Gatlinburg Ski Area and Aerial Tramway. Popular winter destinations with ski-in access and year-round mountain recreation.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Glades Road Corridor</h3>
+            <p class="text-gray-700">
+              Scenic mountain road with luxury cabins, chalets, and vacation properties. Winding roads with elevation changes requiring experienced mountain driving and cleaning logistics.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Buckhorn Road</h3>
+            <p class="text-gray-700">
+              Popular vacation rental corridor connecting Gatlinburg to Pigeon Forge. Mix of cabins and chalets with convenient access to attractions in both cities.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Chalet Village</h3>
+            <p class="text-gray-700">
+              Established vacation rental community with mountain views, wooded settings, and convenient Gatlinburg access. Popular with families and groups.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Highway 321 Mountain Communities</h3>
+            <p class="text-gray-700">
+              Cabins and properties along scenic Highway 321 corridor toward Cosby and Newport. More secluded mountain settings with national park proximity.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Great Smoky Mountains National Park Gateway</h3>
+            <p class="text-gray-700">
+              Properties within minutes of national park entrance, trailheads, and Sugarlands Visitor Center. Prime locations for hiking and nature enthusiasts.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold mb-3 text-blue-600">Remote Mountain Cabins</h3>
+            <p class="text-gray-700">
+              Secluded luxury cabins on private mountain roads with panoramic Smoky Mountain views. Challenging access roads requiring experienced mountain navigation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Landmarks -->
+        <div class="mt-12 bg-blue-50 rounded-lg p-8">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">Serving Vacation Rentals Throughout Gatlinburg</h3>
+          <p class="text-lg text-gray-700 mb-6">
+            Whether your property is near Ober Gatlinburg, the Space Needle, or a remote mountain chalet with national park views, we provide the same exceptional vacation rental cleaning service. Our team cleans properties near:
+          </p>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Ober Gatlinburg Ski Area & Aerial Tramway</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Gatlinburg Space Needle & SkyPark</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Ripley's Aquarium of the Smokies</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Great Smoky Mountains National Park entrance</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Gatlinburg SkyLift Park</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Arts & Crafts Community (8-mile loop)</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Anakeesta mountain theme park</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-blue-600 mr-2">✓</span>
+              <span>Gatlinburg Parkway & downtown attractions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Vacation Rental Cleaning Services for Gatlinburg Properties
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          Comprehensive turnover cleaning, hot tub sanitation, seasonal deep cleans, and specialized services for Smoky Mountain cabins and vacation properties
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Vacation Rental Turnover -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition border-2 border-blue-500">
+            <div class="inline-block bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">MOST POPULAR</div>
+            <div class="text-4xl mb-4">🏔️</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Vacation Rental Turnover</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $180</p>
+            <p class="text-gray-700 mb-6">
+              Complete turnover cleaning between guests including linens, hot tub, outdoor spaces, and photo documentation. Our specialty service for Gatlinburg vacation rentals.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>All rooms cleaned to hotel standards</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Fresh linen service (strip/wash/remake)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Hot tub drain, clean, sanitize, refill</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Deck & outdoor space cleaning</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Before/after photos & damage reporting</span>
+              </li>
+            </ul>
+            <a href="/services/airbnb-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Same-Day Turnover -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Same-Day Turnover Service</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Book by 9 AM</p>
+            <p class="text-gray-700 mb-6">
+              Emergency turnover for back-to-back bookings during peak Gatlinburg tourism season. Maximize your rental calendar with fast turnarounds.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Guest-ready the same day</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Priority scheduling for monthly clients</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Perfect for sold-out October weekends</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Available 7 days/week during peak season</span>
+              </li>
+            </ul>
+            <a href="/services/airbnb-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Seasonal Deep Clean -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">✨</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Seasonal Deep Cleaning</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Starting at $350</p>
+            <p class="text-gray-700 mb-6">
+              Intensive deep clean for spring pollen season, post-summer wear, fall foliage prep, or winter readiness. Maintain 5-star standards year-round.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Complete pollen removal (spring)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Window cleaning inside & out</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Deck pressure washing & sealing</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Appliance deep clean & maintenance</span>
+              </li>
+            </ul>
+            <a href="/deep-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Hot Tub Specialist -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🛁</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Hot Tub Sanitation Service</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Included w/ Turnover</p>
+            <p class="text-gray-700 mb-6">
+              Professional hot tub drain, deep clean, sanitize, refill, and water chemistry balancing between every guest. Prevent negative reviews.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Complete drain & deep scrub</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Biofilm & body oil removal</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Filter cleaning/replacement check</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Water chemistry testing & balancing</span>
+              </li>
+            </ul>
+            <a href="/services/airbnb-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Monthly Packages -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">📅</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Monthly Packages</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Save 15-20%</p>
+            <p class="text-gray-700 mb-6">
+              Recurring service packages for high-volume vacation rental owners. Priority scheduling during peak Gatlinburg tourism seasons.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>15-20% discount per turnover</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Priority during October fall foliage</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Dedicated cleaning team assignment</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Calendar integration included</span>
+              </li>
+            </ul>
+            <a href="/services/airbnb-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+
+          <!-- Linen Service -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+            <div class="text-4xl mb-4">🛏️</div>
+            <h3 class="text-2xl font-bold mb-3 text-gray-900">Linen & Restocking Service</h3>
+            <p class="text-3xl font-bold text-blue-600 mb-4">Available Add-On</p>
+            <p class="text-gray-700 mb-6">
+              Complete linen service and guest amenity restocking. Coordinate with your linen supplier or handle in-unit washing for smaller properties.
+            </p>
+            <ul class="space-y-2 mb-6 text-gray-700">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Strip, wash, dry, remake all beds</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Hotel-style bed making & staging</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Toiletries & supplies restocking</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">✓</span>
+                <span>Coffee, paper products, basics</span>
+              </li>
+            </ul>
+            <a href="/services/airbnb-cleaning" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            <strong>All services include photo documentation, damage reporting, and quality inspection.</strong>
+          </p>
+          <a href="/services/airbnb-cleaning" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            View Complete Airbnb Cleaning Service Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Hero for Gatlinburg -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Why Gatlinburg Vacation Rental Owners Choose Hero House Cleaning
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg max-w-3xl mx-auto">
+          We're not just cleaners—we're vacation rental specialists who understand the Gatlinburg tourism market and what it takes to maintain 5-star properties
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🏔️</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Smoky Mountain Vacation Rental Specialists</h3>
+              <p class="text-gray-700">
+                We specialize exclusively in vacation rental cleaning for Gatlinburg and Smoky Mountain properties. We're not a residential maid service trying to adapt—we understand hot tub sanitation, mountain pollen removal, high-volume turnover demands, and the 5-star standards guests expect from premium Gatlinburg cabins. Our team is trained specifically for vacation rental challenges including tight turnover windows, outdoor amenity cleaning, and the unique conditions of mountain properties.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">⚡</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Same-Day Turnover During Peak Tourism Seasons</h3>
+              <p class="text-gray-700">
+                October fall foliage weekends and summer peak demand require same-day turnover with 11 AM checkout/4 PM check-in windows. We specialize in rapid turnarounds without sacrificing quality. Our teams are scaled specifically for Gatlinburg's peak seasons, and monthly package clients receive priority scheduling during sold-out tourism weekends when every hour of vacancy costs you money. We work 7 days a week during peak periods to ensure your calendar stays fully booked.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">📸</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Photo Documentation & Damage Reporting Included</h3>
+              <p class="text-gray-700">
+                Every turnover includes before/after photos and detailed damage reporting. We document property condition, identify missing items, report maintenance issues (burnt bulbs, clogged drains, HVAC problems), and provide timestamped photos to support damage claims with Airbnb and VRBO. This is especially valuable for out-of-town owners who can't personally inspect properties between guests. Our documentation has helped dozens of owners successfully file damage claims and prevent false accusations from guests.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🛁</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Expert Hot Tub Sanitation Every Turnover</h3>
+              <p class="text-gray-700">
+                Hot tubs drive Gatlinburg cabin bookings—and cause the most negative reviews when not properly maintained. We drain, deep clean, sanitize, and refill hot tubs between every guest without exception. We test and balance water chemistry (pH, alkalinity, chlorine/bromine), clean jets and filters, remove biofilm buildup, and inspect equipment operation. We also clean decks, outdoor furniture, fire pit areas, and grills—the outdoor amenities that separate 5-star cabins from average ones.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">📅</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Calendar Integration & Automated Scheduling</h3>
+              <p class="text-gray-700">
+                We integrate with Airbnb, VRBO, Booking.com, Evolve, Vacasa, Guesty, Hospitable, OwnerRez, and all major vacation rental platforms. Cleanings are scheduled automatically based on guest check-ins and check-outs—no manual coordination required. You receive guest-ready confirmations with photos after each turnover. For owners managing multiple Gatlinburg properties, this automation eliminates hours of weekly administrative work while ensuring no turnover is ever missed during busy seasons.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">🚗</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Experienced with Mountain Access Roads</h3>
+              <p class="text-gray-700">
+                Gatlinburg's best vacation rentals are often on winding mountain roads with steep grades, hairpin turns, and unpaved sections. Our team is experienced navigating difficult mountain terrain in all weather conditions including winter ice and snow. We reach remote mountain cabins that other cleaning services refuse to service. No property is too high, too remote, or too challenging for our Gatlinburg vacation rental cleaning specialists.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">⭐</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Protect Your 5-Star Rating & Rental Income</h3>
+              <p class="text-gray-700">
+                Your Airbnb and VRBO ratings directly impact your search ranking, booking volume, and nightly rates you can command. A single bad cleanliness review can drop your rating and cost thousands in lost revenue. We maintain the hotel-quality standards that protect your 5-star rating and justify premium Gatlinburg pricing. Our clients consistently report that cleanliness is their #1 positive review category—the foundation of vacation rental success.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+              <span class="text-2xl">💰</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2 text-gray-900">Transparent Pricing, No Hidden Fees</h3>
+              <p class="text-gray-700">
+                We provide upfront, transparent pricing based on your property size, amenities, and cleaning needs. No surprise charges, no hidden fees, no price increases during peak seasons (for monthly package clients). You'll know exactly what each turnover costs, making it easy to factor into your vacation rental financials and set appropriate cleaning fees for guests. We also offer volume discounts for owners with multiple Gatlinburg properties.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 text-center">
+          <h3 class="text-2xl font-bold mb-4">Ready to Maximize Your Gatlinburg Rental Income?</h3>
+          <p class="text-lg mb-6 text-blue-100">
+            Join 100+ Gatlinburg vacation rental owners who trust Hero House Cleaning to maintain their 5-star ratings and maximize bookings year-round.
+          </p>
+          <a href="tel:8655071405" class="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405 Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Everything you need to know about vacation rental cleaning in Gatlinburg TN
+        </p>
+
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you offer same-day turnover for Gatlinburg vacation rentals?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! We specialize in same-day turnover cleaning for Gatlinburg vacation rentals, cabins, and Airbnb properties. During peak tourism season (summer, fall foliage, winter holidays), we recommend booking 24 hours in advance when possible. For emergency same-day service, call us before 9 AM at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>. We understand the high-demand nature of Gatlinburg tourism and prioritize quick turnarounds to maximize your rental income.
+            </p>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How do you handle the unique cleaning challenges of Smoky Mountain cabins?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Gatlinburg mountain cabins face unique challenges including heavy pollen from surrounding forests, mountain dirt and red clay tracked inside, dust from unpaved mountain roads, wildlife activity, and seasonal debris. We use specialized equipment including HEPA vacuums for pollen, commercial-grade cleaners for mountain dirt, and detailed checklists specific to cabin properties (decks, hot tubs, wood surfaces, stone fireplaces). We also inspect for wildlife intrusion and weather-related issues during each turnover.
+            </p>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What areas of Gatlinburg do you serve for vacation rental cleaning?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              We serve all Gatlinburg vacation rental areas including downtown cabins and condos, Arts & Crafts Loop properties, Ski Mountain/Ober area, Glades Road corridor, Buckhorn Road cabins, Chalet Village, Mountain communities off Highway 321, and all mountain roads throughout the Great Smoky Mountains National Park gateway area. We're experienced with difficult mountain access roads and can reach properties throughout the Gatlinburg tourism corridor.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Do you clean hot tubs and handle outdoor spaces at Gatlinburg cabins?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Yes! Hot tub cleaning and maintenance is included with our vacation rental turnover service. We drain, clean, sanitize, and refill hot tubs between guests, test chemical levels, and ensure proper operation. We also clean outdoor spaces including decks, porches, outdoor furniture, grills (exterior), and remove debris. For mountain cabins, we inspect and clean outdoor amenities that are critical to guest satisfaction and 5-star reviews.
+            </p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How do you handle high seasonal demand during peak Gatlinburg tourism season?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Peak seasons in Gatlinburg (summer vacation, fall foliage October, winter holidays, spring break) see extremely high demand. We scale our team specifically for Gatlinburg vacation rental needs during these periods. Monthly package clients receive priority scheduling during peak times. We recommend establishing a recurring cleaning relationship before peak season to ensure availability. During sold-out tourism weekends, advance booking is essential. We work 7 days a week during peak seasons to accommodate turnover demand.
+            </p>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              What's included in your Gatlinburg vacation rental cleaning service?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Our comprehensive vacation rental turnover includes: complete cleaning of all bedrooms, bathrooms, kitchen, living areas; fresh linen service (strip, wash, remake beds); hot tub drain/clean/refill; deck and outdoor space cleaning; trash removal; restocking supplies (if requested); damage inspection and photo documentation; amenity check (WiFi, appliances, remotes); and a final quality walkthrough. We provide before/after photos and immediate damage reporting to protect your investment and maintain 5-star guest reviews.
+            </p>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              How much does vacation rental cleaning cost in Gatlinburg?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Gatlinburg vacation rental cleaning typically ranges from $180-$400 per turnover depending on cabin size (1-bedroom condo vs. 5-bedroom cabin), amenities (hot tubs, multiple decks, game rooms), mountain access difficulty, and service level. Monthly packages for owners with frequent bookings save 15-20% per cleaning. Seasonal deep cleans and post-construction cleans are quoted separately. Call <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a> for exact pricing based on your specific Gatlinburg property.
+            </p>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-3 text-gray-900">
+              Can you integrate with my vacation rental management software?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Absolutely! We integrate with all major vacation rental platforms including Airbnb, VRBO, Booking.com, Evolve, Vacasa, and property management systems like Guesty, Hospitable, and OwnerRez. Calendar integration allows automatic turnover scheduling based on guest check-ins/check-outs. We can also work with simple iCal syncs or shared Google calendars. Once integrated, cleanings happen automatically without manual coordination—you just receive guest-ready confirmations with photos after each turnover.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
+          What Gatlinburg Vacation Rental Owners Are Saying
+        </h2>
+        <p class="text-center text-gray-600 mb-12 text-lg">
+          Real reviews from Gatlinburg cabin owners and Airbnb hosts
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We own a 4-bedroom cabin on Glades Road with a hot tub and mountain views. Hero House Cleaning has been our turnover service for 2 years and they're absolutely worth every penny. Same-day turnover during October foliage season, hot tub is always crystal clear, and they catch maintenance issues before guests do. Our cleanliness rating is 4.98—couldn't be happier!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Mark & Jennifer T.</p>
+              <p class="text-gray-600">Gatlinburg Cabin Owners - Glades Road</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "I manage 6 vacation rentals in Gatlinburg and Pigeon Forge. Before Hero, I was constantly stressed about turnovers and dealing with unreliable cleaners. Now everything is automated through calendar integration. They handle same-day turnovers during peak season, provide photos after every clean, and my guests consistently mention how spotless the cabins are. Best decision I made for my rental business."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">David L.</p>
+              <p class="text-gray-600">Property Manager - 6 Gatlinburg/PF Cabins</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "Our Arts & Crafts Loop cabin is our retirement investment and we live 3 hours away. Hero's photo documentation gives us total peace of mind—we can see exactly what condition the property is in after every guest. They've reported damage immediately so we could file claims, caught a water leak before it became serious, and their hot tub maintenance is impeccable. Highly recommend!"
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Robert & Susan M.</p>
+              <p class="text-gray-600">Gatlinburg Airbnb Hosts - Arts & Crafts Loop</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+              "We have a downtown Gatlinburg condo near Ripley's Aquarium with back-to-back bookings almost every weekend. Hero's same-day turnover service is a lifesaver—11 AM checkout, guest-ready by 4 PM check-in. They're fast without cutting corners, extremely reliable, and their pricing is very fair for the quality of work. Our guests love how clean the condo is when they arrive."
+            </p>
+            <div class="border-t border-gray-300 pt-4">
+              <p class="font-bold text-gray-900">Amanda K.</p>
+              <p class="text-gray-600">Downtown Gatlinburg Condo Owner</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-4">
+            Join 100+ Gatlinburg vacation rental owners who trust Hero House Cleaning for turnover service.
+          </p>
+          <a href="#contact-form" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg">
+            Get Your Free Quote Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-50 to-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          Transparent Pricing for Gatlinburg Vacation Rentals
+        </h2>
+        <p class="text-lg text-gray-700 mb-8">
+          No hidden fees. No surprise charges. Just honest, upfront pricing for your Gatlinburg cabin or vacation property.
+        </p>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$180+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Vacation Rental Turnover</div>
+              <div class="text-sm text-gray-600">Complete turnover with hot tub</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">$350+</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Seasonal Deep Clean</div>
+              <div class="text-sm text-gray-600">Spring pollen or peak season prep</div>
+            </div>
+            <div class="text-center">
+              <div class="text-4xl font-bold text-blue-600 mb-2">Save 15-20%</div>
+              <div class="text-lg font-semibold text-gray-900 mb-1">Monthly Packages</div>
+              <div class="text-sm text-gray-600">For high-volume rental owners</div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 pt-6">
+            <p class="text-gray-700 mb-4">
+              <strong>Pricing based on cabin size, amenities, and cleaning needs.</strong><br />
+              Hot tub sanitation, photo documentation, and damage reporting included with all turnover services.
+            </p>
+            <a href="/services/airbnb-cleaning" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              View Complete Service Details & Pricing
+            </a>
+          </div>
+        </div>
+
+        <p class="text-gray-600">
+          Serving all Gatlinburg areas: Downtown, Arts & Crafts Loop, Ski Mountain, Glades Road, and all mountain communities
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Book Your Gatlinburg Vacation Rental Cleaning Today
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Join 100+ Gatlinburg vacation rental owners who trust Hero House Cleaning for same-day turnover and 5-star cleanliness. Get your free quote in minutes.
+          </p>
+          <div class="inline-block bg-blue-50 rounded-lg px-6 py-3 mb-6">
+            <p class="text-2xl font-bold text-blue-600">
+              <a href="tel:8655071405" class="hover:text-blue-800 transition">(865) 507-1405</a>
+            </p>
+            <p class="text-sm text-gray-600">Call now for same-day availability</p>
+          </div>
+        </div>
+
+        <!-- Form Placeholder -->
+        <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+          <div class="text-center text-gray-500 py-12">
+            <!-- GoHighLevel form embed will go here -->
+            <p class="text-lg mb-4">Contact Form</p>
+            <p class="text-sm mb-6">GoHighLevel form integration for Gatlinburg vacation rental inquiries</p>
+            <div class="space-y-4 max-w-md mx-auto text-left">
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Name *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Your name</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Phone *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">(865) 123-4567</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">your@email.com</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Property Type *</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Cabin, Chalet, Condo, etc.</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Location</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400">Gatlinburg area (pre-selected)</div>
+              </div>
+              <div>
+                <label class="block text-gray-700 font-semibold mb-2">Message</label>
+                <div class="bg-white border border-gray-300 rounded px-4 py-3 text-gray-400 h-24">Tell us about your vacation rental...</div>
+              </div>
+              <button class="w-full bg-yellow-400 text-gray-900 px-6 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition">
+                Get My Free Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center text-gray-600">
+          <p class="mb-2">
+            <strong>Prefer to talk?</strong> Call us at <a href="tel:8655071405" class="text-blue-600 hover:text-blue-800 font-semibold">(865) 507-1405</a>
+          </p>
+          <p class="text-sm">
+            Available 7 days/week during peak tourism season | Quick response for vacation rental emergencies
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Maximize Your Gatlinburg Rental Income?
+        </h2>
+        <p class="text-xl mb-8 text-blue-100">
+          Professional vacation rental cleaning that protects your 5-star rating, maximizes bookings, and keeps your Gatlinburg cabin guest-ready year-round.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <a href="tel:8655071405" class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition shadow-lg">
+            Call (865) 507-1405
+          </a>
+          <a href="#contact-form" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition border-2 border-white/30">
+            Get Free Quote
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">Same-Day Turnover</div>
+              <div class="text-blue-100 text-sm">Maximize your booking calendar</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">Hot Tub Experts</div>
+              <div class="text-blue-100 text-sm">Crystal clear every turnover</div>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-2xl">✓</span>
+            <div>
+              <div class="font-bold">100+ Satisfied Owners</div>
+              <div class="text-blue-100 text-sm">Trusted Gatlinburg partner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Internal Links Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6 text-center text-gray-900">Explore Our Services</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <a href="/services/airbnb-cleaning" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏔️</div>
+            <div class="font-semibold text-gray-900">Airbnb Cleaning</div>
+          </a>
+          <a href="/services" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏠</div>
+            <div class="font-semibold text-gray-900">All Services</div>
+          </a>
+          <a href="/locations" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📍</div>
+            <div class="font-semibold text-gray-900">Service Areas</div>
+          </a>
+          <a href="/locations/pigeon-forge" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🎢</div>
+            <div class="font-semibold text-gray-900">Pigeon Forge</div>
+          </a>
+          <a href="/locations/maryville" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">🏫</div>
+            <div class="font-semibold text-gray-900">Maryville</div>
+          </a>
+          <a href="/pricing-guide" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">💲</div>
+            <div class="font-semibold text-gray-900">Pricing</div>
+          </a>
+          <a href="/about" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">👥</div>
+            <div class="font-semibold text-gray-900">About Us</div>
+          </a>
+          <a href="/contact" class="bg-white rounded-lg p-4 hover:shadow-lg transition">
+            <div class="text-3xl mb-2">📞</div>
+            <div class="font-semibold text-gray-900">Contact</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Custom styles for this location page */
+  .hero-section {
+    background-image: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  }
+
+  .prose {
+    max-width: none;
+  }
+
+  .prose p {
+    margin-bottom: 1.5em;
+  }
+
+  /* Ensure proper spacing and readability */
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

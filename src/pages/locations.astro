@@ -2,86 +2,180 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Service Locations - Knoxville Clean" description="We serve Knoxville and surrounding areas in Tennessee with professional house cleaning services.">
+<Layout title="Service Areas Knoxville TN | Hero House Cleaning" description="Hero House Cleaning serves Knoxville, Oak Ridge, Maryville, Farragut, Sevierville, Gatlinburg, and surrounding East Tennessee areas. Family-owned, 4.8 stars.">
+
+	<!-- Service Area Schema Markup -->
+	<script type="application/ld+json" set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Service",
+		"serviceType": "House Cleaning Service",
+		"provider": {
+			"@type": "LocalBusiness",
+			"name": "Hero House Cleaning",
+			"telephone": "+1-865-507-1405",
+			"email": "info@herohousecleaning.com",
+			"url": "https://herohousecleaning.com"
+		},
+		"areaServed": [
+			{
+				"@type": "City",
+				"name": "Knoxville",
+				"@id": "https://www.wikidata.org/wiki/Q185582"
+			},
+			{
+				"@type": "City",
+				"name": "Oak Ridge"
+			},
+			{
+				"@type": "City",
+				"name": "Maryville"
+			},
+			{
+				"@type": "City",
+				"name": "Farragut"
+			},
+			{
+				"@type": "City",
+				"name": "Alcoa"
+			},
+			{
+				"@type": "City",
+				"name": "Sevierville"
+			},
+			{
+				"@type": "City",
+				"name": "Gatlinburg"
+			},
+			{
+				"@type": "City",
+				"name": "Powell"
+			},
+			{
+				"@type": "City",
+				"name": "Karns"
+			},
+			{
+				"@type": "City",
+				"name": "Clinton"
+			},
+			{
+				"@type": "City",
+				"name": "Loudon"
+			}
+		],
+		"geo": {
+			"@type": "GeoCircle",
+			"geoMidpoint": {
+				"@type": "GeoCoordinates",
+				"latitude": "35.9606",
+				"longitude": "-83.9207"
+			},
+			"geoRadius": "40000"
+		}
+	})} />
+
 	<section class="page-header">
 		<div class="container">
-			<h1>Service Areas</h1>
-			<p>Proudly serving Knoxville and surrounding communities</p>
+			<h1>Where We Serve</h1>
+			<p>Professional house cleaning throughout Knoxville & East Tennessee</p>
 		</div>
 	</section>
 
 	<section class="locations-section">
 		<div class="container">
 			<div class="intro-text">
-				<h2>Serving Greater Knoxville, TN</h2>
-				<p>We're proud to bring professional house cleaning services to homes throughout Knoxville and the surrounding areas. Our team is dedicated to serving our local community with reliable, high-quality cleaning services.</p>
+				<h2>Serving Greater Knoxville & East Tennessee</h2>
+				<p>Hero House Cleaning is proud to serve homes and businesses throughout Knoxville and the surrounding East Tennessee communities. As a family-owned, locally-operated business, we're invested in our community and committed to providing reliable, professional cleaning services to our neighbors.</p>
 			</div>
 
 			<div class="locations-grid">
 				<div class="location-card primary">
-					<h3>Knoxville</h3>
-					<p>Our primary service area includes all neighborhoods in Knoxville, from downtown to the suburbs.</p>
+					<h3>🏙️ Knoxville</h3>
+					<p>Our primary service area includes all Knoxville neighborhoods.</p>
 					<ul>
-						<li>Downtown Knoxville</li>
-						<li>West Knoxville</li>
-						<li>North Knoxville</li>
-						<li>South Knoxville</li>
-						<li>East Knoxville</li>
-						<li>Sequoyah Hills</li>
-						<li>Bearden</li>
-						<li>Farragut</li>
+						<li><a href="/locations/downtown-knoxville">Downtown Knoxville</a></li>
+						<li><a href="/locations/west-knoxville">West Knoxville</a></li>
+						<li><a href="/locations/north-knoxville">North Knoxville</a></li>
+						<li><a href="/locations/south-knoxville">South Knoxville</a></li>
+						<li><a href="/locations/east-knoxville">East Knoxville</a></li>
+						<li><a href="/locations/sequoyah-hills">Sequoyah Hills</a></li>
+						<li><a href="/locations/bearden">Bearden</a></li>
 					</ul>
 				</div>
 
 				<div class="location-card">
-					<h3>Knox County</h3>
-					<p>We extend our services throughout Knox County communities.</p>
+					<h3>🏘️ Knox County Communities</h3>
+					<p>Comprehensive service throughout Knox County.</p>
 					<ul>
-						<li>Powell</li>
-						<li>Karns</li>
-						<li>Halls</li>
-						<li>Corryton</li>
-						<li>Mascot</li>
+						<li><a href="/locations/farragut">Farragut</a></li>
+						<li><a href="/locations/powell">Powell</a></li>
+						<li><a href="/locations/karns">Karns</a></li>
+						<li><a href="/locations/halls">Halls</a></li>
+						<li><a href="/locations/corryton">Corryton</a></li>
 					</ul>
 				</div>
 
 				<div class="location-card">
-					<h3>Surrounding Areas</h3>
-					<p>We also serve select nearby communities.</p>
+					<h3>🌄 Surrounding Cities</h3>
+					<p>Extended service to nearby communities.</p>
 					<ul>
-						<li>Maryville</li>
-						<li>Alcoa</li>
-						<li>Oak Ridge</li>
-						<li>Lenoir City</li>
-						<li>Clinton</li>
+						<li><a href="/locations/oak-ridge">Oak Ridge</a></li>
+						<li><a href="/locations/maryville">Maryville</a></li>
+						<li><a href="/locations/alcoa">Alcoa</a></li>
+						<li><a href="/locations/loudon">Loudon</a></li>
+						<li><a href="/locations/lenoir-city">Lenoir City</a></li>
+						<li><a href="/locations/clinton">Clinton</a></li>
+					</ul>
+				</div>
+
+				<div class="location-card">
+					<h3>⛰️ Smoky Mountain Area</h3>
+					<p>Serving the gateway to the Smokies.</p>
+					<ul>
+						<li><a href="/locations/sevierville">Sevierville</a></li>
+						<li><a href="/locations/pigeon-forge">Pigeon Forge</a></li>
+						<li><a href="/locations/gatlinburg">Gatlinburg</a></li>
+						<li><a href="/locations/dandridge">Dandridge</a></li>
+						<li><a href="/locations/seymour">Seymour</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="coverage-note">
 				<h3>Don't See Your Area?</h3>
-				<p>We're always expanding our service area. If you don't see your location listed, please contact us anyway. We may be able to accommodate special requests or your area might be within our extended service range.</p>
-				<a href="/contact" class="btn btn-primary">Contact Us</a>
+				<p>We're always expanding our service area throughout East Tennessee. If you don't see your location listed, please contact us anyway. We may be able to accommodate special requests or your area might be within our extended service range.</p>
+				<div class="contact-options">
+					<a href="/contact" class="btn btn-primary">Get Free Quote</a>
+					<a href="tel:865-507-1405" class="btn btn-secondary">📞 Call (865) 507-1405</a>
+				</div>
 			</div>
 
 			<div class="service-commitment">
-				<h2>Local, Trusted, Professional</h2>
+				<h2>Why Choose Hero House Cleaning?</h2>
 				<div class="commitment-grid">
 					<div class="commitment-item">
 						<h4>🏠 Local Expertise</h4>
-						<p>We understand Knoxville homes and the specific cleaning needs of our community.</p>
+						<p>Founded in Knoxville. We understand East Tennessee homes and the specific cleaning challenges of our region.</p>
 					</div>
 					<div class="commitment-item">
-						<h4>⏰ Reliable Service</h4>
-						<p>Consistent, punctual service you can depend on, week after week.</p>
+						<h4>⭐ 4.8-Star Rated</h4>
+						<p>175+ five-star reviews from satisfied Knoxville-area customers. Your neighbors trust us!</p>
 					</div>
 					<div class="commitment-item">
-						<h4>🤝 Community Focused</h4>
-						<p>We're invested in our community and committed to serving our neighbors well.</p>
+						<h4>🤝 Family-Owned</h4>
+						<p>Not a national franchise. We're invested in our local community and committed to serving our neighbors well.</p>
 					</div>
 					<div class="commitment-item">
-						<h4>🚗 Efficient Routes</h4>
-						<p>Our local presence means we can serve you efficiently and respond quickly to your needs.</p>
+						<h4>💰 Transparent Pricing</h4>
+						<p>Starting at $160. No hidden fees. See our prices upfront - unlike our competitors!</p>
+					</div>
+					<div class="commitment-item">
+						<h4>⏰ Flexible Scheduling</h4>
+						<p>Book online 24/7. Typical availability within 2-3 days. Same-day service for Airbnb turnovers.</p>
+					</div>
+					<div class="commitment-item">
+						<h4>🌿 Eco-Friendly</h4>
+						<p>Safe, environmentally responsible cleaning products. Perfect for families with children and pets.</p>
 					</div>
 				</div>
 			</div>
@@ -90,8 +184,8 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="cta-section">
 		<div class="container">
-			<h2>Ready to Experience the Cleanest Home in Knoxville?</h2>
-			<p>Get your free quote today and join hundreds of satisfied customers in the Knoxville area</p>
+			<h2>Ready to Experience Hero House Cleaning?</h2>
+			<p>Join 175+ satisfied customers throughout Knoxville and East Tennessee. Book your cleaning today!</p>
 			<a href="/contact" class="btn btn-large btn-white">Get Your Free Quote</a>
 		</div>
 	</section>
@@ -174,6 +268,18 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--text-light);
 	}
 
+	.location-card li a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.2s;
+	}
+
+	.location-card li a:hover {
+		color: var(--primary-dark);
+		text-decoration: underline;
+	}
+
 	.location-card li::before {
 		content: "📍";
 		position: absolute;
@@ -200,6 +306,24 @@ import Layout from '../layouts/Layout.astro';
 		max-width: 700px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.contact-options {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn-secondary {
+		background: white;
+		color: var(--primary);
+		border: 2px solid var(--primary);
+	}
+
+	.btn-secondary:hover {
+		background: var(--primary);
+		color: white;
 	}
 
 	.service-commitment {

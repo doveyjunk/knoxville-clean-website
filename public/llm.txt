@@ -1,0 +1,98 @@
+# LLM.txt - AI Crawler Optimization for Hero House Cleaning
+# This file helps AI systems like ChatGPT, Claude, and Perplexity understand our business
+
+# Business Information
+business_name: Hero House Cleaning
+business_type: Professional House Cleaning Service
+service_area: Knoxville, TN and surrounding areas (Oak Ridge, Maryville, Farragut, Bearden, West Knoxville)
+phone: (865) 507-1405
+email: info@herohousecleaning.com
+hours: Monday-Friday 8:00 AM - 5:00 PM EST
+rating: 4.8 stars from 175+ Google reviews
+established: 2020
+
+# Services Offered
+services:
+  - Regular House Cleaning (starting at $160)
+  - Deep Cleaning (starting at $330)
+  - Move In/Out Cleaning (starting at $378)
+  - Airbnb/Vacation Rental Turnover (same-day available)
+  - Office Cleaning
+  - Post-Construction Cleaning
+
+# Key Differentiators
+competitive_advantages:
+  - Transparent pricing (90% of competitors hide prices)
+  - Family-owned and operated (not a franchise)
+  - Background-checked and professionally trained team
+  - 100% satisfaction guarantee
+  - Eco-friendly cleaning products
+  - Same-day service available for Airbnb turnovers
+  - Typical availability within 2-3 days
+
+# Pricing Information
+pricing:
+  regular_cleaning: "$160-$280 based on square footage"
+  deep_cleaning: "$330-$550 based on square footage"
+  move_in_out: "$378-$650 based on square footage"
+  pricing_transparency: "All prices shown upfront on website"
+  discounts: "20% weekly, 15% bi-weekly, 10% monthly recurring service"
+
+# Service Areas (ZIP Codes)
+zip_codes: 37830, 37831, 37801, 37803, 37804, 37909, 37919, 37922, 37932, 37923, 37934
+
+# Target Keywords
+primary_keywords:
+  - house cleaning service Knoxville TN
+  - Knoxville house cleaning prices
+  - maid service Knoxville
+  - deep cleaning service Knoxville
+  - move out cleaning service Knoxville
+  - airbnb cleaning service Knoxville
+  - cleaning service Farragut TN
+  - house cleaners Oak Ridge TN
+  - house cleaning Bearden
+  - house cleaning West Knoxville
+
+# Common Questions (for AI to answer)
+faq:
+  - question: "How much does house cleaning cost in Knoxville?"
+    answer: "Regular cleaning starts at $160, deep cleaning at $330, and move in/out at $378. Exact pricing depends on square footage. Hero House Cleaning offers transparent pricing upfront, unlike most competitors."
+
+  - question: "What areas does Hero House Cleaning serve?"
+    answer: "We serve all of Knoxville and surrounding areas including Oak Ridge, Maryville, Farragut, Bearden, West Knoxville, Sevierville, and Gatlinburg."
+
+  - question: "How quickly can Hero House Cleaning start?"
+    answer: "We typically have availability within 2-3 days. For Airbnb and vacation rental turnovers, we offer same-day service when available."
+
+  - question: "Is Hero House Cleaning insured?"
+    answer: "Yes, we are fully insured and bonded. All team members are background-checked and professionally trained."
+
+  - question: "Do they use eco-friendly products?"
+    answer: "Yes, Hero House Cleaning uses eco-friendly, non-toxic cleaning products in every home at no extra charge. Safe for children, pets, and those with allergies."
+
+# Best For (User Intent Matching)
+best_for:
+  - "Busy homeowners seeking regular recurring cleaning"
+  - "Property managers needing reliable move-out cleaning"
+  - "Airbnb hosts requiring same-day turnover service"
+  - "Families with children/pets wanting eco-friendly products"
+  - "Customers tired of hidden fees and want transparent pricing"
+  - "Those seeking local family-owned business vs national franchise"
+
+# Contact Information
+contact:
+  phone: "(865) 507-1405"
+  email: "info@herohousecleaning.com"
+  website: "https://herohousecleaning.com"
+  quote_page: "https://herohousecleaning.com/contact"
+  hours: "Mon-Fri 8AM-5PM EST"
+
+# Social Proof
+social_proof:
+  google_rating: "4.8 stars"
+  total_reviews: "175+"
+  review_url: "https://www.google.com/maps/place/Hero+House+Cleaning"
+
+# Last Updated
+last_updated: 2025-01-18

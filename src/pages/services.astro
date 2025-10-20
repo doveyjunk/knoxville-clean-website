@@ -2,72 +2,179 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Our Services - Knoxville Clean" description="Comprehensive house cleaning services in Knoxville, TN. Regular cleaning, deep cleaning, move in/out, and more.">
+<Layout title="House Cleaning Services & Pricing | Knoxville TN" description="Transparent pricing for house cleaning in Knoxville. Regular cleaning $160, Deep cleaning $330, Move in/out $378. Eco-friendly, satisfaction guaranteed.">
+
+	<!-- Service Schema Markup -->
+	<script type="application/ld+json" set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "ItemList",
+		"itemListElement": [
+			{
+				"@type": "Service",
+				"name": "Regular House Cleaning",
+				"description": "Weekly or bi-weekly maintenance cleaning service including dusting, vacuuming, mopping, kitchen and bathroom cleaning.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Hero House Cleaning",
+					"telephone": "+1-865-507-1405"
+				},
+				"areaServed": {
+					"@type": "City",
+					"name": "Knoxville"
+				},
+				"offers": {
+					"@type": "Offer",
+					"price": "160",
+					"priceCurrency": "USD",
+					"priceSpecification": {
+						"@type": "UnitPriceSpecification",
+						"price": "160",
+						"priceCurrency": "USD",
+						"referenceQuantity": {
+							"@type": "QuantitativeValue",
+							"value": "1",
+							"unitText": "service"
+						}
+					}
+				}
+			},
+			{
+				"@type": "Service",
+				"name": "Deep Cleaning",
+				"description": "Thorough top-to-bottom cleaning including baseboards, inside appliances, light fixtures, and detailed attention to every surface.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Hero House Cleaning",
+					"telephone": "+1-865-507-1405"
+				},
+				"areaServed": {
+					"@type": "City",
+					"name": "Knoxville"
+				},
+				"offers": {
+					"@type": "Offer",
+					"price": "330",
+					"priceCurrency": "USD"
+				}
+			},
+			{
+				"@type": "Service",
+				"name": "Move In/Out Cleaning",
+				"description": "Comprehensive cleaning for move-in or move-out situations, ensuring deposit return and fresh start in new home.",
+				"provider": {
+					"@type": "LocalBusiness",
+					"name": "Hero House Cleaning",
+					"telephone": "+1-865-507-1405"
+				},
+				"areaServed": {
+					"@type": "City",
+					"name": "Knoxville"
+				},
+				"offers": {
+					"@type": "Offer",
+					"price": "378",
+					"priceCurrency": "USD"
+				}
+			}
+		]
+	})} />
+
 	<section class="page-header">
 		<div class="container">
-			<h1>Our Cleaning Services</h1>
-			<p>Professional cleaning solutions tailored to your needs</p>
+			<h1>Our Cleaning Services & Pricing</h1>
+			<p>Transparent pricing • No hidden fees • Satisfaction guaranteed</p>
 		</div>
 	</section>
 
 	<section class="services-section">
 		<div class="container">
 			<div id="regular" class="service-detail">
-				<h2>Regular Cleaning</h2>
-				<p class="service-intro">Keep your home consistently clean with our weekly or bi-weekly maintenance service.</p>
+				<div class="service-header">
+					<div>
+						<h2>Regular Cleaning</h2>
+						<p class="service-intro">Keep your home consistently clean with our weekly or bi-weekly maintenance service.</p>
+					</div>
+					<div class="pricing-badge">
+						<span class="price-label">Starting at</span>
+						<span class="price-amount">$160</span>
+					</div>
+				</div>
 				<div class="service-content">
 					<div class="service-description">
 						<h3>What's Included:</h3>
 						<ul>
 							<li>Dusting all surfaces and furniture</li>
-							<li>Vacuuming and mopping floors</li>
-							<li>Kitchen cleaning (counters, sinks, appliances)</li>
+							<li>Vacuuming and mopping all floors</li>
+							<li>Kitchen cleaning (counters, sinks, exterior appliances)</li>
 							<li>Bathroom cleaning and sanitizing</li>
 							<li>Trash removal and bin cleaning</li>
 							<li>Making beds and tidying rooms</li>
-							<li>Wiping down switches and handles</li>
+							<li>Wiping down light switches and door handles</li>
+							<li>Spot cleaning walls and baseboards</li>
 						</ul>
 					</div>
 					<div class="service-details-box">
 						<h3>Perfect For:</h3>
-						<p>Busy families, professionals, and anyone who wants to maintain a clean home without the hassle</p>
+						<p>Busy families, working professionals, and anyone who wants to maintain a consistently clean home</p>
 						<h3>Frequency Options:</h3>
 						<p>Weekly, Bi-weekly, or Monthly</p>
+						<h3>Pricing Based On:</h3>
+						<p>Square footage of your home</p>
 						<a href="/contact" class="btn btn-primary">Schedule Service</a>
 					</div>
 				</div>
 			</div>
 
 			<div id="deep" class="service-detail">
-				<h2>Deep Cleaning</h2>
-				<p class="service-intro">A thorough, top-to-bottom cleaning that reaches every corner of your home.</p>
+				<div class="service-header">
+					<div>
+						<h2>Deep Cleaning</h2>
+						<p class="service-intro">A thorough, top-to-bottom cleaning that reaches every corner of your home.</p>
+					</div>
+					<div class="pricing-badge">
+						<span class="price-label">Starting at</span>
+						<span class="price-amount">$330</span>
+					</div>
+				</div>
 				<div class="service-content">
 					<div class="service-description">
 						<h3>What's Included:</h3>
 						<ul>
 							<li>Everything in Regular Cleaning, plus:</li>
-							<li>Baseboard and trim cleaning</li>
-							<li>Inside appliances (oven, refrigerator, microwave)</li>
-							<li>Cabinet exterior and interior cleaning</li>
+							<li>Baseboard and trim detailed cleaning</li>
+							<li>Inside appliances (add-ons available)</li>
+							<li>Cabinet exterior cleaning</li>
 							<li>Window sills and tracks</li>
 							<li>Light fixtures and ceiling fan cleaning</li>
 							<li>Door frames and detailed woodwork</li>
 							<li>Behind and under furniture</li>
+							<li>Blind dusting and wiping</li>
+							<li>More thorough attention to every surface</li>
 						</ul>
 					</div>
 					<div class="service-details-box">
 						<h3>Perfect For:</h3>
-						<p>Spring cleaning, preparing for guests, or when your home needs extra attention</p>
+						<p>Spring cleaning, preparing for guests, seasonal refresh, or when your home needs extra attention</p>
 						<h3>Time Required:</h3>
 						<p>3-6 hours depending on home size</p>
+						<h3>Recommended:</h3>
+						<p>Quarterly or as needed</p>
 						<a href="/contact" class="btn btn-primary">Get a Quote</a>
 					</div>
 				</div>
 			</div>
 
 			<div id="move" class="service-detail">
-				<h2>Move In/Move Out Cleaning</h2>
-				<p class="service-intro">Ensure a fresh start in your new home or leave your old one spotless.</p>
+				<div class="service-header">
+					<div>
+						<h2>Move In/Move Out Cleaning</h2>
+						<p class="service-intro">Ensure a fresh start in your new home or leave your old one spotless.</p>
+					</div>
+					<div class="pricing-badge">
+						<span class="price-label">Starting at</span>
+						<span class="price-amount">$378</span>
+					</div>
+				</div>
 				<div class="service-content">
 					<div class="service-description">
 						<h3>What's Included:</h3>
@@ -80,36 +187,154 @@ import Layout from '../layouts/Layout.astro';
 							<li>Window cleaning (interior)</li>
 							<li>Bathroom deep clean and sanitization</li>
 							<li>Floor cleaning (vacuum, mop, or both)</li>
+							<li>Baseboards and trim cleaning</li>
+							<li>Light fixtures and fans</li>
 						</ul>
 					</div>
 					<div class="service-details-box">
 						<h3>Perfect For:</h3>
-						<p>Tenants, landlords, home buyers, and home sellers</p>
+						<p>Tenants, landlords, home buyers, home sellers, and real estate agents</p>
 						<h3>Satisfaction Guarantee:</h3>
 						<p>We'll make it right if you're not 100% satisfied</p>
+						<h3>Popular With:</h3>
+						<p>Property managers and real estate professionals</p>
 						<a href="/contact" class="btn btn-primary">Book Now</a>
 					</div>
 				</div>
 			</div>
 
+			<div id="office" class="service-detail">
+				<div class="service-header">
+					<div>
+						<h2>Office Cleaning</h2>
+						<p class="service-intro">Professional office cleaning customized for your business needs.</p>
+					</div>
+					<div class="pricing-badge custom">
+						<span class="price-label">Custom</span>
+						<span class="price-amount">Quote</span>
+					</div>
+				</div>
+				<div class="service-content">
+					<div class="service-description">
+						<h3>Services Available:</h3>
+						<ul>
+							<li>Regular office maintenance cleaning</li>
+							<li>Restroom sanitization</li>
+							<li>Break room and kitchen cleaning</li>
+							<li>Vacuuming and floor care</li>
+							<li>Trash removal and recycling</li>
+							<li>Surface disinfection</li>
+							<li>Window cleaning</li>
+							<li>Flexible scheduling (after hours available)</li>
+						</ul>
+					</div>
+					<div class="service-details-box">
+						<h3>Perfect For:</h3>
+						<p>Small businesses, professional offices, medical offices, and retail spaces</p>
+						<h3>Custom Scheduling:</h3>
+						<p>Daily, weekly, bi-weekly, or monthly service</p>
+						<h3>Get a Quote:</h3>
+						<p>Call (865) 507-1405 for custom pricing based on your office size and needs</p>
+						<a href="tel:865-507-1405" class="btn btn-primary">Call for Quote</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="airbnb" class="service-detail">
+				<div class="service-header">
+					<div>
+						<h2>Airbnb/Vacation Rental Cleaning</h2>
+						<p class="service-intro">Fast turnaround cleaning between guests. Keep your ratings high!</p>
+					</div>
+					<div class="pricing-badge custom">
+						<span class="price-label">Custom</span>
+						<span class="price-amount">Quote</span>
+					</div>
+				</div>
+				<div class="service-content">
+					<div class="service-description">
+						<h3>Turnover Service Includes:</h3>
+						<ul>
+							<li>Complete cleaning between guests</li>
+							<li>Linen service (strip, wash, remake beds)</li>
+							<li>Bathroom deep clean and restocking</li>
+							<li>Kitchen cleaning and restocking</li>
+							<li>Trash removal</li>
+							<li>Floor cleaning throughout</li>
+							<li>Quality check before guest arrival</li>
+							<li>Same-day turnaround available</li>
+						</ul>
+					</div>
+					<div class="service-details-box">
+						<h3>Perfect For:</h3>
+						<p>Airbnb hosts, VRBO owners, vacation rental property managers</p>
+						<h3>Turnaround Time:</h3>
+						<p>Same-day or next-day service available</p>
+						<h3>Get a Quote:</h3>
+						<p>Call (865) 507-1405 for pricing based on property size and frequency</p>
+						<a href="tel:865-507-1405" class="btn btn-primary">Call for Quote</a>
+					</div>
+				</div>
+			</div>
+
 			<div class="service-detail">
-				<h2>Additional Services</h2>
-				<div class="additional-services">
+				<h2>Add-On Services</h2>
+				<p class="service-intro">Enhance any cleaning with these popular add-ons:</p>
+				<div class="addons-grid">
 					<div class="addon-card">
-						<h3>Window Cleaning</h3>
-						<p>Interior and exterior window cleaning for a crystal-clear view</p>
+						<div class="addon-price">$50</div>
+						<h3>Pet Hair Removal</h3>
+						<p>Extra attention to pet hair and dander throughout your home</p>
 					</div>
 					<div class="addon-card">
+						<div class="addon-price">$75</div>
+						<h3>Extra 1000 Sq Ft</h3>
+						<p>For larger homes, add per additional 1000 square feet</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$137</div>
 						<h3>Carpet Cleaning</h3>
-						<p>Professional steam cleaning to refresh and sanitize your carpets</p>
+						<p>Professional carpet deep cleaning service</p>
 					</div>
 					<div class="addon-card">
-						<h3>Post-Construction</h3>
-						<p>Thorough cleanup after renovation or construction projects</p>
+						<div class="addon-price">$12/window</div>
+						<h3>Interior Windows</h3>
+						<p>Crystal-clear window cleaning</p>
 					</div>
 					<div class="addon-card">
-						<h3>Laundry Service</h3>
-						<p>Wash, dry, and fold service to save you time</p>
+						<div class="addon-price">$75</div>
+						<h3>Inside Refrigerator</h3>
+						<p>Deep clean and sanitize refrigerator interior</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$40</div>
+						<h3>Inside Cabinets</h3>
+						<p>Cabinet interior cleaning and organizing</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$50</div>
+						<h3>Heavy Duty Clean</h3>
+						<p>Extra attention for heavily soiled areas</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$20</div>
+						<h3>Wet Wipe Blinds</h3>
+						<p>Thorough blind cleaning and wiping</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$35</div>
+						<h3>Linen Service</h3>
+						<p>Change and launder bed linens</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$40</div>
+						<h3>Inside Oven</h3>
+						<p>Deep oven interior cleaning</p>
+					</div>
+					<div class="addon-card">
+						<div class="addon-price">$20</div>
+						<h3>Dishes</h3>
+						<p>Wash and put away dishes</p>
 					</div>
 				</div>
 			</div>
@@ -118,9 +343,23 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="pricing-note">
 		<div class="container">
-			<h2>Transparent Pricing</h2>
-			<p>All quotes are customized based on your home size and specific needs. Contact us for a free, no-obligation estimate.</p>
-			<a href="/contact" class="btn btn-large btn-primary">Request Your Free Quote</a>
+			<h2>Transparent Pricing You Can Trust</h2>
+			<p>Unlike our competitors who hide pricing, we believe in transparency. All prices are based on your home's square footage. Final quotes provided after a brief consultation.</p>
+			<div class="pricing-features">
+				<div class="pricing-feature">
+					<strong>✓ No Hidden Fees</strong>
+					<p>What you see is what you pay</p>
+				</div>
+				<div class="pricing-feature">
+					<strong>✓ Instant Online Quotes</strong>
+					<p>Get pricing in seconds</p>
+				</div>
+				<div class="pricing-feature">
+					<strong>✓ Price Match Guarantee</strong>
+					<p>We'll match any competitor's written quote</p>
+				</div>
+			</div>
+			<a href="/contact" class="btn btn-large btn-primary">Get Your Free Quote</a>
 		</div>
 	</section>
 </Layout>
@@ -158,6 +397,14 @@ import Layout from '../layouts/Layout.astro';
 		border-bottom: none;
 	}
 
+	.service-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
 	.service-detail h2 {
 		color: var(--primary);
 		font-size: 2rem;
@@ -167,7 +414,35 @@ import Layout from '../layouts/Layout.astro';
 	.service-intro {
 		font-size: 1.1rem;
 		color: var(--text-light);
-		margin-bottom: 2rem;
+		margin-bottom: 0;
+	}
+
+	.pricing-badge {
+		background: var(--primary);
+		color: white;
+		padding: 1rem 1.5rem;
+		border-radius: 0.5rem;
+		text-align: center;
+		min-width: 140px;
+		flex-shrink: 0;
+	}
+
+	.pricing-badge.custom {
+		background: var(--secondary);
+	}
+
+	.price-label {
+		display: block;
+		font-size: 0.85rem;
+		opacity: 0.9;
+		margin-bottom: 0.25rem;
+	}
+
+	.price-amount {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 1;
 	}
 
 	.service-content {
@@ -229,23 +504,47 @@ import Layout from '../layouts/Layout.astro';
 		margin-top: 1rem;
 	}
 
-	.additional-services {
+	.addons-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
+		gap: 1.5rem;
 		margin-top: 2rem;
 	}
 
 	.addon-card {
-		background: var(--bg-light);
-		padding: 2rem;
+		background: white;
+		padding: 1.5rem;
 		border-radius: 0.5rem;
-		border-left: 4px solid var(--secondary);
+		border: 2px solid var(--border);
+		transition: all 0.3s;
+	}
+
+	.addon-card:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+	}
+
+	.addon-price {
+		background: var(--secondary);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 0.25rem;
+		font-weight: 700;
+		display: inline-block;
+		margin-bottom: 1rem;
+		font-size: 1.1rem;
 	}
 
 	.addon-card h3 {
-		color: var(--primary);
+		color: var(--text);
 		margin-bottom: 0.5rem;
+		font-size: 1.1rem;
+	}
+
+	.addon-card p {
+		color: var(--text-light);
+		font-size: 0.95rem;
+		margin: 0;
 	}
 
 	.pricing-note {
@@ -258,9 +557,37 @@ import Layout from '../layouts/Layout.astro';
 		margin-bottom: 1rem;
 	}
 
-	.pricing-note p {
+	.pricing-note > .container > p {
 		font-size: 1.1rem;
 		margin-bottom: 2rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.pricing-features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin: 3rem auto;
+		max-width: 900px;
+	}
+
+	.pricing-feature {
+		text-align: center;
+	}
+
+	.pricing-feature strong {
+		display: block;
+		color: var(--secondary);
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.pricing-feature p {
+		color: var(--text-light);
+		font-size: 0.95rem;
+		margin: 0;
 	}
 
 	.btn {
@@ -278,6 +605,14 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	@media (max-width: 768px) {
+		.service-header {
+			flex-direction: column;
+		}
+
+		.pricing-badge {
+			width: 100%;
+		}
+
 		.service-content {
 			grid-template-columns: 1fr;
 			gap: 2rem;
@@ -287,7 +622,11 @@ import Layout from '../layouts/Layout.astro';
 			font-size: 2rem;
 		}
 
-		.additional-services {
+		.addons-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-features {
 			grid-template-columns: 1fr;
 		}
 	}

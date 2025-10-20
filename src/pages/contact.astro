@@ -2,11 +2,48 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Contact Us - Knoxville Clean" description="Get in touch with Knoxville Clean for a free quote or to schedule your house cleaning service in Knoxville, TN.">
+<Layout title="Contact Hero House Cleaning - Free Quote | Knoxville TN" description="Get your free quote from Hero House Cleaning in Knoxville. 4.8 stars, 175+ reviews. Call (865) 507-1405 or book online. Typical availability in 2-3 days.">
+
+	<!-- ContactPage Schema Markup -->
+	<script type="application/ld+json" set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "ContactPage",
+		"@id": "https://herohousecleaning.com/contact#webpage",
+		"url": "https://herohousecleaning.com/contact",
+		"name": "Contact Hero House Cleaning - Free Quote",
+		"description": "Get your free quote from Hero House Cleaning in Knoxville. Call (865) 507-1405 or book online.",
+		"mainEntity": {
+			"@type": "LocalBusiness",
+			"name": "Hero House Cleaning",
+			"telephone": "+1-865-507-1405",
+			"email": "info@herohousecleaning.com",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Knoxville",
+				"addressRegion": "TN",
+				"postalCode": "37919",
+				"addressCountry": "US"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+1-865-507-1405",
+				"contactType": "Customer Service",
+				"areaServed": ["Knoxville", "Oak Ridge", "Maryville", "Farragut"],
+				"availableLanguage": "English",
+				"hoursAvailable": {
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+					"opens": "08:00",
+					"closes": "17:00"
+				}
+			}
+		}
+	})} />
+
 	<section class="page-header">
 		<div class="container">
-			<h1>Contact Us</h1>
-			<p>Get your free quote today</p>
+			<h1>Get Your Free Quote</h1>
+			<p>Join 175+ happy customers • Book online 24/7 • Availability in 2-3 days</p>
 		</div>
 	</section>
 
@@ -14,36 +51,38 @@ import Layout from '../layouts/Layout.astro';
 		<div class="container">
 			<div class="contact-grid">
 				<div class="contact-info">
-					<h2>Get in Touch</h2>
-					<p>We'd love to hear from you! Whether you're ready to schedule a cleaning or just have questions, we're here to help.</p>
+					<h2>We're Here to Help</h2>
+					<p>Ready to experience the Hero House Cleaning difference? Get your free, no-obligation quote today. We typically have availability within 2-3 days and offer same-day service for Airbnb turnovers.</p>
 
 					<div class="info-cards">
 						<div class="info-card">
-							<h3>📞 Phone</h3>
-							<p>(865) XXX-XXXX</p>
-							<p class="info-note">Monday - Friday: 8am - 6pm<br>Saturday: 9am - 4pm</p>
+							<h3>📞 Call or Text</h3>
+							<p><a href="tel:865-507-1405">(865) 507-1405</a></p>
+							<p class="info-note">Monday - Friday: 8AM - 5PM</p>
 						</div>
 
 						<div class="info-card">
 							<h3>📧 Email</h3>
-							<p>info@knoxvilleclean.com</p>
+							<p><a href="mailto:info@herohousecleaning.com">info@herohousecleaning.com</a></p>
 							<p class="info-note">We respond within 24 hours</p>
 						</div>
 
 						<div class="info-card">
-							<h3>📍 Service Area</h3>
-							<p>Knoxville, TN & Surrounding Areas</p>
-							<p class="info-note"><a href="/locations">View all locations →</a></p>
+							<h3>📍 Service Areas</h3>
+							<p>Knoxville • Oak Ridge • Maryville</p>
+							<p class="info-note"><a href="/locations">View all 21+ locations →</a></p>
 						</div>
 					</div>
 
 					<div class="quick-facts">
-						<h3>What to Expect</h3>
+						<h3>Why Choose Hero House Cleaning?</h3>
 						<ul>
-							<li>Free, no-obligation quotes</li>
-							<li>Same-day or next-day response</li>
-							<li>Flexible scheduling options</li>
-							<li>Professional consultation</li>
+							<li>⭐ 4.8 stars from 175+ customers</li>
+							<li>💰 Transparent pricing - starting at $160</li>
+							<li>🏠 Family-owned, Knoxville-based</li>
+							<li>🌿 Eco-friendly cleaning products</li>
+							<li>✅ Background-checked team members</li>
+							<li>📋 100% satisfaction guarantee</li>
 						</ul>
 					</div>
 				</div>
@@ -86,10 +125,11 @@ import Layout from '../layouts/Layout.astro';
 							<label for="service">Service Type</label>
 							<select id="service" name="service">
 								<option value="">Select service</option>
-								<option value="regular">Regular Cleaning</option>
-								<option value="deep">Deep Cleaning</option>
-								<option value="move">Move In/Out</option>
-								<option value="other">Other</option>
+								<option value="regular">Regular Cleaning ($160+)</option>
+								<option value="deep">Deep Cleaning ($330+)</option>
+								<option value="move">Move In/Out ($378+)</option>
+								<option value="office">Office Cleaning</option>
+								<option value="airbnb">Airbnb/Vacation Rental</option>
 							</select>
 						</div>
 
@@ -111,7 +151,7 @@ import Layout from '../layouts/Layout.astro';
 
 						<button type="submit" class="btn btn-primary btn-large">Get Your Free Quote</button>
 
-						<p class="form-note">By submitting this form, you agree to be contacted by Knoxville Clean regarding your inquiry.</p>
+						<p class="form-note">By submitting this form, you agree to be contacted by Hero House Cleaning regarding your inquiry. We typically respond within 24 hours.</p>
 					</form>
 				</div>
 			</div>
@@ -120,23 +160,31 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="faq-preview">
 		<div class="container">
-			<h2>Common Questions</h2>
+			<h2>Frequently Asked Questions</h2>
 			<div class="faq-grid">
 				<div class="faq-item">
 					<h3>How quickly can you start?</h3>
-					<p>We often have availability within 2-3 days and can sometimes accommodate same-week requests.</p>
+					<p>We typically have availability within 2-3 days. For Airbnb and vacation rental turnovers, we offer same-day service when available.</p>
 				</div>
 				<div class="faq-item">
-					<h3>Do I need to be home?</h3>
-					<p>No, many of our clients provide us with a key or access code. We're fully insured and bonded.</p>
+					<h3>Do I need to be home during cleaning?</h3>
+					<p>No, many of our clients provide a key or access code. All team members are background-checked, and we're fully insured and bonded for your peace of mind.</p>
 				</div>
 				<div class="faq-item">
 					<h3>What if I'm not satisfied?</h3>
-					<p>We have a 100% satisfaction guarantee. If you're not happy, we'll return within 24 hours to make it right.</p>
+					<p>We have a 100% satisfaction guarantee. If you're not completely happy with our service, we'll return to make it right - no questions asked.</p>
 				</div>
 				<div class="faq-item">
-					<h3>Do you bring supplies?</h3>
-					<p>Yes, we bring all necessary cleaning supplies and equipment. You don't need to provide anything.</p>
+					<h3>Do you bring your own supplies?</h3>
+					<p>Yes! We bring all eco-friendly cleaning supplies and professional equipment. You don't need to provide anything.</p>
+				</div>
+				<div class="faq-item">
+					<h3>What areas do you serve?</h3>
+					<p>We serve Knoxville and surrounding areas including Oak Ridge, Maryville, Farragut, Sevierville, Gatlinburg, and more. <a href="/locations">See all locations →</a></p>
+				</div>
+				<div class="faq-item">
+					<h3>How much does it cost?</h3>
+					<p>Regular cleaning starts at $160, deep cleaning at $330, and move in/out at $378. Pricing varies by square footage. <a href="/services">View all pricing →</a></p>
 				</div>
 			</div>
 		</div>
@@ -207,6 +255,16 @@ import Layout from '../layouts/Layout.astro';
 		margin-bottom: 0.25rem;
 		color: var(--text);
 		font-weight: 500;
+	}
+
+	.info-card p a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.info-card p a:hover {
+		text-decoration: underline;
 	}
 
 	.info-note {
@@ -379,6 +437,16 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--primary);
 		margin-bottom: 0.5rem;
 		font-size: 1.1rem;
+	}
+
+	.faq-item p a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.faq-item p a:hover {
+		text-decoration: underline;
 	}
 
 	@media (max-width: 968px) {

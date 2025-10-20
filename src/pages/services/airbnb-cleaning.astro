@@ -1,0 +1,1945 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const pageTitle = "Airbnb Cleaning Knoxville | Same-Day Turnover";
+const pageDescription = "Professional Airbnb cleaning in Knoxville with same-day turnover. Maintain 5-star reviews. Serving Gatlinburg & Pigeon Forge. Call (865) 507-1405";
+
+// Structured Data - LocalBusiness Schema
+const localBusinessSchema = {
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	"name": "Hero House Cleaning - Airbnb Cleaning Service",
+	"image": "https://herohousecleaning.com/logo.png",
+	"@id": "https://herohousecleaning.com/services/airbnb-cleaning",
+	"url": "https://herohousecleaning.com/services/airbnb-cleaning",
+	"telephone": "865-507-1405",
+	"priceRange": "$$",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Knoxville",
+		"addressRegion": "TN",
+		"postalCode": "37919",
+		"addressCountry": "US"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 35.9606,
+		"longitude": -83.9207
+	},
+	"openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+		"opens": "08:00",
+		"closes": "17:00"
+	},
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.8",
+		"reviewCount": "175"
+	}
+};
+
+// Service Schema
+const serviceSchema = {
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"serviceType": "Airbnb Cleaning Service",
+	"provider": {
+		"@type": "LocalBusiness",
+		"name": "Hero House Cleaning"
+	},
+	"areaServed": [
+		{
+			"@type": "City",
+			"name": "Knoxville",
+			"@id": "https://en.wikipedia.org/wiki/Knoxville,_Tennessee"
+		},
+		{
+			"@type": "City",
+			"name": "Gatlinburg"
+		},
+		{
+			"@type": "City",
+			"name": "Pigeon Forge"
+		},
+		{
+			"@type": "City",
+			"name": "Sevierville"
+		}
+	],
+	"offers": {
+		"@type": "Offer",
+		"name": "Airbnb Turnover Cleaning",
+		"description": "Same-day vacation rental turnover service with quality inspection"
+	}
+};
+
+// FAQ Schema
+const faqSchema = {
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "How much does Airbnb cleaning cost in Knoxville?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Airbnb cleaning in Knoxville typically ranges from $150-$300 per turnover depending on property size and service level. We offer both per-turnover pricing and discounted monthly packages for frequent bookings. Contact us at (865) 507-1405 for a custom quote based on your property."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do you offer same-day Airbnb turnover service?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes! We specialize in same-day turnover for Airbnb and vacation rentals in Knoxville. Book by 9 AM for same-day service. We understand the importance of quick turnarounds to maximize your booking calendar and maintain 5-star reviews."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How do you handle key access for my Airbnb?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We work with your preferred access method - lockbox codes, smart locks, key exchange, or property manager coordination. Our team is experienced with various property management systems and can integrate seamlessly with your check-in/check-out process."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do you provide restocking services for Airbnb properties?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes! We can restock toiletries, coffee, paper products, and other amenities. Simply provide us with your preferred inventory list and we'll ensure your property is always guest-ready with all necessary supplies."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What areas do you serve for vacation rental cleaning?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We provide Airbnb and vacation rental cleaning throughout Knoxville, Gatlinburg, Pigeon Forge, Sevierville, and surrounding East Tennessee areas. We specialize in both urban Knoxville properties and Smoky Mountain vacation rentals."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How do you ensure quality for vacation rental cleaning?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Every turnover includes a comprehensive quality inspection checklist. We photo document the property condition, report any damage or maintenance issues immediately, and ensure hotel-quality standards are met before each guest arrival. Our goal is to help you maintain consistent 5-star cleanliness reviews."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Can you integrate with my property management software?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes! We work with popular property management platforms and calendar systems. We can sync with your booking calendar to automatically schedule cleanings based on guest check-ins and check-outs, ensuring seamless coordination without manual scheduling."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What happens if you find damage during turnover?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We immediately document and report any damage, missing items, or maintenance issues with photos and detailed notes. This helps you file timely guest damage claims and address maintenance before the next guest arrives, protecting your investment and reputation."
+			}
+		}
+	]
+};
+
+// Breadcrumb Schema
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://herohousecleaning.com"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Services",
+			"item": "https://herohousecleaning.com/services"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Airbnb Cleaning Service Knoxville",
+			"item": "https://herohousecleaning.com/services/airbnb-cleaning"
+		}
+	]
+};
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+	<!-- Schema Markup -->
+	<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+	<!-- Hero Section -->
+	<section class="hero-section">
+		<div class="container">
+			<div class="breadcrumb">
+				<a href="/">Home</a> / <a href="/services">Services</a> / Airbnb Cleaning Service Knoxville
+			</div>
+			<div class="hero-content">
+				<div class="hero-text">
+					<h1>Airbnb Cleaning Service Knoxville | Same-Day Vacation Rental Turnover</h1>
+					<p class="hero-subtitle">Professional turnover cleaning for Airbnb & vacation rentals. Maintain 5-star reviews with reliable, hotel-quality cleaning in Knoxville, Gatlinburg, and Pigeon Forge.</p>
+					<div class="trust-badge">4.8 stars | 175+ reviews | Same-day service available</div>
+					<div class="hero-cta">
+						<a href="/contact" class="btn btn-primary btn-large">Get Your Free Airbnb Quote</a>
+						<a href="tel:865-507-1405" class="btn btn-secondary btn-large">Call (865) 507-1405</a>
+					</div>
+					<p class="hero-note">Same-day turnover | Quality inspections | Damage reporting | Restocking available</p>
+				</div>
+				<div class="hero-image">
+					<img src="/images/airbnb-cleaning-hero.jpg" alt="Professional Airbnb cleaning service in Knoxville TN" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Airbnb Hosts Choose Us -->
+	<section class="why-choose-section">
+		<div class="container">
+			<h2>Why Knoxville Airbnb Hosts Trust Hero House Cleaning</h2>
+			<p class="section-intro">Your guests expect perfection, and your reviews depend on it. Here's how we help you maintain 5-star cleanliness ratings consistently:</p>
+
+			<div class="features-grid">
+				<div class="feature-card">
+					<div class="feature-icon">⚡</div>
+					<h3>Same-Day Turnover Service</h3>
+					<p>We understand tight booking schedules. Book by 9 AM and we'll have your property guest-ready the same day. No more blocked calendars or lost revenue due to cleaning delays. Fast turnarounds are our specialty, allowing you to maximize occupancy and profits.</p>
+				</div>
+
+				<div class="feature-card">
+					<div class="feature-icon">📅</div>
+					<h3>Flexible Scheduling Around Your Guests</h3>
+					<p>We coordinate with your check-in and check-out times, not the other way around. Morning checkout and afternoon check-in? We'll be there in between. Late-night arrival? We'll finish before they show up. Your booking calendar drives our schedule.</p>
+				</div>
+
+				<div class="feature-card">
+					<div class="feature-icon">⭐</div>
+					<h3>Quality Checks for 5-Star Reviews</h3>
+					<p>Every turnover includes a detailed quality inspection using our comprehensive checklist. We ensure hotel-quality standards are met before every guest arrival. Your reviews matter to us as much as they matter to you - we're invested in your success.</p>
+				</div>
+
+				<div class="feature-card">
+					<div class="feature-icon">📸</div>
+					<h3>Photo Documentation Included</h3>
+					<p>We photograph the property before and after each cleaning. This protects you from false damage claims and provides proof of condition. You'll have timestamped documentation to support your security deposit decisions.</p>
+				</div>
+
+				<div class="feature-card">
+					<div class="feature-icon">🔧</div>
+					<h3>Damage & Maintenance Reporting</h3>
+					<p>We immediately report any damage, missing items, or maintenance issues with detailed notes and photos. This allows you to address problems before the next guest arrives and file timely damage claims when needed. We're your eyes on the property.</p>
+				</div>
+
+				<div class="feature-card">
+					<div class="feature-icon">🏔️</div>
+					<h3>Gatlinburg & Pigeon Forge Experience</h3>
+					<p>We specialize in Smoky Mountain vacation rentals and understand the unique needs of cabin and chalet properties. From mountain homes to downtown condos, we've cleaned hundreds of vacation rentals in East Tennessee.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- How Same-Day Turnover Works -->
+	<section class="how-it-works-section">
+		<div class="container">
+			<h2>How Our Same-Day Airbnb Turnover Service Works</h2>
+			<p class="section-intro">Seamless coordination for stress-free vacation rental management:</p>
+
+			<div class="process-steps">
+				<div class="process-step">
+					<div class="step-number">1</div>
+					<div class="step-content">
+						<h3>Guest Checks Out</h3>
+						<p>Your guest checks out at 10 AM or 11 AM (your specified time). We receive automatic notification through your property management system or booking calendar integration.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">2</div>
+					<div class="step-content">
+						<h3>We Arrive & Clean</h3>
+						<p>Our team arrives within the window you specify. We complete comprehensive turnover cleaning including all linens, bathrooms, kitchen, floors, trash removal, and restocking. Typical turnovers take 2-4 hours depending on property size.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">3</div>
+					<div class="step-content">
+						<h3>Quality Inspection & Photos</h3>
+						<p>Before leaving, we conduct a detailed quality check using our Airbnb-specific checklist. We photograph the property, check all amenities, and ensure everything meets hotel standards. Any issues are reported immediately.</p>
+					</div>
+				</div>
+
+				<div class="process-step">
+					<div class="step-number">4</div>
+					<div class="step-content">
+						<h3>Guest-Ready Notification</h3>
+						<p>You receive confirmation that the property is guest-ready, complete with photos and any notes. Your next guest can check in on time with confidence that the property is spotless.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="booking-cutoff">
+				<h3>Booking Cutoff Times for Same-Day Service</h3>
+				<p>Book by <strong>9:00 AM</strong> for guaranteed same-day turnover. Need emergency last-minute service? Call us directly at <a href="tel:865-507-1405">(865) 507-1405</a> - we'll do our best to accommodate urgent requests.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Comprehensive Airbnb Cleaning Checklist -->
+	<section class="checklist-section">
+		<div class="container">
+			<h2>Our Comprehensive Airbnb Cleaning Checklist</h2>
+			<p class="section-intro">Hotel-quality standards for every vacation rental turnover:</p>
+
+			<div class="checklist-grid">
+				<div class="checklist-category">
+					<h3>Guest-Ready Standards</h3>
+					<ul>
+						<li>All surfaces dust-free and spotless</li>
+						<li>Floors vacuumed and mopped throughout</li>
+						<li>Windows and glass streak-free</li>
+						<li>All trash removed and bins cleaned</li>
+						<li>Pleasant, fresh scent (not overpowering)</li>
+						<li>Temperature set to guest preference</li>
+						<li>All lights working and in proper setting</li>
+						<li>Remote controls cleaned and functional</li>
+					</ul>
+				</div>
+
+				<div class="checklist-category">
+					<h3>Kitchen Deep Clean</h3>
+					<ul>
+						<li>All dishes washed and put away</li>
+						<li>Countertops sanitized and clear</li>
+						<li>Appliances wiped inside and out</li>
+						<li>Refrigerator cleaned and stocked (if requested)</li>
+						<li>Microwave deep cleaned</li>
+						<li>Stovetop scrubbed and shining</li>
+						<li>Sink sanitized and polished</li>
+						<li>Cabinets wiped down</li>
+						<li>Coffee station set up and ready</li>
+						<li>Trash removed and fresh liner</li>
+					</ul>
+				</div>
+
+				<div class="checklist-category">
+					<h3>Bathroom Sanitization</h3>
+					<ul>
+						<li>Toilet deep cleaned and sanitized</li>
+						<li>Shower/tub scrubbed and sparkling</li>
+						<li>Sink and vanity sanitized</li>
+						<li>Mirror streak-free and spotless</li>
+						<li>Fresh towels hung perfectly</li>
+						<li>Toiletries restocked (if provided)</li>
+						<li>Floor mopped and sanitized</li>
+						<li>Trash removed and liner replaced</li>
+						<li>Exhaust fan cleaned</li>
+					</ul>
+				</div>
+
+				<div class="checklist-category">
+					<h3>Bedroom Preparation</h3>
+					<ul>
+						<li>Beds stripped and linens laundered</li>
+						<li>Fresh sheets and crisp hospital corners</li>
+						<li>Pillows fluffed and arranged</li>
+						<li>Nightstands dusted and organized</li>
+						<li>Closets checked and vacuumed</li>
+						<li>Dresser surfaces cleaned</li>
+						<li>Carpet/floors vacuumed or mopped</li>
+						<li>Under beds cleaned</li>
+					</ul>
+				</div>
+
+				<div class="checklist-category">
+					<h3>Living Areas</h3>
+					<ul>
+						<li>Furniture dusted and arranged</li>
+						<li>Throw pillows fluffed and placed</li>
+						<li>TV remotes cleaned and tested</li>
+						<li>Coffee table cleared and polished</li>
+						<li>Baseboards wiped clean</li>
+						<li>Ceiling fans dusted</li>
+						<li>Rugs vacuumed or cleaned</li>
+						<li>Welcome book/info displayed</li>
+					</ul>
+				</div>
+
+				<div class="checklist-category">
+					<h3>Quality Inspection</h3>
+					<ul>
+						<li>Photo documentation of condition</li>
+						<li>Damage assessment and reporting</li>
+						<li>Missing item inventory check</li>
+						<li>Maintenance issue identification</li>
+						<li>Amenity verification (WiFi, TV, etc.)</li>
+						<li>Final walkthrough with checklist</li>
+						<li>Guest-ready certification</li>
+						<li>Host notification with photos</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="checklist-note">
+				<p>Every turnover includes all of the above at no extra charge. We don't cut corners - we maintain the same high standards whether it's your first guest or your hundredth.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Linen & Restocking Services -->
+	<section class="linen-section">
+		<div class="container">
+			<h2>Linen Service & Amenity Restocking</h2>
+			<p class="section-intro">Complete turnover service including fresh linens and stocked amenities:</p>
+
+			<div class="linen-grid">
+				<div class="linen-card">
+					<h3>Linen Service Coordination</h3>
+					<p>We work with your linen service provider or handle washing in-house:</p>
+					<ul>
+						<li>Strip all beds and collect used linens</li>
+						<li>Coordinate linen delivery/pickup</li>
+						<li>Make beds with fresh linens (hotel-style)</li>
+						<li>Wash, dry, and fold (if in-unit laundry)</li>
+						<li>Quality check all linens for damage/stains</li>
+						<li>Inventory tracking and replacement alerts</li>
+					</ul>
+				</div>
+
+				<div class="linen-card">
+					<h3>Restocking Services Available</h3>
+					<p>We'll keep your property fully stocked with guest essentials:</p>
+					<ul>
+						<li>Toiletries (shampoo, soap, lotion)</li>
+						<li>Paper products (toilet paper, paper towels)</li>
+						<li>Coffee, tea, and beverage supplies</li>
+						<li>Kitchen basics (dish soap, sponges)</li>
+						<li>Trash bags and cleaning supplies</li>
+						<li>Welcome basket items</li>
+					</ul>
+					<p class="linen-note">Simply provide your inventory list and budget - we'll handle the shopping and restocking automatically.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Areas Served -->
+	<section class="areas-section">
+		<div class="container">
+			<h2>Vacation Rental Cleaning Throughout East Tennessee</h2>
+			<p class="section-intro">Serving Knoxville, the Smoky Mountains, and surrounding vacation rental markets:</p>
+
+			<div class="areas-grid">
+				<div class="area-card featured-area">
+					<h3>Knoxville Airbnb Cleaning</h3>
+					<p>Downtown condos, West Knoxville homes, and urban vacation rentals. Quick access for same-day turnovers throughout Knox County.</p>
+				</div>
+
+				<div class="area-card featured-area">
+					<h3>Gatlinburg Vacation Rental Cleaning</h3>
+					<p>Mountain cabins, chalets, and Gatlinburg vacation properties. We understand the unique needs of Smoky Mountain rentals and seasonal demand.</p>
+				</div>
+
+				<div class="area-card featured-area">
+					<h3>Pigeon Forge Short-Term Rental Cleaning</h3>
+					<p>Cabins, condos, and resort properties in the heart of Pigeon Forge. Experienced with high-turnover tourist season cleaning.</p>
+				</div>
+
+				<div class="area-card">
+					<h3>Sevierville</h3>
+					<p>Vacation homes and mountain properties in Sevierville and surrounding areas.</p>
+				</div>
+
+				<div class="area-card">
+					<h3>Farragut</h3>
+					<p>Lakefront vacation rentals and executive Airbnb properties near Knoxville.</p>
+				</div>
+
+				<div class="area-card">
+					<h3>Maryville</h3>
+					<p>Peaceful vacation rentals in Maryville and Blount County.</p>
+				</div>
+			</div>
+
+			<p class="areas-note">Don't see your location? We serve many additional areas throughout East Tennessee. Call <a href="tel:865-507-1405">(865) 507-1405</a> to check if we cover your vacation rental property.</p>
+		</div>
+	</section>
+
+	<!-- Pricing Structure -->
+	<section class="pricing-section">
+		<div class="container">
+			<h2>Airbnb Cleaning Pricing in Knoxville</h2>
+			<p class="section-intro">Transparent pricing with no hidden fees. Choose per-turnover or save with monthly packages:</p>
+
+			<div class="pricing-grid">
+				<div class="pricing-card">
+					<h3>Per-Turnover Pricing</h3>
+					<p class="pricing-description">Pay only for the turnovers you need. Perfect for occasional hosts or testing our service.</p>
+					<div class="price-range">$150 - $300</div>
+					<p class="price-note">Based on property size and service level</p>
+					<ul class="pricing-features">
+						<li>Complete turnover cleaning</li>
+						<li>Linen service included</li>
+						<li>Quality inspection & photos</li>
+						<li>Damage reporting</li>
+						<li>Same-day service available</li>
+						<li>No contracts or commitments</li>
+					</ul>
+					<a href="/contact" class="btn btn-outline">Get Quote</a>
+				</div>
+
+				<div class="pricing-card featured-pricing">
+					<div class="popular-badge">Most Popular</div>
+					<h3>Monthly Packages</h3>
+					<p class="pricing-description">Save up to 20% with recurring service. Best for professional hosts with frequent bookings.</p>
+					<div class="price-range">Save 15-20%</div>
+					<p class="price-note">Discounted per-turnover rate</p>
+					<ul class="pricing-features">
+						<li>Everything in per-turnover pricing</li>
+						<li><strong>15-20% discount on every cleaning</strong></li>
+						<li>Priority scheduling</li>
+						<li>Dedicated cleaning team</li>
+						<li>Calendar integration included</li>
+						<li>Monthly invoicing for easy accounting</li>
+					</ul>
+					<a href="/contact" class="btn btn-primary">Get Started</a>
+				</div>
+
+				<div class="pricing-card">
+					<h3>Add-On Services</h3>
+					<p class="pricing-description">Customize your turnover service with these popular additions:</p>
+					<ul class="addon-pricing-list">
+						<li><strong>Hot tub cleaning:</strong> $40</li>
+						<li><strong>Pool cleaning:</strong> Custom quote</li>
+						<li><strong>Restocking service:</strong> $25 + supplies</li>
+						<li><strong>Deep clean (seasonal):</strong> +$100-200</li>
+						<li><strong>Interior windows:</strong> $12/window</li>
+						<li><strong>Pet hair removal:</strong> $50</li>
+						<li><strong>Laundry service:</strong> $35</li>
+					</ul>
+					<a href="/contact" class="btn btn-outline">Customize Service</a>
+				</div>
+			</div>
+
+			<div class="pricing-note-box">
+				<h3>What Affects Airbnb Cleaning Cost?</h3>
+				<ul>
+					<li><strong>Property size:</strong> Studio to 5+ bedroom properties</li>
+					<li><strong>Number of beds/baths:</strong> More bathrooms = more cleaning time</li>
+					<li><strong>Property condition:</strong> Party aftermath vs. clean guests</li>
+					<li><strong>Frequency:</strong> Monthly packages offer significant savings</li>
+					<li><strong>Location:</strong> Prices may vary slightly by area</li>
+					<li><strong>Add-on services:</strong> Hot tubs, extra amenities, restocking</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Maintain 5-Star Reviews -->
+	<section class="reviews-section">
+		<div class="container">
+			<h2>How to Maintain 5-Star Cleanliness Reviews on Airbnb</h2>
+			<p class="section-intro">Cleanliness is the #1 factor in guest reviews. Here's how we help you consistently earn perfect scores:</p>
+
+			<div class="reviews-tips">
+				<div class="tip-card">
+					<div class="tip-icon">1</div>
+					<h3>Consistent Standards Every Single Time</h3>
+					<p>Guests notice inconsistency. We use the same detailed checklist for every turnover, ensuring every guest receives the same hotel-quality experience. Whether it's summer peak season or a quiet January week, standards never slip.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-icon">2</div>
+					<h3>Deep Clean Between Every Guest</h3>
+					<p>Surface-level cleaning isn't enough for 5-star reviews. We deep clean bathrooms, scrub kitchens thoroughly, and ensure no previous guest evidence remains. Your guests should feel like they're the first person ever to stay there.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-icon">3</div>
+					<h3>Professional-Grade Products & Equipment</h3>
+					<p>Consumer cleaning supplies can't match professional results. We use commercial-grade products that actually remove grime, kill bacteria, and leave surfaces sparkling. The difference shows in your reviews.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-icon">4</div>
+					<h3>Photo-Ready Presentation</h3>
+					<p>Everything staged perfectly - throw pillows arranged, towels folded hotel-style, beds made with crisp corners. We ensure your property looks as good in person as it does in your listing photos. First impressions drive reviews.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-icon">5</div>
+					<h3>Attention to Detail Guests Notice</h3>
+					<p>It's the little things - streak-free mirrors, dust-free baseboards, perfectly aligned furniture, fresh scent. These details separate 4-star reviews from 5-star reviews. We're perfectionists so you get perfect reviews.</p>
+				</div>
+
+				<div class="tip-card">
+					<div class="tip-icon">6</div>
+					<h3>Immediate Issue Resolution</h3>
+					<p>We catch and report maintenance issues before guests do. Burnt-out light bulb? We replace it. Clogged drain? We report it immediately. Proactive problem-solving prevents negative reviews about cleanliness or maintenance.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Property Management Integration -->
+	<section class="integration-section">
+		<div class="container">
+			<h2>Seamless Integration with Property Management Software</h2>
+			<p class="section-intro">Automated scheduling and communication for hands-free vacation rental management:</p>
+
+			<div class="integration-content">
+				<div class="integration-benefits">
+					<h3>How Calendar Integration Works</h3>
+					<p>We sync directly with your property management system or booking calendar:</p>
+					<ul>
+						<li>Automatic cleaning scheduling based on guest checkout</li>
+						<li>No manual communication needed for standard turnovers</li>
+						<li>Real-time status updates in your management dashboard</li>
+						<li>Instant notifications when property is guest-ready</li>
+						<li>Photo documentation uploaded automatically</li>
+						<li>Billing and invoicing integrated with your accounting</li>
+					</ul>
+
+					<h3 class="platforms-title">Compatible Platforms</h3>
+					<p>We work with all major vacation rental platforms:</p>
+					<div class="platforms">
+						<span class="platform-badge">Airbnb</span>
+						<span class="platform-badge">VRBO</span>
+						<span class="platform-badge">Booking.com</span>
+						<span class="platform-badge">Guesty</span>
+						<span class="platform-badge">Hospitable</span>
+						<span class="platform-badge">OwnerRez</span>
+						<span class="platform-badge">iCal sync</span>
+						<span class="platform-badge">Custom calendars</span>
+					</div>
+				</div>
+
+				<div class="integration-visual">
+					<div class="integration-box">
+						<h4>Set It & Forget It</h4>
+						<p>Once integrated, cleanings happen automatically:</p>
+						<ol class="integration-steps">
+							<li>Guest books your property</li>
+							<li>System schedules cleaning after checkout</li>
+							<li>We receive notification and complete turnover</li>
+							<li>You get confirmation with photos</li>
+							<li>Next guest checks in to spotless property</li>
+						</ol>
+						<p class="integration-highlight">You focus on hosting. We handle the cleaning automatically.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Emergency & Last-Minute Service -->
+	<section class="emergency-section">
+		<div class="container">
+			<h2>Emergency & Last-Minute Airbnb Turnover Service</h2>
+			<p class="section-intro">Unexpected booking? Guest checking in early? We've got you covered:</p>
+
+			<div class="emergency-grid">
+				<div class="emergency-card">
+					<h3>Same-Day Emergency Service</h3>
+					<p>Unexpected back-to-back bookings happen. Call us before 9 AM and we'll prioritize your property for same-day turnover. We keep availability specifically for emergency requests from our Airbnb clients.</p>
+					<p class="emergency-note">Emergency service may incur rush fees during peak season, but we'll always give you a price upfront before starting.</p>
+				</div>
+
+				<div class="emergency-card">
+					<h3>Last-Minute Booking Coverage</h3>
+					<p>Got a last-minute booking with just hours until check-in? We maintain a team ready for urgent turnovers. While we can't guarantee immediate availability, we'll do everything possible to accommodate you.</p>
+					<p class="emergency-cta">Call directly: <a href="tel:865-507-1405" class="emergency-phone">(865) 507-1405</a></p>
+				</div>
+
+				<div class="emergency-card">
+					<h3>Holiday & Peak Season Priority</h3>
+					<p>During Gatlinburg/Pigeon Forge peak seasons and holidays, our Airbnb package clients receive priority scheduling. Lock in your cleanings during high-demand periods with a monthly package.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ Section -->
+	<section class="faq-section">
+		<div class="container">
+			<h2>Airbnb Cleaning Service FAQ - Knoxville Host Questions</h2>
+
+			<div class="faq-list">
+				<div class="faq-item">
+					<h3>How much does Airbnb cleaning cost in Knoxville?</h3>
+					<p>Airbnb cleaning in Knoxville typically ranges from $150-$300 per turnover depending on property size, number of beds/baths, and service level needed. Studio and 1-bedroom properties start around $150, while larger 4-5 bedroom vacation homes range $250-$300. We also offer discounted monthly packages that save 15-20% per cleaning for hosts with frequent bookings. Contact us at <a href="tel:865-507-1405">(865) 507-1405</a> for a custom quote based on your specific property.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Do you offer same-day Airbnb turnover service?</h3>
+					<p>Yes! We specialize in same-day turnover for Airbnb and vacation rentals throughout Knoxville, Gatlinburg, and Pigeon Forge. Book by 9:00 AM and we'll have your property guest-ready the same day. We understand the importance of quick turnarounds to maximize your booking calendar and maintain 5-star reviews. Same-day service is included at no extra charge (emergency rush requests may have additional fees during peak season).</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>How do you handle key access for my Airbnb?</h3>
+					<p>We work with whatever access method you prefer - lockbox with code, smart lock access, hidden key, direct key exchange, or coordination with your property manager. Our team is experienced with all types of access systems and can integrate seamlessly with your check-in/check-out process. We maintain strict security protocols and only team members assigned to your property receive access codes.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Do you provide restocking services for Airbnb properties?</h3>
+					<p>Yes! We can restock toiletries (shampoo, conditioner, soap), coffee and tea supplies, paper products (toilet paper, paper towels), kitchen basics (dish soap, sponges), trash bags, and any other amenities you provide guests. Simply give us your inventory list and preferred brands, and we'll ensure your property is always fully stocked. Restocking service is $25 plus the cost of supplies (you can provide supplies or we'll purchase and add to your invoice).</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>What areas do you serve for vacation rental cleaning?</h3>
+					<p>We provide Airbnb and vacation rental cleaning throughout Knoxville, West Knoxville, Farragut, Gatlinburg, Pigeon Forge, Sevierville, Maryville, and surrounding East Tennessee areas. We specialize in both urban Knoxville properties and Smoky Mountain vacation rentals (cabins, chalets, mountain homes). If your property is within 30 miles of Knoxville, we likely serve your area - call to confirm.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>How do you ensure quality for vacation rental cleaning?</h3>
+					<p>Every turnover includes a comprehensive quality inspection using our detailed Airbnb-specific checklist. We photograph the property condition before and after cleaning, ensuring hotel-quality standards are met. We verify all amenities are working (WiFi, TV, appliances), check for damage or missing items, and ensure the property matches your listing photos. You receive a guest-ready confirmation with photos and any notes before check-in time. Our goal is to help you maintain consistent 5-star cleanliness reviews.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>Can you integrate with my property management software?</h3>
+					<p>Yes! We work with popular property management platforms including Airbnb, VRBO, Booking.com, Guesty, Hospitable, OwnerRez, and any system with iCal calendar sync. Once integrated, cleanings are scheduled automatically based on your guest check-ins and check-outs - no manual communication needed. We can also work with simple shared Google calendars if you don't use property management software. Integration ensures seamless coordination without you having to schedule each cleaning manually.</p>
+				</div>
+
+				<div class="faq-item">
+					<h3>What happens if you find damage during turnover?</h3>
+					<p>We immediately document and report any damage, missing items, or maintenance issues with detailed photos and notes. This is sent to you within minutes of discovery, allowing you to file timely guest damage claims (most platforms require reporting within 24-48 hours of checkout). We also identify maintenance issues (burnt bulbs, clogged drains, broken appliances) so you can address them before the next guest arrives. This damage reporting service is included at no extra charge - it protects your investment and prevents negative reviews.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials -->
+	<section class="testimonials-section">
+		<div class="container">
+			<h2>What Airbnb Hosts Say About Our Service</h2>
+
+			<div class="testimonials-grid">
+				<div class="testimonial-card featured-testimonial">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"Hero House Cleaning has been a game-changer for our Gatlinburg cabin rental. They turn our property around the same day, even during peak season, and we've maintained a perfect 5.0 cleanliness rating for over a year. Their damage reporting caught a broken hot tub pump before our next guest arrived - saved us from a guaranteed bad review. Worth every penny."</p>
+					<div class="testimonial-author">
+						<strong>Mark & Jenna P.</strong>
+						<span>Gatlinburg Cabin Owners | 2 properties</span>
+					</div>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"I manage 8 vacation rentals in Pigeon Forge and Sevierville. Before Hero House Cleaning, I was constantly stressed about turnovers and dealing with unreliable cleaners who'd cancel last minute. Now it's completely automated - they sync with my calendar and I just get notifications when properties are ready. Game changer for my business."</p>
+					<div class="testimonial-author">
+						<strong>David T.</strong>
+						<span>Vacation Rental Property Manager</span>
+					</div>
+				</div>
+
+				<div class="testimonial-card">
+					<div class="stars">⭐⭐⭐⭐⭐</div>
+					<p class="testimonial-text">"The attention to detail is what sets them apart. My guests consistently mention how clean the property is in reviews. The photos they send after each cleaning give me peace of mind, and I love that they restock everything automatically - one less thing for me to worry about."</p>
+					<div class="testimonial-author">
+						<strong>Lisa M.</strong>
+						<span>Downtown Knoxville Airbnb Host</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Final CTA Section -->
+	<section class="final-cta-section">
+		<div class="container">
+			<h2>Ready to Elevate Your Airbnb Cleaning Standards?</h2>
+			<p class="cta-intro">Join dozens of Knoxville area Airbnb hosts who trust Hero House Cleaning to maintain their 5-star ratings. Same-day turnover, quality inspections, and stress-free management.</p>
+
+			<div class="cta-benefits">
+				<div class="cta-benefit">
+					<span class="check-mark">✓</span>
+					<span>Same-day turnover service</span>
+				</div>
+				<div class="cta-benefit">
+					<span class="check-mark">✓</span>
+					<span>Hotel-quality standards</span>
+				</div>
+				<div class="cta-benefit">
+					<span class="check-mark">✓</span>
+					<span>Photo documentation</span>
+				</div>
+				<div class="cta-benefit">
+					<span class="check-mark">✓</span>
+					<span>Damage reporting included</span>
+				</div>
+			</div>
+
+			<div class="cta-options">
+				<div class="cta-option">
+					<h3>Get Custom Quote</h3>
+					<p>Free quote based on your property size and booking frequency</p>
+					<a href="/contact" class="btn btn-large btn-primary">Get Your Free Airbnb Quote</a>
+				</div>
+				<div class="cta-option">
+					<h3>Call Us Directly</h3>
+					<p>Speak with our team about your vacation rental needs</p>
+					<a href="tel:865-507-1405" class="btn btn-large btn-secondary">Call (865) 507-1405</a>
+				</div>
+			</div>
+
+			<p class="cta-note">Serving Knoxville, Gatlinburg, Pigeon Forge, Sevierville & surrounding areas | Same-day service available | Monthly packages save up to 20%</p>
+		</div>
+	</section>
+
+	<!-- Related Links Section -->
+	<section class="related-links-section">
+		<div class="container">
+			<h2>Explore Our Other Cleaning Services</h2>
+			<div class="related-links-grid">
+				<a href="/services" class="related-link">
+					<h3>All Services & Pricing</h3>
+					<p>Complete list of our residential and commercial cleaning services</p>
+				</a>
+				<a href="/maid-service-knoxville" class="related-link">
+					<h3>Regular Maid Service</h3>
+					<p>Weekly or bi-weekly cleaning for your primary residence</p>
+				</a>
+				<a href="/house-cleaning-cost-knoxville" class="related-link">
+					<h3>Pricing Guide</h3>
+					<p>Transparent pricing for all cleaning services in Knoxville</p>
+				</a>
+				<a href="/contact" class="related-link">
+					<h3>Get a Quote</h3>
+					<p>Free quote for your vacation rental cleaning needs</p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	/* Hero Section */
+	.hero-section {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		padding: 4rem 2rem;
+	}
+
+	.breadcrumb {
+		font-size: 0.9rem;
+		margin-bottom: 1.5rem;
+		opacity: 0.9;
+	}
+
+	.breadcrumb a {
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	}
+
+	.breadcrumb a:hover {
+		border-bottom-color: white;
+	}
+
+	.hero-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.hero-text h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		margin-bottom: 1.5rem;
+		color: rgba(255, 255, 255, 0.95);
+		line-height: 1.6;
+	}
+
+	.trust-badge {
+		background: rgba(255, 255, 255, 0.2);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		padding: 0.75rem 1.5rem;
+		border-radius: 0.5rem;
+		display: inline-block;
+		margin-bottom: 2rem;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.hero-note {
+		font-size: 0.95rem;
+		color: rgba(255, 255, 255, 0.85);
+		margin: 0;
+	}
+
+	.hero-image img {
+		width: 100%;
+		border-radius: 1rem;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.75rem 2rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s;
+		text-align: center;
+	}
+
+	.btn-large {
+		padding: 1rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.btn-primary {
+		background: var(--secondary);
+		color: white;
+	}
+
+	.btn-primary:hover {
+		background: #059669;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-secondary {
+		background: white;
+		color: var(--primary);
+	}
+
+	.btn-secondary:hover {
+		background: var(--bg-light);
+		transform: translateY(-2px);
+	}
+
+	.btn-outline {
+		background: transparent;
+		color: var(--primary);
+		border: 2px solid var(--primary);
+	}
+
+	.btn-outline:hover {
+		background: var(--primary);
+		color: white;
+	}
+
+	/* Why Choose Section */
+	.why-choose-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.section-intro {
+		text-align: center;
+		max-width: 900px;
+		margin: 0 auto 3rem;
+		font-size: 1.15rem;
+		color: var(--text-light);
+		line-height: 1.6;
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.feature-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		transition: all 0.3s;
+	}
+
+	.feature-card:hover {
+		border-color: var(--primary);
+		box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+		transform: translateY(-4px);
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.35rem;
+	}
+
+	.feature-card p {
+		color: var(--text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	/* How It Works Section */
+	.how-it-works-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.process-steps {
+		max-width: 1000px;
+		margin: 3rem auto;
+	}
+
+	.process-step {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		padding-bottom: 3rem;
+		border-bottom: 2px solid var(--border);
+	}
+
+	.process-step:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.step-number {
+		width: 80px;
+		height: 80px;
+		background: var(--primary);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-weight: 700;
+		flex-shrink: 0;
+	}
+
+	.step-content h3 {
+		color: var(--primary);
+		margin-bottom: 0.75rem;
+		font-size: 1.5rem;
+	}
+
+	.step-content p {
+		color: var(--text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.booking-cutoff {
+		max-width: 900px;
+		margin: 3rem auto 0;
+		background: white;
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--secondary);
+		text-align: center;
+	}
+
+	.booking-cutoff h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.booking-cutoff p {
+		color: var(--text-light);
+		font-size: 1.1rem;
+		margin: 0;
+	}
+
+	.booking-cutoff a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	/* Checklist Section */
+	.checklist-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.checklist-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.checklist-category {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.checklist-category h3 {
+		color: var(--primary);
+		margin-bottom: 1.5rem;
+		font-size: 1.35rem;
+	}
+
+	.checklist-category ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.checklist-category li {
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.checklist-category li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+		font-size: 1.1rem;
+	}
+
+	.checklist-note {
+		max-width: 900px;
+		margin: 2rem auto 0;
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border-left: 4px solid var(--secondary);
+	}
+
+	.checklist-note p {
+		color: var(--text);
+		font-size: 1.1rem;
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	/* Linen Section */
+	.linen-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.linen-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.linen-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.linen-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.linen-card p {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.linen-card ul {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.linen-card li {
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.linen-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.linen-note {
+		background: var(--bg-light);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		font-size: 0.95rem;
+		border-left: 3px solid var(--secondary);
+	}
+
+	/* Areas Section */
+	.areas-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.areas-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.area-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		transition: all 0.3s;
+	}
+
+	.area-card:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+		transform: translateY(-2px);
+	}
+
+	.featured-area {
+		border-color: var(--secondary);
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.1));
+	}
+
+	.area-card h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	.area-card p {
+		color: var(--text-light);
+		margin: 0;
+		line-height: 1.6;
+	}
+
+	.areas-note {
+		text-align: center;
+		max-width: 800px;
+		margin: 2rem auto 0;
+		font-size: 1.05rem;
+		color: var(--text-light);
+	}
+
+	.areas-note a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	/* Pricing Section */
+	.pricing-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.pricing-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.pricing-card {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.featured-pricing {
+		border-color: var(--secondary);
+		border-width: 3px;
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.03), rgba(16, 185, 129, 0.08));
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -1rem;
+		right: 2rem;
+		background: var(--secondary);
+		color: white;
+		padding: 0.5rem 1.5rem;
+		border-radius: 2rem;
+		font-weight: 700;
+		font-size: 0.9rem;
+	}
+
+	.pricing-card h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.pricing-description {
+		color: var(--text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.price-range {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+	}
+
+	.featured-pricing .price-range {
+		color: var(--secondary);
+	}
+
+	.price-note {
+		color: var(--text-light);
+		font-size: 0.95rem;
+		margin-bottom: 2rem;
+	}
+
+	.pricing-features {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 2rem;
+		flex-grow: 1;
+	}
+
+	.pricing-features li {
+		padding: 0.75rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.pricing-features li:last-child {
+		border-bottom: none;
+	}
+
+	.pricing-features li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.addon-pricing-list {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 2rem;
+	}
+
+	.addon-pricing-list li {
+		padding: 0.75rem 0;
+		color: var(--text-light);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.addon-pricing-list li:last-child {
+		border-bottom: none;
+	}
+
+	.pricing-note-box {
+		max-width: 900px;
+		margin: 2rem auto 0;
+		background: white;
+		padding: 2rem;
+		border-radius: 0.75rem;
+	}
+
+	.pricing-note-box h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.pricing-note-box ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.pricing-note-box li {
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.pricing-note-box li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--primary);
+		font-weight: bold;
+	}
+
+	/* Reviews Section */
+	.reviews-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.reviews-tips {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.tip-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		position: relative;
+	}
+
+	.tip-icon {
+		position: absolute;
+		top: -1rem;
+		left: 2rem;
+		background: var(--primary);
+		color: white;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 1.2rem;
+	}
+
+	.tip-card h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	.tip-card p {
+		color: var(--text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	/* Integration Section */
+	.integration-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.integration-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.integration-benefits h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.integration-benefits p {
+		color: var(--text-light);
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.integration-benefits ul {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 2rem;
+	}
+
+	.integration-benefits li {
+		padding: 0.5rem 0;
+		padding-left: 1.75rem;
+		position: relative;
+		color: var(--text-light);
+	}
+
+	.integration-benefits li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--secondary);
+		font-weight: bold;
+	}
+
+	.platforms-title {
+		margin-top: 2rem;
+	}
+
+	.platforms {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 1rem;
+	}
+
+	.platform-badge {
+		background: white;
+		color: var(--primary);
+		padding: 0.5rem 1rem;
+		border-radius: 0.35rem;
+		border: 2px solid var(--primary);
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	.integration-visual {
+		display: flex;
+		align-items: center;
+	}
+
+	.integration-box {
+		background: white;
+		padding: 2.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		width: 100%;
+	}
+
+	.integration-box h4 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.35rem;
+	}
+
+	.integration-box p {
+		color: var(--text-light);
+		margin-bottom: 1rem;
+	}
+
+	.integration-steps {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+		counter-reset: integration-counter;
+	}
+
+	.integration-steps li {
+		padding: 0.75rem 0;
+		padding-left: 2.5rem;
+		position: relative;
+		color: var(--text-light);
+		counter-increment: integration-counter;
+	}
+
+	.integration-steps li::before {
+		content: counter(integration-counter);
+		position: absolute;
+		left: 0;
+		background: var(--secondary);
+		color: white;
+		width: 1.75rem;
+		height: 1.75rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 0.85rem;
+	}
+
+	.integration-highlight {
+		background: rgba(16, 185, 129, 0.1);
+		padding: 1rem;
+		border-radius: 0.5rem;
+		color: var(--text);
+		font-weight: 600;
+		border-left: 3px solid var(--secondary);
+	}
+
+	/* Emergency Section */
+	.emergency-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.emergency-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.emergency-card {
+		background: #fef2f2;
+		border: 2px solid #fca5a5;
+		padding: 2rem;
+		border-radius: 0.75rem;
+	}
+
+	.emergency-card h3 {
+		color: #dc2626;
+		margin-bottom: 1rem;
+		font-size: 1.35rem;
+	}
+
+	.emergency-card p {
+		color: #7f1d1d;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.emergency-note {
+		background: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		font-size: 0.95rem;
+	}
+
+	.emergency-cta {
+		background: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.emergency-phone {
+		color: #dc2626;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.25rem;
+	}
+
+	.emergency-phone:hover {
+		text-decoration: underline;
+	}
+
+	/* FAQ Section */
+	.faq-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.faq-list {
+		max-width: 900px;
+		margin: 3rem auto;
+	}
+
+	.faq-item {
+		background: white;
+		padding: 2rem;
+		margin-bottom: 1.5rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+		transition: all 0.3s;
+	}
+
+	.faq-item:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+	}
+
+	.faq-item h3 {
+		color: var(--primary);
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	.faq-item p {
+		color: var(--text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.faq-item a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	/* Testimonials Section */
+	.testimonials-section {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 3rem auto;
+	}
+
+	.testimonial-card {
+		background: var(--bg-light);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid var(--border);
+	}
+
+	.featured-testimonial {
+		border-color: var(--secondary);
+		background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(16, 185, 129, 0.1));
+	}
+
+	.stars {
+		color: #fbbf24;
+		font-size: 1.25rem;
+		margin-bottom: 1rem;
+	}
+
+	.testimonial-text {
+		color: var(--text);
+		font-size: 1.05rem;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		font-style: italic;
+	}
+
+	.testimonial-author strong {
+		color: var(--text);
+		display: block;
+		margin-bottom: 0.25rem;
+		font-size: 1.1rem;
+	}
+
+	.testimonial-author span {
+		color: var(--text-light);
+		font-size: 0.95rem;
+	}
+
+	/* Final CTA Section */
+	.final-cta-section {
+		padding: 4rem 2rem;
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.final-cta-section h2 {
+		color: white;
+		margin-bottom: 1rem;
+		font-size: 2.25rem;
+	}
+
+	.cta-intro {
+		font-size: 1.2rem;
+		max-width: 800px;
+		margin: 0 auto 2rem;
+		color: rgba(255, 255, 255, 0.95);
+	}
+
+	.cta-benefits {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		flex-wrap: wrap;
+		margin-bottom: 3rem;
+	}
+
+	.cta-benefit {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.05rem;
+	}
+
+	.check-mark {
+		color: var(--secondary);
+		font-weight: bold;
+		font-size: 1.25rem;
+	}
+
+	.cta-options {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		max-width: 900px;
+		margin: 0 auto 2rem;
+	}
+
+	.cta-option {
+		background: rgba(255, 255, 255, 0.1);
+		padding: 2rem;
+		border-radius: 0.75rem;
+		border: 2px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.cta-option h3 {
+		color: white;
+		margin-bottom: 0.75rem;
+		font-size: 1.5rem;
+	}
+
+	.cta-option p {
+		color: rgba(255, 255, 255, 0.9);
+		margin-bottom: 1.5rem;
+	}
+
+	.cta-note {
+		font-size: 0.95rem;
+		color: rgba(255, 255, 255, 0.85);
+		margin: 0;
+	}
+
+	/* Related Links Section */
+	.related-links-section {
+		padding: 4rem 2rem;
+		background: var(--bg-light);
+	}
+
+	.related-links-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		max-width: 1200px;
+		margin: 2rem auto;
+	}
+
+	.related-link {
+		background: white;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		border: 2px solid var(--border);
+		text-decoration: none;
+		transition: all 0.3s;
+		display: block;
+	}
+
+	.related-link:hover {
+		border-color: var(--primary);
+		box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+		transform: translateY(-2px);
+	}
+
+	.related-link h3 {
+		color: var(--primary);
+		margin-bottom: 0.5rem;
+		font-size: 1.15rem;
+	}
+
+	.related-link p {
+		color: var(--text-light);
+		font-size: 0.95rem;
+		margin: 0;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.hero-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.hero-text h1 {
+			font-size: 1.85rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.05rem;
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.process-step {
+			grid-template-columns: 60px 1fr;
+			gap: 1.5rem;
+		}
+
+		.step-number {
+			width: 60px;
+			height: 60px;
+			font-size: 1.5rem;
+		}
+
+		.checklist-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.linen-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.pricing-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.integration-content {
+			grid-template-columns: 1fr;
+		}
+
+		.emergency-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-options {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-benefits {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.hero-cta {
+			flex-direction: column;
+		}
+
+		.hero-cta .btn {
+			width: 100%;
+		}
+
+		h2 {
+			font-size: 1.75rem;
+		}
+
+		.final-cta-section h2 {
+			font-size: 1.75rem;
+		}
+	}
+</style>

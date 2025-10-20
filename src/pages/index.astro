@@ -1,235 +1,1468 @@
 ---
+const pageTitle = "House Cleaning Knoxville TN | Hero House Cleaning";
+const pageDescription = "Professional house cleaning in Knoxville TN. $160 regular, $330 deep cleaning. 4.8★ rating, 175+ reviews. Same-day available. Call (865) 507-1405";
+const phoneNumber = "(865) 507-1405";
+const phoneNumberLink = "tel:+18655071405";
+
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Knoxville Clean - Professional House Cleaning Services">
-	<section class="hero">
-		<div class="container">
-			<div class="hero-content">
-				<h1>Professional House Cleaning in Knoxville</h1>
-				<p class="hero-subtitle">Trusted, reliable, and thorough cleaning services for your home</p>
-				<div class="hero-buttons">
-					<a href="/contact" class="btn btn-large btn-primary">Get a Free Quote</a>
-					<a href="/services" class="btn btn-large btn-secondary">Our Services</a>
-				</div>
-			</div>
-		</div>
-	</section>
+<Layout title={pageTitle}>
+  <Fragment slot="head">
+    <meta name="description" content={pageDescription}>
+    <meta name="keywords" content="house cleaning service Knoxville TN, maid service Knoxville, professional house cleaning Knoxville, cleaning service Knoxville, house cleaners Knoxville TN">
+    <link rel="canonical" href="https://herohousecleaning.com/">
 
-	<section class="features">
-		<div class="container">
-			<h2 class="section-title">Why Choose Us?</h2>
-			<div class="features-grid">
-				<div class="feature-card">
-					<div class="feature-icon">✓</div>
-					<h3>Professional Team</h3>
-					<p>Experienced, background-checked cleaners you can trust in your home</p>
-				</div>
-				<div class="feature-card">
-					<div class="feature-icon">🏆</div>
-					<h3>Quality Guaranteed</h3>
-					<p>We're not satisfied until you are. 100% satisfaction guarantee</p>
-				</div>
-				<div class="feature-card">
-					<div class="feature-icon">🌿</div>
-					<h3>Eco-Friendly</h3>
-					<p>Safe, environmentally friendly cleaning products for your family</p>
-				</div>
-				<div class="feature-card">
-					<div class="feature-icon">💰</div>
-					<h3>Affordable Rates</h3>
-					<p>Competitive pricing with no hidden fees or surprises</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hero House Cleaning",
+      "image": "https://herohousecleaning.com/images/hero-logo.png",
+      "@id": "https://herohousecleaning.com/",
+      "url": "https://herohousecleaning.com/",
+      "telephone": "+18655071405",
+      "priceRange": "$160-$378",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Knoxville",
+        "addressLocality": "Knoxville",
+        "addressRegion": "TN",
+        "postalCode": "37919",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.9606,
+        "longitude": -83.9207
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "175"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Knoxville"
+        },
+        {
+          "@type": "City",
+          "name": "Farragut"
+        },
+        {
+          "@type": "City",
+          "name": "Oak Ridge"
+        },
+        {
+          "@type": "City",
+          "name": "Maryville"
+        }
+      ]
+    })} />
 
-	<section class="services-preview">
-		<div class="container">
-			<h2 class="section-title">Our Services</h2>
-			<div class="services-grid">
-				<div class="service-card">
-					<h3>Regular Cleaning</h3>
-					<p>Weekly or bi-weekly maintenance to keep your home fresh and clean</p>
-					<a href="/services#regular">Learn More →</a>
-				</div>
-				<div class="service-card">
-					<h3>Deep Cleaning</h3>
-					<p>Comprehensive top-to-bottom cleaning for a spotless home</p>
-					<a href="/services#deep">Learn More →</a>
-				</div>
-				<div class="service-card">
-					<h3>Move In/Out</h3>
-					<p>Perfect for transitions, ensuring every corner is pristine</p>
-					<a href="/services#move">Learn More →</a>
-				</div>
-			</div>
-		</div>
-	</section>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "House Cleaning Service",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Hero House Cleaning"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Knoxville",
+        "state": "TN"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cleaning Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Regular House Cleaning",
+              "price": "160",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deep Cleaning",
+              "price": "330",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Move In/Out Cleaning",
+              "price": "378",
+              "priceCurrency": "USD"
+            }
+          }
+        ]
+      }
+    })} />
 
-	<section class="cta">
-		<div class="container">
-			<h2>Ready for a Cleaner Home?</h2>
-			<p>Contact us today for a free, no-obligation quote</p>
-			<a href="/contact" class="btn btn-large btn-white">Get Your Free Quote</a>
-		</div>
-	</section>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does house cleaning cost in Knoxville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our transparent pricing starts at $160 for regular cleaning of a standard home, $330 for deep cleaning, and $378 for move-in/move-out cleaning. Unlike other house cleaning services in Knoxville, we show our prices upfront with no hidden fees. Final pricing depends on your home's size and specific needs. Call us at (865) 507-1405 for a free, accurate quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's included in a regular house cleaning service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our regular house cleaning service includes dusting all surfaces, vacuuming and mopping floors, cleaning bathrooms (toilets, showers, tubs, sinks), kitchen cleaning (countertops, sinks, exterior appliances), wiping down light switches and door handles, and taking out trash. We focus on maintaining your home's cleanliness between deep cleaning sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be home during the cleaning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, you don't need to be home during your cleaning service. Many of our Knoxville clients provide us with entry instructions and go about their day. Our team is fully background-checked, insured, and bonded for your peace of mind. We'll secure your home when we're finished and send you a completion notification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you insured and bonded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Hero House Cleaning is fully insured and bonded. All our team members undergo thorough background checks before joining our team. We carry comprehensive liability insurance to protect your home and belongings, giving you complete peace of mind when you choose our professional house cleaning service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book a cleaning service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Booking is easy! Call us directly at (865) 507-1405, fill out our online quote form, or use our contact page. We'll discuss your cleaning needs, provide an accurate quote, and schedule a time that works for you. We offer same-day availability for urgent cleaning needs in the Knoxville area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas in Knoxville do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We proudly serve West Knoxville, Farragut, Bearden, Oak Ridge, Maryville, Lenoir City, Powell, Karns, Halls, and surrounding areas. If you're unsure whether we service your location, give us a call at (865) 507-1405 and we'll let you know right away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What cleaning products do you use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use professional-grade, eco-friendly cleaning products that are safe for your family, pets, and the environment. Our cleaning solutions are effective against dirt, grime, and bacteria while being gentle on your home's surfaces. If you have specific product preferences or sensitivities, we're happy to accommodate your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your satisfaction guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We stand behind our work with a 100% satisfaction guarantee. If you're not completely happy with any aspect of your cleaning, contact us within 24 hours and we'll return to re-clean the area at no additional charge. Your satisfaction is our top priority, and we'll never cancel on you or leave a job incomplete."
+          }
+        }
+      ]
+    })} />
+  </Fragment>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="trust-badges">
+          <span class="badge">
+            <span class="stars">★★★★★</span>
+            <span class="rating">4.8 Rating</span>
+          </span>
+          <span class="badge">175+ Reviews</span>
+          <span class="badge">Family-Owned</span>
+        </div>
+
+        <h1>Knoxville's Most Trusted House Cleaning Service</h1>
+
+        <p class="subheadline">
+          Professional house cleaning service in Knoxville TN with transparent pricing you can see before you book. No hidden fees, no contracts, no surprises. Just a spotless home you'll love coming back to.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#quote-form" class="btn btn-primary">Get Your Free Quote</a>
+          <a href={phoneNumberLink} class="btn btn-secondary">
+            <span class="phone-icon">📞</span>
+            Call {phoneNumber}
+          </a>
+        </div>
+
+        <p class="hero-footer-text">Same-day availability | Background-checked team | 100% satisfaction guarantee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Preview Section -->
+  <section class="pricing-preview-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Transparent Pricing You Can Trust</h2>
+        <p class="section-subtitle">Unlike other Knoxville cleaners, we show our prices upfront. No sales pressure, no hidden fees, no surprises.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Regular Cleaning</h3>
+          <div class="price">$160</div>
+          <p class="price-description">Perfect for maintaining your home's cleanliness on a weekly or bi-weekly schedule.</p>
+          <ul class="pricing-features">
+            <li>All rooms cleaned thoroughly</li>
+            <li>Bathrooms and kitchen deep-cleaned</li>
+            <li>Floors vacuumed and mopped</li>
+            <li>Dusting and surface wiping</li>
+          </ul>
+          <a href="/services" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Deep Cleaning</h3>
+          <div class="price">$330</div>
+          <p class="price-description">Our most thorough service - ideal for first-time clients or seasonal refreshes.</p>
+          <ul class="pricing-features">
+            <li>Everything in regular cleaning</li>
+            <li>Baseboards and trim wiping</li>
+            <li>Inside appliances and cabinets</li>
+            <li>Detailed bathroom scrubbing</li>
+          </ul>
+          <a href="/deep-cleaning" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Move In/Out</h3>
+          <div class="price">$378</div>
+          <p class="price-description">Make your move stress-free with our comprehensive move-in or move-out cleaning.</p>
+          <ul class="pricing-features">
+            <li>Deep clean of entire property</li>
+            <li>Inside all appliances</li>
+            <li>All cabinets and closets</li>
+            <li>Windows and blinds cleaned</li>
+          </ul>
+          <a href="/move-in-out-cleaning" class="btn-link">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="pricing-footer">
+        <p>Prices based on standard 1,500 sq ft home. <a href="/pricing-guide">View our complete pricing guide</a> for detailed information.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="services-overview">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Cleaning Services for Every Need</h2>
+        <p class="section-subtitle">From routine maintenance to specialty services, Hero House Cleaning has you covered throughout the Knoxville area.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Regular Cleaning</h3>
+          <p>Keep your home consistently clean with our weekly, bi-weekly, or monthly maid service in Knoxville. We'll handle the cleaning so you can enjoy your free time.</p>
+          <a href="/services" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Deep Cleaning</h3>
+          <p>Our most comprehensive cleaning service tackles built-up grime, neglected areas, and everything in between. Perfect for spring cleaning or getting your home back to pristine condition.</p>
+          <a href="/deep-cleaning" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🚚</div>
+          <h3>Move In/Out Cleaning</h3>
+          <p>Moving is stressful enough. Let our professional team handle the deep cleaning of your old or new home so you can focus on settling in or closing out your lease.</p>
+          <a href="/move-in-out-cleaning" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏡</div>
+          <h3>Airbnb & Vacation Rental</h3>
+          <p>Fast turnaround cleaning for short-term rentals. We work around your booking schedule to ensure your property is guest-ready every time.</p>
+          <a href="/services" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <h3>Office Cleaning</h3>
+          <p>Create a productive, healthy workspace for your team. Our commercial cleaning services keep your Knoxville office looking professional and inviting.</p>
+          <a href="/services" class="btn-link">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⏰</div>
+          <h3>Same-Day Service</h3>
+          <p>Need cleaning today? We offer same-day availability for last-minute needs. Whether it's unexpected guests or a cleaning emergency, we're here to help.</p>
+          <a href="/contact" class="btn-link">Contact Us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Hero -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Knoxville Families Choose Hero House Cleaning</h2>
+        <p class="section-subtitle">We're not just another cleaning company. We're your neighbors, committed to delivering exceptional service with complete transparency.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3>Transparent Pricing</h3>
+          <p>See exactly what you'll pay before you book. We show our prices upfront with no hidden fees or surprise charges. What you see is what you pay - guaranteed.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⭐</div>
+          <h3>4.8-Star Excellence</h3>
+          <p>Our 175+ five-star reviews speak for themselves. Knoxville homeowners trust us to deliver consistent, high-quality cleaning service every single time.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">👥</div>
+          <h3>Background-Checked Team</h3>
+          <p>Every team member undergoes thorough background checks and professional training. We're fully insured and bonded for your complete peace of mind.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🌱</div>
+          <h3>Eco-Friendly Products</h3>
+          <p>We use professional-grade, environmentally safe cleaning products that are tough on dirt but gentle on your family, pets, and the planet.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3>Same-Day Availability</h3>
+          <p>Life doesn't always give you advance notice. That's why we offer same-day cleaning services for those urgent situations when you need help fast.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">👍</div>
+          <h3>100% Satisfaction Guarantee</h3>
+          <p>If you're not completely satisfied with any aspect of your cleaning, we'll return to make it right at no extra charge. We'll never cancel on you or leave a job incomplete.</p>
+        </div>
+      </div>
+
+      <div class="additional-benefits">
+        <p class="benefits-text">
+          <strong>No contracts required.</strong> Unlike other maid services in Knoxville that lock you into long-term agreements, we earn your business one cleaning at a time. Cancel or reschedule anytime without penalties. You'll work with the same dedicated team every visit, so they learn your preferences and deliver consistent results. We show up when scheduled, we complete every task on your checklist, and we never leave you wondering if corners were cut. That's the Hero House Cleaning difference.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="service-areas">
+    <div class="container">
+      <div class="section-header">
+        <h2>Serving Knoxville and Surrounding Communities</h2>
+        <p class="section-subtitle">Professional house cleaning service throughout the greater Knoxville area</p>
+      </div>
+
+      <div class="areas-content">
+        <div class="areas-text">
+          <p>Hero House Cleaning proudly serves homeowners and businesses throughout Knoxville and the surrounding communities. Our local team knows the area well and is committed to providing exceptional cleaning services to our neighbors.</p>
+
+          <h3>Areas We Serve:</h3>
+          <ul class="areas-list">
+            <li><strong>West Knoxville</strong> - Our primary service area with same-day availability</li>
+            <li><strong>Farragut</strong> - Serving families and businesses in this growing community</li>
+            <li><strong>Bearden</strong> - Professional cleaning for this established neighborhood</li>
+            <li><strong>Oak Ridge</strong> - Reliable service for the Secret City</li>
+            <li><strong>Maryville</strong> - Quality cleaning in Blount County</li>
+            <li><strong>Lenoir City</strong> - Extending our services to Loudon County</li>
+            <li><strong>Powell</strong> - North Knoxville's trusted cleaning service</li>
+            <li><strong>Karns</strong> - Fast, reliable cleaning in West Knox County</li>
+            <li><strong>Halls</strong> - Professional service for North Knox County</li>
+          </ul>
+
+          <p class="areas-footer">
+            Not sure if we serve your area? Give us a call at {phoneNumber} and we'll let you know right away. We're always expanding our service area to help more Knoxville families enjoy cleaner, healthier homes.
+          </p>
+
+          <a href="/locations/west-knoxville" class="btn btn-outline">View West Knoxville Services</a>
+        </div>
+
+        <div class="areas-map">
+          <div class="map-placeholder">
+            <p>Service Area Map</p>
+            <p class="map-coverage">Covering 50+ miles around Knoxville, TN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Knoxville Homeowners Say About Us</h2>
+        <p class="section-subtitle">Real reviews from real customers who trust Hero House Cleaning</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            "Hero House Cleaning transformed our home! After trying several other cleaning services in Knoxville that kept canceling or sending different people each time, we finally found a company we can count on. The same team comes every two weeks, they know exactly what we need, and they've never missed an appointment. The pricing is straightforward - no hidden fees like we experienced elsewhere. Highly recommend!"
+          </p>
+          <div class="testimonial-author">
+            <strong>Sarah M.</strong>
+            <span>West Knoxville</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            "I was blown away by the deep cleaning service. We'd let things go for too long and I was embarrassed to have anyone come in, but the Hero team was professional and non-judgmental. They tackled everything from baseboards to ceiling fans, and our house looked better than when we moved in. What really impressed me was that they showed me the price upfront - no surprises when they finished. Worth every penny!"
+          </p>
+          <div class="testimonial-author">
+            <strong>Mike T.</strong>
+            <span>Farragut</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">
+            "As a busy working mom, Hero House Cleaning has been a lifesaver. I love that I can book online, they show up exactly when scheduled, and I come home to a spotless house. The eco-friendly products they use give me peace of mind with my kids and pets running around. No contracts, no pressure to sign up for more services - just honest, reliable cleaning every time. This is how cleaning services should operate!"
+          </p>
+          <div class="testimonial-author">
+            <strong>Jennifer L.</strong>
+            <span>Bearden</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-footer">
+        <p>Join 175+ satisfied customers across Knoxville. <a href="/contact">Schedule your first cleaning today</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After Section -->
+  <section class="before-after">
+    <div class="container">
+      <div class="section-header">
+        <h2>See the Hero House Cleaning Difference</h2>
+        <p class="section-subtitle">Real transformations from our professional house cleaning service in Knoxville</p>
+      </div>
+
+      <div class="before-after-grid">
+        <div class="before-after-card">
+          <div class="image-comparison">
+            <div class="before-image">
+              <span class="image-label">Before</span>
+            </div>
+            <div class="after-image">
+              <span class="image-label">After</span>
+            </div>
+          </div>
+          <h3>Kitchen Deep Clean</h3>
+          <p>From greasy buildup to sparkling surfaces - we tackle the toughest kitchen messes with professional-grade products and attention to detail.</p>
+        </div>
+
+        <div class="before-after-card">
+          <div class="image-comparison">
+            <div class="before-image">
+              <span class="image-label">Before</span>
+            </div>
+            <div class="after-image">
+              <span class="image-label">After</span>
+            </div>
+          </div>
+          <h3>Bathroom Transformation</h3>
+          <p>Our deep cleaning service removes soap scum, hard water stains, and grime to leave your bathrooms fresh and sanitized.</p>
+        </div>
+
+        <div class="before-after-card">
+          <div class="image-comparison">
+            <div class="before-image">
+              <span class="image-label">Before</span>
+            </div>
+            <div class="after-image">
+              <span class="image-label">After</span>
+            </div>
+          </div>
+          <h3>Living Space Revival</h3>
+          <p>Comprehensive dusting, vacuuming, and surface cleaning transforms your living areas into welcoming, comfortable spaces.</p>
+        </div>
+      </div>
+
+      <div class="before-after-footer">
+        <p>Ready to see these results in your own home? <a href="#quote-form">Get your free quote now</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions About Our Knoxville House Cleaning Service</h2>
+        <p class="section-subtitle">Get answers to common questions about our cleaning services, pricing, and process</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">How much does house cleaning cost in Knoxville?</h3>
+          <div class="faq-answer">
+            <p>Our transparent pricing starts at <strong>$160 for regular cleaning</strong> of a standard home, <strong>$330 for deep cleaning</strong>, and <strong>$378 for move-in/move-out cleaning</strong>. Unlike other house cleaning services in Knoxville, we show our prices upfront with no hidden fees. Final pricing depends on your home's size and specific needs. Call us at {phoneNumber} for a free, accurate quote based on your exact requirements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What's included in a regular house cleaning service?</h3>
+          <div class="faq-answer">
+            <p>Our regular house cleaning service includes dusting all surfaces, vacuuming and mopping floors, cleaning bathrooms (toilets, showers, tubs, sinks), kitchen cleaning (countertops, sinks, exterior appliances), wiping down light switches and door handles, and taking out trash. We focus on maintaining your home's cleanliness between deep cleaning sessions. Every regular cleaning is thorough and consistent - we never cut corners or rush through jobs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do I need to be home during the cleaning?</h3>
+          <div class="faq-answer">
+            <p>No, you don't need to be home during your cleaning service. Many of our Knoxville clients provide us with entry instructions and go about their day. Our team is fully background-checked, insured, and bonded for your peace of mind. We'll secure your home when we're finished and send you a completion notification. Whether you prefer to be present or out of the house, we accommodate your schedule and preferences.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Are you insured and bonded?</h3>
+          <div class="faq-answer">
+            <p>Yes, Hero House Cleaning is fully insured and bonded. All our team members undergo thorough background checks before joining our team. We carry comprehensive liability insurance to protect your home and belongings, giving you complete peace of mind when you choose our professional house cleaning service. We take the security and safety of your home seriously - it's why families across Knoxville trust us with their keys.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How do I book a cleaning service?</h3>
+          <div class="faq-answer">
+            <p>Booking is easy! Call us directly at <a href={phoneNumberLink}>{phoneNumber}</a>, fill out our online quote form below, or visit our <a href="/contact">contact page</a>. We'll discuss your cleaning needs, provide an accurate quote with transparent pricing, and schedule a time that works for you. We offer same-day availability for urgent cleaning needs in the Knoxville area. No pressure, no sales tactics - just straightforward service.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What areas in Knoxville do you serve?</h3>
+          <div class="faq-answer">
+            <p>We proudly serve <a href="/locations/west-knoxville">West Knoxville</a>, Farragut, Bearden, Oak Ridge, Maryville, Lenoir City, Powell, Karns, Halls, and surrounding areas throughout Knox County and beyond. If you're unsure whether we service your location, give us a call at {phoneNumber} and we'll let you know right away. We're constantly expanding to serve more communities across East Tennessee.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What cleaning products do you use?</h3>
+          <div class="faq-answer">
+            <p>We use professional-grade, eco-friendly cleaning products that are safe for your family, pets, and the environment. Our cleaning solutions are effective against dirt, grime, and bacteria while being gentle on your home's surfaces. If you have specific product preferences, allergies, or sensitivities, we're happy to accommodate your needs. We can use your preferred products or adjust our standard supplies to match your requirements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What is your satisfaction guarantee?</h3>
+          <div class="faq-answer">
+            <p>We stand behind our work with a <strong>100% satisfaction guarantee</strong>. If you're not completely happy with any aspect of your cleaning, contact us within 24 hours and we'll return to re-clean the area at no additional charge. Your satisfaction is our top priority, and we'll never cancel on you or leave a job incomplete. This guarantee means you can book with confidence knowing we'll make it right if anything isn't perfect.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-footer">
+        <p>Have more questions? <a href="/contact">Contact us</a> or call {phoneNumber} - we're happy to help!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready for a Cleaner, Healthier Home?</h2>
+        <p class="cta-subtitle">Join hundreds of satisfied Knoxville families who trust Hero House Cleaning for reliable, transparent service.</p>
+
+        <div class="cta-benefits-inline">
+          <span>✓ Transparent Pricing</span>
+          <span>✓ Same-Day Available</span>
+          <span>✓ 100% Satisfaction Guaranteed</span>
+        </div>
+
+        <div class="cta-buttons">
+          <a href={phoneNumberLink} class="btn btn-primary btn-large">
+            <span class="phone-icon">📞</span>
+            Call {phoneNumber}
+          </a>
+        </div>
+
+        <p class="cta-footer-text">Or fill out the form below for a free quote</p>
+      </div>
+
+      <div class="quote-form-section" id="quote-form">
+        <h3>Get Your Free Quote</h3>
+        <p>Tell us about your cleaning needs and we'll get back to you with a transparent, accurate quote.</p>
+
+        <div class="form-embed">
+          <!-- GoHighLevel form embed here -->
+          <p style="text-align: center; color: #666; padding: 40px 20px; background: #f9f9f9; border-radius: 8px;">
+            Contact form integration goes here<br>
+            Call {phoneNumber} or email us directly to get started
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Content for SEO -->
+  <section class="seo-content">
+    <div class="container">
+      <div class="content-wrapper">
+        <h2>Your Trusted Partner for Professional House Cleaning in Knoxville, TN</h2>
+
+        <p>Finding a reliable house cleaning service in Knoxville shouldn't feel like a gamble. At Hero House Cleaning, we've built our reputation on transparency, consistency, and exceptional results. Unlike other maid services in Knoxville that hide their prices or lock you into long-term contracts, we believe in earning your trust one cleaning at a time.</p>
+
+        <h3>What Makes Professional House Cleaning Different?</h3>
+
+        <p>Professional house cleaning goes far beyond what you can accomplish on your own, even with the best intentions. Our trained team brings industrial-grade equipment, commercial cleaning products, and years of experience to every job. We know exactly how to tackle stubborn stains, eliminate odors, and sanitize your home efficiently and effectively.</p>
+
+        <p>When you hire Hero House Cleaning for your <a href="/services">professional cleaning services</a>, you're not just getting someone to push a vacuum around. You're getting a systematic, thorough cleaning process that covers every surface, every corner, and every detail. We follow proven checklists to ensure nothing gets missed, and we work quickly without sacrificing quality.</p>
+
+        <h3>The True Cost of Choosing the Wrong Cleaning Service</h3>
+
+        <p>Many Knoxville homeowners have learned the hard way that the cheapest option isn't always the best value. We've heard countless stories from new clients about their experiences with other cleaning companies: last-minute cancellations, different teams every visit who don't know your home or preferences, incomplete work that requires you to finish the job yourself, and surprise charges that weren't mentioned upfront.</p>
+
+        <p>Some cleaning services in the area require 6-month or 9-month contracts with penalties for early cancellation. Others quote one price during the sales call and charge significantly more after the work is done. Many send inexperienced cleaners who rush through jobs to maximize the number of houses they can clean in a day.</p>
+
+        <p>These practices might be common in the industry, but they're not acceptable to us. We believe you deserve better, which is why we've built our business differently from the ground up.</p>
+
+        <h3>Our Commitment to Transparency and Consistency</h3>
+
+        <p>At Hero House Cleaning, we show our prices upfront on our <a href="/pricing-guide">pricing page</a>. We provide detailed quotes based on your specific home and needs. What we quote is what you pay - no surprise fees, no upsells, no pressure tactics.</p>
+
+        <p>We don't require contracts because we're confident you'll want to continue working with us after experiencing our service. You can cancel or reschedule anytime without penalties. We want to earn your repeat business through excellent work, not trap you with paperwork.</p>
+
+        <p>Consistency matters too. We assign the same team to your home for every visit. They learn your preferences, your home's layout, and your priorities. You won't have to explain where things go or what needs extra attention every single time. This consistency leads to better results and a more personalized experience.</p>
+
+        <h3>Serving Knoxville with Pride</h3>
+
+        <p>As a family-owned business based right here in Knoxville, we're invested in this community. When you choose Hero House Cleaning, you're supporting local jobs and a local business that cares about its reputation. We're not a national franchise following corporate scripts - we're your neighbors, committed to making Knoxville homes cleaner and healthier.</p>
+
+        <p>We understand the unique needs of homes in <a href="/locations/west-knoxville">West Knoxville</a>, Farragut, Oak Ridge, and surrounding areas. We know that Tennessee pollen can wreak havoc on your home's cleanliness. We understand the challenges of keeping hardwood floors and tile clean in humid Southern weather. Our experience in this region makes us more effective at addressing your specific cleaning challenges.</p>
+
+        <h3>More Than Just Basic Cleaning</h3>
+
+        <p>While our regular cleaning service keeps your home consistently clean, we also offer specialized services for those times when you need something more. Our <a href="/deep-cleaning">deep cleaning service</a> is perfect for spring cleaning, post-renovation cleanup, or when you've fallen behind on housework and need a fresh start. We'll tackle baseboards, ceiling fans, inside appliances, and all those areas that don't get attention during regular maintenance cleaning.</p>
+
+        <p>Moving is stressful enough without having to worry about cleaning your old place or new home. Our <a href="/move-in-out-cleaning">move-in/move-out cleaning service</a> handles the comprehensive cleaning needed to get your deposit back or make your new house feel like home from day one.</p>
+
+        <h3>The Hero House Cleaning Process</h3>
+
+        <p>Every cleaning starts with clear communication. When you contact us, we'll discuss your home's size, your cleaning priorities, any special requirements, and your schedule preferences. We provide a transparent quote and answer all your questions upfront.</p>
+
+        <p>On cleaning day, our background-checked team arrives on time with all necessary equipment and eco-friendly cleaning products. They follow our detailed checklist while paying special attention to any areas you've flagged as priorities. We work systematically through your home, ensuring every room gets the attention it deserves.</p>
+
+        <p>Before we leave, we do a final walkthrough to ensure everything meets our high standards. We secure your home and send you a notification that the cleaning is complete. If you're not home, you'll return to a fresh, clean space that smells amazing and looks immaculate.</p>
+
+        <h3>Flexibility When You Need It</h3>
+
+        <p>Life happens. We understand that plans change, emergencies arise, and schedules shift. That's why we offer same-day cleaning services for those urgent situations when you need help fast. Unexpected guests arriving tonight? Emergency moving situation? We'll do our best to accommodate you.</p>
+
+        <p>We also make it easy to adjust your regular cleaning schedule. Need to skip a week because you're on vacation? Want to add an extra cleaning before hosting a party? Just let us know and we'll make it work.</p>
+
+        <h3>Safety and Peace of Mind</h3>
+
+        <p>Inviting someone into your home requires trust. We take that responsibility seriously. Every member of our team undergoes comprehensive background checks before joining Hero House Cleaning. We're fully insured and bonded to protect your home and belongings. Our team members are trained not just in cleaning techniques but also in professionalism, discretion, and respect for your property.</p>
+
+        <p>We use eco-friendly, safe cleaning products that are tough on dirt but gentle on your family and pets. If you have specific concerns about allergies, sensitivities, or product preferences, we're happy to accommodate. Your health and safety are paramount.</p>
+
+        <h3>Real Results from Real Customers</h3>
+
+        <p>Our 4.8-star rating and 175+ positive reviews reflect the experiences of real Knoxville homeowners who've chosen Hero House Cleaning. They appreciate our transparency, reliability, and the quality of our work. Many have shared stories about previous disappointing experiences with other cleaning services and how refreshing it is to finally find a company that delivers on its promises.</p>
+
+        <p>We're proud of these reviews because they represent real relationships with real people in our community. Every five-star review motivates us to maintain our high standards. Every piece of feedback helps us improve and serve you better.</p>
+
+        <h3>Getting Started is Easy</h3>
+
+        <p>Ready to experience the Hero House Cleaning difference? Getting started is simple. Call us at {phoneNumber} to speak with our friendly team, use our online quote form, or visit our <a href="/contact">contact page</a>. We'll provide a free, accurate quote with no obligation and no pressure.</p>
+
+        <p>Whether you need regular maintenance cleaning, a thorough deep clean, or specialized services, we're here to help. We serve families and businesses throughout Knoxville and would be honored to add you to our growing list of satisfied customers.</p>
+
+        <p>Don't settle for unreliable service, hidden fees, or subpar results. Choose the Knoxville house cleaning service that puts your needs first and delivers exceptional results every time. Choose Hero House Cleaning.</p>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-	.hero {
-		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-		color: white;
-		padding: 6rem 2rem;
-		text-align: center;
-	}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-	.hero-content h1 {
-		color: white;
-		font-size: 3rem;
-		margin-bottom: 1rem;
-	}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-	.hero-subtitle {
-		font-size: 1.25rem;
-		margin-bottom: 2rem;
-		color: rgba(255, 255, 255, 0.9);
-	}
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px 60px;
+    text-align: center;
+  }
 
-	.hero-buttons {
-		display: flex;
-		gap: 1rem;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-	.btn {
-		display: inline-block;
-		padding: 0.75rem 2rem;
-		border-radius: 0.5rem;
-		text-decoration: none;
-		font-weight: 600;
-		transition: all 0.3s;
-	}
+  .trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
 
-	.btn-large {
-		padding: 1rem 2.5rem;
-		font-size: 1.1rem;
-	}
+  .badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+  }
 
-	.btn-secondary {
-		background: white;
-		color: var(--primary);
-	}
+  .stars {
+    color: #ffd700;
+    font-size: 16px;
+  }
 
-	.btn-secondary:hover {
-		background: var(--bg-light);
-		transform: translateY(-2px);
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	}
+  .rating {
+    margin-left: 5px;
+  }
 
-	.btn-white {
-		background: white;
-		color: var(--primary);
-	}
+  .hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
 
-	.btn-white:hover {
-		background: var(--bg-light);
-		transform: translateY(-2px);
-	}
+  .subheadline {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.95;
+  }
 
-	.features {
-		padding: 4rem 2rem;
-		background: var(--bg-light);
-	}
+  .hero-ctas {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
 
-	.section-title {
-		text-align: center;
-		margin-bottom: 3rem;
-	}
+  .btn {
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
 
-	.features-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
-	}
+  .btn-primary {
+    background: white;
+    color: #667eea;
+  }
 
-	.feature-card {
-		background: white;
-		padding: 2rem;
-		border-radius: 0.5rem;
-		text-align: center;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	}
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
 
-	.feature-icon {
-		font-size: 3rem;
-		margin-bottom: 1rem;
-	}
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+  }
 
-	.services-preview {
-		padding: 4rem 2rem;
-	}
+  .btn-secondary:hover {
+    background: white;
+    color: #667eea;
+  }
 
-	.services-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 2rem;
-	}
+  .btn-outline {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+  }
 
-	.service-card {
-		background: var(--bg-light);
-		padding: 2rem;
-		border-radius: 0.5rem;
-		border-left: 4px solid var(--primary);
-	}
+  .btn-outline:hover {
+    background: #667eea;
+    color: white;
+  }
 
-	.service-card h3 {
-		color: var(--primary);
-		margin-bottom: 1rem;
-	}
+  .btn-large {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
 
-	.service-card a {
-		color: var(--primary);
-		text-decoration: none;
-		font-weight: 600;
-		transition: color 0.3s;
-	}
+  .phone-icon {
+    margin-right: 8px;
+  }
 
-	.service-card a:hover {
-		color: var(--primary-dark);
-	}
+  .hero-footer-text {
+    font-size: 16px;
+    opacity: 0.9;
+  }
 
-	.cta {
-		background: var(--secondary);
-		color: white;
-		padding: 4rem 2rem;
-		text-align: center;
-	}
+  /* Section Headers */
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-	.cta h2 {
-		color: white;
-		margin-bottom: 1rem;
-	}
+  .section-header h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
 
-	.cta p {
-		font-size: 1.2rem;
-		margin-bottom: 2rem;
-		color: white;
-	}
+  .section-subtitle {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-	@media (max-width: 768px) {
-		.hero-content h1 {
-			font-size: 2rem;
-		}
+  /* Pricing Preview */
+  .pricing-preview-section {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
 
-		.hero-subtitle {
-			font-size: 1rem;
-		}
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
 
-		.hero-buttons {
-			flex-direction: column;
-			align-items: center;
-		}
-	}
+  .pricing-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  .pricing-card.featured {
+    border: 3px solid #667eea;
+    transform: scale(1.05);
+  }
+
+  .popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #667eea;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .price {
+    font-size: 48px;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 15px;
+  }
+
+  .price-description {
+    color: #666;
+    margin-bottom: 20px;
+    min-height: 50px;
+  }
+
+  .pricing-features {
+    list-style: none;
+    margin-bottom: 25px;
+  }
+
+  .pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .pricing-features li:before {
+    content: "✓ ";
+    color: #48bb78;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .btn-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+
+  .pricing-footer {
+    text-align: center;
+    color: #666;
+  }
+
+  .pricing-footer a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .pricing-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Services Overview */
+  .services-overview {
+    padding: 80px 20px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 30px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .service-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .service-card p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  /* Why Choose */
+  .why-choose {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .benefit-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .benefit-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2d3748;
+  }
+
+  .benefit-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .additional-benefits {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+  }
+
+  .benefits-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4a5568;
+  }
+
+  /* Service Areas */
+  .service-areas {
+    padding: 80px 20px;
+  }
+
+  .areas-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+  }
+
+  .areas-text h3 {
+    font-size: 24px;
+    margin: 25px 0 15px;
+    color: #2d3748;
+  }
+
+  .areas-text p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+
+  .areas-list {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+
+  .areas-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #4a5568;
+  }
+
+  .areas-list li:before {
+    content: "📍 ";
+    margin-right: 10px;
+  }
+
+  .areas-footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .map-placeholder {
+    background: #e2e8f0;
+    border-radius: 12px;
+    padding: 100px 40px;
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map-coverage {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .testimonial-card .stars {
+    color: #ffd700;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-text {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-author strong {
+    color: #2d3748;
+    font-size: 18px;
+  }
+
+  .testimonial-author span {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .testimonials-footer {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+  }
+
+  .testimonials-footer a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .testimonials-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Before/After */
+  .before-after {
+    padding: 80px 20px;
+  }
+
+  .before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .before-after-card h3 {
+    font-size: 22px;
+    margin: 20px 0 10px;
+    color: #2d3748;
+  }
+
+  .before-after-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .image-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .before-image, .after-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #e2e8f0;
+    padding-bottom: 100%;
+  }
+
+  .image-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .before-after-footer {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+  }
+
+  .before-after-footer a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .before-after-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* FAQ */
+  .faq {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .faq-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+  }
+
+  .faq-question {
+    font-size: 20px;
+    color: #2d3748;
+    margin-bottom: 15px;
+  }
+
+  .faq-answer {
+    color: #4a5568;
+    line-height: 1.8;
+  }
+
+  .faq-answer p {
+    margin-bottom: 10px;
+  }
+
+  .faq-answer a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .faq-answer a:hover {
+    text-decoration: underline;
+  }
+
+  .faq-footer {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+  }
+
+  .faq-footer a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .faq-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Final CTA */
+  .final-cta {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .cta-content {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .cta-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .cta-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+  }
+
+  .cta-benefits-inline {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    margin-bottom: 20px;
+  }
+
+  .cta-footer-text {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  .quote-form-section {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #2d3748;
+  }
+
+  .quote-form-section h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .quote-form-section > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .form-embed {
+    margin-top: 20px;
+  }
+
+  /* SEO Content */
+  .seo-content {
+    padding: 80px 20px;
+    background: #f7fafc;
+  }
+
+  .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #2d3748;
+  }
+
+  .content-wrapper h3 {
+    font-size: 24px;
+    margin: 35px 0 20px;
+    color: #2d3748;
+  }
+
+  .content-wrapper p {
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+
+  .content-wrapper a {
+    color: #667eea;
+    text-decoration: none;
+  }
+
+  .content-wrapper a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 32px;
+    }
+
+    .subheadline {
+      font-size: 18px;
+    }
+
+    .section-header h2 {
+      font-size: 28px;
+    }
+
+    .pricing-card.featured {
+      transform: scale(1);
+    }
+
+    .areas-content {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+      font-size: 32px;
+    }
+
+    .quote-form-section {
+      padding: 30px 20px;
+    }
+
+    .hero-ctas {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
 </style>
