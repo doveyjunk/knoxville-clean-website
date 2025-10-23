@@ -28,6 +28,11 @@ const showLeadForm = !hideLeadForm &&
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 
+		<!-- Google Fonts - Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
 		<!-- Canonical URL -->
 		<link rel="canonical" href={canonicalURL} />
 
@@ -149,14 +154,66 @@ const showLeadForm = !hideLeadForm &&
 </html>
 <style is:global>
 	:root {
-		--primary: #2563eb;
-		--primary-dark: #1e40af;
-		--secondary: #10b981;
-		--text: #1f2937;
-		--text-light: #5a6268; /* Updated for WCAG AA contrast (5.85:1) */
-		--bg: #ffffff;
-		--bg-light: #f9fafb;
-		--border: #e5e7eb;
+		/* Hero Design System - Brand Colors */
+		--color-brand-red: #BC1823;
+		--color-brand-navy: #171b3e;
+		--color-brand-white: #ffffff;
+
+		/* Primary Red Scale */
+		--color-red-50: #fef2f2;
+		--color-red-100: #fee2e2;
+		--color-red-500: #ef4444;
+		--color-red-600: #dc2626;
+		--color-red-700: #b91c1c;
+		--color-red-brand: #BC1823;
+
+		/* Navy/Blue Scale */
+		--color-blue-600: #2563eb;
+		--color-blue-700: #1d4ed8;
+		--color-blue-800: #1e40af;
+		--color-blue-brand: #171b3e;
+
+		/* Neutral System - Cool-toned */
+		--color-white: #ffffff;
+		--color-gray-50: #f8fafc;
+		--color-gray-100: #f1f5f9;
+		--color-gray-200: #e2e8f0;
+		--color-gray-300: #cbd5e1;
+		--color-gray-400: #94a3b8;
+		--color-gray-500: #64748b;
+		--color-gray-600: #475569;
+		--color-gray-700: #334155;
+		--color-gray-800: #1e293b;
+		--color-gray-900: #0f172a;
+
+		/* Semantic Colors */
+		--color-success: #22c55e;
+		--color-warning: #f59e0b;
+		--color-error: #ef4444;
+		--color-info: #3b82f6;
+
+		/* Background Variations */
+		--color-bg-primary: #ffffff;
+		--color-bg-secondary: #f8fafc;
+		--color-bg-tertiary: #f1f5f9;
+
+		/* Text Colors */
+		--color-text-primary: #0f172a;
+		--color-text-secondary: #475569;
+		--color-text-tertiary: #64748b;
+		--color-text-inverse: #ffffff;
+		--color-text-brand: #171b3e;
+		--color-text-accent: #BC1823;
+
+		/* Legacy Mapping for Compatibility */
+		--primary: var(--color-brand-red);
+		--primary-dark: #991517;
+		--secondary: var(--color-brand-navy);
+		--text: var(--color-text-primary);
+		--text-light: var(--color-text-secondary);
+		--bg: var(--color-bg-primary);
+		--bg-light: var(--color-bg-secondary);
+		--border: var(--color-gray-200);
 	}
 
 	* {
@@ -166,7 +223,7 @@ const showLeadForm = !hideLeadForm &&
 	}
 
 	body {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 		line-height: 1.6;
 		color: var(--text);
 		background: var(--bg);
