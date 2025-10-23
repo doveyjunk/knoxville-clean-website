@@ -205,6 +205,54 @@ const showLeadForm = !hideLeadForm &&
 		--color-text-brand: #171b3e;
 		--color-text-accent: #BC1823;
 
+		/* Shadow System */
+		--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+		--shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+		--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+		--shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+		--shadow-brand: 0 6px 18px rgba(15, 23, 42, 0.08);
+		--shadow-brand-hover: 0 12px 24px rgba(15, 23, 42, 0.12);
+
+		/* Border Radius */
+		--radius-none: 0;
+		--radius-sm: 0.125rem;
+		--radius-base: 0.25rem;
+		--radius-md: 0.375rem;
+		--radius-lg: 0.5rem;
+		--radius-xl: 0.75rem;
+		--radius-2xl: 1rem;
+		--radius-3xl: 1.5rem;
+		--radius-full: 9999px;
+
+		/* Spacing System (4px base) */
+		--space-0: 0;
+		--space-1: 0.25rem;
+		--space-2: 0.5rem;
+		--space-3: 0.75rem;
+		--space-4: 1rem;
+		--space-5: 1.25rem;
+		--space-6: 1.5rem;
+		--space-8: 2rem;
+		--space-10: 2.5rem;
+		--space-12: 3rem;
+		--space-16: 4rem;
+		--space-20: 5rem;
+		--space-24: 6rem;
+		--space-32: 8rem;
+
+		/* Motion System */
+		--duration-fast: 150ms;
+		--duration-normal: 250ms;
+		--duration-slow: 350ms;
+		--duration-slower: 500ms;
+		--ease-linear: linear;
+		--ease-out: cubic-bezier(0, 0, 0.2, 1);
+		--ease-in: cubic-bezier(0.4, 0, 1, 1);
+		--ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+		--ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+
 		/* Legacy Mapping for Compatibility */
 		--primary: var(--color-brand-red);
 		--primary-dark: #991517;
@@ -240,6 +288,24 @@ const showLeadForm = !hideLeadForm &&
 	.btn-secondary:focus {
 		outline: 3px solid var(--primary);
 		outline-offset: 2px;
+	}
+
+	/* Brand Shadow Utilities */
+	.shadow-brand {
+		box-shadow: var(--shadow-brand);
+	}
+
+	.shadow-brand-hover {
+		box-shadow: var(--shadow-brand-hover);
+	}
+
+	.hover\:shadow-brand-hover:hover {
+		box-shadow: var(--shadow-brand-hover);
+	}
+
+	/* Smooth Shadow Transitions */
+	.transition-shadow {
+		transition: box-shadow var(--duration-normal) var(--ease-brand);
 	}
 
 	a:focus-visible,
